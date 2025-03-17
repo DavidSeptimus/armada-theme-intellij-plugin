@@ -99,7 +99,8 @@
       "selectionInactiveBackground": "LightTint_15",
       "selectionForeground": "Neutral_140",
       "foreground": "Neutral_140",
-      "hoverBackground": "LightTint_5"
+      "hoverBackground": "LightTint_5",
+      "selectionBackground": "Blue_40"
     },
     "ComboBox": {
       "background": "Neutral_30",

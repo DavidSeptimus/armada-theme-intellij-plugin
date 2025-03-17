@@ -1,6 +1,6 @@
 <!-- Plugin Configuration File. Read more: https://plugins.jetbrains.com/docs/intellij/plugin-configuration-file.html -->
 <idea-plugin>
-    <id>com.github.davidseptimus.armadathemeintellijplugin</id>
+    <id>com.github.davidseptimus.armada</id>
     <name>Armada Theme</name>
     <vendor>David Septimus</vendor>
     <description>An IntelliJ theme based on Jetbrains Fleet's default theme</description>
