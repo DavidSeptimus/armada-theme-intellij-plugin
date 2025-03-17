@@ -1,18 +1,18 @@
 <!-- Plugin Configuration File. Read more: https://plugins.jetbrains.com/docs/intellij/plugin-configuration-file.html -->
 <idea-plugin>
     <id>com.github.davidseptimus.fleetthemeintellijplugin</id>
-    <name>fleet-theme-intellij-plugin</name>
-    <vendor>davidseptimus</vendor>
+    <name>Fleet Theme</name>
+    <vendor>David Septimus</vendor>
+    <description>An IntelliJ theme based on Jetbrains Fleet's default theme</description>
 
     <depends>com.intellij.modules.platform</depends>
 
-    <resource-bundle>messages.MyBundle</resource-bundle>
-
     <extensions defaultExtensionNs="com.intellij">
-        <toolWindow factoryClass="com.github.davidseptimus.fleetthemeintellijplugin.toolWindow.MyToolWindowFactory" id="MyToolWindow"/>
+        <themeProvider
+        id="com.github.davidseptimus.fleetthemeintellijplugin"
+        path="themes/fleet-dark/fleet-dark.theme.json"
+        />
+        <annotator language="XML" implementationClass="com.github.davidseptimus.fleetthemeintellijplugin.FleetXmlAnnotator"/>
     </extensions>
 
-    <applicationListeners>
-        <listener class="com.github.davidseptimus.fleetthemeintellijplugin.listeners.MyApplicationActivationListener" topic="com.intellij.openapi.application.ApplicationActivationListener"/>
-    </applicationListeners>
 </idea-plugin>
