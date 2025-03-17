@@ -12,7 +12,9 @@
     "*": {
       "background": "Neutral_20",
       "foreground": "Neutral_140",
-      "disabledText": "Neutral_80"
+      "disabledText": "Neutral_80",
+      "selectionBackground": "BlueTint_40",
+      "selectionForeground": "Neutral_140"
     },
     "DefaultTabs": {
       "background": "Neutral_20",
@@ -55,9 +57,7 @@
     "Label.selectedForeground": "White",
     "Label.infoForeground": "Neutral_110",
     "Tree": {
-      "selectionBackground": "BlueTint_40",
       "selectionInactiveBackground": "LightTint_15",
-      "selectionForeground": "Neutral_140",
       "foreground": "Neutral_140"
     },
     "Link": {
@@ -96,7 +96,6 @@
     },
     "List": {
       "background": "Neutral_30",
-      "selectionBackground": "BlueTint_40",
       "selectionInactiveBackground": "LightTint_15",
       "selectionForeground": "Neutral_140",
       "foreground": "Neutral_140",
@@ -104,24 +103,43 @@
     },
     "ComboBox": {
       "background": "Neutral_30",
-      "selectionBackground": "BlueTint_40",
-      "selectionForeground": "Neutral_140",
       "modifiedItemForeground": "Blue_110"
     },
     "ToolTip": {
       "background": "Neutral_40",
       "borderColor": "Transparent"
     },
-    "Notification": {
-      "background": "Gray_50"
-
+    "Menu": {
+      "background": "Neutral_30",
+      "selectionBackground": "BlueTint_40"
     },
+    "PopupMenu.background": "Neutral_30",
+    "MenuItem.background": "Neutral_30",
+    "Menu.separatorColor": "Neutral_40",
     "ComplexPopup.Header.background": "Neutral_30",
-    "Popup.Header.activeBackground":"Neutral_30",
+    "Popup.Header.activeBackground": "Neutral_30",
     "Popup.background": "Neutral_30",
     "Popup.borderColor": "Neutral_40",
     "Popup.separatorColor": "Neutral_40",
-    "Separator.separatorColor": "Neutral_40"
+    "Separator.separatorColor": "Neutral_40",
+    "Notification": {
+      "background": "Neutral_30",
+      "borderColor": "Neutral_40",
+      "errorBackground": "Red_30",
+      "errorBorderColor": "Red_60"
+    },
+    "NotificationsToolwindow": {
+      "newNotification": {
+        "background": "Neutral_30",
+        "hoverBackground": "Neutral_40"
+      },
+      "Notification.hoverBackground": "Neutral_40"
+    },
+    "Component": {
+      "focusColor": "BlueTint_40",
+      "focusedBorderColor": "Blue_100"
+    }
+
   },
   "colors": {
     "White": "#FFFFFF",
