@@ -1,11 +1,18 @@
 {
   "author": "David Septimus",
   "dark": true,
-  "name": "Fleet Dark",
+  "name": "Fleet Dark (Armada)",
   "editorScheme": "themes/fleet-dark/fleet-dark.xml",
+  "icons": {
+    "ColorPalette": {
+      "Tree.iconColor": "Neutral_140"
+    }
+  },
   "ui": {
     "*": {
-      "background": "Neutral_20"
+      "background": "Neutral_20",
+      "foreground": "Neutral_140",
+      "disabledText": "Neutral_80"
     },
     "DefaultTabs": {
       "background": "Neutral_20",
@@ -34,7 +41,7 @@
       }
     },
     "ToolWindow.Header": {
-       "inactiveBackground": "Neutral_20"
+      "inactiveBackground": "Neutral_20"
     },
     "Panel.foreground": "Neutral_140",
     "StatusBar.borderColor": "Transparent",

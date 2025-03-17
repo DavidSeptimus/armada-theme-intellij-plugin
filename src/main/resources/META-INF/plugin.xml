@@ -1,7 +1,7 @@
 <!-- Plugin Configuration File. Read more: https://plugins.jetbrains.com/docs/intellij/plugin-configuration-file.html -->
 <idea-plugin>
-    <id>com.github.davidseptimus.fleetthemeintellijplugin</id>
-    <name>Fleet Theme</name>
+    <id>com.github.davidseptimus.armadathemeintellijplugin</id>
+    <name>Armada Theme</name>
     <vendor>David Septimus</vendor>
     <description>An IntelliJ theme based on Jetbrains Fleet's default theme</description>
 
@@ -9,10 +9,10 @@
 
     <extensions defaultExtensionNs="com.intellij">
         <themeProvider
-        id="com.github.davidseptimus.fleetthemeintellijplugin"
+        id="com.github.davidseptimus.armada"
         path="themes/fleet-dark/fleet-dark.theme.json"
         />
-        <annotator language="XML" implementationClass="com.github.davidseptimus.fleetthemeintellijplugin.FleetXmlAnnotator"/>
+        <annotator language="XML" implementationClass="com.github.davidseptimus.armada.FleetXmlAnnotator"/>
     </extensions>
 
 </idea-plugin>

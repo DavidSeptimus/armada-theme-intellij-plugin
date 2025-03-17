@@ -1,9 +1,9 @@
-<scheme name="Fleet Dark" version="142" parent_scheme="Darcula">
+<scheme name="Fleet Dark (Armada) " version="142" parent_scheme="Darcula">
   <option name="FONT_SCALE" value="1.0" />
   <metaInfo>
     <property name="ide">idea</property>
     <property name="ideVersion">2024.3.4.1.0.0</property>
-    <property name="originalScheme">Fleet Dark</property>
+    <property name="originalScheme">Fleet Dark (Armada)</property>
   </metaInfo>
   <option name="LINE_SPACING" value="1.2" />
   <option name="EDITOR_FONT_SIZE" value="16" />

@@ -1,5 +1,5 @@
 
-package com.github.davidseptimus.fleetthemeintellijplugin
+package com.github.davidseptimus.armada
 
 import com.intellij.lang.annotation.AnnotationHolder
 import com.intellij.lang.annotation.Annotator
@@ -7,7 +7,6 @@ import com.intellij.lang.annotation.HighlightSeverity
 import com.intellij.openapi.editor.colors.TextAttributesKey
 import com.intellij.openapi.util.TextRange
 import com.intellij.psi.PsiElement
-import com.intellij.psi.xml.XmlDoctype
 import com.intellij.psi.xml.XmlToken
 import com.intellij.psi.xml.XmlTokenType
 
