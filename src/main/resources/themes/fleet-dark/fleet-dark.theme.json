@@ -46,7 +46,71 @@
     "Panel.foreground": "Neutral_140",
     "StatusBar.borderColor": "Transparent",
     "Label.foreground": "Neutral_140",
-    "Label.selectedForeground": "White"
+    "Label.selectedForeground": "White",
+    "Label.infoForeground": "Neutral_110",
+    "Tree": {
+      "selectionBackground": "BlueTint_40",
+      "selectionInactiveBackground": "LightTint_15",
+      "selectionForeground": "Neutral_140",
+      "foreground": "Neutral_140"
+    },
+    "Link": {
+      "activeForeground": "Blue_110",
+      "hoverForeground": "Blue_100",
+      "visitedForeground": "Blue_80",
+      "pressedForeground": "Blue_90"
+    },
+    "CheckBox": {
+      "disabledText": "Neutral_80",
+      "foreground": "Neutral_140"
+    },
+    "CheckBoxMenuItem": {
+      "background": "LightTint_8",
+      "foreground": "Neutral_140",
+      "disabledBackground": "Transparent",
+      "disabledForeground": "Neutral_80"
+    },
+    "Button": {
+      "default": {
+        "startBackground": "Blue_90",
+        "endBackground": "Blue_90",
+        "startBorderColor": "Blue_90",
+        "focusColor": "Blue_80",
+        "focusedBorderColor": "Blue_90",
+        "shadowColor": "Transparent",
+        "foreground": "White"
+      },
+      "startBackground": "LightTint_15",
+      "endBackground": "LightTint_15",
+      "startBorderColor": "LightTint_15",
+      "focusedBorderColor": "Blue_100",
+      "shadowColor": "Transparent",
+      "disabledBorderColor": "LightTint_12",
+      "disabledText": "Neutral_80"
+    },
+    "List": {
+      "background": "Neutral_30",
+      "selectionBackground": "BlueTint_40",
+      "selectionInactiveBackground": "LightTint_15",
+      "selectionForeground": "Neutral_140",
+      "foreground": "Neutral_140",
+      "hoverBackground": "LightTint_5"
+    },
+    "ComboBox": {
+      "background": "Neutral_30",
+      "selectionBackground": "BlueTint_40",
+      "selectionForeground": "Neutral_140",
+      "modifiedItemForeground": "Blue_110"
+    },
+    "ToolTip": {
+      "background": "Neutral_40",
+      "borderColor": "Transparent"
+    },
+    "ComplexPopup.Header.background": "Neutral_30",
+    "Popup.background": "Neutral_30",
+    "Popup.borderColor": "Neutral_40",
+    "Popup.separatorColor": "Neutral_40",
+    "Separator.separatorColor": "Neutral_40"
   },
   "colors": {
     "White": "#FFFFFF",
