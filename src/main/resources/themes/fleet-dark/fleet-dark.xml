@@ -18,11 +18,11 @@
     <option name="BLOCK_TERMINAL_INACTIVE_SELECTED_BLOCK_STROKE_COLOR" value="ebdbb2" />
     <option name="CARET_COLOR" value="d6d6dd" />
     <option name="CARET_ROW_COLOR" value="162638" />
-    <option name="CONSOLE_BACKGROUND_KEY" value="262626" />
+    <option name="CONSOLE_BACKGROUND_KEY" value="18191B" />
     <option name="GUTTER_BACKGROUND" value="181818" />
     <option name="INDENT_GUIDE" value="353535" />
-    <option name="LINE_NUMBERS_COLOR" value="6a7076" />
-    <option name="LINE_NUMBER_ON_CARET_ROW_COLOR" value="d6d7da" />
+    <option name="LINE_NUMBERS_COLOR" value="6E747B" />
+    <option name="LINE_NUMBER_ON_CARET_ROW_COLOR" value="E0E1E4" />
     <option name="MODIFIED_TAB_ICON" value="e0e1e4" />
     <option name="NOTIFICATION_BACKGROUND" value="18191b" />
     <option name="RIGHT_MARGIN_COLOR" value="353535" />
@@ -31,7 +31,36 @@
     <option name="TAB_UNDERLINE" value="10447f" />
     <option name="TAB_UNDERLINE_INACTIVE" value="" />
     <option name="VISUAL_INDENT_GUIDE" value="353535" />
-    <option name="WHITESPACES" value="d6d7da" />
+    <option name="WHITESPACES" value="252629" />
+
+    <!-- VCS Gutter colors -->
+    <option name="IGNORED_ADDED_LINES_BORDER_COLOR" value="1E7857" /> <!-- Green_80 -->
+    <option name="IGNORED_DELETED_LINES_BORDER_COLOR" value="C72C49" /> <!-- Red_80 -->
+    <option name="IGNORED_MODIFIED_LINES_BORDER_COLOR" value="1868CB" /> <!-- Blue_80 -->
+    <option name="ADDED_LINES_COLOR" value="14835E"/> <!-- Green_90 -->
+    <option name="DELETED_LINES_COLOR" value="D73251"/> <!-- Red_90 -->
+    <option name="MODIFIED_LINES_COLOR" value="0870E4"/> <!-- Blue_90 -->
+    <option name="WHITESPACES_MODIFIED_LINES_COLOR" value="9F680C" /> <!-- Yellow_90 -->
+
+    <!-- File Status Colors -->
+    <option name="FILESTATUS_ADDED" value="69B090"/> <!-- Green_120 -->
+    <option name="FILESTATUS_COPIED" value="69B090"/> <!-- Green_120 -->
+    <option name="FILESTATUS_DELETED" value="F87C88"/> <!-- Red_120 -->
+    <option name="FILESTATUS_HIJACKED" value="CD984D"/> <!-- Yellow_120 -->
+    <option name="FILESTATUS_IDEA_FILESTATUS_DELETED_FROM_FILE_SYSTEM" value="F87C88"/> <!-- Red_120 -->
+    <option name="FILESTATUS_IDEA_FILESTATUS_IGNORED" value="6E747B"/> <!-- Neutral_90 -->
+    <option name="FILESTATUS_IDEA_SVN_FILESTATUS_EXTERNAL" value="69B090"/> <!-- Green_120 -->
+    <option name="FILESTATUS_IGNORE.PROJECT_VIEW.IGNORED" value="6E747B"/> <!-- Neutral_90 -->
+    <option name="FILESTATUS_MERGED" value="9599F9"/> <!-- Violet_120 -->
+    <option name="FILESTATUS_MODIFIED" value="71A3EF"/> <!-- Blue_120 -->
+    <option name="FILESTATUS_NOT_CHANGED_IMMEDIATE" value="71A3EF"/> <!-- Blue_120 -->
+    <option name="FILESTATUS_NOT_CHANGED_RECURSIVE" value="71A3EF"/> <!-- Blue_120 -->
+    <option name="FILESTATUS_SWITCHED" value="9599F9"/> <!-- Violet_120 -->
+    <option name="FILESTATUS_SUPPRESSED" value="9EA3A8"/> <!-- Neutral_120 -->
+    <option name="FILESTATUS_UNKNOWN" value="F87C88"/> <!-- Red_120 -->
+    <option name="FILESTATUS_addedOutside" value="69B090"/> <!-- Green_120 -->
+    <option name="FILESTATUS_changelistConflict" value="CD984D"/> <!-- Yellow_120 -->
+    <option name="FILESTATUS_modifiedOutside" value="71A3EF"/> <!-- Blue_120 -->
   </colors>
   <attributes>
     <option name="ANNOTATION_NAME_ATTRIBUTES" baseAttributes="DEFAULT_METADATA" />
@@ -255,107 +284,136 @@
         <option name="FONT_TYPE" value="2" />
       </value>
     </option>
+    <!-- Terminal/Console colors -->
     <option name="CONSOLE_BLACK_OUTPUT">
       <value>
-        <option name="FOREGROUND" value="3b3b3b" />
-      </value>
-    </option>
-    <option name="CONSOLE_BLUE_BRIGHT_OUTPUT">
-      <value>
-        <option name="FOREGROUND" value="95a19d" />
+        <option name="FOREGROUND" value="e0e1e4" /> <!-- Neutral_140 -->
       </value>
     </option>
     <option name="CONSOLE_BLUE_OUTPUT">
       <value>
-        <option name="FOREGROUND" value="84a498" />
+        <option name="FOREGROUND" value="6daaf7" /> <!-- Blue_110 -->
       </value>
     </option>
-    <option name="CONSOLE_CYAN_BRIGHT_OUTPUT">
+    <option name="CONSOLE_BLUE_BRIGHT_OUTPUT">
       <value>
-        <option name="FOREGROUND" value="9ebd93" />
+        <option name="FOREGROUND" value="0067e6" />
       </value>
     </option>
     <option name="CONSOLE_CYAN_OUTPUT">
       <value>
-        <option name="FOREGROUND" value="8ec07b" />
+        <option name="FOREGROUND" value="2ccce6" />
+      </value>
+    </option>
+    <option name="CONSOLE_CYAN_BRIGHT_OUTPUT">
+      <value>
+        <option name="FOREGROUND" value="00bad6" />
       </value>
     </option>
     <option name="CONSOLE_DARKGRAY_OUTPUT">
       <value>
-        <option name="FOREGROUND" value="6b6b6b" />
-      </value>
-    </option>
-    <option name="CONSOLE_ERROR_OUTPUT">
-      <value>
-        <option name="FOREGROUND" value="f67667" />
+        <option name="FOREGROUND" value="424242" /> <!-- ansiBrightBlack background -->
       </value>
     </option>
     <option name="CONSOLE_GRAY_OUTPUT">
       <value>
-        <option name="FOREGROUND" value="ebdbb2" />
-      </value>
-    </option>
-    <option name="CONSOLE_GREEN_BRIGHT_OUTPUT">
-      <value>
-        <option name="FOREGROUND" value="b2b437" />
+        <option name="FOREGROUND" value="595959" /> <!-- ansiBrightBlack foreground -->
       </value>
     </option>
     <option name="CONSOLE_GREEN_OUTPUT">
       <value>
-        <option name="FOREGROUND" value="b8bb26" />
+        <option name="FOREGROUND" value="82d2ce" /> <!-- Cyan -->
       </value>
     </option>
-    <option name="CONSOLE_MAGENTA_BRIGHT_OUTPUT">
+    <option name="CONSOLE_GREEN_BRIGHT_OUTPUT">
       <value>
-        <option name="FOREGROUND" value="cd98a6" />
+        <option name="FOREGROUND" value="009e6f" />
       </value>
     </option>
     <option name="CONSOLE_MAGENTA_OUTPUT">
       <value>
-        <option name="FOREGROUND" value="d3859a" />
+        <option name="FOREGROUND" value="eb83e2" />
       </value>
     </option>
-    <option name="CONSOLE_NORMAL_OUTPUT">
+    <option name="CONSOLE_MAGENTA_BRIGHT_OUTPUT">
       <value>
-        <option name="FOREGROUND" value="ebdbb2" />
-      </value>
-    </option>
-    <option name="CONSOLE_RANGE_TO_EXECUTE">
-      <value />
-    </option>
-    <option name="CONSOLE_RED_BRIGHT_OUTPUT">
-      <value>
-        <option name="FOREGROUND" value="f28e82" />
+        <option name="FOREGROUND" value="eb4dde" />
       </value>
     </option>
     <option name="CONSOLE_RED_OUTPUT">
       <value>
-        <option name="FOREGROUND" value="f78d8c" />
+        <option name="FOREGROUND" value="eb4056" />
       </value>
     </option>
-    <option name="CONSOLE_SYSTEM_OUTPUT">
+    <option name="CONSOLE_RED_BRIGHT_OUTPUT">
       <value>
-        <option name="FOREGROUND" value="ebdbb2" />
-      </value>
-    </option>
-    <option name="CONSOLE_USER_INPUT">
-      <value>
-        <option name="FOREGROUND" value="ebdbb2" />
+        <option name="FOREGROUND" value="c7001b" />
       </value>
     </option>
     <option name="CONSOLE_WHITE_OUTPUT">
       <value>
-        <option name="FOREGROUND" value="ebdbb2" />
-      </value>
-    </option>
-    <option name="CONSOLE_YELLOW_BRIGHT_OUTPUT">
-      <value>
-        <option name="FOREGROUND" value="f1bf4a" />
+        <option name="FOREGROUND" value="18191b" /> <!-- Neutral_20 -->
       </value>
     </option>
     <option name="CONSOLE_YELLOW_OUTPUT">
       <value>
-        <option name="FOREGROUND" value="fabd2f" />
+        <option name="FOREGROUND" value="fad075" />
+      </value>
+    </option>
+    <option name="CONSOLE_YELLOW_BRIGHT_OUTPUT">
+      <value>
+        <option name="FOREGROUND" value="e09119" />
+      </value>
+    </option>
+    <option name="CONSOLE_NORMAL_OUTPUT">
+      <value>
+        <option name="FOREGROUND" value="E0E1E4" /> <!-- Text foreground -->
+      </value>
+    </option>
+    <option name="CONSOLE_ERROR_OUTPUT">
+      <value>
+        <option name="FOREGROUND" value="eb4056" /> <!-- Same as ansiRed -->
+      </value>
+    </option>
+    <option name="CONSOLE_SYSTEM_OUTPUT">
+      <value>
+        <option name="FOREGROUND" value="82d2ce" /> <!-- Cyan -->
+      </value>
+    </option>
+    <option name="CONSOLE_USER_INPUT">
+      <value>
+        <option name="FOREGROUND" value="E0E1E4" /> <!-- Cyan -->
+      </value>
+    </option>
+    <!-- Log console output -->
+    <option name="LOG_DEBUG_OUTPUT">
+      <value>
+        <option name="FOREGROUND" value="6daaf7" /> <!-- Blue_110, same as ansiBlue -->
+      </value>
+    </option>
+    <option name="LOG_ERROR_OUTPUT">
+      <value>
+        <option name="FOREGROUND" value="eb4056" /> <!-- ansiRed -->
+      </value>
+    </option>
+    <option name="LOG_EXPIRED_ENTRY">
+      <value>
+        <option name="FOREGROUND" value="595959" /> <!-- ansiBrightBlack foreground -->
+      </value>
+    </option>
+    <option name="LOG_INFO_OUTPUT">
+      <value>
+        <option name="FOREGROUND" value="82d2ce" /> <!-- Cyan, same as ansiGreen -->
+      </value>
+    </option>
+    <option name="LOG_VERBOSE_OUTPUT">
+      <value>
+        <option name="FOREGROUND" value="e0e1e4" /> <!-- Neutral_140 -->
+      </value>
+    </option>
+    <option name="LOG_WARNING_OUTPUT">
+      <value>
+        <option name="FOREGROUND" value="fad075" /> <!-- ansiYellow -->
       </value>
     </option>
     <option name="CSS.COMMENT">
