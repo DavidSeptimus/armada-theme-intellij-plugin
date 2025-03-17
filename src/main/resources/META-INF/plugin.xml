@@ -6,12 +6,15 @@
     <description>An IntelliJ theme based on Jetbrains Fleet's default theme</description>
 
     <depends>com.intellij.modules.platform</depends>
+    <depends optional="true" config-file="plugin-javascript.xml">JavaScript</depends>
+    <depends optional="true" config-file="plugin-properties.xml">com.intellij.properties</depends>
 
     <extensions defaultExtensionNs="com.intellij">
         <themeProvider
         id="com.github.davidseptimus.armada"
         path="themes/fleet-dark/fleet-dark.theme.json"
         />
+
         <annotator language="XML" implementationClass="com.github.davidseptimus.armada.FleetXmlAnnotator"/>
     </extensions>
 

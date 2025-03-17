@@ -1,0 +1,5 @@
+<idea-plugin>
+    <extensions defaultExtensionNs="com.intellij">
+        <annotator language="Properties" implementationClass="com.github.davidseptimus.armada.FleetPropertiesAnnotator"/>
+    </extensions>
+</idea-plugin>

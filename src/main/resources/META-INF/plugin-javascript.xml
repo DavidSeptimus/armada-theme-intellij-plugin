@@ -1,0 +1,5 @@
+<idea-plugin>
+    <extensions defaultExtensionNs="com.intellij">
+        <annotator language="JavaScript" implementationClass="com.github.davidseptimus.armada.FleetJavaScriptAnnotator"/>
+    </extensions>
+</idea-plugin>
