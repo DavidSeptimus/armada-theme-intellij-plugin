@@ -88,7 +88,8 @@
       },
       "startBackground": "LightTint_15",
       "endBackground": "LightTint_15",
-      "startBorderColor": "LightTint_15",
+      "startBorderColor": "Transparent",
+      "endBorderColor": "Transparent",
       "focusedBorderColor": "Blue_100",
       "shadowColor": "Transparent",
       "disabledBorderColor": "LightTint_12",
@@ -139,6 +140,19 @@
     "Component": {
       "focusColor": "BlueTint_40",
       "focusedBorderColor": "Blue_100"
+    },
+    "Plugins": {
+      "Button": {
+        "installBackground": "LightTint_15",
+        "installBorderColor": "Transparent",
+        "installForeground": "White",
+        "installFillBackground": "Blue_90",
+        "installFillForeground": "White",
+        "installFocusedBackground": "Blue_100",
+        "updateBackground": "LightTint_15",
+        "updateBorderColor": "Transparent",
+        "updateForeground": "White"
+      }
     }
   },
   "colors": {
