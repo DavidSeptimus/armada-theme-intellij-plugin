@@ -22,6 +22,12 @@
       "inactiveUnderlineColor": "LightTint_8",
       "hoverBackground": "LightTint_8"
     },
+    "TabbedPane": {
+      "underlineColor": "BlueTint_50",
+      "disabledUnderlineColor": "LightTint_8",
+      "hoverColor": "LightTint_8",
+      "focusColor": "BlueTint_25"
+    },
     "MainToolbar.background": "Neutral_10",
     "Editor.background": "Neutral_20",
     "ScrollBar": {
@@ -61,7 +67,7 @@
       "pressedForeground": "Blue_90"
     },
     "CheckBox": {
-      "disabledText": "Neutral_80",
+      "disabledText": "Neutral_100",
       "foreground": "Neutral_140"
     },
     "CheckBoxMenuItem": {
@@ -106,7 +112,12 @@
       "background": "Neutral_40",
       "borderColor": "Transparent"
     },
+    "Notification": {
+      "background": "Gray_50"
+
+    },
     "ComplexPopup.Header.background": "Neutral_30",
+    "Popup.Header.activeBackground":"Neutral_30",
     "Popup.background": "Neutral_30",
     "Popup.borderColor": "Neutral_40",
     "Popup.separatorColor": "Neutral_40",
