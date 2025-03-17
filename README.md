@@ -5,7 +5,7 @@
 ## Description
 
 <!-- Plugin description -->
-Armada is a plugin that aims to faithfully recreate the Fleet theme to IntelliJ-based IDEs.
+Armada is a plugin that aims to faithfully recreate the Fleet theme for IntelliJ-based IDEs.
 
 ### Features
 - Fleet Dark UI and Editor Color Scheme
