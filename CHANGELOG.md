@@ -1,6 +1,6 @@
 <!-- Keep a Changelog guide -> https://keepachangelog.com -->
 
-# fleet-theme-intellij-plugin Changelog
+# Armada Theme Changelog
 
 ## [Unreleased]
 ### Added
