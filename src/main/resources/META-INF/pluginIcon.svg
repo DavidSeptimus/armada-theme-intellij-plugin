@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40" width="40" height="40">
+
+              <!-- Main blob with simple gradient -->
+              <defs>
+                <linearGradient id="cleanGradient" x1="25%" y1="25%" x2="75%" y2="75%">
+                  <stop offset="0%" stop-color="#0DF9FF" /> <!-- Bright cyan -->
+                  <stop offset="60%" stop-color="#0094FF" /> <!-- Medium blue -->
+                  <stop offset="100%" stop-color="#E040FB" /> <!-- Magenta -->
+                </linearGradient>
+
+                <!-- Very subtle glow -->
+                <filter id="minimalGlow" x="-10%" y="-10%" width="120%" height="120%">
+                  <feGaussianBlur stdDeviation="0.6" result="blur"/>
+                  <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+                </filter>
+              </defs>
+
+              <!-- Center the 36x36 content in the 40x40 viewbox (2px margin on all sides) -->
+              <g transform="translate(2, 2) scale(0.9)">
+                <!-- Main circular shape (scaled to fit in 36x36) -->
+                <circle cx="20" cy="20" r="20" fill="url(#cleanGradient)" filter="url(#minimalGlow)"/>
+
+                <!-- Simple concavity without effects (scaled proportionally) -->
+                <circle cx="20" cy="20" r="14.875" fill="#1a2531" opacity="0.3"/>
+              </g>
+            </svg>

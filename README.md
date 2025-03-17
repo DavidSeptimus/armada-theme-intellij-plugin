@@ -7,7 +7,7 @@
 <!-- Plugin description -->
 Armada is a plugin that aims to faithfully recreate the Fleet theme to IntelliJ-based IDEs.
 
-Features:
+### Features
 - Fleet Dark UI and Editor Color Scheme
 <!-- Plugin description end -->
 
