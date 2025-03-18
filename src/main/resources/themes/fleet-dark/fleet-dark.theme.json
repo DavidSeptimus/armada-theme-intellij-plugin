@@ -149,7 +149,6 @@
       "disabledText": "Neutral_80"
     },
     "List": {
-      "background": "Neutral_30",
       "selectionInactiveBackground": "LightTint_15",
       "selectionForeground": "Neutral_140",
       "foreground": "Neutral_140",
