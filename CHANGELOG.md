@@ -11,7 +11,8 @@
 
 ## [Unreleased]
 ### Added
-- JavaScript annotator for property reference coloration
+- JavaScript annotator for property reference highlighting
 - Colors for Properties including Annotator support for string literals
-
-### Changed
+- Editor scrollbar colors
+- Diff and Commit log colors
+- Icon colors
