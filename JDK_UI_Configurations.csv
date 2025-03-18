@@ -1,0 +1,82 @@
+key,description,deprecated
+ActionButton.hoverBackground,A toolbar button under an icon,
+ActionButton.hoverBorderColor,,
+ActionButton.pressedBackground,,
+ActionButton.pressedBorderColor,,
+activeCaption,,True
+activeCaptionBorder,,True
+activeCaptionText,,True
+Button.arc,Button corner radius,
+Button.background,Empty area around a button. Must be the same color as Panel.background.,
+Button.darkShadow,,True
+Button.default.borderColor,,True
+Button.default.endBackground,Gradient bottom color,
+Button.default.endBorderColor,Gradient bottom color,
+Button.default.focusColor,Outer border when focused. For the Dark theme only.,
+Button.default.focusedBorderColor,Inner 1px-wide border when focused,
+Button.default.foreground,"""Default"" is the blue button in dialogs that triggers an action on Enter or Ctrl+Enter.",
+Button.default.shadowColor,Light shadow under the default button,
+Button.default.startBackground,Gradient top color,
+Button.default.startBorderColor,Gradient top color,
+Button.disabledBorderColor,,
+Button.disabledText,Foreground of a disabled button,
+Button.endBackground,Gradient bottom color,
+Button.endBorderColor,Gradient bottom color,
+Button.focusedBorderColor,Inner 1px-wide border when focused. The Outer focus border is Component.focusColor.,
+Button.foreground,,
+Button.highlight,,True
+Button.light,,True
+Button.paintShadow,,True
+Button.select,,True
+Button.shadow,,True
+Button.shadowColor,Light shadow under a button,
+Button.shadowWidth,Light shadow under a button. Height in pixels,
+Button.startBackground,Gradient top color,
+Button.startBorderColor,Gradient top color,
+CheckBox.background,,
+CheckBox.disabledText,Foreground of a disabled checkbox,
+CheckBox.foreground,,
+CheckBox.select,,
+CheckBox.textIconGap,Space between CheckBox icon and text,
+CheckBoxMenuItem.acceleratorForeground,The JBCheckboxMenuItem component. Example: context menu for the editor status icon,
+CheckBoxMenuItem.acceleratorSelectionForeground,,
+CheckBoxMenuItem.background,,
+CheckBoxMenuItem.disabledBackground,,
+CheckBoxMenuItem.disabledForeground,,
+CheckBoxMenuItem.foreground,,
+CheckBoxMenuItem.selectionBackground,,
+CheckBoxMenuItem.selectionForeground,,
+ColorChooser.background,,
+ColorChooser.foreground,,
+ColorChooser.swatchesDefaultRecentColor,,
+ComboBox.ArrowButton.background,,
+ComboBox.ArrowButton.disabledIconColor,,
+ComboBox.ArrowButton.iconColor,The triangle icon,
+ComboBox.ArrowButton.nonEditableBackground,Right-side button in a non-editable combo-box,
+ComboBox.background,Drop-down menu background. Editable combo box background is TextField.background. Non-editable combo box background is ComboBox.nonEditableBackground,
+ComboBox.buttonBackground,,True
+ComboBox.buttonDarkShadow,,True
+ComboBox.buttonHighlight,,True
+ComboBox.buttonShadow,,True
+ComboBox.disabledBackground,,True
+ComboBox.disabledForeground,Disabled non-editable combo box,
+ComboBox.foreground,Non-editable combo box. Editable combo box foreground is TextField.foreground,
+ComboBox.modifiedItemForeground,Changed objects that have not been saved yet. Blue by default,
+ComboBox.nonEditableBackground,Non-editable combo box,
+ComboBox.selectionBackground,Background of the selected item in a drop-down menu,
+ComboBox.selectionForeground,Foreground of the selected item in a drop-down menu,
+ComboBoxButton.background,The ComboBoxButton component. Usually appears in toolbars. Other colors are inherited from the button,
+Component.arc,Corner radius for combo boxes and spinners,
+Component.arrowAreaWidth,"Width of area with arrows in components like ComboBox, Spinner, OptionButton",
+Component.borderColor,"Border for a text field, combo box, or spinner",
+Component.disabledBorderColor,"Border for a disabled text field, combo box, or spinner",
+Component.errorFocusColor,"Validated error state. See the ""Validation Dialog Test"" action in internal mode (press Enter for validation in the dialog)",
+Component.focusColor,"Outer border for a button, text field, combo box, or spinner when focused",
+Component.focusedBorderColor,"Inner 1 px-wide border for a text field, combo box, or spinner when focused",
+Component.focusWidth,Border width when focused,
+Component.hoverIconColor,,
+Component.iconColor,A hardcocded icon inside a component (not an svg icon). Note that the arrow icon for a combobox has its own color keys.,
+Component.inactiveErrorFocusColor,Validated error state for an unfocused component,
+Component.inactiveWarningFocusColor,Validated warning state for an unfocused component,
+Component.infoForeground,"Gray info text in a text field, combo box, list, tree, table, or in empty areas",
+Component.warningFocusColor,"Validated warning state. See the ""Show Standard Panels"" action in internal mode (enter text into the fields for validation)",
