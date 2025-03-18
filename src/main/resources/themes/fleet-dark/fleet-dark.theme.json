@@ -4,6 +4,21 @@
   "name": "Fleet Dark (Armada)",
   "editorScheme": "themes/fleet-dark/fleet-dark.xml",
   "icons": {
+    "/com/intellij/ide/ui/laf/icons/darcula/checkBox.svg": "/themes/fleet-dark/icons/checkBox.svg",
+    "/com/intellij/ide/ui/laf/icons/darcula/checkBoxDisabled.svg": "/themes/fleet-dark/icons/checkBoxDisabled.svg",
+    "/com/intellij/ide/ui/laf/icons/darcula/checkBoxFocused.svg": "/themes/fleet-dark/icons/checkBoxFocused.svg",
+    "/com/intellij/ide/ui/laf/icons/darcula/checkBoxIndeterminateSelected.svg": "/themes/fleet-dark/icons/checkBoxIndeterminateSelected.svg",
+    "/com/intellij/ide/ui/laf/icons/darcula/checkBoxIndeterminateSelectedDisabled.svg": "/themes/fleet-dark/icons/checkBoxIndeterminateSelectedDisabled.svg",
+    "/com/intellij/ide/ui/laf/icons/darcula/checkBoxIndeterminateSelectedFocused.svg": "/themes/fleet-dark/icons/checkBoxIndeterminateSelectedFocused.svg",
+    "/com/intellij/ide/ui/laf/icons/darcula/checkBoxSelected.svg": "/themes/fleet-dark/icons/checkBoxSelected.svg",
+    "/com/intellij/ide/ui/laf/icons/darcula/checkBoxSelectedDisabled.svg": "/themes/fleet-dark/icons/checkBoxSelectedDisabled.svg",
+    "/com/intellij/ide/ui/laf/icons/darcula/checkBoxSelectedFocused.svg": "/themes/fleet-dark/icons/checkBoxSelectedFocused.svg",
+    "/com/intellij/ide/ui/laf/icons/darcula/radio.svg": "/themes/fleet-dark/icons/radio.svg",
+    "/com/intellij/ide/ui/laf/icons/darcula/radioDisabled.svg": "/themes/fleet-dark/icons/radioDisabled.svg",
+    "/com/intellij/ide/ui/laf/icons/darcula/radioFocused.svg": "/themes/fleet-dark/icons/radioFocused.svg",
+    "/com/intellij/ide/ui/laf/icons/darcula/radioSelected.svg": "/themes/fleet-dark/icons/radioSelected.svg",
+    "/com/intellij/ide/ui/laf/icons/darcula/radioSelectedDisabled.svg": "/themes/fleet-dark/icons/radioSelectedDisabled.svg",
+    "/com/intellij/ide/ui/laf/icons/darcula/radioSelectedFocused.svg": "/themes/fleet-dark/icons/radioSelectedFocused.svg",
     "ColorPalette": {
       "Tree.iconColor": "Neutral_140",
       "Gray.Fill": "Gray 50",
@@ -115,7 +130,10 @@
     },
     "CheckBox": {
       "disabledText": "Neutral_100",
-      "foreground": "Neutral_140"
+      "foreground": "Neutral_140",
+      "borderInsets": "4,4,4,4",
+      "iconSize": 24,
+      "textIconGap": 4
     },
     "ToolWindow.Button": {
       "selectedBackground": "Blue_90",
@@ -196,6 +214,11 @@
     "Component": {
       "focusColor": "BlueTint_40",
       "focusedBorderColor": "Blue_100"
+    },
+    "RadioButton": {
+      "borderInsets": "4,4,4,4",
+      "iconSize": 24,
+      "iconTextGap": 4
     },
     "Plugins": {
       "Button": {
