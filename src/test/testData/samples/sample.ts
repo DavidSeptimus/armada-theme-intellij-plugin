@@ -31,8 +31,12 @@ function globalFunction({ options = {} }: ValidatorDescriptor) {
     };
 }
 
+interface ButtonProps {
+    click(): void;
+}
+
 @defineElement("download-button")
-class DownloadButton<T extends ButtonProps> extends HTMLButtonElement {
+class DownloadButton<T extends Record<string, string>> extends HTMLButtonElement {
     static STATIC_FIELD = `<span title="HTML injection">${globalVariable}</span>`;
 
     static get observedAttributes(): string[] {

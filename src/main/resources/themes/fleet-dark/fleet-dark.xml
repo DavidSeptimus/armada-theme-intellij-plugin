@@ -32,6 +32,10 @@
     <option name="TAB_UNDERLINE_INACTIVE" value="" />
     <option name="VISUAL_INDENT_GUIDE" value="353535" />
     <option name="WHITESPACES" value="252629" />
+    <option name="ScrollBar.Mac.hoverThumbColor" value="E0E1E433" />
+    <option name="ScrollBar.Mac.thumbColor" value="E0E1E426" />
+    <option name="ScrollBar.hoverThumbColor" value="E0E1E433" />
+    <option name="ScrollBar.thumbColor" value="E0E1E426" />
 
     <!-- VCS Gutter colors -->
     <option name="IGNORED_ADDED_LINES_BORDER_COLOR" value="1E7857" /> <!-- Green_80 -->
