@@ -16,6 +16,15 @@
         />
 
         <annotator language="XML" implementationClass="com.github.davidseptimus.armada.FleetXmlAnnotator"/>
+
+        <applicationService
+            serviceImplementation="com.github.davidseptimus.armada.settings.AppSettings"/>
+
+        <applicationConfigurable
+            parentId="tools"
+            instance="com.github.davidseptimus.armada.settings.AppSettingsConfigurable"
+            id="com.github.davidseptimus.armada.settings.AppSettingsConfigurable"
+            displayName="SDK: Application Settings Example"/>
     </extensions>
 
 </idea-plugin>
