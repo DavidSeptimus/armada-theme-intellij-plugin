@@ -5,7 +5,39 @@
   "editorScheme": "themes/fleet-dark/fleet-dark.xml",
   "icons": {
     "ColorPalette": {
-      "Tree.iconColor": "Neutral_140"
+      "Tree.iconColor": "Neutral_140",
+      "Gray.Fill": "Gray 50",
+      "Gray.SecondaryStroke": "Neutral_70",
+      "Gray.Stroke": "Gray 100",
+      "Green.Solid": "Green_100",
+      "Green.Stroke": "Green_100",
+      "Red.Solid": "Red_100",
+      "Red.Stroke": "Red_100",
+      "Blue.Solid": "Blue_100",
+      "Blue.Stroke": "Blue_100",
+      "Yellow.Solid": "Yellow_120",
+      "Yellow.Stroke": "Yellow_120",
+      "Purple.Solid": "Purple_100",
+      "Purple.Stroke": "Purple_100",
+      "Orange.Solid": "Orange",
+      "Orange.Stroke": "Orange",
+      "Objects.Pink": "Pink_100",
+      "Objects.Blue": "Blue_100",
+      "Objects.Red": "Red_100",
+      "Objects.Green": "Green_100",
+      "Objects.Grey": "Gray_100",
+      "Objects.Yellow": "Yellow_120",
+      "Objects.YellowDark": "Yellow_90",
+      "Objects.Purple": "Purple_100",
+      "Objects.RedStatus": "Red_100",
+      "Actions.Blue": "Blue_100",
+      "Actions.Red": "Red_100",
+      "Actions.Green": "Green_100",
+      "Actions.Yellow": "Yellow_100",
+      "Actions.Purple": "Purple_100",
+      "Actions.Violet": "Violet_100",
+      "Actions.Grey": "Gray 120",
+      "Actions.GreyInline": "Gray 120"
     }
   },
   "ui": {
@@ -16,6 +48,13 @@
       "selectionBackground": "BlueTint_40",
       "selectionForeground": "Neutral_140"
     },
+
+    "ActionButton": {
+      "hoverBackground": "Neutral_40",
+      "hoverBorderColor": "Neutral_40",
+      "pressedBackground": "Neutral_50",
+      "pressedBorderColor": "Neutral_50"
+    },
     "DefaultTabs": {
       "background": "Neutral_20",
       "borderColor": "Transparent",
@@ -23,6 +62,14 @@
       "underlinedTabBackground": "BlueTint_25",
       "inactiveUnderlineColor": "LightTint_8",
       "hoverBackground": "LightTint_8"
+    },
+    "EditorTabs": {
+        "background": "Neutral_20",
+        "borderColor": "Transparent",
+        "underlineColor": "BlueTint_50",
+        "underlinedTabBackground": "BlueTint_25",
+        "inactiveUnderlineColor": "LightTint_8",
+        "hoverBackground": "LightTint_8"
     },
     "TabbedPane": {
       "underlineColor": "BlueTint_50",
@@ -117,6 +164,10 @@
       "background": "Neutral_40",
       "borderColor": "Transparent"
     },
+    "GotItTooltip": {
+      "background": "Neutral_30",
+      "borderColor": "Transparent"
+    },
     "Menu": {
       "background": "Neutral_30",
       "selectionBackground": "BlueTint_40"
@@ -159,6 +210,13 @@
         "updateBorderColor": "Transparent",
         "updateForeground": "White"
       }
+    },
+    "VersionControl.Log.Commit": {
+      "currentBranchBackground": "Neutral_30",
+      "selectionInactiveBackground": "Neutral_60",
+      "selectionInactiveForeground": "Neutral_140",
+      "hoveredBackground": "Neutral_50",
+      "selectionBackground": "Blue_50"
     }
   },
   "colors": {
