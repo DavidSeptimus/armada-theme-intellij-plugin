@@ -70,6 +70,12 @@
       "disabledText": "Neutral_100",
       "foreground": "Neutral_140"
     },
+    "ToolWindow.Button": {
+      "selectedBackground": "Blue_90",
+      "hoverBackground": "LightTint_15",
+      "selectedForeground": "White"
+    },
+    "TextPane.inactiveBackground": "Neutral_20",
     "CheckBoxMenuItem": {
       "background": "LightTint_8",
       "foreground": "Neutral_140",
