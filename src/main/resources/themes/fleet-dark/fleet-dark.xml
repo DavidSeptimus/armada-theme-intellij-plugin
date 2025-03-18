@@ -732,22 +732,22 @@
     </option>
     <option name="DIFF_DELETED">
       <value>
-        <option name="FOREGROUND" value="D7325180" />
-        <option name="BACKGROUND" value="D7325133" />
+        <option name="FOREGROUND" value="D7325133" />
+        <option name="BACKGROUND" value="D7325180" />
         <option name="ERROR_STRIPE_COLOR" value="D73251" />
       </value>
     </option>
     <option name="DIFF_INSERTED">
       <value>
-        <option name="FOREGROUND" value="14835E80" />
-        <option name="BACKGROUND" value="14835E66" />
+        <option name="FOREGROUND" value="14835E66" />
+        <option name="BACKGROUND" value="14835E80" />
         <option name="ERROR_STRIPE_COLOR" value="14835E" />
       </value>
     </option>
     <option name="DIFF_MODIFIED">
       <value>
-        <option name="FOREGROUND" value="0870E480" />
-        <option name="BACKGROUND" value="0870E433" />
+        <option name="FOREGROUND" value="0870E433" />
+        <option name="BACKGROUND" value="0870E480" />
         <option name="ERROR_STRIPE_COLOR" value="0870E4" />
       </value>
     </option>
