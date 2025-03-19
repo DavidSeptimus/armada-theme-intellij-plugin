@@ -750,7 +750,7 @@
     </option>
     <option name="DEFAULT_PARAMETER">
       <value>
-        <option name="FONT_TYPE" value="2"/>
+        <option name="FOREGROUND" value="E0E1E4"/>
       </value>
     </option>
     <option name="DEFAULT_PARENTHS">
@@ -2079,6 +2079,66 @@
     <option name="YAML_TEXT">
       <value>
         <option name="FOREGROUND" value="AF9CFF"/>
+      </value>
+    </option>
+    <option name="ZIG_BUILTIN">
+      <value>
+        <option name="FOREGROUND" value="a8cc7c" />
+      </value>
+    </option>
+    <option name="ZIG_ENUM_DECL">
+      <value>
+        <option name="FOREGROUND" value="e0e1e4" />
+      </value>
+    </option>
+    <option name="ZIG_ENUM_MEMBER_DECL">
+      <value>
+        <option name="FOREGROUND" value="e0e1e4" />
+      </value>
+    </option>
+    <option name="ZIG_FUNCTION">
+      <value>
+        <option name="FOREGROUND" value="e0e1e4" />
+      </value>
+    </option>
+    <option name="ZIG_FUNCTION_DECL">
+      <value>
+        <option name="FOREGROUND" value="e0e1e4" />
+      </value>
+    </option>
+    <option name="ZIG_PROPERTY_DECL">
+      <value>
+        <option name="FOREGROUND" value="e0e1e4" />
+      </value>
+    </option>
+    <option name="ZIG_STRUCT_DECL">
+      <value>
+        <option name="FOREGROUND" value="e0e1e4" />
+      </value>
+    </option>
+    <option name="ZIG_TYPE">
+      <value>
+        <option name="FOREGROUND" value="e0e1e4" />
+      </value>
+    </option>
+    <option name="ZIG_TYPE_DECL">
+      <value>
+        <option name="FOREGROUND" value="e0e1e4" />
+      </value>
+    </option>
+    <option name="ZIG_VARIABLE">
+      <value>
+        <option name="FOREGROUND" value="e0e1e4" />
+      </value>
+    </option>
+    <option name="ZIG_VARIABLE_DECL">
+      <value>
+        <option name="FOREGROUND" value="e0e1e4" />
+      </value>
+    </option>
+    <option name="ZIG_FIELD_TYPE">
+      <value>
+        <option name="FOREGROUND" value="87C3FF"/>
       </value>
     </option>
   </attributes>

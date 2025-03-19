@@ -17,6 +17,10 @@ class XmlAnnotator : Annotator {
         val doctypeAttributes: TextAttributesKey = TextAttributeKeys.XML_DOCTYPE
     }
 
+    override fun isDumbAware(): Boolean {
+        return true
+    }
+
     override fun annotate(element: PsiElement, holder: AnnotationHolder) {
         annotateDocType(element, holder)
     }

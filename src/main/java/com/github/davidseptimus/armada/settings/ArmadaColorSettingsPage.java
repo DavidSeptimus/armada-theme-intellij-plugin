@@ -15,48 +15,50 @@ import java.util.Map;
 
 final class ArmadaColorSettingsPage implements ColorSettingsPage {
 
-  private static final AttributesDescriptor[] DESCRIPTORS = new AttributesDescriptor[]{
-      new AttributesDescriptor("JavaScript Property Reference", TextAttributeKeys.JAVASCRIPT_PROPERTY_REFERENCE),
-      new AttributesDescriptor("Properties String Literal Value", TextAttributeKeys.PROPERTIES_STRING_LITERAL_VALUE),
-      new AttributesDescriptor("XML DocType", TextAttributeKeys.XML_DOCTYPE),
-      new AttributesDescriptor("YAML Alias", TextAttributeKeys.YAML_ALIAS),
-  };
+    private static final AttributesDescriptor[] DESCRIPTORS = new AttributesDescriptor[]{
+            new AttributesDescriptor("JavaScript Property Reference", TextAttributeKeys.JAVASCRIPT_PROPERTY_REFERENCE),
+            new AttributesDescriptor("Properties String Literal Value", TextAttributeKeys.PROPERTIES_STRING_LITERAL_VALUE),
+            new AttributesDescriptor("XML DocType", TextAttributeKeys.XML_DOCTYPE),
+            new AttributesDescriptor("YAML Alias", TextAttributeKeys.YAML_ALIAS),
+            new AttributesDescriptor("Zig Field/Argument Type", TextAttributeKeys.ZIG_FIELD_TYPE),
+            new AttributesDescriptor("Zig Return Type Identifier", TextAttributeKeys.ZIG_RETURN_TYPE_IDENTIFIER),
+    };
 
-  @Override
-  public @Nullable Icon getIcon() {
-    return null;
-  }
+    @Override
+    public @Nullable Icon getIcon() {
+        return null;
+    }
 
-  @Override
-  public @NotNull SyntaxHighlighter getHighlighter() {
-    return new PlainSyntaxHighlighter();
-  }
+    @Override
+    public @NotNull SyntaxHighlighter getHighlighter() {
+        return new PlainSyntaxHighlighter();
+    }
 
-  @Override
-  public @NonNls @NotNull String getDemoText() {
-    return "No demo text available";
-  }
+    @Override
+    public @NonNls @NotNull String getDemoText() {
+        return "No demo text available";
+    }
 
-  @Nullable
-  @Override
-  public Map<String, TextAttributesKey> getAdditionalHighlightingTagToDescriptorMap() {
-    return null;
-  }
+    @Nullable
+    @Override
+    public Map<String, TextAttributesKey> getAdditionalHighlightingTagToDescriptorMap() {
+        return null;
+    }
 
-  @Override
-  public AttributesDescriptor @NotNull [] getAttributeDescriptors() {
-    return DESCRIPTORS;
-  }
+    @Override
+    public AttributesDescriptor @NotNull [] getAttributeDescriptors() {
+        return DESCRIPTORS;
+    }
 
-  @Override
-  public ColorDescriptor @NotNull [] getColorDescriptors() {
-    return ColorDescriptor.EMPTY_ARRAY;
-  }
+    @Override
+    public ColorDescriptor @NotNull [] getColorDescriptors() {
+        return ColorDescriptor.EMPTY_ARRAY;
+    }
 
-  @NotNull
-  @Override
-  public String getDisplayName() {
-    return "Armada Additions";
-  }
+    @NotNull
+    @Override
+    public String getDisplayName() {
+        return "Armada Additions";
+    }
 
 }

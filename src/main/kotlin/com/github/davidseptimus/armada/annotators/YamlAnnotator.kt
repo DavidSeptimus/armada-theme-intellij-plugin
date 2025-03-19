@@ -13,6 +13,10 @@ class YamlAnnotator : Annotator {
         val aliasAttributes: TextAttributesKey = TextAttributeKeys.YAML_ALIAS
     }
 
+    override fun isDumbAware(): Boolean {
+        return true
+    }
+
     override fun annotate(element: PsiElement, holder: AnnotationHolder) {
         when {
             // Highlight aliases (e.g., *params)

@@ -16,6 +16,10 @@ class PropertiesAnnotator : Annotator {
         val stringLiteralValueAttributes: TextAttributesKey = TextAttributeKeys.PROPERTIES_STRING_LITERAL_VALUE
     }
 
+    override fun isDumbAware(): Boolean {
+        return true
+    }
+
     override fun annotate(element: PsiElement, holder: AnnotationHolder) {
         annotateStringLiteralValue(element, holder)
     }

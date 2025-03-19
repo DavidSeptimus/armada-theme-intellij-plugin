@@ -9,6 +9,7 @@
   <depends optional="true" config-file="plugin-javascript.xml">JavaScript</depends>
   <depends optional="true" config-file="plugin-properties.xml">com.intellij.properties</depends>
   <depends optional="true" config-file="plugin-yaml.xml">org.jetbrains.plugins.yaml</depends>
+  <depends optional="true" config-file="plugin-zig.xml">com.falsepattern.zigbrains</depends>
 
   <extensions defaultExtensionNs="com.intellij">
     <themeProvider

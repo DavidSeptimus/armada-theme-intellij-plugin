@@ -7,6 +7,7 @@
 ### Added
 
 - YAML support
+- Zig support
 - Color settings page for text attribute keys added by the plugin's annotators
 - Completion popup colors
 - File colors

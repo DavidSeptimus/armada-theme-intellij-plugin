@@ -1,0 +1,5 @@
+<idea-plugin>
+  <extensions defaultExtensionNs="com.intellij">
+    <annotator language="Zig" implementationClass="com.github.davidseptimus.armada.annotators.ZigAnnotator"/>
+  </extensions>
+</idea-plugin>

@@ -19,9 +19,14 @@ class JavaScriptAnnotator : Annotator {
         val propertyReferenceAttributes: TextAttributesKey = TextAttributeKeys.JAVASCRIPT_PROPERTY_REFERENCE
     }
 
+    override fun isDumbAware(): Boolean {
+        return true
+    }
+
     override fun annotate(element: PsiElement, holder: AnnotationHolder) {
         annotatePropertyReference(element, holder)
     }
+
 
     private fun annotatePropertyReference(element: PsiElement, holder: AnnotationHolder) {
 
