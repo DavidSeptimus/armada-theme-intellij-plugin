@@ -646,7 +646,7 @@
     </option>
     <option name="DEFAULT_CLASS_NAME">
       <value>
-        <option name="FOREGROUND" value="82bbf4"/>
+        <option name="FOREGROUND" value="87C3FF"/>
       </value>
     </option>
     <option name="DEFAULT_CLASS_REFERENCE">
@@ -713,7 +713,7 @@
     <option name="DEFAULT_INSTANCE_FIELD" baseAttributes="DEFAULT_IDENTIFIER"/>
     <option name="DEFAULT_INTERFACE_NAME">
       <value>
-        <option name="FOREGROUND" value="82bbf4"/>
+        <option name="FOREGROUND" value="87C3FF"/>
       </value>
     </option>
     <option name="DEFAULT_INVALID_STRING_ESCAPE">
@@ -1077,7 +1077,7 @@
     </option>
     <option name="HTML_TAG_NAME">
       <value>
-        <option name="FOREGROUND" value="82bbf4"/>
+        <option name="FOREGROUND" value="87C3FF"/>
       </value>
     </option>
     <option name="HYPERLINK_ATTRIBUTES">
@@ -2048,7 +2048,7 @@
     <option name="XML_TAG_DATA" baseAttributes="TEXT"/>
     <option name="XML_TAG_NAME">
       <value>
-        <option name="FOREGROUND" value="82bbf4"/>
+        <option name="FOREGROUND" value="87C3FF"/>
       </value>
     </option>
     <option name="YAML_ANCHOR">
