@@ -2043,35 +2043,34 @@
         <option name="FOREGROUND" value="82bbf4"/>
       </value>
     </option>
-    <option name="YAML_COMMENT">
+    <option name="YAML_ANCHOR">
       <value>
-        <option name="FOREGROUND" value="898989"/>
-        <option name="FONT_TYPE" value="2"/>
+        <option name="FOREGROUND" value="A8CC7C"/>
       </value>
     </option>
-    <option name="YAML_SCALAR_KEY">
+    <option name="YAML_ALIAS">
       <value>
-        <option name="FOREGROUND" value="82d2ce"/>
+        <option name="FOREGROUND" value="E09B70"/>
       </value>
     </option>
     <option name="YAML_SCALAR_LIST">
       <value>
-        <option name="FOREGROUND" value="ebc88d"/>
+        <option name="FOREGROUND" value="E0E1E4"/>
+      </value>
+    </option>
+    <option name="YAML_SCALAR_STRING">
+      <value>
+        <option name="FOREGROUND" value="AF9CFF"/>
       </value>
     </option>
     <option name="YAML_SCALAR_VALUE">
       <value>
-        <option name="FOREGROUND" value="ebc88d"/>
-      </value>
-    </option>
-    <option name="YAML_SIGN">
-      <value>
-        <option name="FOREGROUND" value="d6d6dd"/>
+        <option name="FOREGROUND" value="AF9CFF"/>
       </value>
     </option>
     <option name="YAML_TEXT">
       <value>
-        <option name="FOREGROUND" value="ebc88d"/>
+        <option name="FOREGROUND" value="AF9CFF"/>
       </value>
     </option>
   </attributes>
