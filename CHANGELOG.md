@@ -4,6 +4,8 @@
 
 ## [Unreleased]
 
+## [0.2.0] - 2025-03-19
+
 ### Added
 
 - YAML support
@@ -55,6 +57,7 @@
 - Fleet Dark UI and Editor Color Scheme
 - Plugin Icon
 
-[Unreleased]: https://github.com/DavidSeptimus/armada-theme-intellij-plugin/compare/v0.1.0...HEAD
+[Unreleased]: https://github.com/DavidSeptimus/armada-theme-intellij-plugin/compare/v0.2.0...HEAD
+[0.2.0]: https://github.com/DavidSeptimus/armada-theme-intellij-plugin/compare/v0.1.0...v0.2.0
 [0.1.0]: https://github.com/DavidSeptimus/armada-theme-intellij-plugin/compare/v0.0.2...v0.1.0
 [0.0.2]: https://github.com/DavidSeptimus/armada-theme-intellij-plugin/commits/v0.0.2
