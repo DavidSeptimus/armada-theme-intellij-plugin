@@ -16,7 +16,7 @@
     <option name="BLOCK_TERMINAL_DEFAULT_FOREGROUND" value="ebdbb2"/>
     <option name="BLOCK_TERMINAL_INACTIVE_SELECTED_BLOCK_BACKGROUND" value="212733"/>
     <option name="BLOCK_TERMINAL_INACTIVE_SELECTED_BLOCK_STROKE_COLOR" value="ebdbb2"/>
-    <option name="CARET_COLOR" value="152538"/>
+    <option name="CARET_COLOR" value="E0E1E4"/>
     <option name="CARET_ROW_COLOR" value="152538"/>
     <option name="CONSOLE_BACKGROUND_KEY" value="18191B"/>
     <option name="GUTTER_BACKGROUND" value="181818"/>
