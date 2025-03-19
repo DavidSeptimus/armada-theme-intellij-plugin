@@ -60,9 +60,9 @@
       "background": "Neutral_20",
       "foreground": "Neutral_140",
       "disabledText": "Neutral_80",
-      "selectionBackground": "BlueTint_40",
-      "selectionForeground": "Neutral_140"
-    },
+      "selectionBackground": "#113C6B",
+      "selectionForeground": "Neutral_140",
+      "selectionInactiveBackground": "Neutral_50"},
     "Borders.color": "Neutral_40",
     "ActionButton": {
       "hoverBackground": "Neutral_40",
@@ -126,7 +126,6 @@
     "Label.selectedForeground": "White",
     "Label.infoForeground": "Neutral_110",
     "Tree": {
-      "selectionInactiveBackground": "LightTint_15",
       "foreground": "Neutral_140",
       "errorForeground": "Red_100"
     },
@@ -190,11 +189,9 @@
       "disabledText": "Neutral_80"
     },
     "List": {
-      "selectionInactiveBackground": "LightTint_15",
       "selectionForeground": "Neutral_140",
       "foreground": "Neutral_140",
-      "hoverBackground": "LightTint_5",
-      "selectionBackground": "Blue_40"
+      "hoverBackground": "LightTint_5"
     },
     "ComboBox": {
       "background": "Neutral_30",
@@ -209,8 +206,7 @@
       "borderColor": "Transparent"
     },
     "Menu": {
-      "background": "Neutral_30",
-      "selectionBackground": "BlueTint_40"
+      "background": "Neutral_30"
     },
     "PopupMenu.background": "Neutral_30",
     "MenuItem.background": "Neutral_30",
