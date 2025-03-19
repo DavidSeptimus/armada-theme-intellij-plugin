@@ -1,22 +1,25 @@
 <!-- Plugin Configuration File. Read more: https://plugins.jetbrains.com/docs/intellij/plugin-configuration-file.html -->
 <idea-plugin>
-    <id>com.github.davidseptimus.armada</id>
-    <name>Armada Theme</name>
-    <vendor>David Septimus</vendor>
-    <description>An IntelliJ theme based on Jetbrains Fleet's default theme</description>
+  <id>com.github.davidseptimus.armada</id>
+  <name>Armada Theme</name>
+  <vendor>David Septimus</vendor>
+  <description>An IntelliJ theme based on Jetbrains Fleet's default theme</description>
 
-    <depends>com.intellij.modules.platform</depends>
-    <depends optional="true" config-file="plugin-javascript.xml">JavaScript</depends>
-    <depends optional="true" config-file="plugin-properties.xml">com.intellij.properties</depends>
-    <depends optional="true" config-file="plugin-yaml.xml">org.jetbrains.plugins.yaml</depends>
+  <depends>com.intellij.modules.platform</depends>
+  <depends optional="true" config-file="plugin-javascript.xml">JavaScript</depends>
+  <depends optional="true" config-file="plugin-properties.xml">com.intellij.properties</depends>
+  <depends optional="true" config-file="plugin-yaml.xml">org.jetbrains.plugins.yaml</depends>
 
-    <extensions defaultExtensionNs="com.intellij">
-        <themeProvider
+  <extensions defaultExtensionNs="com.intellij">
+    <themeProvider
         id="com.github.davidseptimus.armada"
         path="themes/fleet-dark/fleet-dark.theme.json"
-        />
+    />
 
-        <annotator language="XML" implementationClass="com.github.davidseptimus.armada.FleetXmlAnnotator"/>
-    </extensions>
+    <colorSettingsPage
+        implementation="com.github.davidseptimus.armada.settings.ArmadaColorSettingsPage" />
+
+    <annotator language="XML" implementationClass="com.github.davidseptimus.armada.annotators.XmlAnnotator"/>
+  </extensions>
 
 </idea-plugin>

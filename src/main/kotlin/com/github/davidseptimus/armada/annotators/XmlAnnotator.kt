@@ -1,6 +1,7 @@
 
-package com.github.davidseptimus.armada
+package com.github.davidseptimus.armada.annotators
 
+import com.github.davidseptimus.armada.settings.TextAttributeKeys
 import com.intellij.lang.annotation.AnnotationHolder
 import com.intellij.lang.annotation.Annotator
 import com.intellij.lang.annotation.HighlightSeverity
@@ -11,9 +12,9 @@ import com.intellij.psi.xml.XmlToken
 import com.intellij.psi.xml.XmlTokenType
 
 
-class FleetXmlAnnotator : Annotator {
+class XmlAnnotator : Annotator {
     companion object {
-        val doctypeAttributes = TextAttributesKey.createTextAttributesKey("XML_DOCTYPE")
+        val doctypeAttributes: TextAttributesKey = TextAttributeKeys.XML_DOCTYPE
     }
 
     override fun annotate(element: PsiElement, holder: AnnotationHolder) {

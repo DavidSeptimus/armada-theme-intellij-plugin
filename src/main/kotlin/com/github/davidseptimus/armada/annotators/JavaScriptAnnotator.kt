@@ -1,6 +1,7 @@
 
-package com.github.davidseptimus.armada
+package com.github.davidseptimus.armada.annotators
 
+import com.github.davidseptimus.armada.settings.TextAttributeKeys
 import com.intellij.lang.annotation.AnnotationHolder
 import com.intellij.lang.annotation.Annotator
 import com.intellij.lang.annotation.HighlightSeverity
@@ -13,9 +14,9 @@ import com.intellij.psi.PsiElement
 import com.intellij.psi.util.elementType
 
 
-class FleetJavaScriptAnnotator : Annotator {
+class JavaScriptAnnotator : Annotator {
     companion object {
-        val propertyReferenceAttributes = TextAttributesKey.createTextAttributesKey("JS.PROPERTY_REFERENCE")
+        val propertyReferenceAttributes: TextAttributesKey = TextAttributeKeys.JAVASCRIPT_PROPERTY_REFERENCE
     }
 
     override fun annotate(element: PsiElement, holder: AnnotationHolder) {

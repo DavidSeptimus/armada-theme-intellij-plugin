@@ -1,5 +1,5 @@
 <idea-plugin>
   <extensions defaultExtensionNs="com.intellij">
-    <annotator language="yaml" implementationClass="com.github.davidseptimus.armada.FleetYamlAnnotator"/>
+    <annotator language="yaml" implementationClass="com.github.davidseptimus.armada.annotators.YamlAnnotator"/>
   </extensions>
 </idea-plugin>
