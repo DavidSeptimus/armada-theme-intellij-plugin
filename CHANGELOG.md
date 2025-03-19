@@ -4,6 +4,27 @@
 
 ## [Unreleased]
 
+### Added
+
+- YAML support
+- Color settings page for text attribute keys added by the plugin's annotators
+- Completion popup colors
+- File colors
+- Drag-and-Drop colors
+- Added spotlight border color
+
+### Fixed
+
+- Selection transparency causing non-uniformity in multiple selection
+- Caret row transparency causing flickering when typing
+
+### Changed
+
+- Toolbar header tab colors
+- Default border color
+- Error underline style
+- Button focus style
+
 ## [0.1.0] - 2025-03-18
 
 ### Added
