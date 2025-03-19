@@ -3,36 +3,25 @@ interface ValidatorOptions {
 }
 
 type ValidatorDescriptor = {
-    options: ValidatorOptions,
-    abc(): void,
+    validatorOptions: ValidatorOptions,
+    describe(): void,
 };
 
-const transform = (param: string | number) =>
-    typeof param === "string" ? param : param.toString();
 
-function globalFunction({ options = {} }: ValidatorDescriptor) {
-    const { minLength } = options;
 
-    const x: ValidatorDescriptor = {}
-
-    x.abc()
-
-    /**
-     * @description Validator
-     * @param {string?} value - parameter description
-     */
-    const localFunction = (value: string) => {
-        let isValid = value.length >= minLength ?? 3; // line comment
-        /* Block comment */
-        isValid = isValid && (/^\d.[A-F]+$/i).test(value);
-        return {
-            isValid,
-        };
-    };
-}
+function globalFunction({ validatorOptions = {} }: ValidatorDescriptor) {
+    const { minLength } = validatorOptions;
 
 interface ButtonProps {
     click(): void;
+}
+
+function defineElement(tagName: string) {
+    return function <T extends { new (...args: any[]): {} }>(constructor: T) {
+        return class extends constructor {
+            static tagName = tagName;
+        };
+    };
 }
 
 @defineElement("download-button")
