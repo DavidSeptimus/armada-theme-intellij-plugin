@@ -36,7 +36,7 @@
       "Purple.Stroke": "Purple_100",
       "Orange.Solid": "Orange",
       "Orange.Stroke": "Orange",
-      "Objects.Pink": "Pink_100",
+      "Objects.Pink": "Pink",
       "Objects.Blue": "Blue_100",
       "Objects.Red": "Red_100",
       "Objects.Green": "Green_100",
@@ -93,13 +93,13 @@
       "focusColor": "BlueTint_25"
     },
     "FileColor": {
-      "Blue": "BlueTint_10",
-      "Green": "GreenTint_10",
-      "Orange": "OrangeTint_10",
-      "Rose": "PinkTint_40",
-      "Violet": "VioletTint_20",
+      "Blue": "Blue_30",
+      "Green": "Green_30",
+      "Orange": "Orange_30",
+      "Rose": "Pink_30",
+      "Violet": "Violet_30",
       "Yellow": "Yellow_30",
-      "Gray": "LightTint_5"
+      "Gray": "Gray 30"
     },
     "MainToolbar.background": "Neutral_10",
     "Editor.background": "Neutral_20",
@@ -257,8 +257,7 @@
       "currentBranchBackground": "Neutral_30",
       "selectionInactiveBackground": "Neutral_60",
       "selectionInactiveForeground": "Neutral_140",
-      "hoveredBackground": "Neutral_50",
-      "selectionBackground": "Blue_50"
+      "hoveredBackground": "Neutral_50"
     },
     "CompletionPopup": {
       "Advertiser": {
@@ -507,8 +506,10 @@
     "GreenTint_10": "#14835E1A",
     "VioletTint_40": "#685AFB66",
     "VioletTint_20": "#685AFB33",
+    "Pink_30": "#3F303F",
     "PinkTint_10": "#E394DC1A",
     "OrangeTint_10": "#E09B701A",
+    "Orange_30": "#3E302A",
     "YellowTint_50": "#9F680C80",
     "YellowTint_40": "#9F680C66",
     "YellowTint_20": "#9F680C33"
