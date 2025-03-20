@@ -2,7 +2,7 @@
   <option name="FONT_SCALE" value="1.0"/>
   <metaInfo>
     <property name="ide">idea</property>
-    <property name="ideVersion">2024.3.4.1.0.0</property>
+    <property name="ideVersion">2024.3.4.5.0.0</property>
     <property name="originalScheme">Fleet Dark (Armada)</property>
   </metaInfo>
   <option name="LINE_SPACING" value="1.2"/>
@@ -19,10 +19,12 @@
     <option name="CARET_COLOR" value="E0E1E4"/>
     <option name="CARET_ROW_COLOR" value="152538"/>
     <option name="CONSOLE_BACKGROUND_KEY" value="18191B"/>
+    <option name="DELETED_LINES_COLOR" value="d73251"/>
     <option name="GUTTER_BACKGROUND" value="181818"/>
     <option name="INDENT_GUIDE" value="353535"/>
     <option name="LINE_NUMBERS_COLOR" value="6E747B"/>
     <option name="LINE_NUMBER_ON_CARET_ROW_COLOR" value="E0E1E4"/>
+    <option name="LOOKUP_COLOR" value="252629"/> <!-- background for completion popup -->
     <option name="MODIFIED_TAB_ICON" value="e0e1e4"/>
     <option name="NOTIFICATION_BACKGROUND" value="18191b"/>
     <option name="RIGHT_MARGIN_COLOR" value="353535"/>
@@ -36,7 +38,6 @@
     <option name="ScrollBar.Mac.thumbColor" value="E0E1E426"/>
     <option name="ScrollBar.hoverThumbColor" value="E0E1E433"/>
     <option name="ScrollBar.thumbColor" value="E0E1E426"/>
-    <option name="LOOKUP_COLOR" value="252629"/> <!-- background for completion popup -->
 
     <!-- VCS Annotations colors -->
     <option name="VCS_ANNOTATIONS_COLOR_1" value="916012"/>
@@ -1089,14 +1090,15 @@
     </option>
     <option name="IDENTIFIER_UNDER_CARET_ATTRIBUTES">
       <value>
-        <option name="BACKGROUND" value="3c3c57"/>
-        <option name="ERROR_STRIPE_COLOR" value="ccccff"/>
+        <option name="BACKGROUND" value="334252"/>
+        <option name="ERROR_STRIPE_COLOR" value="e0e1e4"/>
       </value>
     </option>
     <option name="IMPLICIT_ANONYMOUS_CLASS_PARAMETER_ATTRIBUTES" baseAttributes="CLASS_NAME_ATTRIBUTES"/>
     <option name="INACTIVE_HYPERLINK_ATTRIBUTES">
       <value>
-        <option name="FOREGROUND" value="ebc88d"/>
+        <option name="FOREGROUND" value="e0e1e4"/>
+        <option name="EFFECT_COLOR" value="e0e1e4"/>
         <option name="EFFECT_TYPE" value="1"/>
       </value>
     </option>
@@ -1250,7 +1252,7 @@
     </option>
     <option name="MATCHED_BRACE_ATTRIBUTES">
       <value>
-        <option name="BACKGROUND" value="3b514d"/>
+        <option name="BACKGROUND" value="14835E66"/>
         <option name="FONT_TYPE" value="1"/>
       </value>
     </option>
@@ -1821,7 +1823,7 @@
     </option>
     <option name="SEARCH_RESULT_ATTRIBUTES">
       <value>
-        <option name="BACKGROUND" value="4f4f82"/>
+        <option name="BACKGROUND" value="9f680c"/>
       </value>
     </option>
     <option name="SLIM_BAD_CHARACTER">
@@ -1918,8 +1920,9 @@
     </option>
     <option name="TEXT_SEARCH_RESULT_ATTRIBUTES">
       <value>
-        <option name="BACKGROUND" value="5f5f00"/>
-        <option name="ERROR_STRIPE_COLOR" value="ff00"/>
+        <option name="BACKGROUND" value="9F680C66"/>
+        <option name="EFFECT_COLOR" value="9F680C80"/>
+        <option name="ERROR_STRIPE_COLOR" value="d49550"/>
       </value>
     </option>
     <option name="TODO_DEFAULT_ATTRIBUTES">
@@ -2002,13 +2005,13 @@
     </option>
     <option name="WRITE_IDENTIFIER_UNDER_CARET_ATTRIBUTES">
       <value>
-        <option name="BACKGROUND" value="472c47"/>
-        <option name="ERROR_STRIPE_COLOR" value="ffcdff"/>
+        <option name="BACKGROUND" value="D7325133"/>
+        <option name="ERROR_STRIPE_COLOR" value="ffb0b5"/>
       </value>
     </option>
     <option name="WRITE_SEARCH_RESULT_ATTRIBUTES">
       <value>
-        <option name="BACKGROUND" value="623062"/>
+        <option name="BACKGROUND" value="D732514D"/>
       </value>
     </option>
     <option name="WRONG_REFERENCES_ATTRIBUTES">

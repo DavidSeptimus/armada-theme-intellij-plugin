@@ -292,6 +292,20 @@
       "infoBorderColor": "Blue_60",
       "successBackground": "Green_30",
       "successBorderColor": "Green_60"
+    },
+    "SearchField": {
+      "errorForeground": "Red_110",
+      "errorBackground": "Red_40"
+    },
+    "SpeedSearch.errorForeground": "Red_110",
+
+    "Counter": {
+      "background": "LightTint_20"
+    },
+    "SearchOption": {
+      "selectedBackground": "BlueTint_40",
+      "selectedHoveredBackground": "BlueTint_30",
+      "selectedPressedBackground": "BlueTint_25"
     }
   },
   "colors": {
