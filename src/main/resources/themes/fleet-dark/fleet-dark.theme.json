@@ -3,6 +3,7 @@
   "dark": true,
   "name": "Fleet Dark (Armada)",
   "editorScheme": "themes/fleet-dark/fleet-dark.xml",
+  "parentTheme": "ExperimentalDark",
   "icons": {
     "/com/intellij/ide/ui/laf/icons/darcula/checkBox.svg": "/themes/fleet-dark/icons/checkBox.svg",
     "/com/intellij/ide/ui/laf/icons/darcula/checkBoxDisabled.svg": "/themes/fleet-dark/icons/checkBoxDisabled.svg",
@@ -62,7 +63,8 @@
       "disabledText": "Neutral_80",
       "selectionBackground": "#113C6B",
       "selectionForeground": "Neutral_140",
-      "selectionInactiveBackground": "Neutral_50"},
+      "selectionInactiveBackground": "Neutral_50"
+    },
     "Borders.color": "Neutral_40",
     "ActionButton": {
       "hoverBackground": "Neutral_40",
@@ -159,6 +161,15 @@
         "selectedBackground": "Blue_90",
         "hoverBackground": "LightTint_15",
         "selectedForeground": "White"
+      },
+      "Stripe": {
+        "separatorColor": "Neutral_40",
+        "DragAndDrop": {
+          "separatorColor": "Blue_90"
+        }
+      },
+      "DragAndDrop": {
+        "areaBackground": "BlueTint_15"
       }
     },
     "TextPane.inactiveBackground": "Neutral_20",
@@ -233,7 +244,8 @@
     "Component": {
       "focusColor": "BlueTint_40",
       "focusedBorderColor": "Blue_100",
-      "errorFocusColor": "Red_100"
+      "errorFocusColor": "Red_100",
+      "inactiveErrorFocusColor": "Red_80"
     },
     "RadioButton": {
       "borderInsets": "4,4,4,4",
@@ -253,11 +265,13 @@
         "updateForeground": "White"
       }
     },
-    "VersionControl.Log.Commit": {
-      "currentBranchBackground": "Neutral_30",
-      "selectionInactiveBackground": "Neutral_60",
-      "selectionInactiveForeground": "Neutral_140",
-      "hoveredBackground": "Neutral_50"
+    "VersionControl.Log": {
+      "Commit": {
+        "currentBranchBackground": "Neutral_30",
+        "selectionInactiveBackground": "Neutral_60",
+        "selectionInactiveForeground": "Neutral_140",
+        "hoveredBackground": "Neutral_50"
+      }
     },
     "CompletionPopup": {
       "Advertiser": {
