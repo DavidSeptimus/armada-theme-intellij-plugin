@@ -12,9 +12,6 @@ import com.intellij.psi.PsiElement
 
 
 class PropertiesAnnotator : Annotator {
-    companion object {
-        val stringLiteralValueAttributes: TextAttributesKey = TextAttributeKeys.PROPERTIES_STRING_LITERAL_VALUE
-    }
 
     override fun isDumbAware(): Boolean {
         return true
@@ -33,3 +30,5 @@ class PropertiesAnnotator : Annotator {
             }
     }
 }
+
+val stringLiteralValueAttributes: TextAttributesKey = TextAttributeKeys.PROPERTIES_STRING_LITERAL_VALUE

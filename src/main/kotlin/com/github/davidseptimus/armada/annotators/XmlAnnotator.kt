@@ -13,9 +13,6 @@ import com.intellij.psi.xml.XmlTokenType
 
 
 class XmlAnnotator : Annotator {
-    companion object {
-        val doctypeAttributes: TextAttributesKey = TextAttributeKeys.XML_DOCTYPE
-    }
 
     override fun isDumbAware(): Boolean {
         return true
@@ -51,3 +48,5 @@ class XmlAnnotator : Annotator {
             }
     }
 }
+
+val doctypeAttributes: TextAttributesKey = TextAttributeKeys.XML_DOCTYPE

@@ -10,10 +10,6 @@ import com.intellij.openapi.util.TextRange
 import com.intellij.psi.PsiElement
 
 class ZigAnnotator : Annotator {
-    companion object {
-        val fieldTypeAttributes: TextAttributesKey = TextAttributeKeys.ZIG_FIELD_TYPE
-        val returnTypeIdentifierAttributes: TextAttributesKey = TextAttributeKeys.ZIG_RETURN_TYPE_IDENTIFIER
-    }
 
     override fun isDumbAware(): Boolean {
         return true
@@ -178,3 +174,6 @@ class ZigAnnotator : Annotator {
             .create()
     }
 }
+
+val fieldTypeAttributes: TextAttributesKey = TextAttributeKeys.ZIG_FIELD_TYPE
+val returnTypeIdentifierAttributes: TextAttributesKey = TextAttributeKeys.ZIG_RETURN_TYPE_IDENTIFIER

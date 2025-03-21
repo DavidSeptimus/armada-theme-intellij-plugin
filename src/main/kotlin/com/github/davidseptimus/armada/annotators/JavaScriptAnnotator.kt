@@ -15,9 +15,6 @@ import com.intellij.psi.util.elementType
 
 
 class JavaScriptAnnotator : Annotator {
-    companion object {
-        val propertyReferenceAttributes: TextAttributesKey = TextAttributeKeys.JAVASCRIPT_PROPERTY_REFERENCE
-    }
 
     override fun isDumbAware(): Boolean {
         return true
@@ -45,3 +42,5 @@ class JavaScriptAnnotator : Annotator {
         }
     }
 }
+
+val propertyReferenceAttributes: TextAttributesKey = TextAttributeKeys.JAVASCRIPT_PROPERTY_REFERENCE
