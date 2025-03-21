@@ -3,7 +3,6 @@
   "dark": true,
   "name": "Fleet Dark (Armada)",
   "editorScheme": "themes/fleet-dark/fleet-dark.xml",
-  "parentTheme": "ExperimentalDark",
   "icons": {
     "/com/intellij/ide/ui/laf/icons/darcula/checkBox.svg": "/themes/fleet-dark/icons/checkBox.svg",
     "/com/intellij/ide/ui/laf/icons/darcula/checkBoxDisabled.svg": "/themes/fleet-dark/icons/checkBoxDisabled.svg",
