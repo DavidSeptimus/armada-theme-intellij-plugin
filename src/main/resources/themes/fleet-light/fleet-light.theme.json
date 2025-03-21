@@ -99,12 +99,12 @@
       "focusColor": "BlueTint_10"
     },
     "FileColor": {
-      "Blue": "Blue_150",
-      "Green": "Green_150",
-      "Orange": "Orange_150",
-      "Rose": "Pink_150",
-      "Violet": "Violet_150",
-      "Yellow": "Yellow_150",
+      "Blue": "Blue_160",
+      "Green": "Green_140",
+      "Orange": "Yellow 60",
+      "Rose": "Violet_150",
+      "Violet": "Violet_160",
+      "Yellow": "Yellow_160",
       "Gray": "Neutral_150"
     },
     "MainToolbar.background": "Neutral_150",
