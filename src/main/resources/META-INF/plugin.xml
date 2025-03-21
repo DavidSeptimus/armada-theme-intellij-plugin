@@ -13,8 +13,12 @@
 
   <extensions defaultExtensionNs="com.intellij">
     <themeProvider
-        id="com.github.davidseptimus.armada"
+        id="com.github.davidseptimus.armada.fleet-dark"
         path="themes/fleet-dark/fleet-dark.theme.json"
+    />
+    <themeProvider
+            id="com.github.davidseptimus.armada.fleetlight"
+            path="themes/fleet-light/fleet-light.theme.json"
     />
 
     <colorSettingsPage
