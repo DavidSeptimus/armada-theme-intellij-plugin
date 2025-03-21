@@ -17,8 +17,13 @@
         path="themes/fleet-dark/fleet-dark.theme.json"
     />
     <themeProvider
-            id="com.github.davidseptimus.armada.fleetlight"
+            id="com.github.davidseptimus.armada.fleet-light"
             path="themes/fleet-light/fleet-light.theme.json"
+    />
+
+    <themeProvider
+            id="com.github.davidseptimus.armada.fleet-light-code"
+            path="themes/fleet-light/fleet-light-code.theme.json"
     />
 
     <colorSettingsPage

@@ -16,12 +16,13 @@ import java.util.Map;
 final class ArmadaColorSettingsPage implements ColorSettingsPage {
 
     private static final AttributesDescriptor[] DESCRIPTORS = new AttributesDescriptor[]{
-            new AttributesDescriptor("JavaScript Property Reference", TextAttributeKeys.JAVASCRIPT_PROPERTY_REFERENCE),
-            new AttributesDescriptor("Properties String Literal Value", TextAttributeKeys.PROPERTIES_STRING_LITERAL_VALUE),
+            new AttributesDescriptor("JavaScript this identifier", TextAttributeKeys.JAVASCRIPT_THIS_IDENTIFIER),
+            new AttributesDescriptor("JavaScript property reference", TextAttributeKeys.JAVASCRIPT_PROPERTY_REFERENCE),
+            new AttributesDescriptor("Properties string literal value", TextAttributeKeys.PROPERTIES_STRING_LITERAL_VALUE),
             new AttributesDescriptor("XML DocType", TextAttributeKeys.XML_DOCTYPE),
-            new AttributesDescriptor("YAML Alias", TextAttributeKeys.YAML_ALIAS),
-            new AttributesDescriptor("Zig Field/Argument Type", TextAttributeKeys.ZIG_FIELD_TYPE),
-            new AttributesDescriptor("Zig Return Type Identifier", TextAttributeKeys.ZIG_RETURN_TYPE_IDENTIFIER),
+            new AttributesDescriptor("YAML alias", TextAttributeKeys.YAML_ALIAS),
+            new AttributesDescriptor("Zig field/argument type", TextAttributeKeys.ZIG_FIELD_TYPE),
+            new AttributesDescriptor("Zig return type identifier", TextAttributeKeys.ZIG_RETURN_TYPE_IDENTIFIER),
     };
 
     @Override

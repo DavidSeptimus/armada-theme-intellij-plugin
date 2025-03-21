@@ -1,6 +1,6 @@
 {
   "author": "David Septimus",
-  "name": "Fleet Light Editor (Armada)",
+  "name": "Fleet Light Code (Armada)",
   "description": "A dev theme for working on fleet-light editor colors",
   "dark": false,
   "editorScheme": "themes/fleet-light/fleet-light-code.xml",
