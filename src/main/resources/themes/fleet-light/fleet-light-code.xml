@@ -147,6 +147,11 @@
         <option name="FOREGROUND" value="616605"/>
       </value>
     </option>
+    <option name="CSS.PERCENT">
+      <value>
+        <option name="FOREGROUND" value="a31d8d"/>
+      </value>
+    </option>
     <option name="CSS.PROPERTY_NAME">
       <value>
         <option name="FOREGROUND" value="14646e"/>
@@ -160,6 +165,11 @@
     <option name="CSS.TAG_NAME">
       <value>
         <option name="FOREGROUND" value="5511bf"/>
+      </value>
+    </option>
+    <option name="CSS.TERM_IDENTIFIER">
+      <value>
+        <option name="FOREGROUND" value="90909"/>
       </value>
     </option>
     <option name="CSS.UNICODE.RANGE">
@@ -628,6 +638,18 @@
         <option name="FOREGROUND" value="8c4f7f"/>
       </value>
     </option>
+    <option name="JSON.INVALID_ESCAPE">
+      <value>
+        <option name="FOREGROUND" value="67d17"/>
+        <option name="EFFECT_COLOR" value="d3314f"/>
+        <option name="EFFECT_TYPE" value="4"/>
+      </value>
+    </option>
+    <option name="JSON.PROPERTY_KEY">
+      <value>
+        <option name="FOREGROUND" value="5511bf"/>
+      </value>
+    </option>
     <option name="KOTLIN_LABEL">
       <value/>
     </option>
@@ -652,9 +674,25 @@
         <option name="FOREGROUND" value="767676"/>
       </value>
     </option>
+    <option name="POST_CSS_BAD_CHARACTER">
+      <value>
+        <option name="EFFECT_COLOR" value="d73251"/>
+        <option name="EFFECT_TYPE" value="4"/>
+      </value>
+    </option>
     <option name="PROPERTIES.KEY">
       <value>
-        <option name="FOREGROUND" value="83080"/>
+        <option name="FOREGROUND" value="14646e"/>
+      </value>
+    </option>
+    <option name="PROPERTIES.STRING_LITERAL_VALUE">
+      <value>
+        <option name="FOREGROUND" value="86e14"/>
+      </value>
+    </option>
+    <option name="PROPERTIES.VALUE">
+      <value>
+        <option name="FOREGROUND" value="90909"/>
       </value>
     </option>
     <option name="RECORD_COMPONENT_ATTRIBUTES">
@@ -664,7 +702,12 @@
     </option>
     <option name="SASS_MIXIN">
       <value>
-        <option name="FOREGROUND" value="8080"/>
+        <option name="FOREGROUND" value="616605"/>
+      </value>
+    </option>
+    <option name="SASS_VARIABLE">
+      <value>
+        <option name="FOREGROUND" value="1749bd"/>
       </value>
     </option>
     <option name="STATIC_FIELD_ATTRIBUTES">
@@ -804,9 +847,31 @@
         <option name="FOREGROUND" value="33b3"/>
       </value>
     </option>
+    <option name="YAML_ALIAS">
+      <value>
+        <option name="FOREGROUND" value="bf4a02"/>
+      </value>
+    </option>
     <option name="YAML_ANCHOR">
       <value>
-        <option name="FOREGROUND" value="e6"/>
+        <option name="FOREGROUND" value="1749bd"/>
+      </value>
+    </option>
+    <option name="YAML_SCALAR_VALUE">
+      <value>
+        <option name="FOREGROUND" value="5511bf"/>
+        <option name="BACKGROUND" value="ffffff"/>
+      </value>
+    </option>
+    <option name="YAML_SINGLE_QUOTED_STRING">
+      <value>
+        <option name="FOREGROUND" value="5511bf"/>
+      </value>
+    </option>
+    <option name="YAML_TEXT">
+      <value>
+        <option name="FOREGROUND" value="5511bf"/>
+        <option name="BACKGROUND" value="ffffff"/>
       </value>
     </option>
   </attributes>
