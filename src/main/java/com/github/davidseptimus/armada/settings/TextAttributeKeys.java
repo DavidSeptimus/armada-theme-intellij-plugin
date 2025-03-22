@@ -8,6 +8,7 @@ public final class TextAttributeKeys {
     public static final @NotNull TextAttributesKey YAML_SINGLE_QUOTED_STRING = TextAttributesKey.createTextAttributesKey("YAML_SINGLE_QUOTED_STRING");
     public static final @NotNull TextAttributesKey XML_DOCTYPE = TextAttributesKey.createTextAttributesKey("XML_DOCTYPE");
     public static final @NotNull TextAttributesKey PROPERTIES_STRING_LITERAL_VALUE = TextAttributesKey.createTextAttributesKey("PROPERTIES.STRING_LITERAL_VALUE");
+    public static final @NotNull TextAttributesKey JAVASCRIPT_FUNCTION_DECLARATION_IDENTIFIER = TextAttributesKey.createTextAttributesKey("JS.FUNCTION_DECLARATION_IDENTIFIER") ;
     public static final @NotNull TextAttributesKey JAVASCRIPT_PROPERTY_REFERENCE = TextAttributesKey.createTextAttributesKey("JS.PROPERTY_REFERENCE");
     public static final @NotNull TextAttributesKey JAVASCRIPT_THIS_IDENTIFIER = TextAttributesKey.createTextAttributesKey("JS.THIS_IDENTIFIER");
     public static final @NotNull TextAttributesKey ZIG_FIELD_TYPE = TextAttributesKey.createTextAttributesKey("ZIG_FIELD_TYPE");

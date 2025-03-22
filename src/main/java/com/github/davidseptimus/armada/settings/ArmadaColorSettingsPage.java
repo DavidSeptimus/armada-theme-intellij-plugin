@@ -18,6 +18,7 @@ final class ArmadaColorSettingsPage implements ColorSettingsPage {
     private static final AttributesDescriptor[] DESCRIPTORS = new AttributesDescriptor[]{
             new AttributesDescriptor("CSS percent", TextAttributeKeys.CSS_PERCENT),
             new AttributesDescriptor("CSS identifier term", TextAttributeKeys.CSS_IDENTIFIER_TERM),
+            new AttributesDescriptor("JavaScript function/method declaration identifier", TextAttributeKeys.JAVASCRIPT_FUNCTION_DECLARATION_IDENTIFIER),
             new AttributesDescriptor("JavaScript this identifier", TextAttributeKeys.JAVASCRIPT_THIS_IDENTIFIER),
             new AttributesDescriptor("JavaScript property reference", TextAttributeKeys.JAVASCRIPT_PROPERTY_REFERENCE),
             new AttributesDescriptor("Properties string literal value", TextAttributeKeys.PROPERTIES_STRING_LITERAL_VALUE),
@@ -49,6 +50,7 @@ final class ArmadaColorSettingsPage implements ColorSettingsPage {
                 width: 100%; // CSS Percent
                 
                 // JavaScript
+                function myFunc() {} // JavaScript Function Declaration Identifier
                 this // JavaScript This Identifier
                 a.b.c // JavaScript Property Reference
                 

@@ -17,3 +17,22 @@ fun getAncestor(element: PsiElement, ancestorType: Class<out PsiElement>): PsiEl
     }
     return null
 }
+
+fun hasSibling(element: PsiElement, siblingType: Class<out PsiElement>, lookBehind: Boolean = false): Boolean {
+    return getNearestSibling(element, siblingType, lookBehind) != null
+}
+
+fun getNearestSibling(
+    element: PsiElement,
+    siblingType: Class<out PsiElement>,
+    lookBehind: Boolean
+): PsiElement? {
+    var current: PsiElement? = if (lookBehind) element.prevSibling else element.nextSibling
+    while (current != null) {
+        if (siblingType.isInstance(current)) {
+            return current
+        }
+        current = if (lookBehind) current.prevSibling else current.nextSibling
+    }
+    return null
+}
