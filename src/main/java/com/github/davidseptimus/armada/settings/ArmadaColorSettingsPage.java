@@ -16,11 +16,14 @@ import java.util.Map;
 final class ArmadaColorSettingsPage implements ColorSettingsPage {
 
     private static final AttributesDescriptor[] DESCRIPTORS = new AttributesDescriptor[]{
+            new AttributesDescriptor("CSS percent", TextAttributeKeys.CSS_PERCENT),
+            new AttributesDescriptor("CSS identifier term", TextAttributeKeys.CSS_IDENTIFIER_TERM),
             new AttributesDescriptor("JavaScript this identifier", TextAttributeKeys.JAVASCRIPT_THIS_IDENTIFIER),
             new AttributesDescriptor("JavaScript property reference", TextAttributeKeys.JAVASCRIPT_PROPERTY_REFERENCE),
             new AttributesDescriptor("Properties string literal value", TextAttributeKeys.PROPERTIES_STRING_LITERAL_VALUE),
             new AttributesDescriptor("XML DocType", TextAttributeKeys.XML_DOCTYPE),
             new AttributesDescriptor("YAML alias", TextAttributeKeys.YAML_ALIAS),
+            new AttributesDescriptor("YAML single quoted string", TextAttributeKeys.YAML_SINGLE_QUOTED_STRING),
             new AttributesDescriptor("Zig field/argument type", TextAttributeKeys.ZIG_FIELD_TYPE),
             new AttributesDescriptor("Zig return type identifier", TextAttributeKeys.ZIG_RETURN_TYPE_IDENTIFIER),
     };
@@ -37,7 +40,33 @@ final class ArmadaColorSettingsPage implements ColorSettingsPage {
 
     @Override
     public @NonNls @NotNull String getDemoText() {
-        return "No demo text available";
+        return """
+                Sample text for reference. No syntax highlighting is applied.
+                
+                // CSS
+                color: --someColor; // CSS Identifier Term
+                width: 100%; // CSS Percent
+                
+                // JavaScript
+                this // JavaScript This Identifier
+                a.b.c // JavaScript Property Reference
+                
+                // Properties
+                a = "b" // Properties String Literal Value
+                
+                // XML
+                <!DOCTYPE html> // XML DocType
+                
+                // YAML
+                a: *alias // YAML Alias
+                b: 'string' // YAML Single Quoted String
+                
+                // Zig
+                field: ?*Node // Zig Field/Argument Type
+                pub fn myFunc() SomeError.Variant!void { // Zig Return Type Identifier
+                    return null;
+                }
+                """;
     }
 
     @Nullable

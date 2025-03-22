@@ -31,7 +31,7 @@ class ZigAnnotator : Annotator {
                     doAnnotate(
                         identifier,
                         holder,
-                        fieldTypeAttributes,
+                        TextAttributeKeys.ZIG_FIELD_TYPE,
                     )
                     return true
                 }
@@ -44,7 +44,7 @@ class ZigAnnotator : Annotator {
                     doAnnotate(
                         typeExpr,
                         holder,
-                        fieldTypeAttributes,
+                        TextAttributeKeys.ZIG_FIELD_TYPE,
                     )
                 }
                 return children.isNotEmpty()
@@ -54,7 +54,7 @@ class ZigAnnotator : Annotator {
                 doAnnotate(
                     element,
                     holder,
-                    fieldTypeAttributes,
+                    TextAttributeKeys.ZIG_FIELD_TYPE,
                 )
                 return true
             }
@@ -69,16 +69,16 @@ class ZigAnnotator : Annotator {
                 doAnnotate(
                     element,
                     holder,
-                    returnTypeIdentifierAttributes,
+                    TextAttributeKeys.ZIG_RETURN_TYPE_IDENTIFIER,
                 )
             }
 
             element is ZigErrorUnionExpr && element.parent is ZigFnProto -> {
-                handleErrorUnionExpr(element, holder, returnTypeIdentifierAttributes)
+                handleErrorUnionExpr(element, holder, TextAttributeKeys.ZIG_RETURN_TYPE_IDENTIFIER)
             }
 
             element is ZigSuffixExpr && element.parent is ZigFnProto -> {
-                handleSuffixExpr(element, holder, returnTypeIdentifierAttributes)
+                handleSuffixExpr(element, holder, TextAttributeKeys.ZIG_RETURN_TYPE_IDENTIFIER)
             }
         }
     }
@@ -169,11 +169,8 @@ class ZigAnnotator : Annotator {
         }
 
         holder.newSilentAnnotation(severity)
-            .range(resolvedRange!!)
+            .range(resolvedRange)
             .textAttributes(attribute)
             .create()
     }
 }
-
-val fieldTypeAttributes: TextAttributesKey = TextAttributeKeys.ZIG_FIELD_TYPE
-val returnTypeIdentifierAttributes: TextAttributesKey = TextAttributeKeys.ZIG_RETURN_TYPE_IDENTIFIER

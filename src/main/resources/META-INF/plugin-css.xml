@@ -1,0 +1,5 @@
+<idea-plugin>
+  <extensions defaultExtensionNs="com.intellij">
+    <annotator language="CSS" implementationClass="com.github.davidseptimus.armada.annotators.CSSAnnotator"/>
+  </extensions>
+</idea-plugin>
