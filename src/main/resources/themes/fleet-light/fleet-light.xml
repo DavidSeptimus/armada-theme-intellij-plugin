@@ -74,6 +74,12 @@
         <option name="FONT_TYPE" value="1"/>
       </value>
     </option>
+    <option name="BAD_CHARACTER">
+      <value>
+        <option name="EFFECT_COLOR" value="d73251"/>
+        <option name="EFFECT_TYPE" value="4"/>
+      </value>
+    </option>
     <option name="BREADCRUMBS_CURRENT">
       <value>
         <option name="FOREGROUND" value="0"/>
@@ -287,13 +293,14 @@
     </option>
     <option name="DEFAULT_INTERFACE_NAME">
       <value>
-        <option name="FOREGROUND" value="2b59c2"/>
+        <option name="FOREGROUND" value="1749bd"/>
       </value>
     </option>
     <option name="DEFAULT_INVALID_STRING_ESCAPE">
       <value>
         <option name="FOREGROUND" value="67d17"/>
-        <option name="BACKGROUND" value="ffcccc"/>
+        <option name="EFFECT_COLOR" value="d73251"/>
+        <option name="EFFECT_TYPE" value="4"/>
       </value>
     </option>
     <option name="DEFAULT_KEYWORD">
@@ -693,6 +700,45 @@
     <option name="PROPERTIES.VALUE">
       <value>
         <option name="FOREGROUND" value="90909"/>
+      </value>
+    </option>
+    <option name="PY.BUILTIN_NAME">
+      <value>
+        <option name="FOREGROUND" value="1749bd"/>
+      </value>
+    </option>
+    <option name="PY.DECORATOR">
+      <value>
+        <option name="FOREGROUND" value="5511bf"/>
+      </value>
+    </option>
+    <option name="PY.FSTRING_FRAGMENT_BRACES">
+      <value/>
+    </option>
+    <option name="PY.KEYWORD_ARGUMENT">
+      <value/>
+    </option>
+    <option name="PY.PREDEFINED_DEFINITION">
+      <value>
+        <option name="FOREGROUND" value="a31d8d"/>
+      </value>
+    </option>
+    <option name="PY.PREDEFINED_USAGE">
+      <value>
+        <option name="FOREGROUND" value="a31d8d"/>
+      </value>
+    </option>
+    <option name="PY.SELF_PARAMETER">
+      <value/>
+    </option>
+    <option name="PY.TYPE_ANNOTATION">
+      <value>
+        <option name="FOREGROUND" value="1749bd"/>
+      </value>
+    </option>
+    <option name="PY.TYPE_PARAMETER">
+      <value>
+        <option name="FOREGROUND" value="664229"/>
       </value>
     </option>
     <option name="RECORD_COMPONENT_ATTRIBUTES">
