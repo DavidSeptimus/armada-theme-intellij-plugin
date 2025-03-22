@@ -151,13 +151,7 @@
       "visitedForeground": "Blue_80",
       "pressedForeground": "Blue_110"
     },
-    "CheckBox": {
-      "disabledText": "Neutral_110",
-      "foreground": "Neutral_10",
-      "borderInsets": "4,4,4,4",
-      "iconSize": 24,
-      "textIconGap": 4
-    },
+
     "DragAndDrop": {
       "areaBackground": "BlueTint_15",
       "borderColor": "Blue_100",
