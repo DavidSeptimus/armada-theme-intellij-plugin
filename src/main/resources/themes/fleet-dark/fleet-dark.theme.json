@@ -209,11 +209,22 @@
     },
     "ToolTip": {
       "background": "Neutral_40",
-      "borderColor": "Transparent"
+      "borderColor": "Transparent",
+      "foreground": "Neutral_140",
+      "infoForeground": "Neutral_130",
+      "linkForeground": "Blue_110"
     },
     "GotItTooltip": {
-      "background": "Neutral_30",
-      "borderColor": "Transparent"
+      "background": "Neutral_40",
+      "borderColor": "Transparent",
+      "Button": {
+        "startBackground": "Blue_90",
+        "endBackground": "Blue_90",
+        "startBorderColor": "Transparent",
+        "endBorderColor": "Transparent"
+      },
+      "Header.foreground": "Neutral_140",
+      "secondaryActionForeground": "Blue_110"
     },
     "Menu": {
       "background": "Neutral_30"
@@ -297,7 +308,6 @@
       "errorBackground": "Red_40"
     },
     "SpeedSearch.errorForeground": "Red_110",
-
     "Counter": {
       "background": "LightTint_20"
     },
