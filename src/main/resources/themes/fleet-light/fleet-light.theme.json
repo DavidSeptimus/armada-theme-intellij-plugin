@@ -239,10 +239,20 @@
       "linkForeground": "Blue_110"
     },
     "GotItTooltip": {
-      "background": "Neutral_30",
-      "borderColor": "Transparent",
-      "foreground": "White",
-      "linkForeground": "Blue_110"
+      "background": "White",
+      "borderColor": "Neutral_130",
+      "foreground": "Neutral_10",
+      "linkForeground": "Blue_70",
+      "secondaryActionForeground": "Blue_70",
+      "Header.foreground": "Neutral_10",
+
+      "Button": {
+        "startBackground": "Blue_90",
+        "endBackground": "Blue_90",
+        "startBorderColor": "Transparent",
+        "endBorderColor": "Transparent",
+        "foreground": "White"
+      }
     },
     "Menu": {
       "background": "White",
@@ -274,7 +284,7 @@
     "Separator.separatorColor": "Neutral_140",
     "Notification": {
       "background": "White",
-      "borderColor": "Neutral_140",
+      "borderColor": "Neutral_130",
       "errorBackground": "Red_150",
       "errorBorderColor": "Red_120"
     },
