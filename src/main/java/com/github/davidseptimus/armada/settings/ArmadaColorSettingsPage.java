@@ -21,6 +21,7 @@ final class ArmadaColorSettingsPage implements ColorSettingsPage {
             new AttributesDescriptor("JavaScript this identifier", TextAttributeKeys.JAVASCRIPT_THIS_IDENTIFIER),
             new AttributesDescriptor("JavaScript property reference", TextAttributeKeys.JAVASCRIPT_PROPERTY_REFERENCE),
             new AttributesDescriptor("Properties string literal value", TextAttributeKeys.PROPERTIES_STRING_LITERAL_VALUE),
+            new AttributesDescriptor("Python type annotation", TextAttributeKeys.PYTHON_TYPE_ANNOTATION),
             new AttributesDescriptor("XML DocType", TextAttributeKeys.XML_DOCTYPE),
             new AttributesDescriptor("YAML alias", TextAttributeKeys.YAML_ALIAS),
             new AttributesDescriptor("YAML single quoted string", TextAttributeKeys.YAML_SINGLE_QUOTED_STRING),
@@ -53,6 +54,10 @@ final class ArmadaColorSettingsPage implements ColorSettingsPage {
                 
                 // Properties
                 a = "b" // Properties String Literal Value
+                
+                // Python
+                def my_func(arg1: MyType) -> None: // Python Type Annotation
+                    pass
                 
                 // XML
                 <!DOCTYPE html> // XML DocType

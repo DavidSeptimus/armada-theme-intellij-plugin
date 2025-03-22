@@ -1,4 +1,3 @@
-
 package com.github.davidseptimus.armada.annotators
 
 import com.github.davidseptimus.armada.settings.TextAttributeKeys
@@ -30,7 +29,7 @@ class JavaScriptAnnotator : Annotator {
         if (element is JSThisExpression) {
             holder.newSilentAnnotation(HighlightSeverity.INFORMATION)
                 .range(TextRange(element.textRange.startOffset, element.textRange.endOffset))
-                .textAttributes(thisIdentifierAttributes)
+                .textAttributes(TextAttributeKeys.JAVASCRIPT_THIS_IDENTIFIER)
                 .create()
         }
     }
@@ -38,8 +37,8 @@ class JavaScriptAnnotator : Annotator {
 
     private fun annotatePropertyReference(element: PsiElement, holder: AnnotationHolder) {
 
-        if (element is JSReferenceExpression && element.lastChild is  PsiElement && element.lastChild.elementType == JSTokenTypes.IDENTIFIER) {
-           if (element.parent is JSCallExpression) {
+        if (element is JSReferenceExpression && element.lastChild is PsiElement && element.lastChild.elementType == JSTokenTypes.IDENTIFIER) {
+            if (element.parent is JSCallExpression) {
                 // Skip if the parent is a call expression since it is a function call, not a property reference
                 return
             }
@@ -47,12 +46,9 @@ class JavaScriptAnnotator : Annotator {
             val identifier = element.lastChild
             holder.newSilentAnnotation(HighlightSeverity.INFORMATION)
                 .range(TextRange(identifier.textRange.startOffset, identifier.textRange.endOffset))
-                .textAttributes(propertyReferenceAttributes)
+                .textAttributes(TextAttributeKeys.JAVASCRIPT_PROPERTY_REFERENCE)
                 .create()
             return
         }
     }
 }
-
-val propertyReferenceAttributes: TextAttributesKey = TextAttributeKeys.JAVASCRIPT_PROPERTY_REFERENCE
-val thisIdentifierAttributes: TextAttributesKey = TextAttributeKeys.JAVASCRIPT_THIS_IDENTIFIER

@@ -34,10 +34,8 @@ class XmlAnnotator : Annotator {
         ) {
             holder.newSilentAnnotation(HighlightSeverity.INFORMATION)
                 .range(TextRange(element.textRange.startOffset, element.textRange.endOffset))
-                .textAttributes(doctypeAttributes)
+                .textAttributes(TextAttributeKeys.XML_DOCTYPE)
                 .create()
         }
     }
 }
-
-val doctypeAttributes: TextAttributesKey = TextAttributeKeys.XML_DOCTYPE
