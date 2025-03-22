@@ -9,12 +9,12 @@
   <option name="EDITOR_FONT_NAME" value="JetBrains Mono"/>
   <option name="EDITOR_LIGATURES" value="true"/>
   <colors>
-    <option name="ADDED_LINES_COLOR" value="7FC784"/>
-    <option name="ANNOTATIONS_COLOR" value="5A5D6B"/>
-    <option name="ANNOTATIONS_LAST_COMMIT_COLOR" value="000000"/>
+    <option name="ADDED_LINES_COLOR" value="409D78"/>
+    <option name="ANNOTATIONS_COLOR" value="18191B"/>
+    <option name="ANNOTATIONS_LAST_COMMIT_COLOR" value="090909"/>
     <option name="CARET_COLOR" value="090909"/>
     <option name="CARET_ROW_COLOR" value="E5F0FC"/>
-    <option name="DELETED_LINES_COLOR" value="767A8A"/>
+    <option name="DELETED_LINES_COLOR" value="D73251"/>
     <option name="DIFF_SEPARATORS_BACKGROUND" value="E4E6EB"/>
     <option name="DOCUMENTATION_COLOR" value="FFFFFF"/>
     <option name="ERROR_HINT" value="FFE8E8"/>
@@ -37,9 +37,9 @@
     <option name="FILESTATUS_modifiedOutside" value="0033B3"/>
     <option name="FOLDED_TEXT_BORDER_COLOR" value="3691F9"/>
     <option name="GUTTER_BACKGROUND" value="FFFFFF"/>
-    <option name="IGNORED_ADDED_LINES_BORDER_COLOR" value="7FC784"/>
-    <option name="IGNORED_DELETED_LINES_BORDER_COLOR" value="767A8A"/>
-    <option name="IGNORED_MODIFIED_LINES_BORDER_COLOR" value="88ADF7"/>
+    <option name="IGNORED_ADDED_LINES_BORDER_COLOR" value="409D78"/>
+    <option name="IGNORED_DELETED_LINES_BORDER_COLOR" value="D73251"/>
+    <option name="IGNORED_MODIFIED_LINES_BORDER_COLOR" value="0870E4"/>
     <option name="INDENT_GUIDE" value="EBECF0"/>
     <option name="INFORMATION_HINT" value="FFFFFF"/>
     <option name="LINE_NUMBERS_COLOR" value="AEB3C2"/>
@@ -47,7 +47,7 @@
     <option name="LOOKUP_COLOR" value="FFFFFF"/>
     <option name="MATCHED_BRACES_INDENT_GUIDE_COLOR" value="A0D8D5"/>
     <option name="METHOD_SEPARATORS_COLOR" value="DFE1E5"/>
-    <option name="MODIFIED_LINES_COLOR" value="88ADF7"/>
+    <option name="MODIFIED_LINES_COLOR" value="0870E4"/>
     <option name="NOTIFICATION_BACKGROUND" value="FFF8E3"/>
     <option name="PROMOTION_PANE" value="E7EFFD"/>
     <option name="QUESTION_HINT" value="F5F8FE"/>
@@ -57,14 +57,14 @@
     <option name="SELECTION_BACKGROUND" value="A8C6F4"/>
     <option name="SELECTION_FOREGROUND" value=""/>
     <option name="TEARLINE_COLOR" value="D4D4D4"/>
-    <option name="VCS_ANNOTATIONS_COLOR_1" value="A1BEF7"/>
-    <option name="VCS_ANNOTATIONS_COLOR_2" value="C9DAFB"/>
-    <option name="VCS_ANNOTATIONS_COLOR_3" value="DEE8FC"/>
-    <option name="VCS_ANNOTATIONS_COLOR_4" value="EDF2FA"/>
-    <option name="VCS_ANNOTATIONS_COLOR_5" value="F7F8FA"/>
+    <option name="VCS_ANNOTATIONS_COLOR_1" value="71A3EF"/>
+    <option name="VCS_ANNOTATIONS_COLOR_2" value="A8C6F4"/>
+    <option name="VCS_ANNOTATIONS_COLOR_3" value="D6E3F9"/>
+    <option name="VCS_ANNOTATIONS_COLOR_4" value="E9EFFC"/>
+    <option name="VCS_ANNOTATIONS_COLOR_5" value="F7F8FE"/>
     <option name="VISUAL_INDENT_GUIDE" value="DAE6FD"/>
     <option name="WHITESPACES" value="18191B4D"/>
-    <option name="WHITESPACES_MODIFIED_LINES_COLOR" value="F7E2CB"/>
+    <option name="WHITESPACES_MODIFIED_LINES_COLOR" value="A8C6F4"/>
   </colors>
   <attributes>
     <option name="ANNOTATION_NAME_ATTRIBUTES" baseAttributes="DEFAULT_METADATA"/>
@@ -105,6 +105,106 @@
     <option name="CODE_LENS_BORDER_COLOR">
       <value>
         <option name="EFFECT_COLOR" value="818594"/>
+      </value>
+    </option>
+    <option name="CONSOLE_BLACK_OUTPUT">
+      <value>
+        <option name="FOREGROUND" value="000000"/>
+      </value>
+    </option>
+    <option name="CONSOLE_BLUE_BRIGHT_OUTPUT">
+      <value>
+        <option name="FOREGROUND" value="0073FF"/>
+      </value>
+    </option>
+    <option name="CONSOLE_BLUE_OUTPUT">
+      <value>
+        <option name="FOREGROUND" value="1D61BA"/>
+      </value>
+    </option>
+    <option name="CONSOLE_CYAN_BRIGHT_OUTPUT">
+      <value>
+        <option name="FOREGROUND" value="24E0FF"/>
+      </value>
+    </option>
+    <option name="CONSOLE_CYAN_OUTPUT">
+      <value>
+        <option name="FOREGROUND" value="0A8282"/>
+      </value>
+    </option>
+    <option name="CONSOLE_DARKGRAY_OUTPUT">
+      <value>
+        <option name="FOREGROUND" value="B7B7B7"/>
+      </value>
+    </option>
+    <option name="CONSOLE_ERROR_OUTPUT">
+      <value>
+        <option name="FOREGROUND" value="C72C49"/>
+      </value>
+    </option>
+    <option name="CONSOLE_GRAY_OUTPUT">
+      <value>
+        <option name="FOREGROUND" value="898989"/>
+      </value>
+    </option>
+    <option name="CONSOLE_GREEN_BRIGHT_OUTPUT">
+      <value>
+        <option name="FOREGROUND" value="33F253"/>
+      </value>
+    </option>
+    <option name="CONSOLE_GREEN_OUTPUT">
+      <value>
+        <option name="FOREGROUND" value="4DBB5F"/>
+      </value>
+    </option>
+    <option name="CONSOLE_MAGENTA_BRIGHT_OUTPUT">
+      <value>
+        <option name="FOREGROUND" value="CC26FF"/>
+      </value>
+    </option>
+    <option name="CONSOLE_MAGENTA_OUTPUT">
+      <value>
+        <option name="FOREGROUND" value="CC37FA"/>
+      </value>
+    </option>
+    <option name="CONSOLE_NORMAL_OUTPUT">
+      <value>
+        <option name="FOREGROUND" value="90909"/>
+      </value>
+    </option>
+    <option name="CONSOLE_RED_BRIGHT_OUTPUT">
+      <value>
+        <option name="FOREGROUND" value="FCA4A7"/>
+      </value>
+    </option>
+    <option name="CONSOLE_RED_OUTPUT">
+      <value>
+        <option name="FOREGROUND" value="C72C49"/>
+      </value>
+    </option>
+    <option name="CONSOLE_SYSTEM_OUTPUT">
+      <value>
+        <option name="FOREGROUND" value="4DBB5F"/>
+      </value>
+    </option>
+    <option name="CONSOLE_USER_INPUT">
+      <value>
+        <option name="FOREGROUND" value="90909"/>
+      </value>
+    </option>
+    <option name="CONSOLE_WHITE_OUTPUT">
+      <value>
+        <option name="FOREGROUND" value="FFFFFF"/>
+      </value>
+    </option>
+    <option name="CONSOLE_YELLOW_BRIGHT_OUTPUT">
+      <value>
+        <option name="FOREGROUND" value="FFD83B"/>
+      </value>
+    </option>
+    <option name="CONSOLE_YELLOW_OUTPUT">
+      <value>
+        <option name="FOREGROUND" value="B0993C"/>
       </value>
     </option>
     <option name="CONSTRUCTOR_CALL_ATTRIBUTES">
@@ -379,10 +479,32 @@
         <option name="EFFECT_TYPE" value="3"/>
       </value>
     </option>
+    <option name="DIFF_CONFLICT">
+      <value>
+        <option name="FOREGROUND" value="9F680C33"/>
+        <option name="BACKGROUND" value="9F680C4D"/>
+        <option name="ERROR_STRIPE_COLOR" value="CD984D"/>
+      </value>
+    </option>
+    <option name="DIFF_DELETED">
+      <value>
+        <option name="FOREGROUND" value="D732511A"/>
+        <option name="BACKGROUND" value="D732514D"/>
+        <option name="ERROR_STRIPE_COLOR" value="F87C88"/>
+      </value>
+    </option>
+    <option name="DIFF_INSERTED">
+      <value>
+        <option name="FOREGROUND" value="14835E1A"/>
+        <option name="BACKGROUND" value="14835E33"/>
+        <option name="ERROR_STRIPE_COLOR" value="69B090"/>
+      </value>
+    </option>
     <option name="DIFF_MODIFIED">
       <value>
-        <option name="BACKGROUND" value="c2d8f2"/>
-        <option name="ERROR_STRIPE_COLOR" value="b6d2f2"/>
+        <option name="FOREGROUND" value="0870E426"/>
+        <option name="BACKGROUND" value="0870E44D"/>
+        <option name="ERROR_STRIPE_COLOR" value="71A3EF"/>
       </value>
     </option>
     <option name="DOC_CODE_BLOCK">

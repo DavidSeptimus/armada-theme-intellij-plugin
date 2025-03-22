@@ -280,7 +280,12 @@
       "background": "White",
       "borderColor": "Neutral_130",
       "errorBackground": "Red_150",
-      "errorBorderColor": "Red_120"
+      "errorBorderColor": "Red_120",
+      "Button": {
+        "background": "Blue_90",
+        "foreground": "White",
+        "borderColor": "Transparent"
+      }
     },
     "NotificationsToolwindow": {
       "newNotification": {
@@ -294,11 +299,6 @@
       "focusedBorderColor": "Blue_100",
       "errorFocusColor": "Red_100",
       "inactiveErrorFocusColor": "Red_80"
-    },
-    "RadioButton": {
-      "borderInsets": "4,4,4,4",
-      "iconSize": 24,
-      "iconTextGap": 4
     },
     "Plugins": {
       "Button": {
