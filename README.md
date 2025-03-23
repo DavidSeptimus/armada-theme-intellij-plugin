@@ -26,6 +26,7 @@ Language-specific colors have been added for the following languages so far:
 | Java       | ✅           | ✅          |
 | JavaScript | ✅           | ✅          |
 | JSON       | ✅           | ✅          |
+| Kotlin     | ❌           | ✅          |
 | HTML       | ✅           | ✅          |
 | Python     | ✅           | ✅          |
 | Properties | ✅           | ✅          |

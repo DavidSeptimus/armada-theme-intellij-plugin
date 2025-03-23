@@ -8,6 +8,7 @@
   <depends>com.intellij.modules.platform</depends>
   <depends optional="true" config-file="plugin-css.xml">com.intellij.css</depends>
   <depends optional="true" config-file="plugin-javascript.xml">JavaScript</depends>
+  <depends optional="true" config-file="plugin-kotlin.xml">com.intellij.modules.kotlin.k2</depends>
   <depends optional="true" config-file="plugin-properties.xml">com.intellij.properties</depends>
   <depends optional="true" config-file="plugin-python.xml">PythonCore</depends>
   <depends optional="true" config-file="plugin-yaml.xml">org.jetbrains.plugins.yaml</depends>
@@ -32,6 +33,7 @@
         implementation="com.github.davidseptimus.armada.settings.ArmadaColorSettingsPage" />
 
     <annotator language="XML" implementationClass="com.github.davidseptimus.armada.annotators.XmlAnnotator"/>
+
   </extensions>
 
 </idea-plugin>

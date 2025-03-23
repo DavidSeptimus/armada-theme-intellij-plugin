@@ -21,6 +21,7 @@ final class ArmadaColorSettingsPage implements ColorSettingsPage {
             new AttributesDescriptor("JavaScript function/method declaration identifier", TextAttributeKeys.JAVASCRIPT_FUNCTION_DECLARATION_IDENTIFIER),
             new AttributesDescriptor("JavaScript this identifier", TextAttributeKeys.JAVASCRIPT_THIS_IDENTIFIER),
             new AttributesDescriptor("JavaScript property reference", TextAttributeKeys.JAVASCRIPT_PROPERTY_REFERENCE),
+            new AttributesDescriptor("Kotlin label @", TextAttributeKeys.KOTLIN_LABEL_AT),
             new AttributesDescriptor("Properties string literal value", TextAttributeKeys.PROPERTIES_STRING_LITERAL_VALUE),
             new AttributesDescriptor("Python type annotation", TextAttributeKeys.PYTHON_TYPE_ANNOTATION),
             new AttributesDescriptor("XML DocType", TextAttributeKeys.XML_DOCTYPE),
@@ -53,6 +54,13 @@ final class ArmadaColorSettingsPage implements ColorSettingsPage {
                 function myFunc() {} // JavaScript Function Declaration Identifier
                 this // JavaScript This Identifier
                 a.b.c // JavaScript Property Reference
+                
+                // Kotlin
+                ints.forEach lit@ {                 // Kotlin Label @
+                    if (it == null) return @lit
+                        println(it + ref)
+                    }
+                }
                 
                 // Properties
                 a = "b" // Properties String Literal Value

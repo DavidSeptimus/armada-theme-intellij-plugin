@@ -542,7 +542,7 @@
     </option>
     <option name="DEPRECATED_ATTRIBUTES">
       <value>
-        <option name="EFFECT_COLOR" value="9c9ea0"/>
+        <option name="EFFECT_COLOR" value="e0e1e4"/>
         <option name="EFFECT_TYPE" value="3"/>
       </value>
     </option>
@@ -688,9 +688,9 @@
     </option>
     <option name="INFO_ATTRIBUTES">
       <value>
-        <option name="EFFECT_COLOR" value="61676d"/>
-        <option name="ERROR_STRIPE_COLOR" value="5a6067"/>
-        <option name="EFFECT_TYPE" value="2"/>
+        <option name="EFFECT_COLOR" value="646b71"/>
+        <option name="ERROR_STRIPE_COLOR" value="5d636b"/>
+        <option name="EFFECT_TYPE" value="4"/>
       </value>
     </option>
     <option name="INJECTED_LANGUAGE_FRAGMENT">
@@ -784,8 +784,136 @@
         <option name="FOREGROUND" value="af9cff"/>
       </value>
     </option>
+    <option name="KOTLIN_ANNOTATION_ATTRIBUTE_NAME_ATTRIBUTES">
+      <value>
+        <option name="FOREGROUND" value="add1de"/>
+      </value>
+    </option>
+    <option name="KOTLIN_BACKING_FIELD_VARIABLE">
+      <value/>
+    </option>
+    <option name="KOTLIN_DYNAMIC_FUNCTION_CALL">
+      <value>
+        <option name="FOREGROUND" value="ebc88d"/>
+      </value>
+    </option>
+    <option name="KOTLIN_DYNAMIC_PROPERTY_CALL">
+      <value/>
+    </option>
+    <option name="KOTLIN_ENUM_ENTRY">
+      <value>
+        <option name="FOREGROUND" value="af9cff"/>
+        <option name="FONT_TYPE" value="2"/>
+      </value>
+    </option>
+    <option name="KOTLIN_FUNCTION_DECLARATION">
+      <value>
+        <option name="FONT_TYPE" value="1"/>
+      </value>
+    </option>
     <option name="KOTLIN_LABEL">
       <value/>
+    </option>
+    <option name="KOTLIN_LABEL_AT">
+      <value>
+        <option name="FOREGROUND" value="a8cc7c"/>
+      </value>
+    </option>
+    <option name="KOTLIN_MUTABLE_VARIABLE">
+      <value>
+        <option name="EFFECT_COLOR" value="555558"/>
+        <option name="EFFECT_TYPE" value="1"/>
+      </value>
+    </option>
+    <option name="KOTLIN_NAMED_ARGUMENT">
+      <value>
+        <option name="FOREGROUND" value="add1de"/>
+      </value>
+    </option>
+    <option name="KOTLIN_PACKAGE_FUNCTION_CALL">
+      <value>
+        <option name="FOREGROUND" value="ebc88d"/>
+      </value>
+    </option>
+    <option name="KOTLIN_PACKAGE_PROPERTY">
+      <value>
+        <option name="FOREGROUND" value="af9cff"/>
+        <option name="FONT_TYPE" value="2"/>
+        <option name="EFFECT_COLOR" value="555558"/>
+        <option name="EFFECT_TYPE" value="1"/>
+      </value>
+    </option>
+    <option name="KOTLIN_SMART_CAST_RECEIVER">
+      <value>
+        <option name="BACKGROUND" value="1f392d"/>
+      </value>
+    </option>
+    <option name="KOTLIN_SMART_CAST_VALUE">
+      <value>
+        <option name="BACKGROUND" value="1f392d"/>
+      </value>
+    </option>
+    <option name="KOTLIN_SMART_CONSTANT">
+      <value>
+        <option name="BACKGROUND" value="1f392d"/>
+      </value>
+    </option>
+    <option name="KOTLIN_TYPE_PARAMETER">
+      <value>
+        <option name="FOREGROUND" value="add1de"/>
+      </value>
+    </option>
+    <option name="KOTLIN_VARIABLE_AS_FUNCTION">
+      <value/>
+    </option>
+    <option name="KOTLIN_VARIABLE_AS_FUNCTION_LIKE">
+      <value/>
+    </option>
+    <option name="KOTLIN_MUTABLE_VARIABLE">
+      <value>
+        <option name="FONT_TYPE" value="2"/>
+        <option name="EFFECT_TYPE" value="1"/>
+      </value>
+    </option>
+    <option name="KOTLIN_NAMED_ARGUMENT">
+      <value>
+        <option name="FOREGROUND" value="add1de"/>
+      </value>
+    </option>
+    <option name="KOTLIN_PACKAGE_FUNCTION_CALL">
+      <value>
+        <option name="FOREGROUND" value="ebc88d"/>
+      </value>
+    </option>
+    <option name="KOTLIN_SMART_CAST_RECEIVER">
+      <value>
+        <option name="BACKGROUND" value="1f392d"/>
+      </value>
+    </option>
+    <option name="KOTLIN_SMART_CAST_VALUE">
+      <value>
+        <option name="BACKGROUND" value="1f392d"/>
+      </value>
+    </option>
+    <option name="KOTLIN_SMART_CONSTANT">
+      <value>
+        <option name="BACKGROUND" value="1f392d"/>
+      </value>
+    </option>
+    <option name="KOTLIN_TYPE_PARAMETER">
+      <value>
+        <option name="FOREGROUND" value="add1de"/>
+      </value>
+    </option>
+    <option name="KOTLIN_VARIABLE_AS_FUNCTION">
+      <value>
+        <option name="FOREGROUND" value="ebc88d"/>
+      </value>
+    </option>
+    <option name="KOTLIN_VARIABLE_AS_FUNCTION_LIKE">
+      <value>
+        <option name="FOREGROUND" value="ebc88d"/>
+      </value>
     </option>
     <option name="LABEL">
       <value>
@@ -837,8 +965,8 @@
     </option>
     <option name="MARKED_FOR_REMOVAL_ATTRIBUTES">
       <value>
-        <option name="FOREGROUND" value="d6d7da"/>
-        <option name="EFFECT_COLOR" value="9c9ea0"/>
+        <option name="FOREGROUND" value="e0e1e4"/>
+        <option name="EFFECT_COLOR" value="e0e1e4"/>
         <option name="EFFECT_TYPE" value="3"/>
       </value>
     </option>
@@ -1265,9 +1393,9 @@
     </option>
     <option name="WARNING_ATTRIBUTES">
       <value>
-        <option name="EFFECT_COLOR" value="efc262"/>
-        <option name="ERROR_STRIPE_COLOR" value="db8e09"/>
-        <option name="EFFECT_TYPE" value="1"/>
+        <option name="EFFECT_COLOR" value="facb66"/>
+        <option name="ERROR_STRIPE_COLOR" value="e59408"/>
+        <option name="EFFECT_TYPE" value="4"/>
       </value>
     </option>
     <option name="WRITE_IDENTIFIER_UNDER_CARET_ATTRIBUTES">
@@ -1284,7 +1412,8 @@
     <option name="WRONG_REFERENCES_ATTRIBUTES">
       <value>
         <option name="EFFECT_COLOR" value="e1465e"/>
-        <option name="EFFECT_TYPE" value="4"/>      </value>
+        <option name="EFFECT_TYPE" value="4"/>
+      </value>
     </option>
     <option name="XML_ATTRIBUTE_NAME" baseAttributes="DEFAULT_ATTRIBUTE"/>
     <option name="XML_CUSTOM_TAG_NAME">

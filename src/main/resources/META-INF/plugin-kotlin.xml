@@ -1,0 +1,5 @@
+<idea-plugin>
+  <extensions defaultExtensionNs="com.intellij">
+    <annotator language="kotlin" implementationClass="com.github.davidseptimus.armada.annotators.KotlinAnnotator"/>
+  </extensions>
+</idea-plugin>

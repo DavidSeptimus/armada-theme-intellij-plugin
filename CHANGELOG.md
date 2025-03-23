@@ -4,6 +4,14 @@
 
 ## [Unreleased]
 
+### Added 
+
+- Added Kotlin colors to `Fleet Dark (Armada)`
+
+### Changed
+
+- Dark warning decoration colors
+
 ## [0.3.0] - 2025-03-23
 
 ### Added
