@@ -22,6 +22,7 @@
     <option name="CARET_ROW_COLOR" value="152538"/>
     <option name="CONSOLE_BACKGROUND_KEY" value="18191B"/>
     <option name="DELETED_LINES_COLOR" value="D73251"/>
+    <option name="DOC_COMMENT_GUIDE" value="14835E66"/>
     <option name="FILESTATUS_ADDED" value="69B090"/>
     <option name="FILESTATUS_COPIED" value="69B090"/>
     <option name="FILESTATUS_DELETED" value="F87C88"/>
@@ -59,7 +60,6 @@
     <option name="ScrollBar.hoverThumbColor" value="E0E1E433"/>
     <option name="ScrollBar.thumbColor" value="E0E1E426"/>
     <option name="TAB_UNDERLINE" value="10447F"/>
-    <option name="TAB_UNDERLINE_INACTIVE" value=""/>
     <option name="VCS_ANNOTATIONS_COLOR_1" value="916012"/>
     <option name="VCS_ANNOTATIONS_COLOR_2" value="6C4B18"/>
     <option name="VCS_ANNOTATIONS_COLOR_3" value="433016"/>
@@ -83,38 +83,13 @@
     </option>
     <option name="BAD_CHARACTER">
       <value>
-        <option name="BACKGROUND" value="6e3b3b"/>
+        <option name="EFFECT_COLOR" value="ec5d6f"/>
+        <option name="EFFECT_TYPE" value="4"/>
       </value>
     </option>
     <option name="BREAKPOINT_ATTRIBUTES">
       <value>
         <option name="BACKGROUND" value="d73251"/>
-      </value>
-    </option>
-    <option name="BUILDOUT.KEY">
-      <value>
-        <option name="FOREGROUND" value="83d6c5"/>
-      </value>
-    </option>
-    <option name="BUILDOUT.KEY_VALUE_SEPARATOR">
-      <value>
-        <option name="FOREGROUND" value="d6d6dd"/>
-      </value>
-    </option>
-    <option name="BUILDOUT.LINE_COMMENT">
-      <value>
-        <option name="FOREGROUND" value="E0E1E499"/>
-        <option name="FONT_TYPE" value="2"/>
-      </value>
-    </option>
-    <option name="BUILDOUT.SECTION_NAME">
-      <value>
-        <option name="FOREGROUND" value="ebc88d"/>
-      </value>
-    </option>
-    <option name="BUILDOUT.VALUE">
-      <value>
-        <option name="FOREGROUND" value="e394dc"/>
       </value>
     </option>
     <option name="CLASS_REFERENCE">
@@ -231,12 +206,6 @@
     <option name="CONSTRUCTOR_DECLARATION_ATTRIBUTES">
       <value>
         <option name="FONT_TYPE" value="1"/>
-      </value>
-    </option>
-    <option name="CSS.COMMENT">
-      <value>
-        <option name="FOREGROUND" value="E0E1E499"/>
-        <option name="FONT_TYPE" value="2"/>
       </value>
     </option>
     <option name="CSS.FUNCTION">
@@ -402,17 +371,17 @@
     </option>
     <option name="DEFAULT_BLOCK_COMMENT">
       <value>
-        <option name="FOREGROUND" value="E0E1E499"/>
+        <option name="FOREGROUND" value="909194"/>
       </value>
     </option>
     <option name="DEFAULT_BRACES">
       <value>
-        <option name="FOREGROUND" value="d1d1d1"/>
+        <option name="FOREGROUND" value="e0e1e4"/>
       </value>
     </option>
     <option name="DEFAULT_BRACKETS">
       <value>
-        <option name="FOREGROUND" value="d1d1d1"/>
+        <option name="FOREGROUND" value="e0e1e4"/>
       </value>
     </option>
     <option name="DEFAULT_CLASS_NAME">
@@ -422,22 +391,22 @@
     </option>
     <option name="DEFAULT_CLASS_REFERENCE">
       <value>
-        <option name="FOREGROUND" value="efb080"/>
+        <option name="FOREGROUND" value="87c3ff"/>
       </value>
     </option>
     <option name="DEFAULT_COMMA">
       <value>
-        <option name="FOREGROUND" value="d1d1d1"/>
+        <option name="FOREGROUND" value="e0e1e4"/>
       </value>
     </option>
     <option name="DEFAULT_CONSTANT">
       <value>
-        <option name="FOREGROUND" value="d4bfff"/>
+        <option name="FOREGROUND" value="af9cff"/>
       </value>
     </option>
     <option name="DEFAULT_DOC_COMMENT">
       <value>
-        <option name="FOREGROUND" value="E0E1E499"/>
+        <option name="FOREGROUND" value="909194"/>
       </value>
     </option>
     <option name="DEFAULT_DOC_COMMENT_TAG">
@@ -447,12 +416,12 @@
     </option>
     <option name="DEFAULT_DOC_COMMENT_TAG_VALUE">
       <value>
-        <option name="FOREGROUND" value="d6d7da"/>
+        <option name="FOREGROUND" value="e0e1e4"/>
       </value>
     </option>
     <option name="DEFAULT_DOC_MARKUP">
       <value>
-        <option name="FOREGROUND" value="E0E1E499"/>
+        <option name="FOREGROUND" value="e0e1e4"/>
       </value>
     </option>
     <option name="DEFAULT_DOT">
@@ -476,12 +445,12 @@
       </value>
     </option>
     <option name="DEFAULT_HIGHLIGHTED_REFERENCE" baseAttributes="DEFAULT_STRING"/>
-    <option name="DEFAULT_IDENTIFIER">
+    <option name="DEFAULT_IDENTIFIER" baseAttributes="TEXT"/>
+    <option name="DEFAULT_INSTANCE_FIELD">
       <value>
         <option name="FOREGROUND" value="af9cff"/>
       </value>
     </option>
-    <option name="DEFAULT_INSTANCE_FIELD" baseAttributes="DEFAULT_IDENTIFIER"/>
     <option name="DEFAULT_INTERFACE_NAME">
       <value>
         <option name="FOREGROUND" value="87c3ff"/>
@@ -490,7 +459,7 @@
     <option name="DEFAULT_INVALID_STRING_ESCAPE">
       <value>
         <option name="FOREGROUND" value="82d2ce"/>
-        <option name="EFFECT_COLOR" value="ff0000"/>
+        <option name="EFFECT_COLOR" value="ec5d6f"/>
         <option name="EFFECT_TYPE" value="4"/>
       </value>
     </option>
@@ -501,7 +470,7 @@
     </option>
     <option name="DEFAULT_LINE_COMMENT">
       <value>
-        <option name="FOREGROUND" value="E0E1E499"/>
+        <option name="FOREGROUND" value="909194"/>
       </value>
     </option>
     <option name="DEFAULT_METADATA">
@@ -516,31 +485,36 @@
     </option>
     <option name="DEFAULT_OPERATION_SIGN">
       <value>
-        <option name="FOREGROUND" value="d1d1d1"/>
-      </value>
-    </option>
-    <option name="DEFAULT_PARAMETER">
-      <value>
         <option name="FOREGROUND" value="e0e1e4"/>
       </value>
     </option>
     <option name="DEFAULT_PARENTHS">
       <value>
-        <option name="FOREGROUND" value="d1d1d1"/>
+        <option name="FOREGROUND" value="e0e1e4"/>
       </value>
     </option>
     <option name="DEFAULT_PREDEFINED_SYMBOL">
       <value>
-        <option name="FOREGROUND" value="d4bfff"/>
+        <option name="FOREGROUND" value="82d2ce"/>
       </value>
     </option>
     <option name="DEFAULT_REASSIGNED_LOCAL_VARIABLE" baseAttributes="DEFAULT_LOCAL_VARIABLE"/>
-    <option name="DEFAULT_SEMICOLON">
+    <option name="DEFAULT_REASSIGNED_PARAMETER">
       <value>
-        <option name="FOREGROUND" value="d1d1d1"/>
+        <option name="EFFECT_COLOR" value="646b71"/>
+        <option name="EFFECT_TYPE" value="1"/>
       </value>
     </option>
-    <option name="DEFAULT_STATIC_FIELD" baseAttributes="DEFAULT_IDENTIFIER"/>
+    <option name="DEFAULT_SEMICOLON">
+      <value>
+        <option name="FOREGROUND" value="e0e1e4"/>
+      </value>
+    </option>
+    <option name="DEFAULT_STATIC_FIELD">
+      <value>
+        <option name="FOREGROUND" value="af9cff"/>
+      </value>
+    </option>
     <option name="DEFAULT_STATIC_METHOD" baseAttributes="DEFAULT_FUNCTION_DECLARATION"/>
     <option name="DEFAULT_STRING">
       <value>
@@ -649,12 +623,6 @@
         <option name="EFFECT_TYPE" value="4"/>
       </value>
     </option>
-    <option name="GO_BLOCK_COMMENT">
-      <value>
-        <option name="FOREGROUND" value="E0E1E499"/>
-        <option name="FONT_TYPE" value="2"/>
-      </value>
-    </option>
     <option name="GO_BUILTIN_VARIABLE">
       <value>
         <option name="FOREGROUND" value="d6d6dd"/>
@@ -664,12 +632,6 @@
     <option name="GO_KEYWORD">
       <value>
         <option name="FOREGROUND" value="83d6c5"/>
-      </value>
-    </option>
-    <option name="GO_LINE_COMMENT">
-      <value>
-        <option name="FOREGROUND" value="E0E1E499"/>
-        <option name="FONT_TYPE" value="2"/>
       </value>
     </option>
     <option name="GO_METHOD_RECEIVER">
@@ -686,11 +648,6 @@
     <option name="HTML_ATTRIBUTE_VALUE" baseAttributes="DEFAULT_STRING"/>
     <option name="HTML_CODE">
       <value/>
-    </option>
-    <option name="HTML_COMMENT">
-      <value>
-        <option name="FOREGROUND" value="E0E1E499"/>
-      </value>
     </option>
     <option name="HTML_CUSTOM_TAG_NAME">
       <value>
