@@ -4,6 +4,23 @@
 
 ## [Unreleased]
 
+### Added
+
+- Fleet Light UI and Editor Color Scheme
+- Additional custom highlighting tokens for various languages
+
+### Changed
+
+- Dark UI improvements focusing on tooltips and search options
+- Reworked fleet Dark colors for Java and Python
+- Reworked Default colors for Fleet Dark
+
+### Removed
+
+- Custom colors for languages that are not yet fully supported
+
+### 
+
 ## [0.2.0] - 2025-03-19
 
 ### Added
