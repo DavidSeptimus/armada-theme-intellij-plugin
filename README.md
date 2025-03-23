@@ -17,7 +17,7 @@ Armada is a plugin that aims to faithfully recreate the Fleet's builtin themes f
 
 ### Language Support
 
-Language-specific colors have been added for the following languages:
+Language-specific colors have been added for the following languages so far:
 
 |            | Fleet Light | Fleet Dark |
 |------------|-------------|------------|
@@ -29,7 +29,6 @@ Language-specific colors have been added for the following languages:
 | HTML       | ✅           | ✅          |
 | Python     | ✅           | ✅          |
 | Properties | ✅           | ✅          |
-| Ruby       | ❌           | ✅          |
 | Rust       | ❌           | ✅          |
 | SASS/SCSS  | ✅           | ✅          |
 | Typescript | ✅           | ✅          |
