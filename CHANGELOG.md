@@ -4,6 +4,8 @@
 
 ## [Unreleased]
 
+## [0.3.0] - 2025-03-23
+
 ### Added
 
 - Fleet Light UI and Editor Color Scheme
@@ -18,8 +20,6 @@
 ### Removed
 
 - Custom colors for languages that are not yet fully supported
-
-### 
 
 ## [0.2.0] - 2025-03-19
 
@@ -74,7 +74,8 @@
 - Fleet Dark UI and Editor Color Scheme
 - Plugin Icon
 
-[Unreleased]: https://github.com/DavidSeptimus/armada-theme-intellij-plugin/compare/v0.2.0...HEAD
+[Unreleased]: https://github.com/DavidSeptimus/armada-theme-intellij-plugin/compare/v0.3.0...HEAD
+[0.3.0]: https://github.com/DavidSeptimus/armada-theme-intellij-plugin/compare/v0.2.0...v0.3.0
 [0.2.0]: https://github.com/DavidSeptimus/armada-theme-intellij-plugin/compare/v0.1.0...v0.2.0
 [0.1.0]: https://github.com/DavidSeptimus/armada-theme-intellij-plugin/compare/v0.0.2...v0.1.0
 [0.0.2]: https://github.com/DavidSeptimus/armada-theme-intellij-plugin/commits/v0.0.2
