@@ -679,15 +679,58 @@
         <option name="EFFECT_TYPE" value="4"/>
       </value>
     </option>
-    <option name="GO_BUILTIN_VARIABLE">
+    <option name="GO_BUILTIN_CONSTANT">
       <value>
-        <option name="FOREGROUND" value="d6d6dd"/>
-        <option name="FONT_TYPE" value="2"/>
+        <option name="FOREGROUND" value="82d2ce"/>
       </value>
     </option>
-    <option name="GO_KEYWORD">
+    <option name="GO_BUILTIN_FUNCTION_CALL">
       <value>
-        <option name="FOREGROUND" value="83d6c5"/>
+        <option name="FOREGROUND" value="82d2ce"/>
+      </value>
+    </option>
+    <option name="GO_BUILTIN_TYPE_REFERENCE">
+      <value>
+        <option name="FOREGROUND" value="82d2ce"/>
+      </value>
+    </option>
+    <option name="GO_BUILTIN_VARIABLE">
+      <value>
+        <option name="FOREGROUND" value="82d2ce"/>
+      </value>
+    </option>
+    <option name="GO_EXPORTED_FUNCTION">
+      <value>
+        <option name="FONT_TYPE" value="1"/>
+      </value>
+    </option>
+    <option name="GO_EXPORTED_FUNCTION_CALL">
+      <value>
+        <option name="FOREGROUND" value="ebc88d"/>
+      </value>
+    </option>
+    <option name="GO_EXPORTED_INTERFACE_REFERENCE">
+      <value>
+        <option name="FOREGROUND" value="87c3ff"/>
+      </value>
+    </option>
+    <option name="GO_EXPORTED_STRUCT_REFERENCE">
+      <value>
+        <option name="FOREGROUND" value="87c3ff"/>
+      </value>
+    </option>
+    <option name="GO_LOCAL_FUNCTION">
+      <value/>
+    </option>
+    <option name="GO_LOCAL_FUNCTION_CALL" baseAttributes="DEFAULT_FUNCTION_CALL"/>
+    <option name="GO_LOCAL_INTERFACE_REFERENCE">
+      <value>
+        <option name="FOREGROUND" value="87c3ff"/>
+      </value>
+    </option>
+    <option name="GO_LOCAL_STRUCT_REFERENCE">
+      <value>
+        <option name="FOREGROUND" value="87c3ff"/>
       </value>
     </option>
     <option name="GO_METHOD_RECEIVER">
@@ -697,8 +740,38 @@
     </option>
     <option name="GO_PACKAGE">
       <value>
-        <option name="FOREGROUND" value="efb080"/>
+        <option name="FOREGROUND" value="a8cc7c"/>
       </value>
+    </option>
+    <option name="GO_PACKAGE_EXPORTED_INTERFACE">
+      <value/>
+    </option>
+    <option name="GO_PACKAGE_EXPORTED_STRUCT">
+      <value/>
+    </option>
+    <option name="GO_PACKAGE_LOCAL_INTERFACE">
+      <value/>
+    </option>
+    <option name="GO_PACKAGE_LOCAL_STRUCT">
+      <value/>
+    </option>
+    <option name="GO_SCOPE_VARIABLE">
+      <value>
+        <option name="FOREGROUND" value="e09b70"/>
+      </value>
+    </option>
+    <option name="GO_SHADOWING_VARIABLE">
+      <value>
+        <option name="FOREGROUND" value="e09b70"/>
+      </value>
+    </option>
+    <option name="GO_TYPE_REFERENCE">
+      <value>
+        <option name="FOREGROUND" value="82d2ce"/>
+      </value>
+    </option>
+    <option name="GO_TYPE_SPECIFICATION">
+      <value/>
     </option>
     <option name="HTML_ATTRIBUTE_NAME" baseAttributes="DEFAULT_ATTRIBUTE"/>
     <option name="HTML_ATTRIBUTE_VALUE" baseAttributes="DEFAULT_STRING"/>
