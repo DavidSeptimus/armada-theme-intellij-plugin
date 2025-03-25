@@ -22,7 +22,8 @@ Language-specific colors have been added for the following languages so far:
 |            | Fleet Light | Fleet Dark |
 |------------|-------------|------------|
 | CSS        | ✅           | ✅          |
-| Go         | ❌           | ✅          |
+| Dockerfile | ✅           | ✅          |
+| Go         | ✅           | ✅          |
 | Java       | ✅           | ✅          |
 | JavaScript | ✅           | ✅          |
 | JSON       | ✅           | ✅          |
@@ -33,7 +34,7 @@ Language-specific colors have been added for the following languages so far:
 | Rust       | ❌           | ✅          |
 | SASS/SCSS  | ✅           | ✅          |
 | Typescript | ✅           | ✅          |
-| TOML       | ❌           | ✅          |
+| TOML       | ✅           | ✅          |
 | XML        | ✅           | ✅          |
 | YAML       | ✅           | ✅          |
 | Zig        | ❌           | ✅          |
