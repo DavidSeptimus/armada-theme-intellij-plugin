@@ -13,6 +13,7 @@
 
 - Dark warning decoration colors
 - Reworked dark CSS/SCSS and Go colors
+- Dark border colors
 
 ## [0.3.0] - 2025-03-23
 

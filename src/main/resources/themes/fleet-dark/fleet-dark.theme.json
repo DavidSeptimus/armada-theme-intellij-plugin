@@ -162,7 +162,7 @@
         "selectedForeground": "White"
       },
       "Stripe": {
-        "separatorColor": "Neutral_40",
+        "separatorColor": "Neutral_50",
         "DragAndDrop": {
           "separatorColor": "Blue_90"
         }
@@ -209,14 +209,14 @@
     },
     "ToolTip": {
       "background": "Neutral_40",
-      "borderColor": "Transparent",
+      "borderColor": "#Neutral_50",
       "foreground": "Neutral_140",
       "infoForeground": "Neutral_130",
       "linkForeground": "Blue_110"
     },
     "GotItTooltip": {
       "background": "Neutral_40",
-      "borderColor": "Transparent",
+      "borderColor": "Neutral_50",
       "Button": {
         "startBackground": "Blue_90",
         "endBackground": "Blue_90",
@@ -231,13 +231,13 @@
     },
     "PopupMenu.background": "Neutral_30",
     "MenuItem.background": "Neutral_30",
-    "Menu.separatorColor": "Neutral_40",
+    "Menu.separatorColor": "Neutral_50",
     "ComplexPopup.Header.background": "Neutral_30",
     "Popup.Header.activeBackground": "Neutral_30",
     "Popup.background": "Neutral_30",
-    "Popup.borderColor": "Neutral_40",
-    "Popup.separatorColor": "Neutral_40",
-    "Separator.separatorColor": "Neutral_40",
+    "Popup.borderColor": "Neutral_50",
+    "Popup.separatorColor": "Neutral_50",
+    "Separator.separatorColor": "Neutral_50",
     "Notification": {
       "background": "Neutral_30",
       "borderColor": "Neutral_40",
