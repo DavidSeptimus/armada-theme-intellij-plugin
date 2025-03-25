@@ -10,7 +10,12 @@ import com.intellij.lang.javascript.psi.JSFunction
 import com.intellij.lang.javascript.psi.JSFunctionExpression
 import com.intellij.lang.javascript.psi.JSReferenceExpression
 import com.intellij.lang.javascript.psi.JSThisExpression
+import com.intellij.lang.javascript.psi.JSType
 import com.intellij.lang.javascript.psi.JSVariable
+import com.intellij.lang.javascript.psi.ecma6.JSTypedEntity
+import com.intellij.lang.javascript.psi.ecma6.TypeScriptSingleType
+import com.intellij.lang.javascript.psi.types.typescript.TypeScriptCompilerObjectType
+import com.intellij.lang.javascript.psi.types.typescript.TypeScriptCompilerType
 import com.intellij.openapi.util.TextRange
 import com.intellij.psi.PsiElement
 import com.intellij.psi.util.elementType
@@ -58,12 +63,11 @@ class JavaScriptAnnotator : Annotator {
 
     private fun annotatePropertyReference(element: PsiElement, holder: AnnotationHolder) {
 
-        if (element is JSReferenceExpression && element.lastChild is PsiElement && element.lastChild.elementType == JSTokenTypes.IDENTIFIER) {
-            if (element.parent is JSCallExpression) {
-                // Skip if the parent is a call expression since it is a function call, not a property reference
-                return
-            }
-
+        if (element is JSReferenceExpression
+            && !hasAncestor(element, JSTypedEntity::class.java) // skip type annotations
+            && element.parent!is JSCallExpression // function rather than property reference
+            && element.lastChild.elementType == JSTokenTypes.IDENTIFIER
+            ){
             val identifier = element.lastChild
             holder.newSilentAnnotation(HighlightSeverity.INFORMATION)
                 .range(TextRange(identifier.textRange.startOffset, identifier.textRange.endOffset))

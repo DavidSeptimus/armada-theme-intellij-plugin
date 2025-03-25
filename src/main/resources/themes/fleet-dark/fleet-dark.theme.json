@@ -67,9 +67,9 @@
     "Borders.color": "Neutral_40",
     "ActionButton": {
       "hoverBackground": "LightTint_15",
-      "hoverBorderColor": "Transparent",
+      "hoverBorderColor": "LightTint_2",
       "pressedBackground": "LightTint_30",
-      "pressedBorderColor": "Transparent"
+      "pressedBorderColor": "LightTint_2"
     },
     "DefaultTabs": {
       "background": "Neutral_20",
@@ -514,6 +514,7 @@
     "LightTint_10": "#E0E1E41A",
     "LightTint_8": "#E0E1E414",
     "LightTint_5": "#E0E1E40D",
+    "LightTint_2": "#E0E1E405",
     "DarkTint_70": "#18191BB2",
     "DarkTint_60": "#18191B99",
     "DarkTint_30": "#18191B4D",
