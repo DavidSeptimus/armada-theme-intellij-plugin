@@ -7,10 +7,12 @@
 ### Added 
 
 - Added Kotlin colors to `Fleet Dark (Armada)`
+- Added Docker, Go, and TOML colors to `Fleet Light (Armada)`
 
 ### Changed
 
 - Dark warning decoration colors
+- Reworked dark CSS/SCSS and Go colors
 
 ## [0.3.0] - 2025-03-23
 
