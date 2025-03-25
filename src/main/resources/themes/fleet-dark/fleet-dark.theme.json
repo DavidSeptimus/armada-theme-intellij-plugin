@@ -66,10 +66,10 @@
     },
     "Borders.color": "Neutral_40",
     "ActionButton": {
-      "hoverBackground": "Neutral_40",
-      "hoverBorderColor": "Neutral_40",
-      "pressedBackground": "Neutral_50",
-      "pressedBorderColor": "Neutral_50"
+      "hoverBackground": "LightTint_15",
+      "hoverBorderColor": "Transparent",
+      "pressedBackground": "LightTint_30",
+      "pressedBorderColor": "Transparent"
     },
     "DefaultTabs": {
       "background": "Neutral_20",
