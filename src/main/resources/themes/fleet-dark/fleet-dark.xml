@@ -230,7 +230,7 @@
     </option>
     <option name="CSS.FUNCTION">
       <value>
-        <option name="FOREGROUND" value="c"/>
+        <option name="FOREGROUND" value="af9cff"/>
       </value>
     </option>
     <option name="CSS.HASH">
@@ -722,7 +722,6 @@
     <option name="GO_LOCAL_FUNCTION">
       <value/>
     </option>
-    <option name="GO_LOCAL_FUNCTION_CALL" baseAttributes="DEFAULT_FUNCTION_CALL"/>
     <option name="GO_LOCAL_INTERFACE_REFERENCE">
       <value>
         <option name="FOREGROUND" value="87c3ff"/>
@@ -1366,9 +1365,6 @@
       <value>
         <option name="FOREGROUND" value="e394dc"/>
       </value>
-    </option>
-    <option name="SASS_URL">
-      <value/>
     </option>
     <option name="SASS_VARIABLE">
       <value>
