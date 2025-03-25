@@ -4,7 +4,9 @@
 
 ## [Unreleased]
 
-### Added 
+## [0.3.1] - 2025-03-25
+
+### Added
 
 - Added Kotlin colors to `Fleet Dark (Armada)`
 - Added Docker, Go, and TOML colors to `Fleet Light (Armada)`
@@ -85,7 +87,8 @@
 - Fleet Dark UI and Editor Color Scheme
 - Plugin Icon
 
-[Unreleased]: https://github.com/DavidSeptimus/armada-theme-intellij-plugin/compare/v0.3.0...HEAD
+[Unreleased]: https://github.com/DavidSeptimus/armada-theme-intellij-plugin/compare/v0.3.1...HEAD
+[0.3.1]: https://github.com/DavidSeptimus/armada-theme-intellij-plugin/compare/v0.3.0...v0.3.1
 [0.3.0]: https://github.com/DavidSeptimus/armada-theme-intellij-plugin/compare/v0.2.0...v0.3.0
 [0.2.0]: https://github.com/DavidSeptimus/armada-theme-intellij-plugin/compare/v0.1.0...v0.2.0
 [0.1.0]: https://github.com/DavidSeptimus/armada-theme-intellij-plugin/compare/v0.0.2...v0.1.0
