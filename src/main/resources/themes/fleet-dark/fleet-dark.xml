@@ -430,16 +430,6 @@
         <option name="FOREGROUND" value="909194"/>
       </value>
     </option>
-    <option name="DEFAULT_BRACES">
-      <value>
-        <option name="FOREGROUND" value="e0e1e4"/>
-      </value>
-    </option>
-    <option name="DEFAULT_BRACKETS">
-      <value>
-        <option name="FOREGROUND" value="e0e1e4"/>
-      </value>
-    </option>
     <option name="DEFAULT_CLASS_NAME">
       <value>
         <option name="FOREGROUND" value="87c3ff"/>
@@ -451,9 +441,7 @@
       </value>
     </option>
     <option name="DEFAULT_COMMA">
-      <value>
-        <option name="FOREGROUND" value="e0e1e4"/>
-      </value>
+      <value/>
     </option>
     <option name="DEFAULT_CONSTANT">
       <value>
@@ -478,11 +466,6 @@
     <option name="DEFAULT_DOC_MARKUP">
       <value>
         <option name="FOREGROUND" value="e0e1e4"/>
-      </value>
-    </option>
-    <option name="DEFAULT_DOT">
-      <value>
-        <option name="FOREGROUND" value="d1d1d1"/>
       </value>
     </option>
     <option name="DEFAULT_ENTITY">
@@ -539,16 +522,6 @@
         <option name="FOREGROUND" value="ebc88d"/>
       </value>
     </option>
-    <option name="DEFAULT_OPERATION_SIGN">
-      <value>
-        <option name="FOREGROUND" value="e0e1e4"/>
-      </value>
-    </option>
-    <option name="DEFAULT_PARENTHS">
-      <value>
-        <option name="FOREGROUND" value="e0e1e4"/>
-      </value>
-    </option>
     <option name="DEFAULT_PREDEFINED_SYMBOL">
       <value>
         <option name="FOREGROUND" value="82d2ce"/>
@@ -562,9 +535,7 @@
       </value>
     </option>
     <option name="DEFAULT_SEMICOLON">
-      <value>
-        <option name="FOREGROUND" value="e0e1e4"/>
-      </value>
+      <value/>
     </option>
     <option name="DEFAULT_STATIC_FIELD">
       <value>
@@ -771,6 +742,12 @@
     </option>
     <option name="GO_TYPE_SPECIFICATION">
       <value/>
+    </option>
+    <option name="GRAMMAR_ERROR">
+      <value>
+        <option name="EFFECT_COLOR" value="865a15"/>
+        <option name="EFFECT_TYPE" value="2"/>
+      </value>
     </option>
     <option name="HTML_ATTRIBUTE_NAME" baseAttributes="DEFAULT_ATTRIBUTE"/>
     <option name="HTML_ATTRIBUTE_VALUE" baseAttributes="DEFAULT_STRING"/>
@@ -989,58 +966,6 @@
     <option name="KOTLIN_TYPE_PARAMETER">
       <value>
         <option name="FOREGROUND" value="add1de"/>
-      </value>
-    </option>
-    <option name="KOTLIN_VARIABLE_AS_FUNCTION">
-      <value/>
-    </option>
-    <option name="KOTLIN_VARIABLE_AS_FUNCTION_LIKE">
-      <value/>
-    </option>
-    <option name="KOTLIN_MUTABLE_VARIABLE">
-      <value>
-        <option name="FONT_TYPE" value="2"/>
-        <option name="EFFECT_TYPE" value="1"/>
-      </value>
-    </option>
-    <option name="KOTLIN_NAMED_ARGUMENT">
-      <value>
-        <option name="FOREGROUND" value="add1de"/>
-      </value>
-    </option>
-    <option name="KOTLIN_PACKAGE_FUNCTION_CALL">
-      <value>
-        <option name="FOREGROUND" value="ebc88d"/>
-      </value>
-    </option>
-    <option name="KOTLIN_SMART_CAST_RECEIVER">
-      <value>
-        <option name="BACKGROUND" value="1f392d"/>
-      </value>
-    </option>
-    <option name="KOTLIN_SMART_CAST_VALUE">
-      <value>
-        <option name="BACKGROUND" value="1f392d"/>
-      </value>
-    </option>
-    <option name="KOTLIN_SMART_CONSTANT">
-      <value>
-        <option name="BACKGROUND" value="1f392d"/>
-      </value>
-    </option>
-    <option name="KOTLIN_TYPE_PARAMETER">
-      <value>
-        <option name="FOREGROUND" value="add1de"/>
-      </value>
-    </option>
-    <option name="KOTLIN_VARIABLE_AS_FUNCTION">
-      <value>
-        <option name="FOREGROUND" value="ebc88d"/>
-      </value>
-    </option>
-    <option name="KOTLIN_VARIABLE_AS_FUNCTION_LIKE">
-      <value>
-        <option name="FOREGROUND" value="ebc88d"/>
       </value>
     </option>
     <option name="LABEL">
@@ -1418,9 +1343,14 @@
         <option name="FOREGROUND" value="aaa0fa"/>
       </value>
     </option>
+    <option name="TEMPLATE_VARIABLE_ATTRIBUTES">
+      <value>
+        <option name="FOREGROUND" value="af9cff"/>
+      </value>
+    </option>
     <option name="TEXT">
       <value>
-        <option name="FOREGROUND" value="d6d7da"/>
+        <option name="FOREGROUND" value="e0e1e4"/>
         <option name="BACKGROUND" value="18191b"/>
       </value>
     </option>
@@ -1429,6 +1359,24 @@
         <option name="BACKGROUND" value="9F680C66"/>
         <option name="EFFECT_COLOR" value="9F680C80"/>
         <option name="ERROR_STRIPE_COLOR" value="d49550"/>
+      </value>
+    </option>
+    <option name="TEXT_STYLE_ERROR">
+      <value>
+        <option name="EFFECT_COLOR" value="e09b70"/>
+        <option name="EFFECT_TYPE" value="5"/>
+      </value>
+    </option>
+    <option name="TEXT_STYLE_SUGGESTION">
+      <value>
+        <option name="EFFECT_COLOR" value="87c3ff"/>
+        <option name="EFFECT_TYPE" value="5"/>
+      </value>
+    </option>
+    <option name="TEXT_STYLE_WARNING">
+      <value>
+        <option name="EFFECT_COLOR" value="facb66"/>
+        <option name="EFFECT_TYPE" value="5"/>
       </value>
     </option>
     <option name="TODO_DEFAULT_ATTRIBUTES">
@@ -1466,6 +1414,12 @@
     <option name="TYPE_PARAMETER_NAME_ATTRIBUTES">
       <value>
         <option name="FOREGROUND" value="add1de"/>
+      </value>
+    </option>
+    <option name="TYPO">
+      <value>
+        <option name="EFFECT_COLOR" value="169068"/>
+        <option name="EFFECT_TYPE" value="2"/>
       </value>
     </option>
     <option name="UNMATCHED_BRACE_ATTRIBUTES">
