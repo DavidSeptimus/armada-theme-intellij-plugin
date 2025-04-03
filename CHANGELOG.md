@@ -3,11 +3,16 @@
 # Armada Theme Changelog
 
 ## [Unreleased]
+
+## [0.3.2] - 2025-04-03
+
 ### Fixed
+
 - Action button highlighting in the Fleet Dark UI
 - JS property reference colors incorrectly applyinh to type references
 
 ### Changed
+
 - Darkened documentation popup background color in Fleet Dark UI
 
 ## [0.3.1] - 2025-03-25
@@ -93,7 +98,8 @@
 - Fleet Dark UI and Editor Color Scheme
 - Plugin Icon
 
-[Unreleased]: https://github.com/DavidSeptimus/armada-theme-intellij-plugin/compare/v0.3.1...HEAD
+[Unreleased]: https://github.com/DavidSeptimus/armada-theme-intellij-plugin/compare/v0.3.2...HEAD
+[0.3.2]: https://github.com/DavidSeptimus/armada-theme-intellij-plugin/compare/v0.3.1...v0.3.2
 [0.3.1]: https://github.com/DavidSeptimus/armada-theme-intellij-plugin/compare/v0.3.0...v0.3.1
 [0.3.0]: https://github.com/DavidSeptimus/armada-theme-intellij-plugin/compare/v0.2.0...v0.3.0
 [0.2.0]: https://github.com/DavidSeptimus/armada-theme-intellij-plugin/compare/v0.1.0...v0.2.0
