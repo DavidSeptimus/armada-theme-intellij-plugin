@@ -3,6 +3,12 @@
 # Armada Theme Changelog
 
 ## [Unreleased]
+### Fixed
+- Action button highlighting in the Fleet Dark UI
+- JS property reference colors incorrectly applyinh to type references
+
+### Changed
+- Darkened documentation popup background color in Fleet Dark UI
 
 ## [0.3.1] - 2025-03-25
 
