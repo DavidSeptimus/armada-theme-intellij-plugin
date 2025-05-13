@@ -4,6 +4,13 @@
 
 ## [Unreleased]
 
+### Added
+- Added C/C++, C#, and PHP colors to `Fleet Dark (Armada)`
+
+### Changed
+- Removed background color from default identifier in `Fleet Dark (Armada)`
+- Bumped maximum supported platform version to 252.*
+
 ## [0.3.2] - 2025-04-03
 
 ### Fixed
