@@ -21,6 +21,8 @@ Language-specific colors have been added for the following languages so far:
 
 |            | Fleet Light | Fleet Dark |
 |------------|-------------|------------|
+| C/C++      | ❌           | ✅          |
+| C#         | ❌           | ✅          |
 | CSS        | ✅           | ✅          |
 | Dockerfile | ✅           | ✅          |
 | Go         | ✅           | ✅          |
@@ -30,6 +32,7 @@ Language-specific colors have been added for the following languages so far:
 | Kotlin     | ❌           | ✅          |
 | HTML       | ✅           | ✅          |
 | Python     | ✅           | ✅          |
+| PHP        | ❌           | ✅          |
 | Properties | ✅           | ✅          |
 | Rust       | ❌           | ✅          |
 | SASS/SCSS  | ✅           | ✅          |

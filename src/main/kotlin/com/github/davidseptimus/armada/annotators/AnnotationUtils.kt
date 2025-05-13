@@ -36,3 +36,23 @@ fun getNearestSibling(
     }
     return null
 }
+
+/**
+ * Returns the first sibling of the specified element (starting from the parent's first child).
+ *
+ * @param element The element whose first sibling is to be returned.
+ * @return The first sibling of the specified element, or null if it has no siblings.
+ */
+fun firstSibling(element: PsiElement): PsiElement? {
+    val parent = element.parent
+    return if (parent != null && parent.firstChild != element) {
+        parent.firstChild
+    } else {
+        null
+    }
+}
+
+fun isLastChild(element: PsiElement): Boolean {
+    val parent = element.parent
+    return parent != null && parent.lastChild == element
+}
