@@ -4,10 +4,14 @@
 
 ## [Unreleased]
 
+## [0.4.0] - 2025-05-13
+
 ### Added
+
 - Added C/C++, C#, and PHP colors to `Fleet Dark (Armada)`
 
 ### Changed
+
 - Removed background color from default identifier in `Fleet Dark (Armada)`
 - Bumped maximum supported platform version to 252.*
 
@@ -105,7 +109,8 @@
 - Fleet Dark UI and Editor Color Scheme
 - Plugin Icon
 
-[Unreleased]: https://github.com/DavidSeptimus/armada-theme-intellij-plugin/compare/v0.3.2...HEAD
+[Unreleased]: https://github.com/DavidSeptimus/armada-theme-intellij-plugin/compare/v0.4.0...HEAD
+[0.4.0]: https://github.com/DavidSeptimus/armada-theme-intellij-plugin/compare/v0.3.2...v0.4.0
 [0.3.2]: https://github.com/DavidSeptimus/armada-theme-intellij-plugin/compare/v0.3.1...v0.3.2
 [0.3.1]: https://github.com/DavidSeptimus/armada-theme-intellij-plugin/compare/v0.3.0...v0.3.1
 [0.3.0]: https://github.com/DavidSeptimus/armada-theme-intellij-plugin/compare/v0.2.0...v0.3.0
