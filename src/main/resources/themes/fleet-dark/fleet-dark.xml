@@ -2,7 +2,7 @@
   <option name="FONT_SCALE" value="1.0"/>
   <metaInfo>
     <property name="ide">idea</property>
-    <property name="ideVersion">2025.1.0.0</property>
+    <property name="ideVersion">2025.1.1.0.0</property>
   </metaInfo>
   <option name="LINE_SPACING" value="1.2"/>
   <option name="EDITOR_FONT_SIZE" value="16"/>
@@ -29,7 +29,7 @@
     <option name="FILESTATUS_DELETED" value="F87C88"/>
     <option name="FILESTATUS_HIJACKED" value="CD984D"/>
     <option name="FILESTATUS_IDEA_FILESTATUS_DELETED_FROM_FILE_SYSTEM" value="F87C88"/>
-    <option name="FILESTATUS_IDEA_FILESTATUS_IGNORED" value="6E747B"/>
+    <option name="FILESTATUS_IDEA_FILESTATUS_IGNORED" value="D69A6B"/>
     <option name="FILESTATUS_IDEA_SVN_FILESTATUS_EXTERNAL" value="69B090"/>
     <option name="FILESTATUS_IGNORE.PROJECT_VIEW.IGNORED" value="6E747B"/>
     <option name="FILESTATUS_MERGED" value="9599F9"/>
@@ -1615,51 +1615,19 @@
         <option name="FOREGROUND" value="a8cc7c"/>
       </value>
     </option>
-    <option name="ZIG_ENUM_DECL">
-      <value>
-        <option name="FOREGROUND" value="e0e1e4"/>
-      </value>
-    </option>
-    <option name="ZIG_ENUM_MEMBER_DECL">
-      <value>
-        <option name="FOREGROUND" value="e0e1e4"/>
-      </value>
-    </option>
     <option name="ZIG_FIELD_TYPE">
       <value>
         <option name="FOREGROUND" value="87c3ff"/>
       </value>
     </option>
-    <option name="ZIG_FUNCTION">
-      <value>
-        <option name="FOREGROUND" value="e0e1e4"/>
-      </value>
-    </option>
+        <option name="ZIG_FUNCTION" baseAttributes="DEFAULT_FUNCTION_CALL"/>
     <option name="ZIG_FUNCTION_DECL">
       <value>
         <option name="FOREGROUND" value="e0e1e4"/>
       </value>
     </option>
-    <option name="ZIG_PROPERTY_DECL">
-      <value>
-        <option name="FOREGROUND" value="e0e1e4"/>
-      </value>
-    </option>
-    <option name="ZIG_STRUCT_DECL">
-      <value>
-        <option name="FOREGROUND" value="e0e1e4"/>
-      </value>
-    </option>
-    <option name="ZIG_TYPE">
-      <value>
-        <option name="FOREGROUND" value="e0e1e4"/>
-      </value>
-    </option>
-    <option name="ZIG_TYPE_DECL">
-      <value>
-        <option name="FOREGROUND" value="e0e1e4"/>
-      </value>
-    </option>
+        <option name="ZIG_TYPE" baseAttributes="DEFAULT_CLASS_REFERENCE"/>
+        <option name="ZIG_TYPE_DECL" baseAttributes="DEFAULT_CLASS_NAME"/>
     <option name="ZIG_VARIABLE">
       <value>
         <option name="FOREGROUND" value="e0e1e4"/>

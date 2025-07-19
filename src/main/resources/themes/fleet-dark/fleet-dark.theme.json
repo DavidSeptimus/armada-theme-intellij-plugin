@@ -74,8 +74,7 @@
     "DefaultTabs": {
       "background": "Neutral_20",
       "borderColor": "Transparent",
-      "underlineColor": "BlueTint_50",
-      "underlinedTabBackground": "BlueTint_25",
+      "underlineColor": "Blue 60",
       "inactiveUnderlineColor": "LightTint_8",
       "hoverBackground": "LightTint_8"
     },
@@ -83,12 +82,11 @@
       "background": "Neutral_20",
       "borderColor": "Transparent",
       "underlineColor": "BlueTint_50",
-      "underlinedTabBackground": "BlueTint_25",
       "inactiveUnderlineColor": "LightTint_8",
       "hoverBackground": "LightTint_8"
     },
     "TabbedPane": {
-      "underlineColor": "BlueTint_50",
+      "underlineColor": "Blue 60",
       "disabledUnderlineColor": "LightTint_8",
       "hoverColor": "LightTint_8",
       "focusColor": "BlueTint_25"
@@ -150,7 +148,6 @@
     },
     "ToolWindow": {
       "HeaderTab": {
-        "underlinedTabBackground": "BlueTint_25",
         "inactiveUnderlineColor": "LightTint_30"
       },
       "Header": {
@@ -184,8 +181,8 @@
         "endBackground": "Blue_90",
         "startBorderColor": "Transparent",
         "endBorderColor": "Transparent",
-        "focusColor": "Blue_90",
-        "focusedBorderColor": "Blue_10",
+        "focusColor": "Blue 60",
+        "focusedBorderColor": "Neutral_20",
         "shadowColor": "Transparent",
         "foreground": "White"
       },
@@ -193,7 +190,7 @@
       "endBackground": "LightTint_15",
       "startBorderColor": "Transparent",
       "endBorderColor": "Transparent",
-      "focusedBorderColor": "Blue_100",
+      "focusedBorderColor": "Neutral_20",
       "shadowColor": "Transparent",
       "disabledBorderColor": "LightTint_12",
       "disabledText": "Neutral_80"
@@ -252,8 +249,8 @@
       "Notification.hoverBackground": "Neutral_40"
     },
     "Component": {
-      "focusColor": "BlueTint_40",
-      "focusedBorderColor": "Blue_100",
+      "focusColor": "Blue 60",
+      "focusedBorderColor": "Transparent",
       "errorFocusColor": "Red_100",
       "inactiveErrorFocusColor": "Red_80"
     },
@@ -273,7 +270,8 @@
         "updateBackground": "LightTint_15",
         "updateBorderColor": "Transparent",
         "updateForeground": "White"
-      }
+      },
+      "lightSelectionBackground": "BlueTint_40"
     },
     "VersionControl.Log": {
       "Commit": {
