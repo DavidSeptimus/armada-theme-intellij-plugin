@@ -9,8 +9,10 @@ import com.intellij.psi.PsiElement
 import com.intellij.psi.util.elementType
 import com.jetbrains.php.lang.lexer.PhpTokenTypes
 import com.jetbrains.php.lang.psi.elements.ClassReference
+import com.jetbrains.php.lang.psi.elements.PhpEchoStatement
 import com.jetbrains.php.lang.psi.elements.PhpGoto
 import com.jetbrains.php.lang.psi.elements.PhpUse
+import com.jetbrains.php.lang.psi.elements.StringLiteralExpression
 
 class PHPAnnotator : Annotator {
 
@@ -23,6 +25,9 @@ class PHPAnnotator : Annotator {
             return
         }
         if (annotateClassSelfReference(element, holder)) {
+            return
+        }
+        if (annotateClassReference(element, holder)) {
             return
         }
         annotateGotoLabelIdentifier(element, holder)
@@ -67,6 +72,23 @@ class PHPAnnotator : Annotator {
                 holder.newSilentAnnotation(HighlightSeverity.INFORMATION)
                     .range(TextRange(element.textRange.startOffset, element.textRange.endOffset))
                     .textAttributes(TextAttributeKeys.PHP_ALIAS_IDENTIFIER_DECLARATION)
+                    .create()
+                return true;
+            }
+
+            else -> return false
+        }
+    }
+
+    private fun annotateClassReference(
+        element: PsiElement,
+        holder: AnnotationHolder,
+    ): Boolean {
+        when {
+            element is ClassReference -> {
+                holder.newSilentAnnotation(HighlightSeverity.INFORMATION)
+                    .range(TextRange(element.textRange.startOffset, element.textRange.endOffset))
+                    .textAttributes(TextAttributeKeys.PHP_CLASS_REFERENCE)
                     .create()
                 return true;
             }

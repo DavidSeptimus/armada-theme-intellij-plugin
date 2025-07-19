@@ -29,18 +29,18 @@ Language-specific colors have been added for the following languages so far:
 | Java       | ✅           | ✅          |
 | JavaScript | ✅           | ✅          |
 | JSON       | ✅           | ✅          |
-| Kotlin     | ❌           | ✅          |
+| Kotlin     | ✅           | ✅          |
 | HTML       | ✅           | ✅          |
 | Python     | ✅           | ✅          |
-| PHP        | ❌           | ✅          |
+| PHP        | ✅           | ✅          |
 | Properties | ✅           | ✅          |
-| Rust       | ❌           | ✅          |
+| Rust       | ✅           | ✅          |
 | SASS/SCSS  | ✅           | ✅          |
 | Typescript | ✅           | ✅          |
 | TOML       | ✅           | ✅          |
 | XML        | ✅           | ✅          |
 | YAML       | ✅           | ✅          |
-| Zig        | ❌           | ✅          |
+| Zig        | ✅           | ✅          |
 
 <!-- Plugin description end -->
 

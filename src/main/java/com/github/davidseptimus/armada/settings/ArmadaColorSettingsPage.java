@@ -23,6 +23,7 @@ final class ArmadaColorSettingsPage implements ColorSettingsPage {
             new AttributesDescriptor("JavaScript property reference", TextAttributeKeys.JAVASCRIPT_PROPERTY_REFERENCE),
             new AttributesDescriptor("Kotlin label @", TextAttributeKeys.KOTLIN_LABEL_AT),
             new AttributesDescriptor("PHP alias identifier declaration", TextAttributeKeys.PHP_ALIAS_IDENTIFIER_DECLARATION),
+            new AttributesDescriptor("PHP class reference", TextAttributeKeys.PHP_CLASS_REFERENCE),
             new AttributesDescriptor("PHP class self reference", TextAttributeKeys.PHP_CLASS_SELF_REFERENCE),
             new AttributesDescriptor("PHP goto label identifier", TextAttributeKeys.PHP_GOTO_LABEL_IDENTIFIER),
             new AttributesDescriptor("Properties string literal value", TextAttributeKeys.PROPERTIES_STRING_LITERAL_VALUE),
@@ -68,8 +69,8 @@ final class ArmadaColorSettingsPage implements ColorSettingsPage {
                 // PHP
                 use SomeType as MyType; // PHP Alias Identifier Declaration
                 $def .=  self::magic; // PHP Class Self Reference
+                A extends B implements C; // PHP Class Reference
                 goto SomeLabel; // PHP Goto Label Identifier
-                
                 
                 // Properties
                 a = "b" // Properties String Literal Value
@@ -100,16 +101,15 @@ final class ArmadaColorSettingsPage implements ColorSettingsPage {
     }
 
     @Override
-    public AttributesDescriptor @NotNull [] getAttributeDescriptors() {
+    public AttributesDescriptor [] getAttributeDescriptors() {
         return DESCRIPTORS;
     }
 
     @Override
-    public ColorDescriptor @NotNull [] getColorDescriptors() {
+    public ColorDescriptor [] getColorDescriptors() {
         return ColorDescriptor.EMPTY_ARRAY;
     }
 
-    @NotNull
     @Override
     public String getDisplayName() {
         return "Armada Additions";

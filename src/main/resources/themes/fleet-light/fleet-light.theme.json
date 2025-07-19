@@ -60,7 +60,7 @@
       "background": "White",
       "foreground": "Neutral_10",
       "disabledText": "Neutral_110",
-      "selectionBackground": "Blue_130",
+      "selectionBackground": "BlueTint_20",
       "selectionForeground": "Neutral_10",
       "selectionInactiveBackground": "DarkTint_15"
     },
@@ -78,7 +78,6 @@
       "background": "White",
       "borderColor": "Transparent",
       "underlineColor": "BlueTint_50",
-      "underlinedTabBackground": "BlueTint_10",
       "inactiveUnderlineColor": "LightTint_8",
       "hoverBackground": "DarkTint_7"
     },
@@ -93,7 +92,7 @@
     },
     "TabbedPane": {
       "background": "White",
-      "underlineColor": "BlueTint_50",
+      "underlineColor": "Blue_90",
       "disabledUnderlineColor": "DarkTint_7",
       "hoverColor": "DarkTint_7",
       "focusColor": "BlueTint_10"
@@ -160,7 +159,6 @@
     "ToolWindow": {
       "background": "White",
       "HeaderTab": {
-        "underlinedTabBackground": "BlueTint_8",
         "inactiveUnderlineColor": "LightTint_60"
       },
       "Header": {
@@ -195,7 +193,7 @@
         "endBackground": "Blue_90",
         "startBorderColor": "Transparent",
         "endBorderColor": "Transparent",
-        "focusedBorderColor": "Blue_70",
+        "focusedBorderColor": "White",
         "shadowColor": "Transparent",
         "foreground": "White"
       },
@@ -204,7 +202,7 @@
       "endBackground": "#FFFFFFBF",
       "startBorderColor": "DarkTint_20",
       "endBorderColor": "DarkTint_20",
-      "focusedBorderColor": "DarkTint_20",
+      "focusedBorderColor": "White",
       "shadowColor": "Transparent",
       "disabledBorderColor": "DarkTint_10",
       "disabledText": "Neutral_110"
@@ -213,7 +211,7 @@
       "selectionForeground": "Neutral_10",
       "foreground": "Neutral_10",
       "hoverBackground": "DarkTint_5",
-      "selectionBackground": "Blue_130",
+      "selectionBackground": "BlueTint_20",
       "selectionInactiveBackground": "DarkTint_15"
     },
     "ComboBox": {
@@ -295,8 +293,8 @@
       "Notification.hoverBackground": "Transparent"
     },
     "Component": {
-      "focusColor": "BlueTint_40",
-      "focusedBorderColor": "Blue_100",
+      "focusColor": "Blue_90",
+      "focusedBorderColor": "Transparent",
       "errorFocusColor": "Red_100",
       "inactiveErrorFocusColor": "Red_80"
     },
@@ -311,7 +309,8 @@
         "updateBackground": "Blue_90",
         "updateBorderColor": "Transparent",
         "updateForeground": "White"
-      }
+      },
+      "lightSelectionBackground": "BlueTint_20"
     },
     "TextField": {
       "background": "White"
