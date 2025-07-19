@@ -4,6 +4,19 @@
 
 ## [Unreleased]
 
+### Added
+
+- Added C#, C++,Kotlin, PHP, Rust, and Zig colors to `Fleet Light (Armada)`
+
+### Changed
+
+- Refined light theme colors
+- Refined `Fleet Dark (Armada)` theme and updated Zig colors to reflect IntelliJ's better syntax highlighting capabilities for the language (compared to Fleet)
+
+### Fixed
+
+- Light theme folded text showing as a dark-gray block
+
 ## [0.4.0] - 2025-05-13
 
 ### Added
