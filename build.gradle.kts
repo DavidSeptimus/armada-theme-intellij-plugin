@@ -70,7 +70,7 @@ dependencies {
         pluginsInLatestCompatibleVersion(
             providers.gradleProperty("platformPluginsLatestCompatibleVersion").map { it.split(',') })
 
-        pluginVerifier("1.383")
+        pluginVerifier("1.388")
         zipSigner()
         testFramework(TestFrameworkType.Platform)
     }
