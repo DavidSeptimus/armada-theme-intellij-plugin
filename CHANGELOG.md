@@ -4,6 +4,8 @@
 
 ## [Unreleased]
 
+## [0.5.0] - 2025-07-19
+
 ### Added
 
 - Added C#, C++,Kotlin, PHP, Rust, and Zig colors to `Fleet Light (Armada)`
@@ -122,7 +124,8 @@
 - Fleet Dark UI and Editor Color Scheme
 - Plugin Icon
 
-[Unreleased]: https://github.com/DavidSeptimus/armada-theme-intellij-plugin/compare/v0.4.0...HEAD
+[Unreleased]: https://github.com/DavidSeptimus/armada-theme-intellij-plugin/compare/v0.5.0...HEAD
+[0.5.0]: https://github.com/DavidSeptimus/armada-theme-intellij-plugin/compare/v0.4.0...v0.5.0
 [0.4.0]: https://github.com/DavidSeptimus/armada-theme-intellij-plugin/compare/v0.3.2...v0.4.0
 [0.3.2]: https://github.com/DavidSeptimus/armada-theme-intellij-plugin/compare/v0.3.1...v0.3.2
 [0.3.1]: https://github.com/DavidSeptimus/armada-theme-intellij-plugin/compare/v0.3.0...v0.3.1
