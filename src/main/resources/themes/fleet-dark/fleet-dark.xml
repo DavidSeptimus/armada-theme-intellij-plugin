@@ -5,7 +5,7 @@
     <property name="ideVersion">2025.1.1.0.0</property>
   </metaInfo>
   <option name="LINE_SPACING" value="1.2"/>
-  <option name="EDITOR_FONT_SIZE" value="16"/>
+  <option name="EDITOR_FONT_SIZE" value="13"/>
   <option name="EDITOR_FONT_NAME" value="JetBrains Mono"/>
   <option name="EDITOR_LIGATURES" value="true"/>
   <colors>
