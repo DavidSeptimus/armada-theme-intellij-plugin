@@ -4,6 +4,17 @@
 
 ## [Unreleased]
 
+### Changed
+- Made minor color adjustments to `Armada Dark (Classic)` UI theme
+- Renamed existing themes to `Armada Dark (Classic)` and `Armada Light (Classic)`
+- Bumped maximum supported platform version to 253.*
+
+## [0.5.1] - 2025-08-15
+
+### Fixed
+
+- Restored default editor font size to 13pt
+
 ## [0.5.0] - 2025-07-19
 
 ### Added
