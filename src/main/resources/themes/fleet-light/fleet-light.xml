@@ -1,4 +1,4 @@
-<scheme name="Fleet Light (Armada)" version="142" parent_scheme="Default">
+<scheme name="Armada Light" version="142" parent_scheme="Default">
   <option name="FONT_SCALE" value="1.0"/>
   <metaInfo>
     <property name="ide">idea</property>

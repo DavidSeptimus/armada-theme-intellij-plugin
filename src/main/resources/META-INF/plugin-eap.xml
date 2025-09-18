@@ -1,0 +1,15 @@
+<!-- EAP-specific plugin configuration -->
+<!-- This file is only included in EAP builds and provides experimental features -->
+<idea-plugin>
+  <extensions defaultExtensionNs="com.intellij">
+    <themeProvider
+            id="com.github.davidseptimus.armada.fleet-dark-islands"
+            path="themes/fleet-dark/fleet-dark-islands.theme.json"
+    />
+    <themeProvider
+            id="com.github.davidseptimus.armada.fleet-light-islands"
+            path="themes/fleet-light/fleet-light-islands.theme.json"
+    />
+  </extensions>
+</idea-plugin>
+

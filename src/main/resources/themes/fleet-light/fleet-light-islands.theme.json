@@ -1,8 +1,9 @@
 {
   "author": "David Septimus",
-  "name": "Armada Light (Classic)",
+  "name": "Armada Light (Islands)",
   "dark": false,
   "editorScheme": "themes/fleet-light/fleet-light.xml",
+  "parentTheme": "Islands Light",
   "icons": {
     "/com/intellij/ide/ui/laf/icons/intellij/checkBox.svg": "/themes/fleet-light/icons/checkBox.svg",
     "/com/intellij/ide/ui/laf/icons/intellij/checkBoxDisabled.svg": "/themes/fleet-light/icons/checkBoxDisabled.svg",

@@ -29,6 +29,7 @@ class DownloadButton<T extends Record<string, string>> extends HTMLButtonElement
     static STATIC_FIELD = `<span title="HTML injection">${globalVariable}</span>`;
 
     static get observedAttributes(): string[] {
+        do
         return ['data-test'];
     }
 

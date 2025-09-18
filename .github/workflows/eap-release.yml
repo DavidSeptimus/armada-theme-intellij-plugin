@@ -1,0 +1,162 @@
+# GitHub Actions Workflow for nightly EAP releases
+# Runs nightly on main branch to build and publish EAP builds to the EAP release channel
+
+name: EAP Release
+on:
+  schedule:
+    # Run nightly at 3 AM UTC
+    - cron: '0 3 * * *'
+  workflow_dispatch:
+    # Allow manual triggering
+    inputs:
+      force_publish:
+        description: 'Force publish even if no changes detected'
+        required: false
+        default: false
+        type: boolean
+
+concurrency:
+  group: eap-release
+  cancel-in-progress: true
+
+jobs:
+  check-changes:
+    name: Check for changes
+    runs-on: ubuntu-latest
+    outputs:
+      should-publish: ${{ steps.changes.outputs.should-publish }}
+      commit-sha: ${{ steps.changes.outputs.commit-sha }}
+    steps:
+      - name: Fetch Sources
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Check for changes since last EAP release
+        id: changes
+        run: |
+          # Check if this is a manual force publish
+          if [ "${{ github.event.inputs.force_publish }}" = "true" ]; then
+            echo "Manual force publish requested"
+            echo "should-publish=true" >> $GITHUB_OUTPUT
+            echo "commit-sha=$(git rev-parse HEAD)" >> $GITHUB_OUTPUT
+            exit 0
+          fi
+
+          # Get the latest EAP release tag
+          LATEST_EAP_TAG=$(git tag --list --sort=-version:refname | grep -E '^v.*-eap.*$' | head -n 1)
+
+          if [ -z "$LATEST_EAP_TAG" ]; then
+            echo "No previous EAP release found, will publish"
+            echo "should-publish=true" >> $GITHUB_OUTPUT
+          else
+            # Check if there are commits since the last EAP release
+            COMMITS_SINCE=$(git rev-list --count ${LATEST_EAP_TAG}..HEAD)
+            if [ "$COMMITS_SINCE" -gt 0 ]; then
+              echo "Found $COMMITS_SINCE commits since last EAP release ($LATEST_EAP_TAG)"
+              echo "should-publish=true" >> $GITHUB_OUTPUT
+            else
+              echo "No changes since last EAP release ($LATEST_EAP_TAG)"
+              echo "should-publish=false" >> $GITHUB_OUTPUT
+            fi
+          fi
+
+          echo "commit-sha=$(git rev-parse HEAD)" >> $GITHUB_OUTPUT
+
+  eap-release:
+    name: Publish EAP Release
+    needs: check-changes
+    if: needs.check-changes.outputs.should-publish == 'true'
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      # Free GitHub Actions Environment Disk Space
+      - name: Maximize Build Space
+        uses: jlumbroso/free-disk-space@54081f138730dfa15788a46383842cd2f914a1be
+        with:
+          tool-cache: true
+          large-packages: true
+
+      # Check out the current repository
+      - name: Fetch Sources
+        uses: actions/checkout@v4
+
+      # Validate wrapper
+      - name: Gradle Wrapper Validation
+        uses: gradle/actions/wrapper-validation@v4
+
+      # Set up Java environment for the next steps
+      - name: Setup Java
+        uses: actions/setup-java@v4
+        with:
+          distribution: zulu
+          java-version: 21
+
+      # Setup Gradle
+      - name: Setup Gradle
+        uses: gradle/actions/setup-gradle@v4
+
+      # Get EAP version
+      - name: Get EAP Version
+        id: version
+        run: |
+          EAP_VERSION=$(./gradlew properties -Peap=true --console=plain -q | grep "^version:" | cut -f2- -d ' ')
+          echo "eap-version=$EAP_VERSION" >> $GITHUB_OUTPUT
+          echo "Building EAP version: $EAP_VERSION"
+
+      # Build and publish EAP plugin
+      - name: Build and Publish EAP Plugin
+        env:
+          IS_EAP_BUILD: "true"
+          PUBLISH_TOKEN: ${{ secrets.PUBLISH_TOKEN }}
+          CERTIFICATE_CHAIN: ${{ secrets.CERTIFICATE_CHAIN }}
+          PRIVATE_KEY: ${{ secrets.PRIVATE_KEY }}
+          PRIVATE_KEY_PASSWORD: ${{ secrets.PRIVATE_KEY_PASSWORD }}
+        run: ./gradlew publishEAP
+
+      # Create EAP release tag
+      - name: Create EAP Release Tag
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          EAP_VERSION="${{ steps.version.outputs.eap-version }}"
+          TAG_NAME="v$EAP_VERSION"
+
+          git config user.email "action@github.com"
+          git config user.name "GitHub Action"
+
+          # Create and push tag
+          git tag -a "$TAG_NAME" -m "EAP Release $EAP_VERSION"
+          git push origin "$TAG_NAME"
+
+      # Create GitHub release
+      - name: Create EAP GitHub Release
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          EAP_VERSION="${{ steps.version.outputs.eap-version }}"
+          TAG_NAME="v$EAP_VERSION"
+          COMMIT_SHA="${{ needs.check-changes.outputs.commit-sha }}"
+
+          # Get recent commits for release notes
+          RECENT_COMMITS=$(git log --pretty=format:"- %s (%h)" --since="24 hours ago" | head -10)
+
+          gh release create "$TAG_NAME" \
+            --title "EAP Release $EAP_VERSION" \
+            --notes "$(cat << 'EOM'
+          🚀 **Early Access Program (EAP) Release**
+
+          This is an automated nightly build containing the latest changes from the main branch.
+
+          **⚠️ Warning**: EAP releases are experimental and may contain bugs. Use at your own risk.
+
+          **Recent Changes:**
+          $RECENT_COMMITS
+
+          **Installation**: Download the plugin from the [JetBrains Marketplace EAP channel](https://plugins.jetbrains.com/plugin/26844-armada-theme) or install via IDE settings.
+
+          Built from commit: $COMMIT_SHA
+          EOM
+          )" \
+            --prerelease

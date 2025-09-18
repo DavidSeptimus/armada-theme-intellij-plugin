@@ -15,24 +15,19 @@
   <depends optional="true" config-file="plugin-zig.xml">com.falsepattern.zigbrains</depends>
   <depends optional="true" config-file="plugin-php.xml">com.jetbrains.php</depends>
 
+  <!-- BEGIN Build-time Dependencies -->
+  <!-- END Build-time Dependencies -->
+
   <extensions defaultExtensionNs="com.intellij">
     <themeProvider
         id="com.github.davidseptimus.armada.fleet-dark"
         path="themes/fleet-dark/fleet-dark.theme.json"
     />
-    <themeProvider
-        id="com.github.davidseptimus.armada.fleet-dark-islands"
-        path="themes/fleet-dark/fleet-dark-islands.theme.json"
-    />
+
     <themeProvider
             id="com.github.davidseptimus.armada.fleet-light"
             path="themes/fleet-light/fleet-light.theme.json"
     />
-
-<!--    <themeProvider-->
-<!--            id="com.github.davidseptimus.armada.fleet-light-code"-->
-<!--            path="themes/fleet-light/fleet-light-code.theme.json"-->
-<!--    />-->
 
     <colorSettingsPage
         implementation="com.github.davidseptimus.armada.settings.ArmadaColorSettingsPage" />
