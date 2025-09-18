@@ -11,36 +11,35 @@ Armada is a plugin that aims to faithfully recreate the Fleet's builtin themes f
 
 ### Features
 
-- Fleet Dark UI and Editor Color Scheme
-- Fleet Light UI and Editor Color Scheme
+- Fleet-inspired Dark and Light UI themes/Editor Color Schemes
 - Custom tokens for improved highlighting accuracy
 
 ### Language Support
 
 Language-specific colors have been added for the following languages so far:
 
-|            | Fleet Light | Fleet Dark |
-|------------|-------------|------------|
-| C/C++      | ✅           | ✅          |
-| C#         | ✅           | ✅          |
-| CSS        | ✅           | ✅          |
-| Dockerfile | ✅           | ✅          |
-| Go         | ✅           | ✅          |
-| Java       | ✅           | ✅          |
-| JavaScript | ✅           | ✅          |
-| JSON       | ✅           | ✅          |
-| Kotlin     | ✅           | ✅          |
-| HTML       | ✅           | ✅          |
-| Python     | ✅           | ✅          |
-| PHP        | ✅           | ✅          |
-| Properties | ✅           | ✅          |
-| Rust       | ✅           | ✅          |
-| SASS/SCSS  | ✅           | ✅          |
-| Typescript | ✅           | ✅          |
-| TOML       | ✅           | ✅          |
-| XML        | ✅           | ✅          |
-| YAML       | ✅           | ✅          |
-| Zig        | ✅           | ✅          |
+|            | Armada Light | Armada Dark |
+|------------|--------------|-------------|
+| C/C++      | ✅            | ✅         |
+| C#         | ✅            | ✅         |
+| CSS        | ✅            | ✅         |
+| Dockerfile | ✅            | ✅         |
+| Go         | ✅            | ✅         |
+| Java       | ✅            | ✅         |
+| JavaScript | ✅            | ✅         |
+| JSON       | ✅            | ✅         |
+| Kotlin     | ✅            | ✅         |
+| HTML       | ✅            | ✅         |
+| Python     | ✅            | ✅         |
+| PHP        | ✅            | ✅         |
+| Properties | ✅            | ✅         |
+| Rust       | ✅            | ✅         |
+| SASS/SCSS  | ✅            | ✅         |
+| Typescript | ✅            | ✅         |
+| TOML       | ✅            | ✅         |
+| XML        | ✅            | ✅         |
+| YAML       | ✅            | ✅         |
+| Zig        | ✅            | ✅         |
 
 <!-- Plugin description end -->
 
