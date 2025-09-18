@@ -5,6 +5,7 @@
 ## [Unreleased]
 
 ### Changed
+
 - Made minor color adjustments to `Armada Dark (Classic)` UI theme
 - Renamed existing themes to `Armada Dark (Classic)` and `Armada Light (Classic)`
 - Bumped maximum supported platform version to 253.*
@@ -135,7 +136,10 @@
 - Fleet Dark UI and Editor Color Scheme
 - Plugin Icon
 
-[Unreleased]: https://github.com/DavidSeptimus/armada-theme-intellij-plugin/compare/v0.5.0...HEAD
+[Unreleased]: https://github.com/DavidSeptimus/armada-theme-intellij-plugin/compare/v0.5.3-eap...HEAD
+[0.5.3-eap]: https://github.com/DavidSeptimus/armada-theme-intellij-plugin/compare/v0.5.1...v0.5.3-eap
+[0.5.2]: https://github.com/DavidSeptimus/armada-theme-intellij-plugin/compare/v0.5.1...v0.5.2
+[0.5.1]: https://github.com/DavidSeptimus/armada-theme-intellij-plugin/compare/v0.5.0...v0.5.1
 [0.5.0]: https://github.com/DavidSeptimus/armada-theme-intellij-plugin/compare/v0.4.0...v0.5.0
 [0.4.0]: https://github.com/DavidSeptimus/armada-theme-intellij-plugin/compare/v0.3.2...v0.4.0
 [0.3.2]: https://github.com/DavidSeptimus/armada-theme-intellij-plugin/compare/v0.3.1...v0.3.2

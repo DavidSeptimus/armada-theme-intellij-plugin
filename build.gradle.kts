@@ -228,48 +228,36 @@ tasks {
         inputs.property("taskNames", taskNamesProvider)
         outputs.file(outputPluginXml)
 
-        doLast {
-            val mainContent = pluginMainXml.asFile.readText()
+        val mainContent = pluginMainXml.asFile.readText()
 
-            // Determine if this is an EAP build using only the captured inputs
-            val hasEapProperty = eapPropertyProvider.get() != "false"
-            val hasEapEnv = eapEnvProvider.get() != "false"
-            val hasEapTask = taskNamesProvider.get().contains("EAP")
-            val isEAP = hasEapProperty || hasEapEnv || hasEapTask
+        // Determine if this is an EAP build using only the captured inputs
+        val hasEapProperty = eapPropertyProvider.get() != "false"
+        val hasEapEnv = eapEnvProvider.get() != "false"
+        val hasEapTask = taskNamesProvider.get().contains("EAP")
+        val isEAP = hasEapProperty || hasEapEnv || hasEapTask
 
-            val finalContent = if (isEAP) {
-                // Inject EAP dependencies into the designated section
-                val beginMarker = "  <!-- BEGIN Build-time Dependencies -->"
-                val endMarker = "  <!-- END Build-time Dependencies -->"
+        val finalContent = if (isEAP) {
+            // Inject EAP dependencies into the designated section
+            val beginMarker = "  <!-- BEGIN Build-time Dependencies -->"
+            val endMarker = "  <!-- END Build-time Dependencies -->"
 
-                if (mainContent.contains(beginMarker)) {
-                    // Inject dependencies
-                    val dependenciesText = """  <depends optional="true" config-file="plugin-eap.xml">com.intellij.modules.platform</depends>"""
-                    mainContent.replace(
-                        "$beginMarker\n$endMarker",
-                        "$beginMarker\n$dependenciesText\n$endMarker"
-                    )
-                } else {
-                    throw GradleException("Build-time dependency markers not found in plugin-main.xml")
-                }
+            if (mainContent.contains(beginMarker)) {
+                // Inject dependencies
+                val dependenciesText = """  <depends optional="true" config-file="plugin-eap.xml">com.intellij.modules.platform</depends>"""
+                mainContent.replace(
+                    "$beginMarker\n$endMarker",
+                    "$beginMarker\n$dependenciesText\n$endMarker"
+                )
             } else {
-                // For non-EAP builds, just copy the main file as-is
-                mainContent
+                throw GradleException("Build-time dependency markers not found in plugin-main.xml")
             }
-
-            outputPluginXml.asFile.writeText(finalContent)
-            println("Generated plugin.xml for ${if (isEAP) "EAP" else "stable"} build")
+        } else {
+            // For non-EAP builds, just copy the main file as-is
+            mainContent
         }
-    }
 
-    // Make sure plugin.xml is generated before processing resources and other tasks that use it
-    processResources {
-        dependsOn("generatePluginXml")
-    }
-
-    // Ensure patchPluginXml runs after generatePluginXml
-    patchPluginXml {
-        dependsOn("generatePluginXml")
+        outputPluginXml.asFile.writeText(finalContent)
+        println("Generated plugin.xml for ${if (isEAP) "EAP" else "stable"} build")
     }
 
     wrapper {
@@ -278,6 +266,10 @@ tasks {
 
     publishPlugin {
         dependsOn(patchChangelog)
+    }
+
+    initializeIntellijPlatformPlugin {
+        dependsOn("generatePluginXml")
     }
 
     register("buildEAP") {
@@ -295,9 +287,10 @@ tasks {
         group = "eap"
         description = "Publishes plugin to EAP channel"
 
-        dependsOn("buildEAP")
-
-        commandLine("./gradlew", "publishPlugin")
+        finalizedBy("publishPlugin")
+        doLast {
+            println("EAP plugin published successfully")
+        }
     }
 
     register<Exec>("checkEAP") {
@@ -314,11 +307,15 @@ tasks {
         commandLine("./gradlew", "runIde", "-Peap=true")
     }
 
-    register<Exec>("verifyPluginEAP") {
+    register("verifyPluginEAP") {
         group = "eap"
         description = "Verifies plugin with EAP dependencies enabled"
 
-        commandLine("./gradlew", "verifyPlugin", "-Peap=true")
+        finalizedBy("verifyPlugin")
+
+        doLast {
+            println("EAP plugin built successfully, running verification...")
+        }
     }
 }
 

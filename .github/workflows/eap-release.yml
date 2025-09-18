@@ -275,7 +275,7 @@ jobs:
 
           gh release create "$TAG_NAME" \
             --title "EAP Release $EAP_VERSION" \
-            --notes "$(cat << 'EOM'
+            --notes "$(cat << EOM
           🚀 **Early Access Program (EAP) Release**
 
           This is an automated nightly build containing the latest changes from the main branch.
