@@ -175,11 +175,12 @@ intellijPlatform {
     }
 
     publishing {
-        token = providers.environmentVariable("PUBLISH_TOKEN")
         // The pluginVersion is based on the SemVer (https://semver.org) and supports pre-release labels, like 2.1.7-alpha.3
         // Specify pre-release label to publish the plugin in a custom Release Channel automatically. Read more:
         // https://plugins.jetbrains.com/docs/intellij/deployment.html#specifying-a-release-channel
-        channels = providers.gradleProperty("pluginVersion").map { listOf(it.substringAfter('-', "").substringBefore('.').ifEmpty { "default" }) }
+        channels = provider { listOf(project.version.toString().substringAfter('-', "").substringBefore('.').ifEmpty { "default" }) }
+        print("Publishing to channel(s): ${channels.get()}\n")
+        token = providers.environmentVariable("PUBLISH_TOKEN")
     }
 
     pluginVerification {
@@ -287,7 +288,7 @@ tasks {
         group = "eap"
         description = "Publishes plugin to EAP channel"
 
-        finalizedBy("publishPlugin")
+        commandLine("./gradlew", "publishPlugin", "-Peap=true")
         doLast {
             println("EAP plugin published successfully")
         }
