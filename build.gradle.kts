@@ -212,24 +212,30 @@ tasks {
         group = "build"
         description = "Generates plugin.xml from plugin-main.xml with conditional EAP dependencies"
 
-        // Disable configuration cache for this specific task to avoid serialization issues
-        notCompatibleWithConfigurationCache("Uses project state that cannot be serialized")
-
         val pluginMainXml = layout.projectDirectory.file("src/main/resources/META-INF/plugin-main.xml")
         val pluginEapXml = layout.projectDirectory.file("src/main/resources/META-INF/plugin-eap.xml")
         val outputPluginXml = layout.projectDirectory.file("src/main/resources/META-INF/plugin.xml")
 
+        // Use providers to capture all EAP detection logic at configuration time
+        val eapPropertyProvider = providers.gradleProperty("eap").orElse("false")
+        val eapEnvProvider = providers.environmentVariable("IS_EAP_BUILD").orElse("false")
+        val taskNamesProvider = provider { gradle.startParameter.taskNames.joinToString(",") }
+
         inputs.file(pluginMainXml)
         inputs.file(pluginEapXml)
-        inputs.property("eap", project.hasProperty("eap"))
-        inputs.property("eapEnv", providers.environmentVariable("IS_EAP_BUILD").orElse("false"))
+        inputs.property("eapProperty", eapPropertyProvider)
+        inputs.property("eapEnv", eapEnvProvider)
+        inputs.property("taskNames", taskNamesProvider)
         outputs.file(outputPluginXml)
 
         doLast {
             val mainContent = pluginMainXml.asFile.readText()
-            val isEAP = project.hasProperty("eap") ||
-                       providers.environmentVariable("IS_EAP_BUILD").isPresent ||
-                       gradle.startParameter.taskNames.any { it.contains("EAP") }
+
+            // Determine if this is an EAP build using only the captured inputs
+            val hasEapProperty = eapPropertyProvider.get() != "false"
+            val hasEapEnv = eapEnvProvider.get() != "false"
+            val hasEapTask = taskNamesProvider.get().contains("EAP")
+            val isEAP = hasEapProperty || hasEapEnv || hasEapTask
 
             val finalContent = if (isEAP) {
                 // Inject EAP dependencies into the designated section
@@ -285,17 +291,34 @@ tasks {
         }
     }
 
-    register("publishEAP") {
+    register<Exec>("publishEAP") {
         group = "eap"
         description = "Publishes plugin to EAP channel"
 
         dependsOn("buildEAP")
 
-        doLast {
-            providers.exec {
-                commandLine("./gradlew", "publishPlugin")
-            }
-        }
+        commandLine("./gradlew", "publishPlugin")
+    }
+
+    register<Exec>("checkEAP") {
+        group = "eap"
+        description = "Runs tests with EAP configuration"
+
+        commandLine("./gradlew", "check", "-Peap=true")
+    }
+
+    register<Exec>("runIdeEAP") {
+        group = "eap"
+        description = "Runs IDE with EAP dependencies enabled"
+
+        commandLine("./gradlew", "runIde", "-Peap=true")
+    }
+
+    register<Exec>("verifyPluginEAP") {
+        group = "eap"
+        description = "Verifies plugin with EAP dependencies enabled"
+
+        commandLine("./gradlew", "verifyPlugin", "-Peap=true")
     }
 }
 
