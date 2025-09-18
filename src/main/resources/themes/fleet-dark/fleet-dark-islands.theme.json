@@ -1,8 +1,9 @@
 {
   "author": "David Septimus",
   "dark": true,
-  "name": "Armada Dark (Classic)",
+  "name": "Armada Dark (Islands)",
   "editorScheme": "themes/fleet-dark/fleet-dark.xml",
+  "parentTheme": "Islands Dark",
   "icons": {
     "/com/intellij/ide/ui/laf/icons/darcula/checkBox.svg": "/themes/fleet-dark/icons/checkBox.svg",
     "/com/intellij/ide/ui/laf/icons/darcula/checkBoxDisabled.svg": "/themes/fleet-dark/icons/checkBoxDisabled.svg",
@@ -23,7 +24,7 @@
       "Tree.iconColor": "Neutral_140",
       "Gray.Fill": "Gray 50",
       "Gray.SecondaryStroke": "Neutral_70",
-      "Gray.Stroke": "Gray 100",
+      "Gray.Stroke": "Neutral_140",
       "Green.Solid": "Green_100",
       "Green.Stroke": "Green_100",
       "Red.Solid": "Red_100",
@@ -100,6 +101,7 @@
       "Yellow": "Yellow_30",
       "Gray": "Gray 30"
     },
+    "MainWindow.background": "Neutral_10",
     "MainToolbar.background": "Neutral_10",
     "Editor.background": "Neutral_20",
     "ScrollBar": {
@@ -120,7 +122,10 @@
     },
     "Settings.Spotlight.borderColor": "YellowTint_50",
     "Panel.foreground": "Neutral_140",
-    "StatusBar.borderColor": "Transparent",
+    "StatusBar": {
+      "background": "Neutral_10",
+      "borderColor": "Transparent"
+    },
     "Label.foreground": "Neutral_140",
     "Label.selectedForeground": "White",
     "Label.infoForeground": "Neutral_110",
@@ -159,7 +164,8 @@
         "selectedForeground": "White"
       },
       "Stripe": {
-        "separatorColor": "Neutral_50",
+        "background": "Neutral_10",
+        "separatorColor": "Neutral_40",
         "DragAndDrop": {
           "separatorColor": "Blue_90"
         }
@@ -206,7 +212,7 @@
     },
     "ToolTip": {
       "background": "Neutral_40",
-      "borderColor": "#Neutral_50",
+      "borderColor": "Neutral_50",
       "foreground": "Neutral_140",
       "infoForeground": "Neutral_130",
       "linkForeground": "Blue_110"
@@ -224,17 +230,19 @@
       "secondaryActionForeground": "Blue_110"
     },
     "Menu": {
-      "background": "Neutral_30"
+      "background": "Neutral_30",
+      "foreground": "Neutral_140",
+      "separatorColor": "Neutral_50"
     },
     "PopupMenu.background": "Neutral_30",
     "MenuItem.background": "Neutral_30",
-    "Menu.separatorColor": "Neutral_50",
     "ComplexPopup.Header.background": "Neutral_30",
     "Popup.Header.activeBackground": "Neutral_30",
     "Popup.background": "Neutral_30",
-    "Popup.borderColor": "Neutral_50",
+    "Popup.borderColor": "Neutral_40",
     "Popup.separatorColor": "Neutral_50",
-    "Separator.separatorColor": "Neutral_50",
+    "Popup.Advertiser.background": "Neutral_30",
+    "Separator.separatorColor": "Neutral_40",
     "Notification": {
       "background": "Neutral_30",
       "borderColor": "Neutral_40",

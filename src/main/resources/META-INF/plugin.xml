@@ -21,6 +21,10 @@
         path="themes/fleet-dark/fleet-dark.theme.json"
     />
     <themeProvider
+        id="com.github.davidseptimus.armada.fleet-dark-islands"
+        path="themes/fleet-dark/fleet-dark-islands.theme.json"
+    />
+    <themeProvider
             id="com.github.davidseptimus.armada.fleet-light"
             path="themes/fleet-light/fleet-light.theme.json"
     />
