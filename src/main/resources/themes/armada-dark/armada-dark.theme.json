@@ -1,25 +1,24 @@
 {
   "author": "David Septimus",
   "dark": true,
-  "name": "Armada Dark (Islands)",
-  "editorScheme": "themes/fleet-dark/fleet-dark.xml",
-  "parentTheme": "Islands Dark",
+  "name": "Armada Dark (Classic)",
+  "editorScheme": "themes/armada-dark/armada-dark.xml",
   "icons": {
-    "/com/intellij/ide/ui/laf/icons/darcula/checkBox.svg": "/themes/fleet-dark/icons/checkBox.svg",
-    "/com/intellij/ide/ui/laf/icons/darcula/checkBoxDisabled.svg": "/themes/fleet-dark/icons/checkBoxDisabled.svg",
-    "/com/intellij/ide/ui/laf/icons/darcula/checkBoxFocused.svg": "/themes/fleet-dark/icons/checkBoxFocused.svg",
-    "/com/intellij/ide/ui/laf/icons/darcula/checkBoxIndeterminateSelected.svg": "/themes/fleet-dark/icons/checkBoxIndeterminateSelected.svg",
-    "/com/intellij/ide/ui/laf/icons/darcula/checkBoxIndeterminateSelectedDisabled.svg": "/themes/fleet-dark/icons/checkBoxIndeterminateSelectedDisabled.svg",
-    "/com/intellij/ide/ui/laf/icons/darcula/checkBoxIndeterminateSelectedFocused.svg": "/themes/fleet-dark/icons/checkBoxIndeterminateSelectedFocused.svg",
-    "/com/intellij/ide/ui/laf/icons/darcula/checkBoxSelected.svg": "/themes/fleet-dark/icons/checkBoxSelected.svg",
-    "/com/intellij/ide/ui/laf/icons/darcula/checkBoxSelectedDisabled.svg": "/themes/fleet-dark/icons/checkBoxSelectedDisabled.svg",
-    "/com/intellij/ide/ui/laf/icons/darcula/checkBoxSelectedFocused.svg": "/themes/fleet-dark/icons/checkBoxSelectedFocused.svg",
-    "/com/intellij/ide/ui/laf/icons/darcula/radio.svg": "/themes/fleet-dark/icons/radio.svg",
-    "/com/intellij/ide/ui/laf/icons/darcula/radioDisabled.svg": "/themes/fleet-dark/icons/radioDisabled.svg",
-    "/com/intellij/ide/ui/laf/icons/darcula/radioFocused.svg": "/themes/fleet-dark/icons/radioFocused.svg",
-    "/com/intellij/ide/ui/laf/icons/darcula/radioSelected.svg": "/themes/fleet-dark/icons/radioSelected.svg",
-    "/com/intellij/ide/ui/laf/icons/darcula/radioSelectedDisabled.svg": "/themes/fleet-dark/icons/radioSelectedDisabled.svg",
-    "/com/intellij/ide/ui/laf/icons/darcula/radioSelectedFocused.svg": "/themes/fleet-dark/icons/radioSelectedFocused.svg",
+    "/com/intellij/ide/ui/laf/icons/darcula/checkBox.svg": "/themes/armada-dark/icons/checkBox.svg",
+    "/com/intellij/ide/ui/laf/icons/darcula/checkBoxDisabled.svg": "/themes/armada-dark/icons/checkBoxDisabled.svg",
+    "/com/intellij/ide/ui/laf/icons/darcula/checkBoxFocused.svg": "/themes/armada-dark/icons/checkBoxFocused.svg",
+    "/com/intellij/ide/ui/laf/icons/darcula/checkBoxIndeterminateSelected.svg": "/themes/armada-dark/icons/checkBoxIndeterminateSelected.svg",
+    "/com/intellij/ide/ui/laf/icons/darcula/checkBoxIndeterminateSelectedDisabled.svg": "/themes/armada-dark/icons/checkBoxIndeterminateSelectedDisabled.svg",
+    "/com/intellij/ide/ui/laf/icons/darcula/checkBoxIndeterminateSelectedFocused.svg": "/themes/armada-dark/icons/checkBoxIndeterminateSelectedFocused.svg",
+    "/com/intellij/ide/ui/laf/icons/darcula/checkBoxSelected.svg": "/themes/armada-dark/icons/checkBoxSelected.svg",
+    "/com/intellij/ide/ui/laf/icons/darcula/checkBoxSelectedDisabled.svg": "/themes/armada-dark/icons/checkBoxSelectedDisabled.svg",
+    "/com/intellij/ide/ui/laf/icons/darcula/checkBoxSelectedFocused.svg": "/themes/armada-dark/icons/checkBoxSelectedFocused.svg",
+    "/com/intellij/ide/ui/laf/icons/darcula/radio.svg": "/themes/armada-dark/icons/radio.svg",
+    "/com/intellij/ide/ui/laf/icons/darcula/radioDisabled.svg": "/themes/armada-dark/icons/radioDisabled.svg",
+    "/com/intellij/ide/ui/laf/icons/darcula/radioFocused.svg": "/themes/armada-dark/icons/radioFocused.svg",
+    "/com/intellij/ide/ui/laf/icons/darcula/radioSelected.svg": "/themes/armada-dark/icons/radioSelected.svg",
+    "/com/intellij/ide/ui/laf/icons/darcula/radioSelectedDisabled.svg": "/themes/armada-dark/icons/radioSelectedDisabled.svg",
+    "/com/intellij/ide/ui/laf/icons/darcula/radioSelectedFocused.svg": "/themes/armada-dark/icons/radioSelectedFocused.svg",
     "ColorPalette": {
       "Tree.iconColor": "Neutral_140",
       "Gray.Fill": "Gray 50",
@@ -101,7 +100,6 @@
       "Yellow": "Yellow_30",
       "Gray": "Gray 30"
     },
-    "MainWindow.background": "Neutral_10",
     "MainToolbar.background": "Neutral_10",
     "Editor.background": "Neutral_20",
     "ScrollBar": {
@@ -122,10 +120,7 @@
     },
     "Settings.Spotlight.borderColor": "YellowTint_50",
     "Panel.foreground": "Neutral_140",
-    "StatusBar": {
-      "background": "Neutral_10",
-      "borderColor": "Transparent"
-    },
+    "StatusBar.borderColor": "Transparent",
     "Label.foreground": "Neutral_140",
     "Label.selectedForeground": "White",
     "Label.infoForeground": "Neutral_110",
@@ -164,8 +159,7 @@
         "selectedForeground": "White"
       },
       "Stripe": {
-        "background": "Neutral_10",
-        "separatorColor": "Neutral_40",
+        "separatorColor": "Neutral_50",
         "DragAndDrop": {
           "separatorColor": "Blue_90"
         }
@@ -207,8 +201,13 @@
       "hoverBackground": "LightTint_5"
     },
     "ComboBox": {
+      "selectionBackground": "BlueTint_40",
       "background": "Neutral_30",
-      "modifiedItemForeground": "Blue_110"
+      "modifiedItemForeground": "Blue_110",
+      "nonEditableBackground": "Neutral_30",
+      "disabledBackground": "Neutral_20",
+      "ArrowButton.nonEditableBackground": "Neutral_30",
+      "ArrowButton.background": "Neutral_30"
     },
     "ToolTip": {
       "background": "Neutral_40",

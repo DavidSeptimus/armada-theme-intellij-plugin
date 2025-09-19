@@ -21,12 +21,12 @@
   <extensions defaultExtensionNs="com.intellij">
     <themeProvider
         id="com.github.davidseptimus.armada.fleet-dark"
-        path="themes/fleet-dark/fleet-dark.theme.json"
+        path="themes/armada-dark/armada-dark.theme.json"
     />
 
     <themeProvider
             id="com.github.davidseptimus.armada.fleet-light"
-            path="themes/fleet-light/fleet-light.theme.json"
+            path="themes/armada-light/armada-light.theme.json"
     />
 
     <colorSettingsPage

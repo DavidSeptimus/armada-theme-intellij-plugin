@@ -32,9 +32,9 @@ This is an IntelliJ Platform plugin that provides Armada themes for IntelliJ-bas
 ### Core Components
 
 #### Theme System
-- **Theme JSON files**: Located in `src/main/resources/themes/` with separate folders for `fleet-dark` and `fleet-light`
-- **Editor color schemes**: XML files (e.g., `fleet-dark.xml`) defining syntax highlighting colors
-- **UI theme definitions**: JSON files (e.g., `fleet-dark.theme.json`) defining IDE UI colors and icons
+- **Theme JSON files**: Located in `src/main/resources/themes/` with separate folders for `armada-dark` and `armada-light`
+- **Editor color schemes**: XML files (e.g., `armada-dark.xml`) defining syntax highlighting colors
+- **UI theme definitions**: JSON files (e.g., `armada-dark.theme.json`) defining IDE UI colors and icons
 - **Theme variants**: Both "classic" and "islands" variants available for each theme
 
 #### Language-Specific Annotators
