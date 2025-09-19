@@ -2,17 +2,17 @@
   <option name="FONT_SCALE" value="1.0"/>
   <metaInfo>
     <property name="ide">idea</property>
-    <property name="ideVersion">2025.1.1.0.0</property>
+    <property name="ideVersion">2025.3.0.0</property>
   </metaInfo>
   <option name="LINE_SPACING" value="1.2"/>
   <option name="EDITOR_FONT_SIZE" value="13"/>
   <option name="EDITOR_FONT_NAME" value="JetBrains Mono"/>
   <option name="EDITOR_LIGATURES" value="true"/>
   <colors>
-    <option name="ActionButton.iconTextForeground" value="E0E1E4"/>
     <option name="ADDED_LINES_COLOR" value="14835E"/>
     <option name="ANNOTATIONS_COLOR" value="9EA3A8"/>
     <option name="ANNOTATIONS_LAST_COMMIT_COLOR" value="F8F8F9"/>
+    <option name="ActionButton.iconTextForeground" value="E0E1E4" />
     <option name="BLOCK_TERMINAL_BLOCK_BACKGROUND_END" value="212733"/>
     <option name="BLOCK_TERMINAL_BLOCK_BACKGROUND_START" value="212733"/>
     <option name="BLOCK_TERMINAL_DEFAULT_BACKGROUND" value="212733"/>
@@ -57,31 +57,31 @@
     <option name="RIGHT_MARGIN_COLOR" value="353535"/>
     <option name="SELECTED_INDENT_GUIDE" value="353535"/>
     <option name="SELECTION_BACKGROUND" value="225090"/>
+    <option name="ScrollBar.Mac.Transparent.hoverThumbBorderColor" value="00000000" />
+    <option name="ScrollBar.Mac.Transparent.hoverThumbColor" value="E0E1E433" />
+    <option name="ScrollBar.Mac.Transparent.hoverTrackColor" value="E0E1E41A" />
+    <option name="ScrollBar.Mac.Transparent.thumbBorderColor" value="00000000" />
+    <option name="ScrollBar.Mac.Transparent.thumbColor" value="E0E1E426" />
+    <option name="ScrollBar.Mac.Transparent.trackColor" value="00000000" />
+    <option name="ScrollBar.Mac.hoverThumbBorderColor" value="00000000" />
+    <option name="ScrollBar.Mac.hoverThumbColor" value="E0E1E433" />
+    <option name="ScrollBar.Mac.hoverTrackColor" value="E0E1E41A" />
+    <option name="ScrollBar.Mac.thumbBorderColor" value="00000000" />
+    <option name="ScrollBar.Mac.thumbColor" value="E0E1E426" />
+    <option name="ScrollBar.Mac.trackColor" value="00000000" />
+    <option name="ScrollBar.Transparent.hoverThumbBorderColor" value="00000000" />
+    <option name="ScrollBar.Transparent.hoverThumbColor" value="E0E1E433" />
+    <option name="ScrollBar.Transparent.hoverTrackColor" value="E0E1E41A" />
+    <option name="ScrollBar.Transparent.thumbBorderColor" value="00000000" />
+    <option name="ScrollBar.Transparent.thumbColor" value="E0E1E426" />
+    <option name="ScrollBar.Transparent.trackColor" value="00000000" />
     <option name="ScrollBar.background" value="00000000"/>
-    <option name="ScrollBar.trackColor" value="00000000"/>
-    <option name="ScrollBar.thumbColor" value="E0E1E426"/>
-    <option name="ScrollBar.thumbBorderColor" value="00000000"/>
-    <option name="ScrollBar.hoverTrackColor" value="E0E1E41A"/>
+    <option name="ScrollBar.hoverThumbBorderColor" value="00000000" />
     <option name="ScrollBar.hoverThumbColor" value="E0E1E433"/>
-    <option name="ScrollBar.hoverThumbBorderColor" value="00000000"/>
-    <option name="ScrollBar.Transparent.trackColor" value="00000000"/>
-    <option name="ScrollBar.Transparent.thumbColor" value="E0E1E426"/>
-    <option name="ScrollBar.Transparent.thumbBorderColor" value="00000000"/>
-    <option name="ScrollBar.Transparent.hoverTrackColor" value="E0E1E41A"/>
-    <option name="ScrollBar.Transparent.hoverThumbColor" value="E0E1E433"/>
-    <option name="ScrollBar.Transparent.hoverThumbBorderColor" value="00000000"/>
-    <option name="ScrollBar.Mac.trackColor" value="00000000"/>
-    <option name="ScrollBar.Mac.thumbColor" value="E0E1E426"/>
-    <option name="ScrollBar.Mac.thumbBorderColor" value="00000000"/>
-    <option name="ScrollBar.Mac.hoverTrackColor" value="E0E1E41A"/>
-    <option name="ScrollBar.Mac.hoverThumbColor" value="E0E1E433"/>
-    <option name="ScrollBar.Mac.hoverThumbBorderColor" value="00000000"/>
-    <option name="ScrollBar.Mac.Transparent.trackColor" value="00000000"/>
-    <option name="ScrollBar.Mac.Transparent.thumbColor" value="E0E1E426"/>
-    <option name="ScrollBar.Mac.Transparent.thumbBorderColor" value="00000000"/>
-    <option name="ScrollBar.Mac.Transparent.hoverTrackColor" value="E0E1E41A"/>
-    <option name="ScrollBar.Mac.Transparent.hoverThumbColor" value="E0E1E433"/>
-    <option name="ScrollBar.Mac.Transparent.hoverThumbBorderColor" value="00000000"/>
+    <option name="ScrollBar.hoverTrackColor" value="E0E1E41A" />
+    <option name="ScrollBar.thumbBorderColor" value="00000000" />
+    <option name="ScrollBar.thumbColor" value="E0E1E426" />
+    <option name="ScrollBar.trackColor" value="00000000" />
     <option name="TAB_UNDERLINE" value="10447F"/>
     <option name="VCS_ANNOTATIONS_COLOR_1" value="916012"/>
     <option name="VCS_ANNOTATIONS_COLOR_2" value="6C4B18"/>
@@ -122,7 +122,7 @@
     </option>
     <option name="CONDITIONALLY_NOT_COMPILED">
       <value>
-        <option name="FOREGROUND" value="E0E1E499"/>
+        <option name="FOREGROUND" value="909194"/>
         <option name="FONT_TYPE" value="2"/>
       </value>
     </option>
@@ -361,13 +361,13 @@
     </option>
     <option name="CUSTOM_LINE_COMMENT_ATTRIBUTES">
       <value>
-        <option name="FOREGROUND" value="E0E1E499"/>
+        <option name="FOREGROUND" value="909194"/>
         <option name="FONT_TYPE" value="2"/>
       </value>
     </option>
     <option name="CUSTOM_MULTI_LINE_COMMENT_ATTRIBUTES">
       <value>
-        <option name="FOREGROUND" value="E0E1E499"/>
+        <option name="FOREGROUND" value="909194"/>
         <option name="FONT_TYPE" value="2"/>
       </value>
     </option>
@@ -602,29 +602,29 @@
     </option>
     <option name="DIFF_CONFLICT">
       <value>
-        <option name="FOREGROUND" value="9F680C80"/>
-        <option name="BACKGROUND" value="9F680C80"/>
+        <option name="FOREGROUND" value="322818" />
+        <option name="BACKGROUND" value="5c4013" />
         <option name="ERROR_STRIPE_COLOR" value="9f680c"/>
       </value>
     </option>
     <option name="DIFF_DELETED">
       <value>
-        <option name="FOREGROUND" value="D7325133"/>
-        <option name="BACKGROUND" value="D7325180"/>
+        <option name="FOREGROUND" value="632230" />
+        <option name="BACKGROUND" value="782535" />
         <option name="ERROR_STRIPE_COLOR" value="d73251"/>
       </value>
     </option>
     <option name="DIFF_INSERTED">
       <value>
-        <option name="FOREGROUND" value="14835E66"/>
-        <option name="BACKGROUND" value="14835E80"/>
+        <option name="FOREGROUND" value="154335" />
+        <option name="BACKGROUND" value="164e3c" />
         <option name="ERROR_STRIPE_COLOR" value="14835e"/>
       </value>
     </option>
     <option name="DIFF_MODIFIED">
       <value>
-        <option name="FOREGROUND" value="0870E433"/>
-        <option name="BACKGROUND" value="0870E480"/>
+        <option name="FOREGROUND" value="192941" />
+        <option name="BACKGROUND" value="10447f" />
         <option name="ERROR_STRIPE_COLOR" value="870e4"/>
       </value>
     </option>
@@ -789,7 +789,7 @@
     <option name="HTML_ENTITY_REFERENCE" baseAttributes="DEFAULT_ENTITY"/>
     <option name="HTML_TAG">
       <value>
-        <option name="FOREGROUND" value="E0E1E499"/>
+        <option name="FOREGROUND" value="909194"/>
       </value>
     </option>
     <option name="HTML_TAG_NAME">
@@ -1052,13 +1052,13 @@
     </option>
     <option name="MATCHED_BRACE_ATTRIBUTES">
       <value>
-        <option name="BACKGROUND" value="14835E66"/>
+        <option name="BACKGROUND" value="154335" />
         <option name="FONT_TYPE" value="1"/>
       </value>
     </option>
     <option name="NOT_TOP_FRAME_ATTRIBUTES">
       <value>
-        <option name="BACKGROUND" value="0870E433"/>
+        <option name="BACKGROUND" value="142a43" />
       </value>
     </option>
     <option name="NOT_USED_ELEMENT_ATTRIBUTES">
@@ -1467,8 +1467,8 @@
     </option>
     <option name="TEXT_SEARCH_RESULT_ATTRIBUTES">
       <value>
-        <option name="BACKGROUND" value="9F680C66"/>
-        <option name="EFFECT_COLOR" value="9F680C80"/>
+        <option name="BACKGROUND" value="4d3814" />
+        <option name="EFFECT_COLOR" value="765010" />
         <option name="ERROR_STRIPE_COLOR" value="d49550"/>
       </value>
     </option>
@@ -1498,7 +1498,7 @@
     </option>
     <option name="TS.DOC_TYPE">
       <value>
-        <option name="FOREGROUND" value="E0E1E499"/>
+        <option name="FOREGROUND" value="909194"/>
       </value>
     </option>
     <option name="TS.INSTANCE_MEMBER_VARIABLE">
@@ -1547,13 +1547,13 @@
     </option>
     <option name="WRITE_IDENTIFIER_UNDER_CARET_ATTRIBUTES">
       <value>
-        <option name="BACKGROUND" value="D7325133"/>
+        <option name="BACKGROUND" value="3D1D26"/>
         <option name="ERROR_STRIPE_COLOR" value="ffb0b5"/>
       </value>
     </option>
     <option name="WRITE_SEARCH_RESULT_ATTRIBUTES">
       <value>
-        <option name="BACKGROUND" value="D732514D"/>
+        <option name="BACKGROUND" value="51202b" />
       </value>
     </option>
     <option name="WRONG_REFERENCES_ATTRIBUTES">
