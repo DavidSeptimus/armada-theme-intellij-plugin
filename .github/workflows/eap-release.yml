@@ -67,6 +67,7 @@ jobs:
   test:
     name: Test
     needs: [ check-changes ]
+    if: needs.check-changes.outputs.should-publish == 'true'
     runs-on: ubuntu-latest
     steps:
       - name: Maximize Build Space
@@ -112,6 +113,7 @@ jobs:
   inspectCode:
     name: Inspect code
     needs: [ test ]
+    if: needs.check-changes.outputs.should-publish == 'true'
     runs-on: ubuntu-latest
     permissions:
       contents: write
@@ -150,6 +152,7 @@ jobs:
   verify:
     name: Verify plugin
     needs: [ test ]
+    if: needs.check-changes.outputs.should-publish == 'true'
     runs-on: macos-latest
     steps:
 
@@ -196,7 +199,7 @@ jobs:
 
   eap-release:
     name: Publish EAP Release
-    needs: [ test ]
+    needs: [ test, inspectCode, verify ]
     if: needs.check-changes.outputs.should-publish == 'true'
     runs-on: ubuntu-latest
     permissions:
