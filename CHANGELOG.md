@@ -142,7 +142,7 @@
 - Fleet Dark UI and Editor Color Scheme
 - Plugin Icon
 
-[Unreleased]: https://github.com/DavidSeptimus/armada-theme-intellij-plugin/compare/v0.5.3-eap...HEAD
+[Unreleased]: https://github.com/DavidSeptimus/armada-theme-intellij-plugin/compare/v0.5.2...HEAD
 [0.5.3-eap]: https://github.com/DavidSeptimus/armada-theme-intellij-plugin/compare/v0.5.1...v0.5.3-eap
 [0.5.2]: https://github.com/DavidSeptimus/armada-theme-intellij-plugin/compare/v0.5.1...v0.5.2
 [0.5.1]: https://github.com/DavidSeptimus/armada-theme-intellij-plugin/compare/v0.5.0...v0.5.1

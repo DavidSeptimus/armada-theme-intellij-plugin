@@ -49,17 +49,12 @@ fun generateEAPVersion(baseVersion: String, gitTagOutput: String): String {
     val tags = gitTagOutput.lines().filter { it.isNotBlank() }.map { Version.fromString(if (it.startsWith("v"))  it.substring(1) else it) }
     val eapTags = tags.filter { it.preReleaseIdentifiers.any { id -> id.toString().startsWith("eap") } }.sortedWith { a, b -> Version.reverseComparator().compare(a,b) }
     val stableTags = tags.filter { it.preReleaseIdentifiers.isEmpty() }.sortedWith { a, b -> Version.reverseComparator().compare(a,b) }
-    println("Found ${stableTags.size} stable tags and ${eapTags.size} EAP tags in git")
     val isBaseReleased = stableTags.any { it.equals(baseSemVer) }
     val eapBaseVersion = if (isBaseReleased) baseSemVer.incrementMinor() else baseSemVer
     val eapsForBase = eapTags.filter { it.major == eapBaseVersion.major && it.minor == eapBaseVersion.minor && it.patch == eapBaseVersion.patch }
-    println("Found ${eapsForBase.size} EAP tags for base version $eapBaseVersion: ${eapsForBase.joinToString(", ")}")
     if (eapsForBase.size == 0) {
         return "$eapBaseVersion-eap"
     } else {
-        println("Latest EAP for base version is ${eapsForBase.first()}")
-        println("Oldest EAP for base version is ${eapsForBase.last()}")
-        println("preReleaseIdentifiers: ${eapsForBase.first().preReleaseIdentifiers.joinToString(", ")}")
         return  eapsForBase.first().let {
             val currentEapNumber = if(it.preReleaseIdentifiers.size > 1 && it.preReleaseIdentifiers.get(1).isNumeric) it.preReleaseIdentifiers.get(1).toString().toInt() else 0
             "$eapBaseVersion-eap.${currentEapNumber + 1}"
@@ -194,7 +189,6 @@ intellijPlatform {
         // Specify pre-release label to publish the plugin in a custom Release Channel automatically. Read more:
         // https://plugins.jetbrains.com/docs/intellij/deployment.html#specifying-a-release-channel
         channels = provider { listOf(project.version.toString().substringAfter('-', "").substringBefore('.').ifEmpty { "default" }) }
-        print("Publishing to channel(s): ${channels.get()}\n")
         token = providers.environmentVariable("PUBLISH_TOKEN")
     }
 
@@ -295,7 +289,7 @@ tasks {
         dependsOn("buildPlugin")
 
         doFirst {
-            println("Building EAP version with incremented patch number")
+            println("Building EAP with version $version")
         }
     }
 
