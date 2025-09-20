@@ -4,6 +4,12 @@
 
 ## [Unreleased]
 
+### Fixed
+
+- Replaced transparent colors Armada Dark color scheme with solid blended colors to resolve issues with losing transparency when exporting/importing user customizations
+
+## [0.5.2] - 2025-09-18
+
 ### Changed
 
 - Made minor color adjustments to `Armada Dark (Classic)` UI theme
