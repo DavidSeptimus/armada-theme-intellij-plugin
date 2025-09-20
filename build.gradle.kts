@@ -3,7 +3,14 @@ import org.jetbrains.changelog.markdownToHTML
 import org.jetbrains.intellij.platform.gradle.TestFrameworkType
 import org.jetbrains.intellij.platform.gradle.extensions.IntelliJPlatformDependenciesExtension
 import org.jetbrains.intellij.pluginRepository.PluginRepositoryFactory
+import org.gradle.api.provider.Property
+import org.gradle.api.provider.ValueSource
+import org.gradle.api.provider.ValueSourceParameters
+import org.gradle.process.ExecOperations
+import org.jetbrains.kotlin.com.github.gundy.semver4j.model.Version
 import java.io.ByteArrayOutputStream
+import javax.inject.Inject
+import kotlin.collections.sortedWith
 
 plugins {
     id("java") // Java support
@@ -12,6 +19,52 @@ plugins {
     alias(libs.plugins.changelog) // Gradle Changelog Plugin
     alias(libs.plugins.qodana) // Gradle Qodana Plugin
     alias(libs.plugins.kover) // Gradle Kover Plugin
+}
+
+abstract class GitTagValueSource : ValueSource<String, GitTagValueSource.Parameters> {
+    interface Parameters : ValueSourceParameters {
+        val pattern: Property<String>
+    }
+
+    @get:Inject
+    abstract val execOperations: ExecOperations
+
+    override fun obtain(): String {
+        val output = ByteArrayOutputStream()
+        return try {
+            execOperations.exec {
+                commandLine("git", "tag", "--list", "--sort=-version:refname", parameters.pattern.get())
+                standardOutput = output
+                isIgnoreExitValue = true
+            }
+            output.toString().trim()
+        } catch (ignored: Exception) {
+            ""
+        }
+    }
+}
+
+fun generateEAPVersion(baseVersion: String, gitTagOutput: String): String {
+    val baseSemVer = Version.fromString(baseVersion)
+    val tags = gitTagOutput.lines().filter { it.isNotBlank() }.map { Version.fromString(if (it.startsWith("v"))  it.substring(1) else it) }
+    val eapTags = tags.filter { it.preReleaseIdentifiers.any { id -> id.toString().startsWith("eap") } }.sortedWith { a, b -> Version.reverseComparator().compare(a,b) }
+    val stableTags = tags.filter { it.preReleaseIdentifiers.isEmpty() }.sortedWith { a, b -> Version.reverseComparator().compare(a,b) }
+    println("Found ${stableTags.size} stable tags and ${eapTags.size} EAP tags in git")
+    val isBaseReleased = stableTags.any { it.equals(baseSemVer) }
+    val eapBaseVersion = if (isBaseReleased) baseSemVer.incrementMinor() else baseSemVer
+    val eapsForBase = eapTags.filter { it.major == eapBaseVersion.major && it.minor == eapBaseVersion.minor && it.patch == eapBaseVersion.patch }
+    println("Found ${eapsForBase.size} EAP tags for base version $eapBaseVersion: ${eapsForBase.joinToString(", ")}")
+    if (eapsForBase.size == 0) {
+        return "$eapBaseVersion-eap"
+    } else {
+        println("Latest EAP for base version is ${eapsForBase.first()}")
+        println("Oldest EAP for base version is ${eapsForBase.last()}")
+        println("preReleaseIdentifiers: ${eapsForBase.first().preReleaseIdentifiers.joinToString(", ")}")
+        return  eapsForBase.first().let {
+            val currentEapNumber = if(it.preReleaseIdentifiers.size > 1 && it.preReleaseIdentifiers.get(1).isNumeric) it.preReleaseIdentifiers.get(1).toString().toInt() else 0
+            "$eapBaseVersion-eap.${currentEapNumber + 1}"
+        }
+    }
 }
 
 group = providers.gradleProperty("pluginGroup").get()
@@ -23,52 +76,14 @@ val isEAPBuild = project.hasProperty("eap") ||
                  gradle.startParameter.taskNames.any { it.contains("EAP") }
 
 version = if (isEAPBuild) {
-    // Generate EAP version with point release support
-    val eapVersion = generateEAPVersion(baseVersion)
+    val gitTagOutput = providers.of(GitTagValueSource::class.java) {
+        parameters.pattern.set("v*")
+    }.get()
+    val eapVersion = generateEAPVersion(baseVersion, gitTagOutput)
     println("Generated EAP version: $eapVersion")
     eapVersion
 } else {
     baseVersion
-}
-
-fun generateEAPVersion(baseVersion: String): String {
-    // Get existing EAP tags to determine next version
-    val result = ByteArrayOutputStream()
-    try {
-        providers.exec {
-            commandLine("git", "tag", "--list", "--sort=-version:refname", "v*-eap*")
-            standardOutput = result
-            isIgnoreExitValue = true
-        }
-    } catch (e: Exception) {
-        // If git command fails, fall back to simple increment
-        val parts = baseVersion.split(".")
-        val patch = parts[2].toInt() + 1
-        return "${parts[0]}.${parts[1]}.$patch-eap"
-    }
-
-    val eapTags = result.toString().trim().lines().filter { it.isNotBlank() }
-    val parts = baseVersion.split(".")
-    val baseVersionPattern = "${parts[0]}\\.${parts[1]}\\.${parts[2]}"
-
-    // Find existing EAP versions for this base version
-    val existingEapVersions = eapTags
-        .filter { it.matches(Regex("^v?$baseVersionPattern-eap(?:\\.\\d+)?$")) }
-        .mapNotNull { tag ->
-            val version = tag.removePrefix("v")
-            val eapPart = version.substringAfter("-eap")
-            if (eapPart.isEmpty()) 1 else eapPart.removePrefix(".").toIntOrNull() ?: 1
-        }
-        .sorted()
-
-    return if (existingEapVersions.isNotEmpty()) {
-        // Increment the highest existing EAP point release
-        val nextPointRelease = existingEapVersions.last() + 1
-        "$baseVersion-eap.$nextPointRelease"
-    } else {
-        // First EAP for this base version
-        "$baseVersion-eap"
-    }
 }
 
 // Set the JVM language level used to build the project.
@@ -209,7 +224,7 @@ kover {
 
 tasks {
     // Task to generate plugin.xml from plugin-main.xml with conditional EAP injection
-    register("generatePluginXml") {
+    register<Task>("generatePluginXml") {
         group = "build"
         description = "Generates plugin.xml from plugin-main.xml with conditional EAP dependencies"
 
@@ -273,7 +288,7 @@ tasks {
         dependsOn("generatePluginXml")
     }
 
-    register("buildEAP") {
+    register<Task>("buildEAP") {
         group = "eap"
         description = "Builds plugin with EAP version and configuration"
 

@@ -7,7 +7,6 @@ on:
     # Run nightly at 3 AM UTC
     - cron: '0 3 * * *'
   workflow_dispatch:
-    # Allow manual triggering
     inputs:
       force_publish:
         description: 'Force publish even if no changes detected'
@@ -63,7 +62,6 @@ jobs:
 
           echo "commit-sha=$(git rev-parse HEAD)" >> $GITHUB_OUTPUT
 
-    # Run tests and upload a code coverage report
   test:
     name: Test
     needs: [ check-changes ]
@@ -76,26 +74,21 @@ jobs:
           tool-cache: false
           large-packages: false
 
-      # Check out the current repository
       - name: Fetch Sources
         uses: actions/checkout@v4
 
-      # Set up Java environment for the next steps
       - name: Setup Java
         uses: actions/setup-java@v4
         with:
           distribution: zulu
           java-version: 21
 
-      # Setup Gradle
       - name: Setup Gradle
         uses: gradle/actions/setup-gradle@v4
 
-      # Run tests
       - name: Run Tests
         run: ./gradlew checkEAP
 
-      # Collect Tests Result of failed tests
       - name: Collect Tests Result
         if: ${{ failure() }}
         uses: actions/upload-artifact@v4
@@ -103,7 +96,6 @@ jobs:
           name: tests-result
           path: ${{ github.workspace }}/build/reports/tests
 
-      # Upload the Kover report to CodeCov
       - name: Upload Code Coverage Report
         uses: codecov/codecov-action@v5
         with:
@@ -120,76 +112,56 @@ jobs:
       checks: write
       pull-requests: write
     steps:
-
-      # Free GitHub Actions Environment Disk Space
       - name: Maximize Build Space
         uses: jlumbroso/free-disk-space@54081f138730dfa15788a46383842cd2f914a1be
         with:
           tool-cache: false
           large-packages: false
 
-      # Check out the current repository
       - name: Fetch Sources
         uses: actions/checkout@v4
         with:
           ref: ${{ github.event.pull_request.head.sha }}  # to check out the actual pull request commit, not the merge commit
           fetch-depth: 0  # a full history is required for pull request analysis
 
-      # Set up Java environment for the next steps
       - name: Setup Java
         uses: actions/setup-java@v4
         with:
           distribution: zulu
           java-version: 21
 
-      # Run Qodana inspections
       - name: Qodana - Code Inspection
         uses: JetBrains/qodana-action@v2025.2
         with:
           cache-default-branch-only: true
 
-  # Run plugin structure verification along with IntelliJ Plugin Verifier
   verify:
     name: Verify plugin
     needs: [ test ]
     if: needs.check-changes.outputs.should-publish == 'true'
     runs-on: macos-latest
     steps:
-
-      #      # Free GitHub Actions Environment Disk Space
-      #      - name: Maximize Build Space
-      #        uses: jlumbroso/free-disk-space@54081f138730dfa15788a46383842cd2f914a1be
-      #        with:
-      #          tool-cache: true
-      #          large-packages: true
-
-      # Check out the current repository
       - name: Fetch Sources
         uses: actions/checkout@v4
 
-      # Set up Java environment for the next steps
       - name: Setup Java
         uses: actions/setup-java@v4
         with:
           distribution: zulu
           java-version: 21
 
-      # Setup Gradle
       - name: Setup Gradle
         uses: gradle/actions/setup-gradle@v4
 
-      # Cache Plugin Verifier IDEs
       - name: Setup Plugin Verifier IDEs Cache
         uses: actions/cache@v4
         with:
           path: ${{ needs.build.outputs.pluginVerifierHomeDir }}/ides
           key: plugin-verifier-${{ hashFiles('build/listProductsReleases.txt') }}
 
-      # Run Verify Plugin task and IntelliJ Plugin Verifier tool
       - name: Run Plugin Verification tasks
         run: ./gradlew verifyPluginEAP -Dplugin.verifier.home.dir=${{ needs.build.outputs.pluginVerifierHomeDir }}
 
-      # Collect Plugin Verifier Result
       - name: Collect Plugin Verifier Result
         if: ${{ always() }}
         uses: actions/upload-artifact@v4
@@ -212,26 +184,21 @@ jobs:
           tool-cache: true
           large-packages: true
 
-      # Check out the current repository
       - name: Fetch Sources
         uses: actions/checkout@v4
 
-      # Validate wrapper
       - name: Gradle Wrapper Validation
         uses: gradle/actions/wrapper-validation@v4
 
-      # Set up Java environment for the next steps
       - name: Setup Java
         uses: actions/setup-java@v4
         with:
           distribution: zulu
           java-version: 21
 
-      # Setup Gradle
       - name: Setup Gradle
         uses: gradle/actions/setup-gradle@v4
 
-      # Get EAP version
       - name: Get EAP Version
         id: version
         run: |
@@ -288,7 +255,7 @@ jobs:
           **Recent Changes:**
           $RECENT_COMMITS
 
-          **Installation**: Download the plugin from the [JetBrains Marketplace EAP channel](https://plugins.jetbrains.com/plugin/26844-armada-theme) or install via IDE settings.
+          **Installation**: Download the plugin from the [JetBrains Marketplace EAP channel](https://plugins.jetbrains.com/plugin/26844-armada-theme) or install via IDE settings by after adding the following plugin registry: https://plugins.jetbrains.com/plugins/eap/26844.
 
           Built from commit: $COMMIT_SHA
           EOM
