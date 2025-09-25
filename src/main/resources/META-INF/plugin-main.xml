@@ -14,6 +14,7 @@
   <depends optional="true" config-file="plugin-yaml.xml">org.jetbrains.plugins.yaml</depends>
   <depends optional="true" config-file="plugin-zig.xml">com.falsepattern.zigbrains</depends>
   <depends optional="true" config-file="plugin-php.xml">com.jetbrains.php</depends>
+  <depends optional="true" config-file="plugin-shell.xml">com.jetbrains.sh</depends>
 
   <!-- BEGIN Build-time Dependencies -->
   <!-- END Build-time Dependencies -->

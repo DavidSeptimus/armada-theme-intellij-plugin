@@ -9,10 +9,8 @@ import com.intellij.psi.PsiElement
 import com.intellij.psi.util.elementType
 import com.jetbrains.php.lang.lexer.PhpTokenTypes
 import com.jetbrains.php.lang.psi.elements.ClassReference
-import com.jetbrains.php.lang.psi.elements.PhpEchoStatement
 import com.jetbrains.php.lang.psi.elements.PhpGoto
 import com.jetbrains.php.lang.psi.elements.PhpUse
-import com.jetbrains.php.lang.psi.elements.StringLiteralExpression
 
 class PHPAnnotator : Annotator {
 

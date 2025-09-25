@@ -4,9 +4,20 @@
 
 ## [Unreleased]
 
+### Added
+
+- Added colors for Shell Script, including annotations for let commands and subshell parentheses
+- Added old terminal ANSI background colors as well as both foreground and background colors for the new terminal color
+
+### Changed
+
+- Updated terminal search and selection colors
+
 ### Fixed
 
+- Fixed terminal background color in dark themes
 - Replaced transparent colors Armada Dark color scheme with solid blended colors to resolve issues with losing transparency when exporting/importing user customizations
+- Removed all non-color settings from color schemes to prevent overriding user font and other preferences when applying the color scheme
 
 ## [0.5.2] - 2025-09-18
 

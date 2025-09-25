@@ -23,4 +23,6 @@ public final class TextAttributeKeys {
     public static final @NotNull TextAttributesKey YAML_SINGLE_QUOTED_STRING = TextAttributesKey.createTextAttributesKey("YAML_SINGLE_QUOTED_STRING");
     public static final @NotNull TextAttributesKey ZIG_FIELD_TYPE = TextAttributesKey.createTextAttributesKey("ZIG_FIELD_TYPE");
     public static final @NotNull TextAttributesKey ZIG_RETURN_TYPE_IDENTIFIER = TextAttributesKey.createTextAttributesKey("ZIG_RETURN_TYPE_IDENTIFIER", ZIG_FIELD_TYPE);
+    public static final @NotNull TextAttributesKey BASH_LET_COMMAND = TextAttributesKey.createTextAttributesKey("BASH.LET_COMMAND");
+    public static final @NotNull TextAttributesKey BASH_SUBSHELL_COMMAND_PARENTHESES = TextAttributesKey.createTextAttributesKey("BASH.SUBSHELL_COMMAND_PARENTHESES");
 }

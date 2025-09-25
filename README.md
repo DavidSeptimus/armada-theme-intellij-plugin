@@ -35,6 +35,7 @@ Language-specific colors have been added for the following languages so far:
 | Properties | ✅            | ✅         |
 | Rust       | ✅            | ✅         |
 | SASS/SCSS  | ✅            | ✅         |
+| Shell      | ✅            | ✅         |
 | Typescript | ✅            | ✅         |
 | TOML       | ✅            | ✅         |
 | XML        | ✅            | ✅         |

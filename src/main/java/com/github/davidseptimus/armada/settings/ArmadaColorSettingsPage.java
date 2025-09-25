@@ -28,6 +28,8 @@ final class ArmadaColorSettingsPage implements ColorSettingsPage {
             new AttributesDescriptor("PHP goto label identifier", TextAttributeKeys.PHP_GOTO_LABEL_IDENTIFIER),
             new AttributesDescriptor("Properties string literal value", TextAttributeKeys.PROPERTIES_STRING_LITERAL_VALUE),
             new AttributesDescriptor("Python type annotation", TextAttributeKeys.PYTHON_TYPE_ANNOTATION),
+            new AttributesDescriptor("Shell Script let command", TextAttributeKeys.BASH_LET_COMMAND),
+            new AttributesDescriptor("Shell Script subshell command parentheses", TextAttributeKeys.BASH_SUBSHELL_COMMAND_PARENTHESES),
             new AttributesDescriptor("XML DocType", TextAttributeKeys.XML_DOCTYPE),
             new AttributesDescriptor("YAML alias", TextAttributeKeys.YAML_ALIAS),
             new AttributesDescriptor("YAML single quoted string", TextAttributeKeys.YAML_SINGLE_QUOTED_STRING),
@@ -79,6 +81,9 @@ final class ArmadaColorSettingsPage implements ColorSettingsPage {
                 def my_func(arg1: MyType) -> None: // Python Type Annotation
                     pass
                 
+                // Shell Script
+                let a=5 b=10 // Shell Script let command
+                rm -f $(find / -name core) // Shell Script Subshell Command Parentheses
                 // XML
                 <!DOCTYPE html> // XML DocType
                 
