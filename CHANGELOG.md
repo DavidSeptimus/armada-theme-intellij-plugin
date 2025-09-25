@@ -8,10 +8,12 @@
 
 - Added colors for Shell Script, including annotations for let commands and subshell parentheses
 - Added old terminal ANSI background colors as well as both foreground and background colors for the new terminal color
+- Added an annotator to support highlighting of Rust attributes
 
 ### Changed
 
 - Updated terminal search and selection colors
+- Updated Rust colorst to reflect Rust Rover's improved syntax highlighting capabilities for the language since initial support was added
 
 ### Fixed
 

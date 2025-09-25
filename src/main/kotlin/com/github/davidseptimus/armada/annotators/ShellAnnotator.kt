@@ -17,12 +17,6 @@ class ShellAnnotator : Annotator {
     }
 
     override fun annotate(element: PsiElement, holder: AnnotationHolder) {
-        annotateLabel(element, holder)
-    }
-
-
-
-    private fun annotateLabel(element: PsiElement, holder: AnnotationHolder) {
         when {
             element.text.equals("let") && element.parent is ShLetCommand && element.parent.firstChild == element -> {
                 holder.newSilentAnnotation(HighlightSeverity.INFORMATION)
@@ -44,6 +38,5 @@ class ShellAnnotator : Annotator {
                     .create()
             }
         }
-
     }
 }
