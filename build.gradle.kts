@@ -288,8 +288,9 @@ tasks {
 
         dependsOn("buildPlugin")
 
+        val buildVersion = version.toString()
         doFirst {
-            println("Building EAP with version $version")
+            println("Building EAP with version $buildVersion")
         }
     }
 
