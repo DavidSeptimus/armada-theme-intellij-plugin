@@ -666,7 +666,7 @@
     </option>
     <option name="DEFAULT_METADATA">
       <value>
-        <option name="FOREGROUND" value="a1c377"/>
+        <option name="FOREGROUND" value="a8cc7c" />
       </value>
     </option>
     <option name="DEFAULT_NUMBER">
@@ -1791,6 +1791,8 @@
         <option name="FONT_TYPE" value="1"/>
       </value>
     </option>
+    <option name="org.rust.ASSOC_FUNCTION_CALL" baseAttributes="DEFAULT_STATIC_METHOD" />
+    <option name="org.rust.ASSOC_TRAIT_FUNCTION_CALL" baseAttributes="org.rust.ASSOC_FUNCTION_CALL" />
     <option name="org.rust.CFG_DISABLED_CODE">
       <value>
         <option name="FOREGROUND" value="767676"/>
@@ -1808,7 +1810,8 @@
     </option>
     <option name="org.rust.CONST_PARAMETER">
       <value>
-        <option name="FOREGROUND" value="e0e1e4"/>
+        <option name="FOREGROUND" value="af9cff" />
+        <option name="FONT_TYPE" value="2" />
       </value>
     </option>
     <option name="org.rust.CRATE">
@@ -1821,12 +1824,15 @@
         <option name="FONT_TYPE" value="2"/>
       </value>
     </option>
+    <option name="org.rust.ENUM" baseAttributes="DEFAULT_CLASS_NAME" />
+    <option name="org.rust.ENUM_VARIANT" baseAttributes="DEFAULT_STATIC_FIELD" />
     <option name="org.rust.FUNCTION">
       <value>
         <option name="FOREGROUND" value="e0e1e4"/>
         <option name="FONT_TYPE" value="1"/>
       </value>
     </option>
+    <option name="org.rust.FUNCTION_CALL" baseAttributes="DEFAULT_FUNCTION_CALL" />
     <option name="org.rust.LIFETIME">
       <value>
         <option name="FOREGROUND" value="a8cc7c"/>
@@ -1834,7 +1840,37 @@
     </option>
     <option name="org.rust.MACRO">
       <value>
+        <option name="FOREGROUND" value="a8cc7c" />
+      </value>
+    </option>
+    <option name="org.rust.MACRO_BINDING_IDENTIFIER">
+      <value>
+        <option name="FOREGROUND" value="87c3ff" />
+      </value>
+    </option>
+    <option name="org.rust.MACRO_COLON">
+      <value>
+        <option name="FOREGROUND" value="e0e1e4" />
+      </value>
+    </option>
+    <option name="org.rust.MACRO_DOLLAR">
+      <value>
+        <option name="FOREGROUND" value="e0e1e4" />
+      </value>
+    </option>
+    <option name="org.rust.MACRO_GROUP_ELEMENTS">
+      <value>
         <option name="FOREGROUND" value="e0e1e4"/>
+      </value>
+    </option>
+    <option name="org.rust.MACRO_IDENTIFIER">
+      <value>
+        <option name="FOREGROUND" value="a8cc7c" />
+      </value>
+    </option>
+    <option name="org.rust.MACRO_RULES">
+      <value>
+        <option name="FOREGROUND" value="82d2ce" />
       </value>
     </option>
     <option name="org.rust.METHOD">
@@ -1843,6 +1879,7 @@
         <option name="FONT_TYPE" value="1"/>
       </value>
     </option>
+    <option name="org.rust.METHOD_CALL" baseAttributes="DEFAULT_FUNCTION_CALL" />
     <option name="org.rust.MODULE">
       <value>
         <option name="FOREGROUND" value="e0e1e4"/>
@@ -1868,6 +1905,11 @@
         <option name="FOREGROUND" value="e0e1e4"/>
       </value>
     </option>
+    <option name="org.rust.SELF_EXPRESSION">
+      <value>
+        <option name="FOREGROUND" value="cc7c8a" />
+      </value>
+    </option>
     <option name="org.rust.SELF_PARAMETER">
       <value>
         <option name="FOREGROUND" value="cc7c8a"/>
@@ -1878,9 +1920,19 @@
         <option name="FOREGROUND" value="e0e1e4"/>
       </value>
     </option>
+    <option name="org.rust.STRUCT" baseAttributes="DEFAULT_CLASS_NAME" />
+    <option name="org.rust.TRAIT" baseAttributes="DEFAULT_INTERFACE_NAME" />
+    <option name="org.rust.TRAIT_METHOD" baseAttributes="org.rust.METHOD" />
+    <option name="org.rust.TRAIT_METHOD_CALL" baseAttributes="org.rust.METHOD_CALL" />
+    <option name="org.rust.TYPE_ALIAS" baseAttributes="DEFAULT_CLASS_NAME" />
     <option name="org.rust.TYPE_PARAMETER">
       <value>
-        <option name="FOREGROUND" value="82bbf4"/>
+        <option name="FOREGROUND" value="add1de" />
+      </value>
+    </option>
+    <option name="org.rust.UNION">
+      <value>
+        <option name="FOREGROUND" value="85c0fc" />
       </value>
     </option>
     <option name="org.rust.UNSAFE_CODE">

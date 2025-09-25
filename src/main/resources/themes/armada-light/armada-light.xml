@@ -1477,7 +1477,7 @@
         </option>
         <option name="org.rust.ASSOC_FUNCTION">
             <value>
-                <option name="FONT_TYPE" value="1"/>
+        <option name="FOREGROUND" value="5511bf" />
             </value>
         </option>
         <option name="org.rust.ASSOC_FUNCTION_CALL">
@@ -1485,9 +1485,15 @@
                 <option name="FOREGROUND" value="5511bf"/>
             </value>
         </option>
+    <option name="org.rust.ASSOC_TRAIT_FUNCTION">
+      <value>
+        <option name="FONT_TYPE" value="1" />
+      </value>
+    </option>
+    <option name="org.rust.ASSOC_TRAIT_FUNCTION_CALL" baseAttributes="org.rust.ASSOC_FUNCTION_CALL" />
         <option name="org.rust.CFG_DISABLED_CODE">
             <value>
-                <option name="FOREGROUND" value="616605"/>
+        <option name="FOREGROUND" value="767676" />
             </value>
         </option>
         <option name="org.rust.CHAR">
@@ -1501,13 +1507,22 @@
         <option name="org.rust.CONST_PARAMETER">
             <value>
                 <option name="FOREGROUND" value="a31d8d"/>
+        <option name="FONT_TYPE" value="2" />
+      </value>
+    </option>
+    <option name="org.rust.CRATE">
+      <value>
+        <option name="FOREGROUND" value="90909" />
             </value>
         </option>
+    <option name="org.rust.ENUM" baseAttributes="DEFAULT_CLASS_NAME" />
         <option name="org.rust.ENUM_VARIANT">
             <value>
                 <option name="FOREGROUND" value="a31d8d"/>
             </value>
         </option>
+    <option name="org.rust.FUNCTION" baseAttributes="DEFAULT_FUNCTION_DECLARATION" />
+    <option name="org.rust.FUNCTION_CALL" baseAttributes="DEFAULT_FUNCTION_CALL" />
         <option name="org.rust.LIFETIME">
             <value>
                 <option name="FOREGROUND" value="616605"/>
@@ -1518,6 +1533,28 @@
                 <option name="FOREGROUND" value="616605"/>
             </value>
         </option>
+    <option name="org.rust.MACRO_BINDING_IDENTIFIER">
+      <value>
+        <option name="FOREGROUND" value="1749bd" />
+      </value>
+    </option>
+    <option name="org.rust.MACRO_DOLLAR">
+      <value />
+    </option>
+    <option name="org.rust.MACRO_GROUP_ELEMENTS">
+      <value />
+    </option>
+    <option name="org.rust.MACRO_RULES">
+      <value>
+        <option name="FOREGROUND" value="14646e" />
+      </value>
+    </option>
+    <option name="org.rust.METHOD">
+      <value>
+        <option name="FONT_TYPE" value="1" />
+      </value>
+    </option>
+    <option name="org.rust.METHOD_CALL" baseAttributes="DEFAULT_FUNCTION_CALL" />
         <option name="org.rust.MUT_SELF_PARAMETER">
             <value>
                 <option name="FOREGROUND" value="8c4f7f"/>
@@ -1537,7 +1574,7 @@
         </option>
         <option name="org.rust.SELF_EXPRESSION">
             <value>
-                <option name="FOREGROUND" value="8c4f7f"/>
+        <option name="FOREGROUND" value="944a9e" />
             </value>
         </option>
         <option name="org.rust.SELF_PARAMETER">
@@ -1545,9 +1582,24 @@
                 <option name="FOREGROUND" value="8c4f7f"/>
             </value>
         </option>
+    <option name="org.rust.STATIC">
+      <value />
+    </option>
+    <option name="org.rust.STRUCT">
+      <value>
+        <option name="FOREGROUND" value="1749bd" />
+      </value>
+    </option>
+    <option name="org.rust.TRAIT" baseAttributes="DEFAULT_INTERFACE_NAME" />
+    <option name="org.rust.TRAIT_METHOD" baseAttributes="org.rust.METHOD" />
+    <option name="org.rust.TRAIT_METHOD_CALL" baseAttributes="org.rust.METHOD_CALL" />
+    <option name="org.rust.TYPE_ALIAS" baseAttributes="DEFAULT_CLASS_NAME" />
         <option name="org.rust.TYPE_PARAMETER">
-            <value/>
+      <value>
+        <option name="FOREGROUND" value="664229" />
+      </value>
         </option>
+    <option name="org.rust.UNION" baseAttributes="DEFAULT_CLASS_NAME" />
         <option name="org.rust.UNSAFE_CODE">
             <value>
                 <option name="BACKGROUND" value="fceddc"/>
