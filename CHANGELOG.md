@@ -8,6 +8,10 @@
 
 - Added colors for SQL, including custom annotations for various SQL syntax elements to improve highlighting accuracy and better match Fleet's colors
 
+### Changed
+
+- Adjusted dark theme selection background color for better visibility
+
 ## [0.6.0] - 2025-09-25
 
 ### Added
