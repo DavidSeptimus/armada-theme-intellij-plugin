@@ -13,6 +13,7 @@
   <depends optional="true" config-file="plugin-properties.xml">com.intellij.properties</depends>
   <depends optional="true" config-file="plugin-python.xml">PythonCore</depends>
   <depends optional="true" config-file="plugin-shell.xml">com.jetbrains.sh</depends>
+  <depends optional="true" config-file="plugin-sql.xml">com.intellij.database</depends>
   <depends optional="true" config-file="plugin-rust.xml">com.jetbrains.rust</depends>
   <depends optional="true" config-file="plugin-yaml.xml">org.jetbrains.plugins.yaml</depends>
   <depends optional="true" config-file="plugin-zig.xml">com.falsepattern.zigbrains</depends>

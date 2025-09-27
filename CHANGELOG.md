@@ -6,6 +6,12 @@
 
 ### Added
 
+- Added colors for SQL, including custom annotations for various SQL syntax elements to improve highlighting accuracy and better match Fleet's colors
+
+## [0.6.0] - 2025-09-25
+
+### Added
+
 - Added colors for Shell Script, including annotations for let commands and subshell parentheses
 - Added old terminal ANSI background colors as well as both foreground and background colors for the new terminal color
 - Added an annotator to support highlighting of Rust attributes
@@ -13,7 +19,7 @@
 ### Changed
 
 - Updated terminal search and selection colors
-- Updated Rust colorst to reflect Rust Rover's improved syntax highlighting capabilities for the language since initial support was added
+- Updated Rust colors to reflect Rust Rover's improved syntax highlighting capabilities for the language since initial support was added
 
 ### Fixed
 

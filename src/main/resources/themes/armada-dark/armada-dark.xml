@@ -1537,6 +1537,38 @@
         <option name="BACKGROUND" value="9f680c"/>
       </value>
     </option>
+    <option name="SQL_COLUMN">
+      <value />
+    </option>
+    <option name="SQL_DATABASE_OBJECT">
+      <value />
+    </option>
+    <option name="SQL_NUMBER">
+      <value>
+        <option name="FOREGROUND" value="af9cff" />
+      </value>
+    </option>
+    <option name="SQL_PRIMARY_KEY_DEFINITION">
+      <value>
+        <option name="FOREGROUND" value="87c3ff"/>
+      </value>
+    </option>
+    <option name="SQL_REFERENCE_IDENTIFIER">
+      <value>
+        <option name="FOREGROUND" value="af9cff"/>
+      </value>
+    </option>
+    <option name="SQL_SCHEMA">
+      <value />
+    </option>
+    <option name="SQL_TABLE">
+      <value />
+    </option>
+    <option name="SQL_TYPE">
+      <value>
+        <option name="FOREGROUND" value="87c3ff" />
+      </value>
+    </option>
     <option name="STATIC_FIELD_IMPORTED_ATTRIBUTES">
       <value>
         <option name="FOREGROUND" value="af9cff"/>

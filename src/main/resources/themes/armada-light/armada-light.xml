@@ -836,6 +836,11 @@
         <option name="EFFECT_TYPE" value="4"/>
       </value>
     </option>
+    <option name="INJECTED_LANGUAGE_FRAGMENT">
+      <value>
+        <option name="BACKGROUND" value="d2e7db" />
+      </value>
+    </option>
     <option name="INSTANCE_FIELD_ATTRIBUTES" baseAttributes="DEFAULT_INSTANCE_FIELD"/>
     <option name="JS.EXPORTED.CLASS">
       <value>
@@ -1283,6 +1288,43 @@
     <option name="SASS_VARIABLE">
       <value>
         <option name="FOREGROUND" value="1749bd"/>
+      </value>
+    </option>
+    <option name="SQL_COLUMN">
+      <value />
+    </option>
+    <option name="SQL_DATABASE_OBJECT">
+      <value />
+    </option>
+    <option name="SQL_PRIMARY_KEY_DEFINITION">
+      <value>
+        <option name="FOREGROUND" value="1749bd" />
+      </value>
+    </option>
+    <option name="SQL_PROCEDURE">
+      <value>
+        <option name="FOREGROUND" value="5511bf" />
+      </value>
+    </option>
+    <option name="SQL_REFERENCE_IDENTIFIER">
+      <value>
+        <option name="FOREGROUND" value="a31d8d" />
+      </value>
+    </option>
+    <option name="SQL_SCHEMA">
+      <value />
+    </option>
+    <option name="SQL_SCHEMA_TABLE_IDENTIFIER">
+      <value>
+        <option name="FONT_TYPE" value="1"/>
+      </value>
+    </option>
+    <option name="SQL_TABLE">
+      <value />
+    </option>
+    <option name="SQL_TYPE">
+      <value>
+        <option name="FOREGROUND" value="1749bd" />
       </value>
     </option>
     <option name="STATIC_FIELD_ATTRIBUTES">

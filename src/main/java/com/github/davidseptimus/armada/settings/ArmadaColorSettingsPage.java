@@ -31,6 +31,11 @@ final class ArmadaColorSettingsPage implements ColorSettingsPage {
             new AttributesDescriptor("Rust attribute punctuation", TextAttributeKeys.RUST_ATTRIBUTE_PUNCTUATION),
             new AttributesDescriptor("Shell Script let command", TextAttributeKeys.BASH_LET_COMMAND),
             new AttributesDescriptor("Shell Script subshell command parentheses", TextAttributeKeys.BASH_SUBSHELL_COMMAND_PARENTHESES),
+            new AttributesDescriptor("SQL symbolic operators", TextAttributeKeys.SQL_SYMBOLIC_OPERATORS),
+            new AttributesDescriptor("SQL foreign key definition", TextAttributeKeys.SQL_FOREIGN_KEY_DEFINITION),
+            new AttributesDescriptor("SQL primary key definition", TextAttributeKeys.SQL_PRIMARY_KEY_DEFINITION),
+            new AttributesDescriptor("SQL reference identifier", TextAttributeKeys.SQL_REFERENCE_IDENTIFIER),
+            new AttributesDescriptor("SQL schema or table identifier (creation)", TextAttributeKeys.SQL_SCHEMA_TABLE_IDENTIFIER),
             new AttributesDescriptor("XML DocType", TextAttributeKeys.XML_DOCTYPE),
             new AttributesDescriptor("YAML alias", TextAttributeKeys.YAML_ALIAS),
             new AttributesDescriptor("YAML single quoted string", TextAttributeKeys.YAML_SINGLE_QUOTED_STRING),
@@ -90,6 +95,13 @@ final class ArmadaColorSettingsPage implements ColorSettingsPage {
                 rm -f $(find / -name core) // Shell Script Subshell Command Parentheses
                 // XML
                 <!DOCTYPE html> // XML DocType
+                
+                // SQL
+                alter table orders add constraint fk_customer foreign key (customer_id) references customers(id); // SQL Foreign Key Definition
+                create table users (id int primary key, name varchar(100)); // SQL Primary Key Definition
+                select * from users where id = 5; // SQL symbolic Operators
+                select id from crm.product; // SQL Table Reference Identifier
+                create table my_table (id int, name varchar(100)); // SQL Schema Table Identifier
                 
                 // YAML
                 a: *alias // YAML Alias
