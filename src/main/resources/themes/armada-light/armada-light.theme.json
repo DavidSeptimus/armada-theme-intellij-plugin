@@ -310,7 +310,10 @@
         "updateBorderColor": "Transparent",
         "updateForeground": "White"
       },
-      "lightSelectionBackground": "BlueTint_20"
+      "lightSelectionBackground": "BlueTint_20",
+      "trialTagBackground": "Green 80",
+      "paidTagBackground": "Blue 80",
+      "tagForeground": "Neutral_20"
     },
     "TextField": {
       "background": "White"

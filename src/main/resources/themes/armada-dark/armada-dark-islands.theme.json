@@ -128,7 +128,7 @@
     },
     "Label.foreground": "Neutral_140",
     "Label.selectedForeground": "White",
-    "Label.infoForeground": "Neutral_110",
+    "Label.infoForeground": "Neutral_120",
     "Tree": {
       "foreground": "Neutral_140",
       "errorForeground": "Red_100"
@@ -279,7 +279,11 @@
         "updateBorderColor": "Transparent",
         "updateForeground": "White"
       },
-      "lightSelectionBackground": "BlueTint_40"
+      "lightSelectionBackground": "BlueTint_40",
+      "trialTagBackground": "Green 40",
+      "paidTagBackground": "Blue_50",
+      "tagForeground": "Neutral_130",
+      "tagBackground": "Neutral_50"
     },
     "VersionControl.Log": {
       "Commit": {
@@ -351,6 +355,22 @@
     "Blue 20": "#132C4F",
     "Blue 10-60": "#0B1B3299",
     "Blue 10": "#0B1B32",
+    "BlueDesaturated_160": "#F7F8FD",
+    "BlueDesaturated_150": "#E8EDFB",
+    "BlueDesaturated_140": "#D4E0F7",
+    "BlueDesaturated_130": "#A6C3F1",
+    "BlueDesaturated_120": "#6F9FEB",
+    "BlueDesaturated_110": "#4A89E7",
+    "BlueDesaturated_100": "#2C79E6",
+    "BlueDesaturated_90": "#0D6EDF",
+    "BlueDesaturated_80": "#1C65C6",
+    "BlueDesaturated_70": "#205DB5",
+    "BlueDesaturated_60": "#244D8B",
+    "BlueDesaturated_50": "#233F6C",
+    "BlueDesaturated_40": "#1F3250",
+    "BlueDesaturated_30": "#192537",
+    "BlueDesaturated_20": "#121824",
+    "BlueDesaturated_10": "#070910",
     "Blue": "#87C3FF",
     "Red 80": "#EC7388",
     "Red 70": "#EA4B67",

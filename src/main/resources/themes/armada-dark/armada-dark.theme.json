@@ -123,7 +123,7 @@
     "StatusBar.borderColor": "Transparent",
     "Label.foreground": "Neutral_140",
     "Label.selectedForeground": "White",
-    "Label.infoForeground": "Neutral_110",
+    "Label.infoForeground": "Neutral_120",
     "Tree": {
       "foreground": "Neutral_140",
       "errorForeground": "Red_100"
@@ -278,7 +278,11 @@
         "updateBorderColor": "Transparent",
         "updateForeground": "White"
       },
-      "lightSelectionBackground": "BlueTint_40"
+      "lightSelectionBackground": "BlueTint_40",
+      "trialTagBackground": "Green 40",
+      "paidTagBackground": "Blue_50",
+      "tagForeground": "Neutral_130",
+      "tagBackground": "Neutral_50"
     },
     "VersionControl.Log": {
       "Commit": {

@@ -11,6 +11,8 @@
 ### Changed
 
 - Adjusted dark theme selection background color for better visibility
+- Updated label and tag colors in the plugins menu
+- Updated in-editor banner-syle notification colors for better visibility
 
 ## [0.6.0] - 2025-09-25
 
