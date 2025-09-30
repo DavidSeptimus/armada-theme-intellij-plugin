@@ -212,7 +212,9 @@ jobs:
           echo "eap-version=$EAP_VERSION" >> $GITHUB_OUTPUT
           echo "Building EAP version: $EAP_VERSION"
 
-      # Build and publish EAP plugin
+      - name: Patch Changelog
+        run: ./gradlew patchChangelog -Peap=true
+
       - name: Build and Publish EAP Plugin
         env:
           IS_EAP_BUILD: "true"
