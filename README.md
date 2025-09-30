@@ -29,6 +29,7 @@ Language-specific colors have been added for the following languages so far:
 | JavaScript | ✅            | ✅           |
 | JSON       | ✅            | ✅           |
 | Kotlin     | ✅            | ✅           |
+| Lua        | ✅            | ✅           |
 | HTML       | ✅            | ✅           |
 | NGINX Conf | ✅            | ✅           |
 | Perl       | ✅            | ❌           |

@@ -1163,6 +1163,63 @@
         <option name="FOREGROUND" value="fad075"/>
       </value>
     </option>
+    <option name="LUA_DOC_TAG">
+      <value>
+        <option name="FOREGROUND" value="a8cc7c" />
+      </value>
+    </option>
+    <option name="LUA_FIELD">
+      <value />
+    </option>
+    <option name="LUA_GLOBAL_FUNCTION_ID">
+      <value>
+        <option name="FOREGROUND" value="ebc88d" />
+      </value>
+    </option>
+    <option name="LUA_GLOBAL_VAR">
+      <value>
+        <option name="FOREGROUND" value="ebc88d" />
+      </value>
+    </option>
+    <option name="LUA_NUMBER">
+      <value>
+        <option name="FOREGROUND" value="af9cff" />
+      </value>
+    </option>
+    <option name="LUA_OPERATORS">
+      <value>
+        <option name="FOREGROUND" value="82d2ce" />
+      </value>
+    </option>
+    <option name="LUA_PARAMETER">
+      <value />
+    </option>
+    <option name="LUA_PRIMITIVE_TYPE">
+      <value>
+        <option name="FOREGROUND" value="af9cff" />
+      </value>
+    </option>
+    <option name="LUA_REGION_DESC">
+      <value>
+        <option name="FOREGROUND" value="909194" />
+      </value>
+    </option>
+    <option name="LUA_SELF">
+      <value>
+        <option name="FOREGROUND" value="cc7c8a" />
+      </value>
+    </option>
+    <option name="LUA_STD_API">
+      <value>
+        <option name="FOREGROUND" value="ebc88d" />
+        <option name="EFFECT_TYPE" value="2" />
+      </value>
+    </option>
+    <option name="LUA_UP_VALUE">
+      <value>
+        <option name="EFFECT_TYPE" value="1" />
+      </value>
+    </option>
     <option name="MACRONAME">
       <value>
         <option name="FOREGROUND" value="efb080"/>

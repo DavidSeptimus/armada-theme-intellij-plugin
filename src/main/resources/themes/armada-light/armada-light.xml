@@ -1035,6 +1035,55 @@
         <option name="FOREGROUND" value="b0993c"/>
       </value>
     </option>
+    <option name="LUA_GLOBAL_FUNCTION_ID">
+      <value>
+        <option name="FONT_TYPE" value="1" />
+      </value>
+    </option>
+    <option name="LUA_GLOBAL_VAR">
+      <value>
+        <option name="FOREGROUND" value="5511bf" />
+      </value>
+    </option>
+    <option name="LUA_OPERATORS">
+      <value>
+        <option name="FOREGROUND" value="14646e" />
+      </value>
+    </option>
+    <option name="LUA_PARAMETER">
+      <value />
+    </option>
+    <option name="LUA_PRIMITIVE_TYPE">
+      <value>
+        <option name="FOREGROUND" value="a31d8d" />
+      </value>
+    </option>
+    <option name="LUA_REGION_DESC">
+      <value>
+        <option name="FOREGROUND" value="747576" />
+      </value>
+    </option>
+    <option name="LUA_SELF">
+      <value>
+        <option name="FOREGROUND" value="14646e" />
+      </value>
+    </option>
+    <option name="LUA_STATIC_METHOD">
+      <value>
+        <option name="FONT_TYPE" value="1" />
+      </value>
+    </option>
+    <option name="LUA_STD_API">
+      <value>
+        <option name="FOREGROUND" value="5511bf" />
+        <option name="EFFECT_TYPE" value="2" />
+      </value>
+    </option>
+    <option name="LUA_UP_VALUE">
+      <value>
+        <option name="EFFECT_TYPE" value="1" />
+      </value>
+    </option>
     <option name="List/map to object conversion">
       <value>
         <option name="FOREGROUND" value="ff"/>
