@@ -1051,6 +1051,19 @@
         <option name="BACKGROUND" value="c9ecec"/>
       </value>
     </option>
+    <option name="NGINX_IDENTIFIER">
+      <value>
+        <option name="FOREGROUND" value="5511bf" />
+      </value>
+    </option>
+    <option name="NGINX_VALUE">
+      <value />
+    </option>
+    <option name="NGINX_VARIABLE">
+      <value>
+        <option name="FOREGROUND" value="1749bd" />
+      </value>
+    </option>
     <option name="NOT_USED_ELEMENT_ATTRIBUTES">
       <value>
         <option name="FOREGROUND" value="767676"/>

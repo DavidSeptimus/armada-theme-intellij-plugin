@@ -1181,6 +1181,21 @@
         <option name="FONT_TYPE" value="1"/>
       </value>
     </option>
+    <option name="NGINX_IDENTIFIER">
+      <value>
+        <option name="FOREGROUND" value="af9cff" />
+      </value>
+    </option>
+    <option name="NGINX_VALUE">
+      <value>
+        <option name="FOREGROUND" value="e0e1e4" />
+      </value>
+    </option>
+    <option name="NGINX_VARIABLE">
+      <value>
+        <option name="FOREGROUND" value="87c3ff" />
+      </value>
+    </option>
     <option name="NOT_TOP_FRAME_ATTRIBUTES">
       <value>
         <option name="BACKGROUND" value="142a43"/>
@@ -1305,6 +1320,90 @@
     <option name="PACKAGE_PRIVATE_REFERENCE">
       <value/>
     </option>
+    <option name="PERL_ANNOTATION">
+      <value>
+        <option name="FOREGROUND" value="909194" />
+      </value>
+    </option>
+    <option name="PERL_ARRAY">
+      <value />
+    </option>
+    <option name="PERL_ARRAY_BUILTIN">
+      <value />
+    </option>
+    <option name="PERL_AUTOLOAD">
+      <value />
+    </option>
+    <option name="PERL_DEREFERENCE">
+      <value>
+        <option name="FOREGROUND" value="82d2ce" />
+      </value>
+    </option>
+    <option name="PERL_EMBED_MARKER">
+      <value>
+        <option name="FOREGROUND" value="e394dc" />
+      </value>
+    </option>
+    <option name="PERL_GLOB_BUILTIN">
+      <value>
+        <option name="FOREGROUND" value="ebc88d" />
+      </value>
+    </option>
+    <option name="PERL_HASH">
+      <value />
+    </option>
+    <option name="PERL_HASH_BUILTIN">
+      <value />
+    </option>
+    <option name="PERL_LABEL">
+      <value>
+        <option name="EFFECT_COLOR" value="e0e1e4" />
+        <option name="EFFECT_TYPE" value="1" />
+      </value>
+    </option>
+    <option name="PERL_NUMBER">
+      <value />
+    </option>
+    <option name="PERL_PACKAGE">
+      <value />
+    </option>
+    <option name="PERL_PACKAGE_PRAGMA">
+      <value />
+    </option>
+    <option name="PERL_REGEX_QUOTE">
+      <value>
+        <option name="FOREGROUND" value="e394dc" />
+      </value>
+    </option>
+    <option name="PERL_SCALAR">
+      <value />
+    </option>
+    <option name="PERL_SCALAR_BUILTIN">
+      <value />
+    </option>
+    <option name="PERL_SQ_STRING">
+      <value>
+        <option name="FOREGROUND" value="e394dc" />
+      </value>
+    </option>
+    <option name="PERL_SUB_ATTRIBUTE">
+      <value />
+    </option>
+    <option name="PERL_SUB_DECLARATION">
+      <value>
+        <option name="FONT_TYPE" value="1" />
+      </value>
+    </option>
+    <option name="PERL_SUB_DEFINITION">
+      <value>
+        <option name="FONT_TYPE" value="1" />
+      </value>
+    </option>
+    <option name="PERL_TAG">
+      <value>
+        <option name="FOREGROUND" value="af9cff" />
+      </value>
+    </option>
     <option name="PHP_ALIAS_IDENTIFIER_DECLARATION">
       <value>
         <option name="FOREGROUND" value="e0e1e4"/>
@@ -1364,6 +1463,24 @@
     </option>
     <option name="PHP_VAR_VAR">
       <value/>
+    </option>
+    <option name="POWER_SHELL_COMMAND_NAME">
+      <value>
+        <option name="FOREGROUND" value="ebc88d" />
+      </value>
+    </option>
+    <option name="POWER_SHELL_COMMAND_PARAMETER">
+      <value />
+    </option>
+    <option name="POWER_SHELL_NUMBER">
+      <value>
+        <option name="FOREGROUND" value="af9cff" />
+      </value>
+    </option>
+    <option name="POWER_SHELL_TYPE_NAME">
+      <value>
+        <option name="FONT_TYPE" value="1" />
+      </value>
     </option>
     <option name="PRIVATE_REFERENCE">
       <value/>
@@ -1496,6 +1613,30 @@
         <option name="EFFECT_TYPE" value="5"/>
       </value>
     </option>
+    <option name="R_FIELD">
+      <value />
+    </option>
+    <option name="R_FUNCTION_DECLARATION">
+      <value>
+        <option name="FONT_TYPE" value="1" />
+      </value>
+    </option>
+    <option name="R_NAMED_ARGUMENT">
+      <value />
+    </option>
+    <option name="R_NAMESPACE">
+      <value />
+    </option>
+    <option name="R_NUMBER">
+      <value>
+        <option name="FOREGROUND" value="af9cff" />
+      </value>
+    </option>
+    <option name="R_OPERATION_SIGN">
+      <value>
+        <option name="FOREGROUND" value="82d2ce" />
+      </value>
+    </option>
     <option name="ReSharper.CSHARP_NAMESPACE_IDENTIFIER">
       <value>
         <option name="FOREGROUND" value="87c3ff"/>
@@ -1534,7 +1675,7 @@
     </option>
     <option name="SEARCH_RESULT_ATTRIBUTES">
       <value>
-        <option name="BACKGROUND" value="4D3814"/>
+        <option name="BACKGROUND" value="4d3814" />
       </value>
     </option>
     <option name="SQL_COLUMN">
@@ -1542,6 +1683,11 @@
     </option>
     <option name="SQL_DATABASE_OBJECT">
       <value />
+    </option>
+    <option name="SQL_LOCAL_ALIAS">
+      <value>
+        <option name="EFFECT_TYPE" value="1" />
+      </value>
     </option>
     <option name="SQL_NUMBER">
       <value>

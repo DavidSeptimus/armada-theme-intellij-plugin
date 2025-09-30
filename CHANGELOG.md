@@ -7,6 +7,8 @@
 ### Added
 
 - Added colors for SQL, including custom annotations for various SQL syntax elements to improve highlighting accuracy and better match Fleet's colors
+- Added colors for NGINX configuration files
+- Added colors to `Armada Dark` for Perl, PowerShell, and R
 
 ### Changed
 
