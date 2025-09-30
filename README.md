@@ -31,6 +31,7 @@ Language-specific colors have been added for the following languages so far:
 | Kotlin     | ✅           | ✅            |
 | Lua        | ✅           | ✅            |
 | HTML       | ✅           | ✅            |
+| Markdown   | ✅           | ✅            |
 | NGINX Conf | ✅           | ✅            |
 | Perl       | ✅           | ❌            |
 | PHP        | ✅           | ✅            |

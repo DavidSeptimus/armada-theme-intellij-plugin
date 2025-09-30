@@ -783,8 +783,7 @@
     </option>
     <option name="FOLLOWED_HYPERLINK_ATTRIBUTES">
       <value>
-        <option name="FOREGROUND" value="4987e2"/>
-        <option name="FONT_TYPE" value="2"/>
+        <option name="FOREGROUND" value="4b8dec" />
         <option name="EFFECT_COLOR" value="c7c7ff"/>
         <option name="EFFECT_TYPE" value="1"/>
       </value>
@@ -924,8 +923,7 @@
     </option>
     <option name="HYPERLINK_ATTRIBUTES">
       <value>
-        <option name="FOREGROUND" value="4987e2"/>
-        <option name="FONT_TYPE" value="2"/>
+        <option name="FOREGROUND" value="4b8dec" />
         <option name="EFFECT_TYPE" value="1"/>
       </value>
     </option>
@@ -952,7 +950,7 @@
     </option>
     <option name="INJECTED_LANGUAGE_FRAGMENT">
       <value>
-        <option name="BACKGROUND" value="273627"/>
+        <option name="BACKGROUND" value="1f392d" />
       </value>
     </option>
     <option name="IVAR">
@@ -1223,6 +1221,97 @@
     <option name="MACRONAME">
       <value>
         <option name="FOREGROUND" value="efb080"/>
+      </value>
+    </option>
+    <option name="MARKDOWN_AUTO_LINK">
+      <value>
+        <option name="FOREGROUND" value="4b8dec" />
+        <option name="EFFECT_TYPE" value="1" />
+      </value>
+    </option>
+    <option name="MARKDOWN_BLOCK_QUOTE_MARKER">
+      <value>
+        <option name="FOREGROUND" value="e394dc" />
+      </value>
+    </option>
+    <option name="MARKDOWN_BOLD">
+      <value>
+        <option name="FONT_TYPE" value="1" />
+      </value>
+    </option>
+    <option name="MARKDOWN_HEADER_LEVEL_1">
+      <value>
+        <option name="FOREGROUND" value="ebc88d" />
+      </value>
+    </option>
+    <option name="MARKDOWN_HEADER_LEVEL_2">
+      <value>
+        <option name="FOREGROUND" value="ebc88d" />
+      </value>
+    </option>
+    <option name="MARKDOWN_HEADER_LEVEL_3">
+      <value>
+        <option name="FOREGROUND" value="ebc88d" />
+      </value>
+    </option>
+    <option name="MARKDOWN_HEADER_LEVEL_4">
+      <value>
+        <option name="FOREGROUND" value="ebc88d" />
+      </value>
+    </option>
+    <option name="MARKDOWN_HEADER_LEVEL_5">
+      <value>
+        <option name="FOREGROUND" value="ebc88d" />
+      </value>
+    </option>
+    <option name="MARKDOWN_HEADER_LEVEL_6">
+      <value>
+        <option name="FOREGROUND" value="ebc88d" />
+      </value>
+    </option>
+    <option name="MARKDOWN_HTML_BLOCK">
+      <value>
+        <option name="FOREGROUND" value="e394dc" />
+      </value>
+    </option>
+    <option name="MARKDOWN_INLINE_HTML">
+      <value>
+        <option name="FOREGROUND" value="e394dc" />
+      </value>
+    </option>
+    <option name="MARKDOWN_ITALIC">
+      <value>
+        <option name="FONT_TYPE" value="2" />
+      </value>
+    </option>
+    <option name="MARKDOWN_LINK_DESTINATION">
+      <value>
+        <option name="FOREGROUND" value="4b8dec" />
+      </value>
+    </option>
+    <option name="MARKDOWN_LINK_LABEL">
+      <value>
+        <option name="FOREGROUND" value="4b8dec" />
+      </value>
+    </option>
+    <option name="MARKDOWN_LINK_TEXT">
+      <value>
+        <option name="FOREGROUND" value="4b8dec" />
+        <option name="EFFECT_TYPE" value="1" />
+      </value>
+    </option>
+    <option name="MARKDOWN_LIST_ITEM">
+      <value />
+    </option>
+    <option name="MARKDOWN_REFERENCE_LINK">
+      <value>
+        <option name="FOREGROUND" value="af9cff" />
+      </value>
+    </option>
+    <option name="MARKDOWN_STRIKE_THROUGH">
+      <value>
+        <option name="FOREGROUND" value="909194" />
+        <option name="EFFECT_TYPE" value="3" />
       </value>
     </option>
     <option name="MARKED_FOR_REMOVAL_ATTRIBUTES">

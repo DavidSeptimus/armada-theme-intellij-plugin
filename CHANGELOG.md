@@ -7,7 +7,7 @@
 ### Added
 
 - Added colors for SQL, including custom annotations for various SQL syntax elements to improve highlighting accuracy and better match Fleet's colors
-- Added colors for NGINX configuration files and Lua
+- Added colors for Markdown, NGINX configuration files, and Lua
 - Added colors to `Armada Dark` for Perl, PowerShell, and R
 
 ### Changed
@@ -16,6 +16,8 @@
 - Updated label and tag colors in the plugins menu
 - Updated in-editor banner-syle notification colors for better visibility
 - Reworked color settings page for "Armada Additions" to nest attributes under their respective languages for better organization and added highlighting to the demo text to make it easier to see the effects of changes
+- Removed RGBa colors from `Armada Light` to prevent issues with losing transparency when exporting/importing user customizations
+- Adjusted light theme diff colors for better visibility
 
 ## [0.6.0] - 2025-09-25
 
