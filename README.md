@@ -18,35 +18,35 @@ Armada is a plugin that aims to faithfully recreate the Fleet's builtin themes f
 
 Language-specific colors have been added for the following languages so far:
 
-|            | Armada Light | Armada Dark |
-|------------|--------------|-------------|
-| C/C++      | ✅            | ✅           |
-| C#         | ✅            | ✅           |
-| CSS        | ✅            | ✅           |
-| Dockerfile | ✅            | ✅           |
-| Go         | ✅            | ✅           |
-| Java       | ✅            | ✅           |
-| JavaScript | ✅            | ✅           |
-| JSON       | ✅            | ✅           |
-| Kotlin     | ✅            | ✅           |
-| Lua        | ✅            | ✅           |
-| HTML       | ✅            | ✅           |
-| NGINX Conf | ✅            | ✅           |
-| Perl       | ✅            | ❌           |
-| PHP        | ✅            | ✅           |
-| PowerShell | ✅            | ❌           |
-| Properties | ✅            | ✅           |
-| Python     | ✅            | ✅           |
-| R          | ✅            | ❌           |
-| Rust       | ✅            | ✅           |
-| SASS/SCSS  | ✅            | ✅           |
-| Shell      | ✅            | ✅           |
-| SQL        | ✅            | ✅           |
-| Typescript | ✅            | ✅           |
-| TOML       | ✅            | ✅           |
-| XML        | ✅            | ✅           |
-| YAML       | ✅            | ✅           |
-| Zig        | ✅            | ✅           |
+|            | Armada Dark | Armada Light |
+|------------|-------------|--------------|
+| C/C++      | ✅           | ✅            |
+| C#         | ✅           | ✅            |
+| CSS        | ✅           | ✅            |
+| Dockerfile | ✅           | ✅            |
+| Go         | ✅           | ✅            |
+| Java       | ✅           | ✅            |
+| JavaScript | ✅           | ✅            |
+| JSON       | ✅           | ✅            |
+| Kotlin     | ✅           | ✅            |
+| Lua        | ✅           | ✅            |
+| HTML       | ✅           | ✅            |
+| NGINX Conf | ✅           | ✅            |
+| Perl       | ✅           | ❌            |
+| PHP        | ✅           | ✅            |
+| PowerShell | ✅           | ❌            |
+| Properties | ✅           | ✅            |
+| Python     | ✅           | ✅            |
+| R          | ✅           | ❌            |
+| Rust       | ✅           | ✅            |
+| SASS/SCSS  | ✅           | ✅            |
+| Shell      | ✅           | ✅            |
+| SQL        | ✅           | ✅            |
+| Typescript | ✅           | ✅            |
+| TOML       | ✅           | ✅            |
+| XML        | ✅           | ✅            |
+| YAML       | ✅           | ✅            |
+| Zig        | ✅           | ✅            |
 
 <!-- Plugin description end -->
 
