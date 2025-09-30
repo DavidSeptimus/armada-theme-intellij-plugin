@@ -136,6 +136,9 @@ jobs:
         uses: JetBrains/qodana-action@v2025.2
         with:
           cache-default-branch-only: true
+        env:
+          QODANA_TOKEN: ${{ secrets.QODANA_TOKEN_1113892841 }}
+          QODANA_ENDPOINT: 'https://qodana.cloud'
 
   verify:
     name: Verify plugin
