@@ -13,6 +13,7 @@
 - Adjusted dark theme selection background color for better visibility
 - Updated label and tag colors in the plugins menu
 - Updated in-editor banner-syle notification colors for better visibility
+- Reworked color settings page for "Armada Additions" to nest attributes under their respective languages for better organization and added highlighting to the demo text to make it easier to see the effects of changes
 
 ## [0.6.0] - 2025-09-25
 
