@@ -12,7 +12,8 @@ Armada is a plugin that aims to faithfully recreate the Fleet's builtin themes f
 ### Features
 
 - Fleet-inspired Dark and Light UI themes/Editor Color Schemes
-- Custom tokens for improved highlighting accuracy
+- Includes both Islands and "New UI" interface theme variants (New UI themes are now labeled "(Classic)" )
+- Custom highlighting tokens for improved highlighting accuracy in various languages
 
 ### Language Support
 

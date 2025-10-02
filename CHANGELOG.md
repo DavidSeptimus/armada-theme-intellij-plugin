@@ -6,6 +6,7 @@
 
 ### Added
 
+- Added Islands-based UI theme variants for both light and dark themes
 - Added colors for SQL, including custom annotations for various SQL syntax elements to improve highlighting accuracy and better match Fleet's colors
 - Added colors for Markdown, NGINX configuration files, and Lua
 - Added colors to `Armada Dark` for Perl, PowerShell, and R
