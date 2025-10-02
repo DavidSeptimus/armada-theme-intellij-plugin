@@ -32,6 +32,16 @@
             path="themes/armada-light/armada-light.theme.json"
     />
 
+    <themeProvider
+            id="com.github.davidseptimus.armada.armada-dark-islands"
+            path="themes/armada-dark/armada-dark-islands.theme.json"
+    />
+
+    <themeProvider
+            id="com.github.davidseptimus.armada.armada-light-islands"
+            path="themes/armada-light/armada-light-islands.theme.json"
+    />
+
     <colorSettingsPage
         implementation="com.github.davidseptimus.armada.settings.ArmadaColorSettingsPage" />
 
