@@ -67,8 +67,8 @@ group = providers.gradleProperty("pluginGroup").get()
 // Handle EAP version
 val baseVersion = providers.gradleProperty("pluginVersion").get()
 val isEAPBuild = project.hasProperty("eap") ||
-                 providers.environmentVariable("IS_EAP_BUILD").isPresent ||
-                 gradle.startParameter.taskNames.any { it.contains("EAP") }
+        providers.environmentVariable("IS_EAP_BUILD").isPresent ||
+        gradle.startParameter.taskNames.any { it.contains("EAP") }
 
 version = if (isEAPBuild) {
     val gitTagOutput = providers.of(GitTagValueSource::class.java) {
@@ -119,6 +119,8 @@ fun IntelliJPlatformDependenciesExtension.pluginsInLatestCompatibleVersion(plugi
 
 // Dependencies are managed with Gradle version catalog - read more: https://docs.gradle.org/current/userguide/platforms.html#sub:version-catalog
 dependencies {
+    implementation(libs.gson)
+    implementation(kotlin("stdlib"))
     testImplementation(libs.junit)
     testImplementation(libs.opentest4j)
 
@@ -328,6 +330,101 @@ tasks {
             println("EAP plugin built successfully, running verification...")
         }
     }
+
+    register<JavaExec>("normalizeTheme") {
+        group = "theme"
+        description = "Normalizes a theme JSON file by converting dotted keys to nested objects"
+
+        classpath = sourceSets["main"].runtimeClasspath
+        mainClass.set("buildscripts.ThemeMergerKt")
+
+        args = listOfNotNull(
+            "normalize",
+            project.findProperty("input")?.toString(),
+            project.findProperty("output")?.toString()
+        )
+
+        doFirst {
+            if (project.findProperty("input") == null || project.findProperty("output") == null) {
+                throw GradleException("Usage: ./gradlew normalizeTheme -Pinput=<input.json> -Poutput=<output.json>")
+            }
+        }
+    }
+
+    register<JavaExec>("mergeThemes") {
+        group = "theme"
+        description = "Merges multiple theme JSON files"
+
+        classpath = sourceSets["main"].runtimeClasspath
+        mainClass.set("buildscripts.ThemeMergerKt")
+
+        val inputs = project.findProperty("inputs")?.toString()?.split(",") ?: emptyList()
+        args = listOfNotNull(
+            "merge",
+            project.findProperty("output")?.toString()
+        ) + inputs
+
+        doFirst {
+            if (project.findProperty("output") == null || inputs.isEmpty()) {
+                throw GradleException("Usage: ./gradlew mergeThemes -Poutput=<output.json> -Pinputs=<file1.json,file2.json,...>")
+            }
+        }
+    }
+
+    register<JavaExec>("generateDarkClassicUITheme") {
+        group = "generate"
+        description = "Generates the Armada Dark Classic UI theme by merging base theme with overrides"
+
+        dependsOn("classes")
+        classpath(sourceSets["main"].runtimeClasspath, sourceSets["main"].output)
+        mainClass.set("buildscripts.ThemeMergerKt")
+
+        val baseTheme = "src/main/resources/themes/armada-dark/armada-dark.theme.json"
+        val overrides = "src/main/resources/themes/armada-dark/armada-dark-classic-ui.overrides.json"
+        val output = "src/main/resources/themes/armada-dark/armada-dark-classic-ui.theme.json"
+
+        inputs.files(baseTheme, overrides)
+        outputs.file(output)
+
+        args = listOf("merge", output, baseTheme, overrides)
+
+        doLast {
+            println("Generated Armada Dark Classic UI theme")
+        }
+    }
+
+    register<JavaExec>("generateLightClassicUITheme") {
+        group = "generate"
+        description = "Generates the Armada Light Classic UI theme by merging base theme with overrides"
+
+        dependsOn("classes")
+        classpath(sourceSets["main"].runtimeClasspath, sourceSets["main"].output)
+        mainClass.set("buildscripts.ThemeMergerKt")
+
+        val baseTheme = "src/main/resources/themes/armada-light/armada-light.theme.json"
+        val overrides = "src/main/resources/themes/armada-light/armada-light-classic-ui.overrides.json"
+        val output = "src/main/resources/themes/armada-light/armada-light-classic-ui.theme.json"
+
+        inputs.files(baseTheme, overrides)
+        outputs.file(output)
+
+        args = listOf("merge", output, baseTheme, overrides)
+
+        doLast {
+            println("Generated Armada Light Classic UI theme")
+        }
+    }
+
+    register("generateAllThemes") {
+        group = "generate"
+        description = "Generates all theme variants"
+
+        dependsOn("generateDarkClassicUITheme", "generateLightClassicUITheme")
+
+        doLast {
+            println("Generated all theme variants")
+        }
+    }
 }
 
 intellijPlatformTesting {
@@ -346,6 +443,28 @@ intellijPlatformTesting {
 
             plugins {
                 robotServerPlugin()
+            }
+        }
+
+        register("runIdeClassicUI") {
+            task {
+                description = "Runs IDE with the classic UI plugin for testing theme compatibility"
+            }
+
+            plugins {
+                plugin(provider {
+                    val platformType = intellijPlatform.productInfo.productCode
+                    val platformVersion = intellijPlatform.productInfo.buildNumber
+
+                    val repo = PluginRepositoryFactory.create("https://plugins.jetbrains.com")
+                    val plugin = repo.pluginManager.searchCompatibleUpdates(
+                        build = "$platformType-$platformVersion",
+                        xmlIds = listOf("com.intellij.classic.ui"),
+                    ).firstOrNull()
+                        ?: throw GradleException("No plugin update with id='com.intellij.classic.ui' compatible with '$platformType-$platformVersion' found in JetBrains Marketplace")
+
+                    "${plugin.pluginXmlId}:${plugin.version}"
+                })
             }
         }
     }

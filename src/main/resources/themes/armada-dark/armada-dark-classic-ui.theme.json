@@ -1,7 +1,7 @@
 {
   "author": "David Septimus",
   "dark": true,
-  "name": "Armada Dark (New UI)",
+  "name": "Armada Dark (Classic UI)",
   "editorScheme": "themes/armada-dark/armada-dark.xml",
   "icons": {
     "/com/intellij/ide/ui/laf/icons/darcula/checkBox.svg": "/themes/armada-dark/icons/checkBox.svg",
@@ -20,39 +20,59 @@
     "/com/intellij/ide/ui/laf/icons/darcula/radioSelectedDisabled.svg": "/themes/armada-dark/icons/radioSelectedDisabled.svg",
     "/com/intellij/ide/ui/laf/icons/darcula/radioSelectedFocused.svg": "/themes/armada-dark/icons/radioSelectedFocused.svg",
     "ColorPalette": {
-      "Tree.iconColor": "Neutral_140",
-      "Gray.Fill": "Gray 50",
-      "Gray.SecondaryStroke": "Neutral_70",
-      "Gray.Stroke": "Neutral_140",
-      "Green.Solid": "Green_100",
-      "Green.Stroke": "Green_100",
-      "Red.Solid": "Red_100",
-      "Red.Stroke": "Red_100",
-      "Blue.Solid": "Blue_100",
-      "Blue.Stroke": "Blue_100",
-      "Yellow.Solid": "Yellow_120",
-      "Yellow.Stroke": "Yellow_120",
-      "Purple.Solid": "Purple_100",
-      "Purple.Stroke": "Purple_100",
-      "Orange.Solid": "Orange",
-      "Orange.Stroke": "Orange",
-      "Objects.Pink": "Pink",
-      "Objects.Blue": "Blue_100",
-      "Objects.Red": "Red_100",
-      "Objects.Green": "Green_100",
-      "Objects.Grey": "Gray_100",
-      "Objects.Yellow": "Yellow_120",
-      "Objects.YellowDark": "Yellow_90",
-      "Objects.Purple": "Purple_100",
-      "Objects.RedStatus": "Red_100",
-      "Actions.Blue": "Blue_100",
-      "Actions.Red": "Red_100",
-      "Actions.Green": "Green_100",
-      "Actions.Yellow": "Yellow_100",
-      "Actions.Purple": "Purple_100",
-      "Actions.Violet": "Violet_100",
-      "Actions.Grey": "Gray 120",
-      "Actions.GreyInline": "Gray 120"
+      "Tree": {
+        "iconColor": "Neutral_140"
+      },
+      "Gray": {
+        "Fill": "Gray 50",
+        "SecondaryStroke": "Neutral_70",
+        "Stroke": "Neutral_140"
+      },
+      "Green": {
+        "Solid": "Green_100",
+        "Stroke": "Green_100"
+      },
+      "Red": {
+        "Solid": "Red_100",
+        "Stroke": "Red_100"
+      },
+      "Blue": {
+        "Solid": "Blue_100",
+        "Stroke": "Blue_100"
+      },
+      "Yellow": {
+        "Solid": "Yellow_120",
+        "Stroke": "Yellow_120"
+      },
+      "Purple": {
+        "Solid": "Purple_100",
+        "Stroke": "Purple_100"
+      },
+      "Orange": {
+        "Solid": "Orange",
+        "Stroke": "Orange"
+      },
+      "Objects": {
+        "Pink": "Pink",
+        "Blue": "Blue_100",
+        "Red": "Red_100",
+        "Green": "Green_100",
+        "Grey": "Gray_100",
+        "Yellow": "Yellow_120",
+        "YellowDark": "Yellow_90",
+        "Purple": "Purple_100",
+        "RedStatus": "Red_100"
+      },
+      "Actions": {
+        "Blue": "Blue_100",
+        "Red": "Red_100",
+        "Green": "Green_100",
+        "Yellow": "Yellow_100",
+        "Purple": "Purple_100",
+        "Violet": "Violet_100",
+        "Grey": "Gray 120",
+        "GreyInline": "Gray 120"
+      }
     }
   },
   "ui": {
@@ -64,7 +84,9 @@
       "selectionForeground": "Neutral_140",
       "selectionInactiveBackground": "Neutral_50"
     },
-    "Borders.color": "Neutral_40",
+    "Borders": {
+      "color": "Neutral_40"
+    },
     "ActionButton": {
       "hoverBackground": "LightTint_15",
       "hoverBorderColor": "LightTint_2",
@@ -100,8 +122,12 @@
       "Yellow": "Yellow_30",
       "Gray": "Gray 30"
     },
-    "MainToolbar.background": "Neutral_10",
-    "Editor.background": "Neutral_20",
+    "MainToolbar": {
+      "background": "Neutral_10"
+    },
+    "Editor": {
+      "background": "Neutral_20"
+    },
     "ScrollBar": {
       "background": "Neutral_20",
       "thumb": "LightTint_15",
@@ -118,12 +144,22 @@
         "hoverTrackColor": "LightTint_10"
       }
     },
-    "Settings.Spotlight.borderColor": "YellowTint_50",
-    "Panel.foreground": "Neutral_140",
-    "StatusBar.borderColor": "Transparent",
-    "Label.foreground": "Neutral_140",
-    "Label.selectedForeground": "White",
-    "Label.infoForeground": "Neutral_120",
+    "Settings": {
+      "Spotlight": {
+        "borderColor": "YellowTint_50"
+      }
+    },
+    "Panel": {
+      "foreground": "Neutral_140"
+    },
+    "StatusBar": {
+      "borderColor": "Transparent"
+    },
+    "Label": {
+      "foreground": "Neutral_140",
+      "selectedForeground": "White",
+      "infoForeground": "Neutral_120"
+    },
     "Tree": {
       "foreground": "Neutral_140",
       "errorForeground": "Red_100"
@@ -154,9 +190,9 @@
         "inactiveBackground": "Neutral_20"
       },
       "Button": {
-        "selectedBackground": "Blue_90",
+        "selectedBackground": "Neutral_50",
         "hoverBackground": "LightTint_15",
-        "selectedForeground": "White"
+        "selectedForeground": "Neutral_150"
       },
       "Stripe": {
         "separatorColor": "Neutral_50",
@@ -168,7 +204,9 @@
         "areaBackground": "BlueTint_15"
       }
     },
-    "TextPane.inactiveBackground": "Neutral_20",
+    "TextPane": {
+      "inactiveBackground": "Neutral_20"
+    },
     "CheckBoxMenuItem": {
       "background": "LightTint_8",
       "foreground": "Neutral_140",
@@ -206,8 +244,10 @@
       "modifiedItemForeground": "Blue_110",
       "nonEditableBackground": "Neutral_30",
       "disabledBackground": "Neutral_20",
-      "ArrowButton.nonEditableBackground": "Neutral_30",
-      "ArrowButton.background": "Neutral_30"
+      "ArrowButton": {
+        "nonEditableBackground": "Neutral_30",
+        "background": "Neutral_30"
+      }
     },
     "ToolTip": {
       "background": "Neutral_40",
@@ -225,7 +265,9 @@
         "startBorderColor": "Transparent",
         "endBorderColor": "Transparent"
       },
-      "Header.foreground": "Neutral_140",
+      "Header": {
+        "foreground": "Neutral_140"
+      },
       "secondaryActionForeground": "Blue_110"
     },
     "Menu": {
@@ -233,15 +275,31 @@
       "foreground": "Neutral_140",
       "separatorColor": "Neutral_50"
     },
-    "PopupMenu.background": "Neutral_30",
-    "MenuItem.background": "Neutral_30",
-    "ComplexPopup.Header.background": "Neutral_30",
-    "Popup.Header.activeBackground": "Neutral_30",
-    "Popup.background": "Neutral_30",
-    "Popup.borderColor": "Neutral_40",
-    "Popup.separatorColor": "Neutral_50",
-    "Popup.Advertiser.background": "Neutral_30",
-    "Separator.separatorColor": "Neutral_40",
+    "PopupMenu": {
+      "background": "Neutral_30"
+    },
+    "MenuItem": {
+      "background": "Neutral_30"
+    },
+    "ComplexPopup": {
+      "Header": {
+        "background": "Neutral_30"
+      }
+    },
+    "Popup": {
+      "Header": {
+        "activeBackground": "Neutral_30"
+      },
+      "background": "Neutral_30",
+      "borderColor": "Neutral_40",
+      "separatorColor": "Neutral_50",
+      "Advertiser": {
+        "background": "Neutral_30"
+      }
+    },
+    "Separator": {
+      "separatorColor": "Neutral_40"
+    },
     "Notification": {
       "background": "Neutral_30",
       "borderColor": "Neutral_40",
@@ -253,7 +311,9 @@
         "background": "Neutral_30",
         "hoverBackground": "Neutral_40"
       },
-      "Notification.hoverBackground": "Neutral_40"
+      "Notification": {
+        "hoverBackground": "Neutral_40"
+      }
     },
     "Component": {
       "focusColor": "Blue 60",
@@ -284,12 +344,14 @@
       "tagForeground": "Neutral_130",
       "tagBackground": "Neutral_50"
     },
-    "VersionControl.Log": {
-      "Commit": {
-        "currentBranchBackground": "Neutral_30",
-        "selectionInactiveBackground": "Neutral_60",
-        "selectionInactiveForeground": "Neutral_140",
-        "hoveredBackground": "Neutral_50"
+    "VersionControl": {
+      "Log": {
+        "Commit": {
+          "currentBranchBackground": "Neutral_30",
+          "selectionInactiveBackground": "Neutral_60",
+          "selectionInactiveForeground": "Neutral_140",
+          "hoveredBackground": "Neutral_50"
+        }
       }
     },
     "CompletionPopup": {
@@ -316,7 +378,9 @@
       "errorForeground": "Red_110",
       "errorBackground": "Red_40"
     },
-    "SpeedSearch.errorForeground": "Red_110",
+    "SpeedSearch": {
+      "errorForeground": "Red_110"
+    },
     "Counter": {
       "background": "LightTint_20"
     },
@@ -324,6 +388,9 @@
       "selectedBackground": "BlueTint_40",
       "selectedHoveredBackground": "BlueTint_30",
       "selectedPressedBackground": "BlueTint_25"
+    },
+    "ToggleButton": {
+      "foreground": "Neutral_150"
     }
   },
   "colors": {

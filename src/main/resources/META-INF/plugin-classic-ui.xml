@@ -1,0 +1,15 @@
+<idea-plugin>
+    <extensions defaultExtensionNs="com.intellij">
+        <themeProvider
+                id="com.github.davidseptimus.armada.armada-dark-classic-ui"
+                path="themes/armada-dark/armada-dark-classic-ui.theme.json"
+                targetUi="classic"
+        />
+
+        <themeProvider
+                id="com.github.davidseptimus.armada.armada-light-classic-ui"
+                path="themes/armada-light/armada-light-classic-ui.theme.json"
+                targetUi="classic"
+        />
+    </extensions>
+</idea-plugin>

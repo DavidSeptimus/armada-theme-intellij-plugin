@@ -1,52 +1,60 @@
 <!-- Plugin Configuration File. Read more: https://plugins.jetbrains.com/docs/intellij/plugin-configuration-file.html -->
 <idea-plugin>
-  <id>com.github.davidseptimus.armada</id>
-  <name>Armada Theme</name>
-  <vendor>David Septimus</vendor>
-  <description>An IntelliJ theme based on Jetbrains Fleet's default theme</description>
+    <id>com.github.davidseptimus.armada</id>
+    <name>Armada Theme</name>
+    <vendor>David Septimus</vendor>
+    <description>An IntelliJ theme based on Jetbrains Fleet's default theme</description>
 
-  <depends>com.intellij.modules.platform</depends>
-  <depends optional="true" config-file="plugin-css.xml">com.intellij.css</depends>
-  <depends optional="true" config-file="plugin-javascript.xml">JavaScript</depends>
-  <depends optional="true" config-file="plugin-kotlin.xml">com.intellij.modules.kotlin.k2</depends>
-  <depends optional="true" config-file="plugin-php.xml">com.jetbrains.php</depends>
-  <depends optional="true" config-file="plugin-properties.xml">com.intellij.properties</depends>
-  <depends optional="true" config-file="plugin-python.xml">PythonCore</depends>
-  <depends optional="true" config-file="plugin-shell.xml">com.jetbrains.sh</depends>
-  <depends optional="true" config-file="plugin-sql.xml">com.intellij.database</depends>
-  <depends optional="true" config-file="plugin-rust.xml">com.jetbrains.rust</depends>
-  <depends optional="true" config-file="plugin-yaml.xml">org.jetbrains.plugins.yaml</depends>
-  <depends optional="true" config-file="plugin-zig.xml">com.falsepattern.zigbrains</depends>
+    <depends>com.intellij.modules.platform</depends>
+    <!-- Classic UI is only included when running the runIdeClassicUI task. Ignore the error here. -->
+    <depends optional="true" config-file="plugin-classic-ui.xml">com.intellij.classic.ui</depends>
+    <depends optional="true" config-file="plugin-css.xml">com.intellij.css</depends>
+    <depends optional="true" config-file="plugin-javascript.xml">JavaScript</depends>
+    <depends optional="true" config-file="plugin-kotlin.xml">com.intellij.modules.kotlin.k2</depends>
+    <depends optional="true" config-file="plugin-php.xml">com.jetbrains.php</depends>
+    <depends optional="true" config-file="plugin-properties.xml">com.intellij.properties</depends>
+    <depends optional="true" config-file="plugin-python.xml">PythonCore</depends>
+    <depends optional="true" config-file="plugin-shell.xml">com.jetbrains.sh</depends>
+    <depends optional="true" config-file="plugin-sql.xml">com.intellij.database</depends>
+    <depends optional="true" config-file="plugin-rust.xml">com.jetbrains.rust</depends>
+    <depends optional="true" config-file="plugin-yaml.xml">org.jetbrains.plugins.yaml</depends>
+    <depends optional="true" config-file="plugin-zig.xml">com.falsepattern.zigbrains</depends>
 
-  <!-- BEGIN Build-time Dependencies -->
-  <!-- END Build-time Dependencies -->
+    <!-- BEGIN Build-time Dependencies -->
+    <!-- END Build-time Dependencies -->
 
-  <extensions defaultExtensionNs="com.intellij">
-    <themeProvider
-        id="com.github.davidseptimus.armada.fleet-dark"
-        path="themes/armada-dark/armada-dark.theme.json"
-    />
+    <extensions defaultExtensionNs="com.intellij">
 
-    <themeProvider
-            id="com.github.davidseptimus.armada.fleet-light"
-            path="themes/armada-light/armada-light.theme.json"
-    />
 
-    <themeProvider
-            id="com.github.davidseptimus.armada.armada-dark-islands"
-            path="themes/armada-dark/armada-dark-islands.theme.json"
-    />
+        <themeProvider
+                id="com.github.davidseptimus.armada.fleet-dark"
+                path="themes/armada-dark/armada-dark.theme.json"
+                targetUi="new"
+        />
 
-    <themeProvider
-            id="com.github.davidseptimus.armada.armada-light-islands"
-            path="themes/armada-light/armada-light-islands.theme.json"
-    />
+        <themeProvider
+                id="com.github.davidseptimus.armada.fleet-light"
+                path="themes/armada-light/armada-light.theme.json"
+                targetUi="new"
+        />
 
-    <colorSettingsPage
-        implementation="com.github.davidseptimus.armada.settings.ArmadaColorSettingsPage" />
+        <themeProvider
+                id="com.github.davidseptimus.armada.armada-dark-islands"
+                path="themes/armada-dark/armada-dark-islands.theme.json"
+                targetUi="islands"
+        />
 
-    <annotator language="XML" implementationClass="com.github.davidseptimus.armada.annotators.XmlAnnotator"/>
+        <themeProvider
+                id="com.github.davidseptimus.armada.armada-light-islands"
+                path="themes/armada-light/armada-light-islands.theme.json"
+                targetUi="islands"
+        />
 
-  </extensions>
+        <colorSettingsPage
+                implementation="com.github.davidseptimus.armada.settings.ArmadaColorSettingsPage"/>
+
+        <annotator language="XML" implementationClass="com.github.davidseptimus.armada.annotators.XmlAnnotator"/>
+
+    </extensions>
 
 </idea-plugin>

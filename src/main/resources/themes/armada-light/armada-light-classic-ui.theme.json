@@ -1,6 +1,6 @@
 {
   "author": "David Septimus",
-  "name": "Armada Light (New UI)",
+  "name": "Armada Light (Classic UI)",
   "dark": false,
   "editorScheme": "themes/armada-light/armada-light.xml",
   "icons": {
@@ -20,39 +20,59 @@
     "/com/intellij/ide/ui/laf/icons/intellij/radioSelectedDisabled.svg": "/themes/armada-light/icons/radioSelectedDisabled.svg",
     "/com/intellij/ide/ui/laf/icons/intellij/radioSelectedFocused.svg": "/themes/armada-light/icons/radioSelectedFocused.svg",
     "ColorPalette": {
-      "Tree.iconColor": "Neutral_10",
-      "Gray.Fill": "White",
-      "Gray.SecondaryStroke": "Neutral_90",
-      "Gray.Stroke": "Neutral_70",
-      "Green.Solid": "Green_100",
-      "Green.Stroke": "Green_100",
-      "Red.Solid": "Red_100",
-      "Red.Stroke": "Red_100",
-      "Blue.Solid": "Blue_100",
-      "Blue.Stroke": "Blue_100",
-      "Yellow.Solid": "YellowBright_10",
-      "Yellow.Stroke": "YellowBright_10",
-      "Purple.Solid": "Purple_100",
-      "Purple.Stroke": "Purple_100",
-      "Orange.Solid": "Orange",
-      "Orange.Stroke": "Orange",
-      "Objects.Pink": "Pink",
-      "Objects.Blue": "Blue_100",
-      "Objects.Red": "Red_100",
-      "Objects.Green": "Green_100",
-      "Objects.Grey": "Orange",
-      "Objects.Yellow": "YellowBright_10",
-      "Objects.YellowDark": "Yellow_100",
-      "Objects.Purple": "Purple_100",
-      "Objects.RedStatus": "Red_100",
-      "Actions.Blue": "Blue_100",
-      "Actions.Red": "Red_100",
-      "Actions.Green": "Green_100",
-      "Actions.Yellow": "Yellow_100",
-      "Actions.Purple": "Purple_100",
-      "Actions.Violet": "Violet_100",
-      "Actions.Grey": "Neutral_70",
-      "Actions.GreyInline": "Neutral_70"
+      "Tree": {
+        "iconColor": "Neutral_10"
+      },
+      "Gray": {
+        "Fill": "White",
+        "SecondaryStroke": "Neutral_90",
+        "Stroke": "Neutral_70"
+      },
+      "Green": {
+        "Solid": "Green_100",
+        "Stroke": "Green_100"
+      },
+      "Red": {
+        "Solid": "Red_100",
+        "Stroke": "Red_100"
+      },
+      "Blue": {
+        "Solid": "Blue_100",
+        "Stroke": "Blue_100"
+      },
+      "Yellow": {
+        "Solid": "YellowBright_10",
+        "Stroke": "YellowBright_10"
+      },
+      "Purple": {
+        "Solid": "Purple_100",
+        "Stroke": "Purple_100"
+      },
+      "Orange": {
+        "Solid": "Orange",
+        "Stroke": "Orange"
+      },
+      "Objects": {
+        "Pink": "Pink",
+        "Blue": "Blue_100",
+        "Red": "Red_100",
+        "Green": "Green_100",
+        "Grey": "Orange",
+        "Yellow": "YellowBright_10",
+        "YellowDark": "Yellow_100",
+        "Purple": "Purple_100",
+        "RedStatus": "Red_100"
+      },
+      "Actions": {
+        "Blue": "Blue_100",
+        "Red": "Red_100",
+        "Green": "Green_100",
+        "Yellow": "Yellow_100",
+        "Purple": "Purple_100",
+        "Violet": "Violet_100",
+        "Grey": "Neutral_70",
+        "GreyInline": "Neutral_70"
+      }
     }
   },
   "ui": {
@@ -64,7 +84,9 @@
       "selectionForeground": "Neutral_10",
       "selectionInactiveBackground": "DarkTint_15"
     },
-    "Borders.color": "DarkTint_20",
+    "Borders": {
+      "color": "DarkTint_20"
+    },
     "ActionButton": {
       "hoverBackground": "DarkTint_7",
       "hoverBorderColor": "Transparent",
@@ -106,8 +128,12 @@
       "Yellow": "Yellow_160",
       "Gray": "Neutral_150"
     },
-    "MainToolbar.background": "Neutral_150",
-    "Editor.background": "Neutral_150",
+    "MainToolbar": {
+      "background": "Neutral_150"
+    },
+    "Editor": {
+      "background": "Neutral_150"
+    },
     "ScrollBar": {
       "background": "White",
       "thumb": "DarkTint_20",
@@ -128,12 +154,18 @@
         "hoverTrackColor": "DarkTint_10"
       }
     },
-    "Settings.Spotlight.borderColor": "YellowTint_30",
+    "Settings": {
+      "Spotlight": {
+        "borderColor": "YellowTint_30"
+      }
+    },
     "Panel": {
       "foreground": "Neutral_10",
       "background": "White"
     },
-    "StatusBar.borderColor": "Transparent",
+    "StatusBar": {
+      "borderColor": "Transparent"
+    },
     "Label": {
       "selectedForeground": "Neutral_10",
       "infoForeground": "Neutral_10",
@@ -150,7 +182,6 @@
       "visitedForeground": "Blue_80",
       "pressedForeground": "Blue_110"
     },
-
     "DragAndDrop": {
       "areaBackground": "BlueTint_15",
       "borderColor": "Blue_100",
@@ -166,9 +197,9 @@
         "background": "White"
       },
       "Button": {
-        "selectedBackground": "Blue_90",
-        "hoverBackground": "Blue_80",
-        "selectedForeground": "White"
+        "selectedBackground": "Neutral_130",
+        "hoverBackground": "Neutral_140",
+        "selectedForeground": "Neutral_10"
       },
       "Stripe": {
         "separatorColor": "DarkTint_20",
@@ -180,7 +211,9 @@
         "areaBackground": "BlueTint_15"
       }
     },
-    "TextPane.inactiveBackground": "White",
+    "TextPane": {
+      "inactiveBackground": "White"
+    },
     "CheckBoxMenuItem": {
       "background": "Neutral_150",
       "foreground": "Neutral_10",
@@ -236,8 +269,9 @@
       "foreground": "Neutral_10",
       "linkForeground": "Blue_70",
       "secondaryActionForeground": "Blue_70",
-      "Header.foreground": "Neutral_10",
-
+      "Header": {
+        "foreground": "Neutral_10"
+      },
       "Button": {
         "startBackground": "Blue_90",
         "endBackground": "Blue_90",
@@ -261,7 +295,11 @@
       "foreground": "Neutral_10",
       "background": "White"
     },
-    "ComplexPopup.Header.background": "Neutral_160",
+    "ComplexPopup": {
+      "Header": {
+        "background": "Neutral_160"
+      }
+    },
     "Popup": {
       "Header": {
         "activeBackground": "Neutral_160"
@@ -273,7 +311,9 @@
         "background": "Neutral_160"
       }
     },
-    "Separator.separatorColor": "Neutral_140",
+    "Separator": {
+      "separatorColor": "Neutral_140"
+    },
     "Notification": {
       "background": "White",
       "borderColor": "Neutral_130",
@@ -290,7 +330,9 @@
         "background": "Blue 100",
         "hoverBackground": "Blue 100"
       },
-      "Notification.hoverBackground": "Transparent"
+      "Notification": {
+        "hoverBackground": "Transparent"
+      }
     },
     "Component": {
       "focusColor": "Blue_90",
@@ -321,11 +363,13 @@
     "TextArea": {
       "background": "White"
     },
-    "VersionControl.Log": {
-      "Commit": {
-        "currentBranchBackground": "BlueTint_110",
-        "selectionInactiveBackground": "Neutral_140",
-        "hoveredBackground": "DarkTint_50"
+    "VersionControl": {
+      "Log": {
+        "Commit": {
+          "currentBranchBackground": "BlueTint_110",
+          "selectionInactiveBackground": "Neutral_140",
+          "hoveredBackground": "DarkTint_50"
+        }
       }
     },
     "CompletionPopup": {
@@ -351,7 +395,9 @@
       "errorForeground": "Red_110",
       "errorBackground": "Red_130"
     },
-    "SpeedSearch.errorForeground": "Red_110",
+    "SpeedSearch": {
+      "errorForeground": "Red_110"
+    },
     "Counter": {
       "background": "#0000001A"
     },
@@ -359,6 +405,9 @@
       "selectedBackground": "BlueTint_15",
       "selectedHoveredBackground": "BlueTint_20",
       "selectedPressedBackground": "BlueTint_30"
+    },
+    "ToggleButton": {
+      "foreground": "Neutral_10"
     }
   },
   "colors": {
@@ -594,5 +643,24 @@
     "YellowTint_50": "#9F680C80",
     "YellowTint_40": "#9F680C66",
     "YellowTint_20": "#9F680C33"
+  },
+  "iconColorsOnSelection": {
+    "#767a8a": "#ffffff",
+    "#6e6e6e": "#afb1b3",
+    "#db5860": "#b75e73",
+    "#f26522b3": "#d38369",
+    "#f2652299": "#d38369",
+    "#40b6e099": "#5eb6d4",
+    "#62b54399": "#7ebe65",
+    "#f98b9e99": "#f1a4b2",
+    "#f4af3d99": "#ecc27d",
+    "#b99bf899": "#b49ee2",
+    "#9aa7b0cc": "#aebdc6",
+    "#9aa7b099": "#aebdc6",
+    "#40b6e0b3": "#5eb6d4",
+    "#62b543b3": "#7ebe65",
+    "#f98b9eb3": "#f1a4b2",
+    "#f4af3db3": "#ecc27d",
+    "#b99bf8b3": "#b49ee2"
   }
 }
