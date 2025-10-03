@@ -2,7 +2,18 @@
 
 # Armada Theme Changelog
 
-## [Unreleased]
+## Unreleased
+
+### Added
+
+- Added Classic UI theme variants for both light and dark themes
+
+### Changed
+
+- The addition of `(Classic UI)` variants necessitated another variant rename of the original Armada themes from `(Classic)` to `(New UI)` to clarify which UI version they are designed for
+- Added `targetUI` attribute to theme definitions to ensure that `(Classic UI)` and `(Islands)` themes are only available when the corresponding UI is available in the IDE
+
+## [0.7.1] - 2025-10-02
 
 ### Added
 
