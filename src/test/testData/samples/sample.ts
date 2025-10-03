@@ -1,23 +1,22 @@
-interface ValidatorOptions {
-    minLength?: number,
-}
-
 type ValidatorDescriptor = {
     validatorOptions: ValidatorOptions,
     describe(): void,
 };
 
+const globalVariable = "\tdata\n";
+const templateLiteral: `Template ${string | number} type` = `Template ${globalVariable} type`;
 
-
-function globalFunction({ validatorOptions = {} }: ValidatorDescriptor) {
-    const { minLength } = validatorOptions;
+export function globalFunction({validatorOptions = {}}: ValidatorDescriptor) {
+    const {minLength} = validatorOptions;
+    console.log(minLength);
+}
 
 interface ButtonProps {
     click(): void;
 }
 
 function defineElement(tagName: string) {
-    return function <T extends { new (...args: any[]): {} }>(constructor: T) {
+    return function <T extends { new(...args: any[]): {} }>(constructor: T) {
         return class extends constructor {
             static tagName = tagName;
         };
@@ -28,12 +27,8 @@ function defineElement(tagName: string) {
 class DownloadButton<T extends Record<string, string>> extends HTMLButtonElement {
     static STATIC_FIELD = `<span title="HTML injection">${globalVariable}</span>`;
 
-    static get observedAttributes(): string[] {
-        do
-        return ['data-test'];
-    }
-
-    #field = { prop: 1 };
+    // @ts-ignore
+    #field = {prop: 1};
 
     public method(props: T) {
         this.click();
@@ -43,7 +38,10 @@ class DownloadButton<T extends Record<string, string>> extends HTMLButtonElement
                 break label;
             }
     }
+
 }
+
+new DownloadButton().method({key: "value"});
 
 enum EnumName {
     EnumMember,
@@ -54,10 +52,16 @@ module Test {
 }
 
 export const EXPORTED_VARIABLE = 1;
-export function exportedFunction() {}
-export class ExportedClass {}
 
-const globalVariable = "chars\n\u11";
-const templateLiteral: `Template ${string | number} type` = `Template ${globalVariable} type`;
+globalFunction({} as any)
 
-#
+const x: ButtonProps = {} as ButtonProps;
+console.log(templateLiteral)
+
+export class ExportedClass {
+}
+
+interface ValidatorOptions {
+    minLength?: number,
+}
+console.log(DownloadButton.STATIC_FIELD)
