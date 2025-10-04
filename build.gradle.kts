@@ -19,6 +19,7 @@ plugins {
     alias(libs.plugins.changelog) // Gradle Changelog Plugin
     alias(libs.plugins.qodana) // Gradle Qodana Plugin
     alias(libs.plugins.kover) // Gradle Kover Plugin
+    id("ThemeMergerPlugin") // Theme merging plugin
 }
 
 abstract class GitTagValueSource : ValueSource<String, GitTagValueSource.Parameters> {
@@ -218,6 +219,39 @@ kover {
     }
 }
 
+// Configure theme merging plugin
+themeMerger {
+    variants {
+        register("darkClassicUITheme") {
+            baseTheme.set("src/main/resources/themes/armada-dark/armada-dark.theme.json")
+            overrides("src/main/resources/themes/armada-dark/armada-dark-classic-ui.overrides.json")
+            output.set("src/main/resources/themes/armada-dark/armada-dark-classic-ui.theme.json")
+            description.set("Generates the Armada Dark Classic UI theme by merging base theme with overrides")
+        }
+
+        register("lightClassicUITheme") {
+            baseTheme.set("src/main/resources/themes/armada-light/armada-light.theme.json")
+            overrides("src/main/resources/themes/armada-light/armada-light-classic-ui.overrides.json")
+            output.set("src/main/resources/themes/armada-light/armada-light-classic-ui.theme.json")
+            description.set("Generates the Armada Light Classic UI theme by merging base theme with overrides")
+        }
+
+        register("darkPurpleTheme") {
+            baseTheme.set("src/main/resources/themes/armada-dark-purple/armada-dark-purple-base.theme.json")
+            overrides("src/main/resources/themes/armada-dark-purple/armada-dark-purple.overrides.json")
+            output.set("src/main/resources/themes/armada-dark-purple/armada-dark-purple.theme.json")
+            description.set("Generates the Armada Dark Purple New UI theme by merging base and overrides")
+        }
+
+        register("darkPurpleIslandsTheme") {
+            baseTheme.set("src/main/resources/themes/armada-dark-purple/armada-dark-purple-base.theme.json")
+            overrides("src/main/resources/themes/armada-dark-purple/armada-dark-purple-islands.overrides.json")
+            output.set("src/main/resources/themes/armada-dark-purple/armada-dark-purple-islands.theme.json")
+            description.set("Generates the Armada Dark Purple Islands theme by merging base and Islands overrides")
+        }
+    }
+}
+
 tasks {
     // Task to generate plugin.xml from plugin-main.xml with conditional EAP injection
     register<Task>("generatePluginXml") {
@@ -337,6 +371,7 @@ tasks {
         }
     }
 
+    // Manual theme manipulation tasks (for ad-hoc use)
     register<JavaExec>("normalizeTheme") {
         group = "theme"
         description = "Normalizes a theme JSON file by converting dotted keys to nested objects"
@@ -377,110 +412,10 @@ tasks {
         }
     }
 
-    register<JavaExec>("generateDarkClassicUITheme") {
-        group = "generate"
-        description = "Generates the Armada Dark Classic UI theme by merging base theme with overrides"
-
-        dependsOn("classes")
-        classpath(sourceSets["main"].runtimeClasspath, sourceSets["main"].output)
-        mainClass.set("buildscripts.ThemeMergerKt")
-
-        val baseTheme = "src/main/resources/themes/armada-dark/armada-dark.theme.json"
-        val overrides = "src/main/resources/themes/armada-dark/armada-dark-classic-ui.overrides.json"
-        val output = "src/main/resources/themes/armada-dark/armada-dark-classic-ui.theme.json"
-
-        inputs.files(baseTheme, overrides)
-        outputs.file(output)
-
-        args = listOf("merge", output, baseTheme, overrides)
-
-        doLast {
-            println("Generated Armada Dark Classic UI theme")
-        }
-    }
-
-    register<JavaExec>("generateLightClassicUITheme") {
-        group = "generate"
-        description = "Generates the Armada Light Classic UI theme by merging base theme with overrides"
-
-        dependsOn("classes")
-        classpath(sourceSets["main"].runtimeClasspath, sourceSets["main"].output)
-        mainClass.set("buildscripts.ThemeMergerKt")
-
-        val baseTheme = "src/main/resources/themes/armada-light/armada-light.theme.json"
-        val overrides = "src/main/resources/themes/armada-light/armada-light-classic-ui.overrides.json"
-        val output = "src/main/resources/themes/armada-light/armada-light-classic-ui.theme.json"
-
-        inputs.files(baseTheme, overrides)
-        outputs.file(output)
-
-        args = listOf("merge", output, baseTheme, overrides)
-
-        doLast {
-            println("Generated Armada Light Classic UI theme")
-        }
-    }
-
-
-    register<JavaExec>("generateDarkPurpleTheme") {
-        group = "generate"
-        description = "Generates the Armada Dark Purple New UI theme by merging base and overrides"
-
-        dependsOn("classes")
-        classpath(sourceSets["main"].runtimeClasspath, sourceSets["main"].output)
-        mainClass.set("buildscripts.ThemeMergerKt")
-
-        val baseTheme = "src/main/resources/themes/armada-dark-purple/armada-dark-purple-base.theme.json"
-        val overrides = "src/main/resources/themes/armada-dark-purple/armada-dark-purple.overrides.json"
-        val output = "src/main/resources/themes/armada-dark-purple/armada-dark-purple.theme.json"
-
-        inputs.files(baseTheme, overrides)
-        outputs.file(output)
-
-        args = listOf("merge", output, baseTheme, overrides)
-
-        doLast {
-            println("Generated Armada Dark Purple Islands theme")
-        }
-    }
-
-    register<JavaExec>("generateDarkPurpleIslandsTheme") {
-        group = "generate"
-        description = "Generates the Armada Dark Purple Islands theme by merging base and Islands overrides"
-
-        dependsOn("classes")
-        classpath(sourceSets["main"].runtimeClasspath, sourceSets["main"].output)
-        mainClass.set("buildscripts.ThemeMergerKt")
-
-        val baseTheme = "src/main/resources/themes/armada-dark-purple/armada-dark-purple-base.theme.json"
-        val overrides = "src/main/resources/themes/armada-dark-purple/armada-dark-purple-islands.overrides.json"
-        val output = "src/main/resources/themes/armada-dark-purple/armada-dark-purple-islands.theme.json"
-
-        inputs.files(baseTheme, overrides)
-        outputs.file(output)
-
-        args = listOf("merge", output, baseTheme, overrides)
-
-        doLast {
-            println("Generated Armada Dark Purple Islands theme")
-        }
-    }
-
-    register<Task>("generateAllThemes") {
-        group = "generate"
-        description = "Generates all theme variants"
-
-        dependsOn(
-            "generateDarkClassicUITheme",
-            "generateLightClassicUITheme",
-            "generateDarkPurpleTheme",
-            "generateDarkPurpleIslandsTheme"
-        )
-
-        doLast {
-            println("Generated all theme variants")
-        }
-    }
+    // Theme generation tasks are now auto-generated by the ThemeMergerPlugin
+    // based on the configuration in the themeMerger block above.
+    // Available tasks: generateDarkClassicUITheme, generateLightClassicUITheme,
+    // generateDarkPurpleTheme, generateDarkPurpleIslandsTheme, generateAllThemes
 }
 
 intellijPlatformTesting {
