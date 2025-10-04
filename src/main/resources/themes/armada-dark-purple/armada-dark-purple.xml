@@ -1,0 +1,2244 @@
+<scheme name="Armada Dark Purple" version="142" parent_scheme="Darcula">
+    <metaInfo>
+        <property name="ide">idea</property>
+        <property name="ideVersion">2025.3.0.0</property>
+    </metaInfo>
+    <colors>
+        <option name="ADDED_LINES_COLOR" value="14835E"/>
+        <option name="ANNOTATIONS_COLOR" value="9EA3A8"/>
+        <option name="ANNOTATIONS_LAST_COMMIT_COLOR" value="F8F8F9"/>
+        <option name="ActionButton.iconTextForeground" value="E0E1E4"/>
+        <option name="BLOCK_TERMINAL_BLOCK_BACKGROUND_END" value="9D4FCF4D"/>
+        <option name="BLOCK_TERMINAL_BLOCK_BACKGROUND_START" value="9D4FCF4D"/>
+        <option name="BLOCK_TERMINAL_DEFAULT_FOREGROUND" value="E0E1E4"/>
+        <option name="BLOCK_TERMINAL_INACTIVE_SELECTED_BLOCK_BACKGROUND" value="4C4662"/>
+        <option name="BLOCK_TERMINAL_INACTIVE_SELECTED_BLOCK_STROKE_COLOR" value="E0E1E4"/>
+        <option name="CARET_COLOR" value="E0E1E4"/>
+        <option name="CARET_ROW_COLOR" value="352348"/>
+        <option name="CONSOLE_BACKGROUND_KEY" value="1C1827"/>
+        <option name="DELETED_LINES_COLOR" value="D73251"/>
+        <option name="DOCUMENTATION_COLOR" value="252629"/>
+        <option name="DOC_COMMENT_GUIDE" value="28644B"/>
+        <option name="DOC_COMMENT_LINK" value="B174D9"/>
+        <option name="FILESTATUS_ADDED" value="69B090"/>
+        <option name="FILESTATUS_COPIED" value="69B090"/>
+        <option name="FILESTATUS_DELETED" value="F87C88"/>
+        <option name="FILESTATUS_HIJACKED" value="CD984D"/>
+        <option name="FILESTATUS_IDEA_FILESTATUS_DELETED_FROM_FILE_SYSTEM" value="F87C88"/>
+        <option name="FILESTATUS_IDEA_FILESTATUS_IGNORED" value="D69A6B"/>
+        <option name="FILESTATUS_IDEA_SVN_FILESTATUS_EXTERNAL" value="69B090"/>
+        <option name="FILESTATUS_IGNORE.PROJECT_VIEW.IGNORED" value="6E747B"/>
+        <option name="FILESTATUS_MERGED" value="9599F9"/>
+        <option name="FILESTATUS_MODIFIED" value="71A3EF"/>
+        <option name="FILESTATUS_NOT_CHANGED_IMMEDIATE" value="71A3EF"/>
+        <option name="FILESTATUS_NOT_CHANGED_RECURSIVE" value="71A3EF"/>
+        <option name="FILESTATUS_SUPPRESSED" value="9EA3A8"/>
+        <option name="FILESTATUS_SWITCHED" value="9599F9"/>
+        <option name="FILESTATUS_UNKNOWN" value="F87C88"/>
+        <option name="FILESTATUS_addedOutside" value="69B090"/>
+        <option name="FILESTATUS_changelistConflict" value="CD984D"/>
+        <option name="FILESTATUS_modifiedOutside" value="71A3EF"/>
+        <option name="GUTTER_BACKGROUND" value="13101B"/>
+        <option name="IGNORED_ADDED_LINES_BORDER_COLOR" value="1E7857"/>
+        <option name="IGNORED_DELETED_LINES_BORDER_COLOR" value="C72C49"/>
+        <option name="IGNORED_MODIFIED_LINES_BORDER_COLOR" value="1868CB"/>
+        <option name="INDENT_GUIDE" value="3E3852"/>
+        <option name="LINE_NUMBERS_COLOR" value="6E747B"/>
+        <option name="LINE_NUMBER_ON_CARET_ROW_COLOR" value="E0E1E4"/>
+        <option name="LOOKUP_COLOR" value="252629"/>
+        <option name="MODIFIED_LINES_COLOR" value="0870E4"/>
+        <option name="MODIFIED_TAB_ICON" value="E0E1E4"/>
+        <option name="NOTIFICATION_BACKGROUND" value="262136"/>
+        <option name="RIGHT_MARGIN_COLOR" value="3E3852"/>
+        <option name="SELECTED_INDENT_GUIDE" value="3E3852"/>
+        <option name="SELECTION_BACKGROUND" value="6A3D88"/>
+        <option name="ScrollBar.Mac.Transparent.hoverThumbBorderColor" value="00000000"/>
+        <option name="ScrollBar.Mac.Transparent.hoverThumbColor" value="2D2541"/>
+        <option name="ScrollBar.Mac.Transparent.hoverTrackColor" value="232129"/>
+        <option name="ScrollBar.Mac.Transparent.thumbBorderColor" value="00000000"/>
+        <option name="ScrollBar.Mac.Transparent.thumbColor" value="272333"/>
+        <option name="ScrollBar.Mac.Transparent.trackColor" value="00000000"/>
+        <option name="ScrollBar.Mac.hoverThumbBorderColor" value="00000000"/>
+        <option name="ScrollBar.Mac.hoverThumbColor" value="2D2541"/>
+        <option name="ScrollBar.Mac.hoverTrackColor" value="232129"/>
+        <option name="ScrollBar.Mac.thumbBorderColor" value="00000000"/>
+        <option name="ScrollBar.Mac.thumbColor" value="272333"/>
+        <option name="ScrollBar.Mac.trackColor" value="00000000"/>
+        <option name="ScrollBar.Transparent.hoverThumbBorderColor" value="00000000"/>
+        <option name="ScrollBar.Transparent.hoverThumbColor" value="2D2541"/>
+        <option name="ScrollBar.Transparent.hoverTrackColor" value="232129"/>
+        <option name="ScrollBar.Transparent.thumbBorderColor" value="00000000"/>
+        <option name="ScrollBar.Transparent.thumbColor" value="272333"/>
+        <option name="ScrollBar.Transparent.trackColor" value="00000000"/>
+        <option name="ScrollBar.background" value="00000000"/>
+        <option name="ScrollBar.hoverThumbBorderColor" value="00000000"/>
+        <option name="ScrollBar.hoverThumbColor" value="2D2541"/>
+        <option name="ScrollBar.hoverTrackColor" value="232129"/>
+        <option name="ScrollBar.thumbBorderColor" value="00000000"/>
+        <option name="ScrollBar.thumbColor" value="272333"/>
+        <option name="ScrollBar.trackColor" value="00000000"/>
+        <option name="TAB_UNDERLINE" value="7A4EA0"/>
+        <option name="VCS_ANNOTATIONS_COLOR_1" value="916012"/>
+        <option name="VCS_ANNOTATIONS_COLOR_2" value="6C4B18"/>
+        <option name="VCS_ANNOTATIONS_COLOR_3" value="433016"/>
+        <option name="VCS_ANNOTATIONS_COLOR_4" value="20180C"/>
+        <option name="VCS_ANNOTATIONS_COLOR_5" value="0C0805"/>
+        <option name="VISUAL_INDENT_GUIDE" value="3E3852"/>
+        <option name="WHITESPACES" value="252629"/>
+        <option name="WHITESPACES_MODIFIED_LINES_COLOR" value="9F680C"/>
+    </colors>
+    <attributes>
+        <option name="ANNOTATION_ATTRIBUTE_NAME_ATTRIBUTES">
+            <value>
+                <option name="FOREGROUND" value="85a658"/>
+            </value>
+        </option>
+        <option name="ANNOTATION_NAME_ATTRIBUTES" baseAttributes="DEFAULT_METADATA"/>
+        <option name="ANONYMOUS_CLASS_NAME_ATTRIBUTES">
+            <value>
+                <option name="FONT_TYPE" value="1"/>
+            </value>
+        </option>
+        <option name="BAD_CHARACTER">
+            <value>
+                <option name="EFFECT_COLOR" value="ec5d6f"/>
+                <option name="EFFECT_TYPE" value="4"/>
+            </value>
+        </option>
+        <option name="BASH.CONDITIONAL">
+            <value/>
+        </option>
+        <option name="BASH.EXTERNAL_COMMAND">
+            <value>
+                <option name="FOREGROUND" value="c7a65d"/>
+            </value>
+        </option>
+        <option name="BASH.FUNCTION_DEF_NAME">
+            <value>
+                <option name="FONT_TYPE" value="1"/>
+                <option name="EFFECT_TYPE" value="4"/>
+            </value>
+        </option>
+        <option name="BASH.LET_COMMAND">
+            <value>
+                <option name="FOREGROUND" value="e09b70"/>
+            </value>
+        </option>
+        <option name="BASH.SHEBANG" baseAttributes="BASH.LINE_COMMENT"/>
+        <option name="BASH.SUBSHELL_COMMAND_PARENTHESES">
+            <value>
+                <option name="FOREGROUND" value="e0e1e4"/>
+            </value>
+        </option>
+        <option name="BLOCK_TERMINAL_BLACK">
+            <value>
+                <option name="FOREGROUND" value="e0e1e4"/>
+                <option name="BACKGROUND" value="18191b"/>
+            </value>
+        </option>
+        <option name="BLOCK_TERMINAL_BLACK_BRIGHT">
+            <value>
+                <option name="FOREGROUND" value="424242"/>
+                <option name="BACKGROUND" value="405c80"/>
+            </value>
+        </option>
+        <option name="BLOCK_TERMINAL_BLUE">
+            <value>
+                <option name="FOREGROUND" value="6daaf7"/>
+                <option name="BACKGROUND" value="405c80"/>
+            </value>
+        </option>
+        <option name="BLOCK_TERMINAL_BLUE_BRIGHT">
+            <value>
+                <option name="FOREGROUND" value="67e6"/>
+                <option name="BACKGROUND" value="314966"/>
+            </value>
+        </option>
+        <option name="BLOCK_TERMINAL_CYAN">
+            <value>
+                <option name="FOREGROUND" value="2ccce6"/>
+                <option name="BACKGROUND" value="477880"/>
+            </value>
+        </option>
+        <option name="BLOCK_TERMINAL_CYAN_BRIGHT">
+            <value>
+                <option name="FOREGROUND" value="bad6"/>
+                <option name="BACKGROUND" value="2f5f66"/>
+            </value>
+        </option>
+        <option name="BLOCK_TERMINAL_GREEN">
+            <value>
+                <option name="FOREGROUND" value="88dbd7"/>
+                <option name="BACKGROUND" value="437a6a"/>
+            </value>
+        </option>
+        <option name="BLOCK_TERMINAL_GREEN_BRIGHT">
+            <value>
+                <option name="FOREGROUND" value="9e6f"/>
+                <option name="BACKGROUND" value="2d6654"/>
+            </value>
+        </option>
+        <option name="BLOCK_TERMINAL_MAGENTA">
+            <value>
+                <option name="FOREGROUND" value="eb83e2"/>
+                <option name="BACKGROUND" value="6b5280"/>
+            </value>
+        </option>
+        <option name="BLOCK_TERMINAL_MAGENTA_BRIGHT">
+            <value>
+                <option name="FOREGROUND" value="eb4dde"/>
+                <option name="BACKGROUND" value="4e3166"/>
+            </value>
+        </option>
+        <option name="BLOCK_TERMINAL_RED">
+            <value>
+                <option name="FOREGROUND" value="eb4056"/>
+                <option name="BACKGROUND" value="804a52"/>
+            </value>
+        </option>
+        <option name="BLOCK_TERMINAL_RED_BRIGHT">
+            <value>
+                <option name="FOREGROUND" value="c7001b"/>
+                <option name="BACKGROUND" value="66333a"/>
+            </value>
+        </option>
+        <option name="BLOCK_TERMINAL_WHITE">
+            <value>
+                <option name="FOREGROUND" value="595959"/>
+                <option name="BACKGROUND" value="898989"/>
+            </value>
+        </option>
+        <option name="BLOCK_TERMINAL_WHITE_BRIGHT">
+            <value>
+                <option name="FOREGROUND" value="18191b"/>
+                <option name="BACKGROUND" value="1c1827"/>
+            </value>
+        </option>
+        <option name="BLOCK_TERMINAL_YELLOW">
+            <value>
+                <option name="FOREGROUND" value="fad075"/>
+                <option name="BACKGROUND" value="80653e"/>
+            </value>
+        </option>
+        <option name="BLOCK_TERMINAL_YELLOW_BRIGHT">
+            <value>
+                <option name="FOREGROUND" value="e09119"/>
+                <option name="BACKGROUND" value="665234"/>
+            </value>
+        </option>
+        <option name="BREADCRUMBS_CURRENT">
+            <value>
+                <option name="FOREGROUND" value="e0e1e4"/>
+                <option name="BACKGROUND" value="3e3852"/>
+            </value>
+        </option>
+        <option name="BREADCRUMBS_DEFAULT">
+            <value>
+                <option name="FOREGROUND" value="aba7be"/>
+            </value>
+        </option>
+        <option name="BREADCRUMBS_HOVERED">
+            <value>
+                <option name="FOREGROUND" value="e0e1e4"/>
+                <option name="BACKGROUND" value="3e3852"/>
+            </value>
+        </option>
+        <option name="BREADCRUMBS_INACTIVE">
+            <value>
+                <option name="FOREGROUND" value="6e747b"/>
+            </value>
+        </option>
+        <option name="BREAKPOINT_ATTRIBUTES">
+            <value>
+                <option name="BACKGROUND" value="1a1822"/>
+            </value>
+        </option>
+        <option name="CLASS_REFERENCE">
+            <value>
+                <option name="FOREGROUND" value="e0e1e4"/>
+            </value>
+        </option>
+        <option name="CONDITIONALLY_NOT_COMPILED">
+            <value>
+                <option name="FOREGROUND" value="aba7be"/>
+                <option name="FONT_TYPE" value="2"/>
+            </value>
+        </option>
+        <option name="CONSOLE_BLACK_OUTPUT">
+            <value>
+                <option name="FOREGROUND" value="e0e1e4"/>
+                <option name="BACKGROUND" value="1c1827"/>
+            </value>
+        </option>
+        <option name="CONSOLE_BLUE_BRIGHT_OUTPUT">
+            <value>
+                <option name="FOREGROUND" value="67e6"/>
+                <option name="BACKGROUND" value="314966"/>
+            </value>
+        </option>
+        <option name="CONSOLE_BLUE_OUTPUT">
+            <value>
+                <option name="FOREGROUND" value="6daaf7"/>
+                <option name="BACKGROUND" value="405c80"/>
+            </value>
+        </option>
+        <option name="CONSOLE_CYAN_BRIGHT_OUTPUT">
+            <value>
+                <option name="FOREGROUND" value="bad6"/>
+                <option name="BACKGROUND" value="2f5f66"/>
+            </value>
+        </option>
+        <option name="CONSOLE_CYAN_OUTPUT">
+            <value>
+                <option name="FOREGROUND" value="2ccce6"/>
+                <option name="BACKGROUND" value="477880"/>
+            </value>
+        </option>
+        <option name="CONSOLE_ERROR_OUTPUT">
+            <value>
+                <option name="FOREGROUND" value="eb4056"/>
+            </value>
+        </option>
+        <option name="CONSOLE_GRAY_OUTPUT">
+            <value>
+                <option name="FOREGROUND" value="595959"/>
+                <option name="BACKGROUND" value="676868"/>
+            </value>
+        </option>
+        <option name="CONSOLE_GREEN_BRIGHT_OUTPUT">
+            <value>
+                <option name="FOREGROUND" value="9e6f"/>
+                <option name="BACKGROUND" value="2d6654"/>
+            </value>
+        </option>
+        <option name="CONSOLE_GREEN_OUTPUT">
+            <value>
+                <option name="FOREGROUND" value="88dbd7"/>
+                <option name="BACKGROUND" value="437a6a"/>
+            </value>
+        </option>
+        <option name="CONSOLE_MAGENTA_BRIGHT_OUTPUT">
+            <value>
+                <option name="FOREGROUND" value="eb4dde"/>
+                <option name="BACKGROUND" value="4e3166"/>
+            </value>
+        </option>
+        <option name="CONSOLE_MAGENTA_OUTPUT">
+            <value>
+                <option name="FOREGROUND" value="eb83e2"/>
+                <option name="BACKGROUND" value="6b5280"/>
+            </value>
+        </option>
+        <option name="CONSOLE_NORMAL_OUTPUT">
+            <value>
+                <option name="FOREGROUND" value="e0e1e4"/>
+            </value>
+        </option>
+        <option name="CONSOLE_RED_BRIGHT_OUTPUT">
+            <value>
+                <option name="FOREGROUND" value="c7001b"/>
+                <option name="BACKGROUND" value="66333a"/>
+            </value>
+        </option>
+        <option name="CONSOLE_RED_OUTPUT">
+            <value>
+                <option name="FOREGROUND" value="eb4056"/>
+                <option name="BACKGROUND" value="804a52"/>
+            </value>
+        </option>
+        <option name="CONSOLE_SYSTEM_OUTPUT">
+            <value>
+                <option name="FOREGROUND" value="e09b70"/>
+            </value>
+        </option>
+        <option name="CONSOLE_USER_INPUT">
+            <value>
+                <option name="FOREGROUND" value="e0e1e4"/>
+            </value>
+        </option>
+        <option name="CONSOLE_WHITE_OUTPUT">
+            <value>
+                <option name="FOREGROUND" value="18191b"/>
+                <option name="BACKGROUND" value="1c1827"/>
+            </value>
+        </option>
+        <option name="CONSOLE_YELLOW_BRIGHT_OUTPUT">
+            <value>
+                <option name="FOREGROUND" value="e09119"/>
+                <option name="BACKGROUND" value="665234"/>
+            </value>
+        </option>
+        <option name="CONSOLE_YELLOW_OUTPUT">
+            <value>
+                <option name="FOREGROUND" value="fad075"/>
+                <option name="BACKGROUND" value="80653e"/>
+            </value>
+        </option>
+        <option name="CONSTRUCTOR_DECLARATION_ATTRIBUTES">
+            <value>
+                <option name="FONT_TYPE" value="1"/>
+            </value>
+        </option>
+        <option name="CSS.AMPERSAND">
+            <value>
+                <option name="FOREGROUND" value="e09b70"/>
+            </value>
+        </option>
+        <option name="CSS.ATTRIBUTE_NAME">
+            <value>
+                <option name="FOREGROUND" value="e09b70"/>
+            </value>
+        </option>
+        <option name="CSS.CLASS_NAME">
+            <value>
+                <option name="FOREGROUND" value="e09b70"/>
+            </value>
+        </option>
+        <option name="CSS.COLOR">
+            <value>
+                <option name="FOREGROUND" value="4dacf0"/>
+            </value>
+        </option>
+        <option name="CSS.FUNCTION">
+            <value>
+                <option name="FOREGROUND" value="e09b70"/>
+            </value>
+        </option>
+        <option name="CSS.HASH">
+            <value>
+                <option name="FOREGROUND" value="e09b70"/>
+            </value>
+        </option>
+        <option name="CSS.IDENT">
+            <value>
+                <option name="FOREGROUND" value="e09b70"/>
+            </value>
+        </option>
+        <option name="CSS.IMPORTANT">
+            <value>
+                <option name="FOREGROUND" value="e09b70"/>
+            </value>
+        </option>
+        <option name="CSS.KEYWORD">
+            <value>
+                <option name="FOREGROUND" value="93a6f5"/>
+            </value>
+        </option>
+        <option name="CSS.NUMBER">
+            <value>
+                <option name="FOREGROUND" value="4dacf0"/>
+            </value>
+        </option>
+        <option name="CSS.PERCENT">
+            <value>
+                <option name="FOREGROUND" value="4dacf0"/>
+            </value>
+        </option>
+        <option name="CSS.PROPERTY_NAME">
+            <value>
+                <option name="FOREGROUND" value="ffffff"/>
+            </value>
+        </option>
+        <option name="CSS.PSEUDO">
+            <value>
+                <option name="FOREGROUND" value="e09b70"/>
+            </value>
+        </option>
+        <option name="CSS.TAG_NAME">
+            <value>
+                <option name="FOREGROUND" value="e09b70"/>
+            </value>
+        </option>
+        <option name="CSS.TERM_IDENTIFIER">
+            <value>
+                <option name="FOREGROUND" value="4dacf0"/>
+            </value>
+        </option>
+        <option name="CSS.UNICODE.RANGE">
+            <value>
+                <option name="FOREGROUND" value="4dacf0"/>
+            </value>
+        </option>
+        <option name="CSS.UNIT">
+            <value>
+                <option name="FOREGROUND" value="62a362"/>
+            </value>
+        </option>
+        <option name="CSS.URL">
+            <value>
+                <option name="FOREGROUND" value="62a362"/>
+                <option name="EFFECT_COLOR" value="4a565b"/>
+                <option name="EFFECT_TYPE" value="1"/>
+            </value>
+        </option>
+        <option name="CTRL_CLICKABLE">
+            <value>
+                <option name="FOREGROUND" value="4987e2"/>
+                <option name="EFFECT_TYPE" value="1"/>
+            </value>
+        </option>
+        <option name="CUSTOM_INVALID_STRING_ESCAPE_ATTRIBUTES">
+            <value>
+                <option name="FOREGROUND" value="68e868"/>
+                <option name="BACKGROUND" value="481515"/>
+            </value>
+        </option>
+        <option name="CUSTOM_KEYWORD1_ATTRIBUTES">
+            <value>
+                <option name="FOREGROUND" value="e3e3ff"/>
+                <option name="FONT_TYPE" value="1"/>
+            </value>
+        </option>
+        <option name="CUSTOM_KEYWORD2_ATTRIBUTES">
+            <value>
+                <option name="FOREGROUND" value="fda5ff"/>
+                <option name="FONT_TYPE" value="1"/>
+            </value>
+        </option>
+        <option name="CUSTOM_KEYWORD3_ATTRIBUTES">
+            <value>
+                <option name="FOREGROUND" value="71d7d7"/>
+                <option name="FONT_TYPE" value="1"/>
+            </value>
+        </option>
+        <option name="CUSTOM_KEYWORD4_ATTRIBUTES">
+            <value>
+                <option name="FOREGROUND" value="ffc2c2"/>
+                <option name="FONT_TYPE" value="1"/>
+            </value>
+        </option>
+        <option name="CUSTOM_LINE_COMMENT_ATTRIBUTES">
+            <value>
+                <option name="FOREGROUND" value="aba7be"/>
+                <option name="FONT_TYPE" value="2"/>
+            </value>
+        </option>
+        <option name="CUSTOM_MULTI_LINE_COMMENT_ATTRIBUTES">
+            <value>
+                <option name="FOREGROUND" value="aba7be"/>
+                <option name="FONT_TYPE" value="2"/>
+            </value>
+        </option>
+        <option name="CUSTOM_NUMBER_ATTRIBUTES">
+            <value>
+                <option name="FOREGROUND" value="4dacf0"/>
+            </value>
+        </option>
+        <option name="CUSTOM_STRING_ATTRIBUTES">
+            <value>
+                <option name="FOREGROUND" value="62a362"/>
+                <option name="FONT_TYPE" value="1"/>
+            </value>
+        </option>
+        <option name="CUSTOM_VALID_STRING_ESCAPE_ATTRIBUTES">
+            <value>
+                <option name="FOREGROUND" value="e0e1e4"/>
+                <option name="FONT_TYPE" value="1"/>
+            </value>
+        </option>
+        <option name="DEFAULT_ATTRIBUTE">
+            <value>
+                <option name="FOREGROUND" value="ffffff"/>
+            </value>
+        </option>
+        <option name="DEFAULT_BLOCK_COMMENT">
+            <value>
+                <option name="FOREGROUND" value="7e7d85"/>
+            </value>
+        </option>
+        <option name="DEFAULT_CLASS_NAME">
+            <value>
+                <option name="FOREGROUND" value="e0e1e4"/>
+            </value>
+        </option>
+        <option name="DEFAULT_CLASS_REFERENCE">
+            <value>
+                <option name="FOREGROUND" value="e0e1e4"/>
+            </value>
+        </option>
+        <option name="DEFAULT_COMMA">
+            <value/>
+        </option>
+        <option name="DEFAULT_CONSTANT">
+            <value>
+                <option name="FOREGROUND" value="93a6f5"/>
+            </value>
+        </option>
+        <option name="DEFAULT_DOC_COMMENT">
+            <value>
+                <option name="FOREGROUND" value="7e7d85"/>
+            </value>
+        </option>
+        <option name="DEFAULT_DOC_COMMENT_TAG">
+            <value>
+                <option name="FOREGROUND" value="e09b70"/>
+            </value>
+        </option>
+        <option name="DEFAULT_DOC_COMMENT_TAG_VALUE">
+            <value>
+                <option name="FOREGROUND" value="c3c5c9"/>
+            </value>
+        </option>
+        <option name="DEFAULT_DOC_MARKUP">
+            <value>
+                <option name="FOREGROUND" value="e0e1e4"/>
+            </value>
+        </option>
+        <option name="DEFAULT_ENTITY">
+            <value>
+                <option name="FOREGROUND" value="4dacf0"/>
+            </value>
+        </option>
+        <option name="DEFAULT_FUNCTION_CALL">
+            <value>
+                <option name="FOREGROUND" value="c7a65d"/>
+            </value>
+        </option>
+        <option name="DEFAULT_FUNCTION_DECLARATION">
+            <value>
+                <option name="FOREGROUND" value="c7a65d"/>
+            </value>
+        </option>
+        <option name="DEFAULT_HIGHLIGHTED_REFERENCE" baseAttributes="DEFAULT_STRING"/>
+        <option name="DEFAULT_IDENTIFIER">
+            <value>
+                <option name="FOREGROUND" value="e0e1e4"/>
+            </value>
+        </option>
+        <option name="DEFAULT_INSTANCE_FIELD">
+            <value>
+                <option name="FOREGROUND" value="93a6f5"/>
+            </value>
+        </option>
+        <option name="DEFAULT_INTERFACE_NAME">
+            <value>
+                <option name="FOREGROUND" value="e0e1e4"/>
+            </value>
+        </option>
+        <option name="DEFAULT_INVALID_STRING_ESCAPE">
+            <value>
+                <option name="FOREGROUND" value="e09b70"/>
+                <option name="EFFECT_COLOR" value="ec5d6f"/>
+                <option name="EFFECT_TYPE" value="4"/>
+            </value>
+        </option>
+        <option name="DEFAULT_KEYWORD">
+            <value>
+                <option name="FOREGROUND" value="e09b70"/>
+            </value>
+        </option>
+        <option name="DEFAULT_LINE_COMMENT">
+            <value>
+                <option name="FOREGROUND" value="7e7d85"/>
+            </value>
+        </option>
+        <option name="DEFAULT_METADATA">
+            <value>
+                <option name="FOREGROUND" value="85a658"/>
+            </value>
+        </option>
+        <option name="DEFAULT_NUMBER">
+            <value>
+                <option name="FOREGROUND" value="4dacf0"/>
+            </value>
+        </option>
+        <option name="DEFAULT_PREDEFINED_SYMBOL">
+            <value>
+                <option name="FOREGROUND" value="e09b70"/>
+            </value>
+        </option>
+        <option name="DEFAULT_REASSIGNED_LOCAL_VARIABLE" baseAttributes="DEFAULT_LOCAL_VARIABLE"/>
+        <option name="DEFAULT_REASSIGNED_PARAMETER">
+            <value>
+                <option name="EFFECT_COLOR" value="646b71"/>
+                <option name="EFFECT_TYPE" value="1"/>
+            </value>
+        </option>
+        <option name="DEFAULT_SEMICOLON">
+            <value/>
+        </option>
+        <option name="DEFAULT_STATIC_FIELD">
+            <value>
+                <option name="FOREGROUND" value="93a6f5"/>
+            </value>
+        </option>
+        <option name="DEFAULT_STATIC_METHOD" baseAttributes="DEFAULT_FUNCTION_DECLARATION"/>
+        <option name="DEFAULT_STRING">
+            <value>
+                <option name="FOREGROUND" value="62a362"/>
+            </value>
+        </option>
+        <option name="DEFAULT_TAG">
+            <value>
+                <option name="FOREGROUND" value="85a658"/>
+            </value>
+        </option>
+        <option name="DEFAULT_TEMPLATE_LANGUAGE_COLOR" baseAttributes="TEXT"/>
+        <option name="DEFAULT_VALID_STRING_ESCAPE">
+            <value>
+                <option name="FOREGROUND" value="e09b70"/>
+            </value>
+        </option>
+        <option name="DELETED_TEXT_ATTRIBUTES">
+            <value>
+                <option name="FOREGROUND" value="bbbbbb"/>
+                <option name="BACKGROUND" value="d73251"/>
+                <option name="EFFECT_COLOR" value="c3c3c3"/>
+                <option name="EFFECT_TYPE" value="3"/>
+            </value>
+        </option>
+        <option name="DEPRECATED_ATTRIBUTES">
+            <value>
+                <option name="EFFECT_COLOR" value="e0e1e4"/>
+                <option name="EFFECT_TYPE" value="3"/>
+            </value>
+        </option>
+        <option name="DIFF_CONFLICT">
+            <value>
+                <option name="FOREGROUND" value="322818"/>
+                <option name="BACKGROUND" value="5c4013"/>
+                <option name="ERROR_STRIPE_COLOR" value="9f680c"/>
+            </value>
+        </option>
+        <option name="DIFF_DELETED">
+            <value>
+                <option name="FOREGROUND" value="632230"/>
+                <option name="BACKGROUND" value="782535"/>
+                <option name="ERROR_STRIPE_COLOR" value="d73251"/>
+            </value>
+        </option>
+        <option name="DIFF_INSERTED">
+            <value>
+                <option name="FOREGROUND" value="154335"/>
+                <option name="BACKGROUND" value="164e3c"/>
+                <option name="ERROR_STRIPE_COLOR" value="14835e"/>
+            </value>
+        </option>
+        <option name="DIFF_MODIFIED">
+            <value>
+                <option name="FOREGROUND" value="192941"/>
+                <option name="BACKGROUND" value="7a4ea0"/>
+                <option name="ERROR_STRIPE_COLOR" value="870e4"/>
+            </value>
+        </option>
+        <option name="DUPLICATE_FROM_SERVER">
+            <value>
+                <option name="BACKGROUND" value="30322b"/>
+            </value>
+        </option>
+        <option name="ENUM_CONST">
+            <value>
+                <option name="FOREGROUND" value="93a6f5"/>
+            </value>
+        </option>
+        <option name="ERRORS_ATTRIBUTES">
+            <value>
+                <option name="EFFECT_COLOR" value="ec5d6f"/>
+                <option name="ERROR_STRIPE_COLOR" value="ec5d6f"/>
+                <option name="EFFECT_TYPE" value="4"/>
+            </value>
+        </option>
+        <option name="EXECUTIONPOINT_ATTRIBUTES">
+            <value>
+                <option name="BACKGROUND" value="d73251"/>
+            </value>
+        </option>
+        <option name="FOLDED_TEXT_ATTRIBUTES">
+            <value>
+                <option name="FOREGROUND" value="8c8c8c"/>
+                <option name="BACKGROUND" value="313c48"/>
+            </value>
+        </option>
+        <option name="FOLLOWED_HYPERLINK_ATTRIBUTES">
+            <value>
+                <option name="FOREGROUND" value="b174d9"/>
+                <option name="EFFECT_COLOR" value="c7c7ff"/>
+                <option name="EFFECT_TYPE" value="1"/>
+            </value>
+        </option>
+        <option name="First symbol in list">
+            <value>
+                <option name="FOREGROUND" value="e0e1e4"/>
+                <option name="FONT_TYPE" value="1"/>
+            </value>
+        </option>
+        <option name="GENERIC_SERVER_ERROR_OR_WARNING">
+            <value>
+                <option name="EFFECT_COLOR" value="ec5d6f"/>
+                <option name="ERROR_STRIPE_COLOR" value="ec5d6f"/>
+                <option name="EFFECT_TYPE" value="4"/>
+            </value>
+        </option>
+        <option name="GO_BUILTIN_CONSTANT">
+            <value>
+                <option name="FOREGROUND" value="e09b70"/>
+            </value>
+        </option>
+        <option name="GO_BUILTIN_FUNCTION_CALL">
+            <value>
+                <option name="FOREGROUND" value="e09b70"/>
+            </value>
+        </option>
+        <option name="GO_BUILTIN_TYPE_REFERENCE">
+            <value>
+                <option name="FOREGROUND" value="e09b70"/>
+            </value>
+        </option>
+        <option name="GO_BUILTIN_VARIABLE">
+            <value>
+                <option name="FOREGROUND" value="e09b70"/>
+            </value>
+        </option>
+        <option name="GO_EXPORTED_FUNCTION">
+            <value>
+                <option name="FONT_TYPE" value="1"/>
+            </value>
+        </option>
+        <option name="GO_EXPORTED_FUNCTION_CALL">
+            <value>
+                <option name="FOREGROUND" value="c7a65d"/>
+            </value>
+        </option>
+        <option name="GO_EXPORTED_INTERFACE_REFERENCE">
+            <value>
+                <option name="FOREGROUND" value="e0e1e4"/>
+            </value>
+        </option>
+        <option name="GO_EXPORTED_STRUCT_REFERENCE">
+            <value>
+                <option name="FOREGROUND" value="e0e1e4"/>
+            </value>
+        </option>
+        <option name="GO_LOCAL_FUNCTION">
+            <value/>
+        </option>
+        <option name="GO_LOCAL_INTERFACE_REFERENCE">
+            <value>
+                <option name="FOREGROUND" value="e0e1e4"/>
+            </value>
+        </option>
+        <option name="GO_LOCAL_STRUCT_REFERENCE">
+            <value>
+                <option name="FOREGROUND" value="e0e1e4"/>
+            </value>
+        </option>
+        <option name="GO_METHOD_RECEIVER">
+            <value>
+                <option name="FOREGROUND" value="4dacf0"/>
+            </value>
+        </option>
+        <option name="GO_PACKAGE">
+            <value>
+                <option name="FOREGROUND" value="a8cc7c"/>
+            </value>
+        </option>
+        <option name="GO_PACKAGE_EXPORTED_INTERFACE">
+            <value/>
+        </option>
+        <option name="GO_PACKAGE_EXPORTED_STRUCT">
+            <value/>
+        </option>
+        <option name="GO_PACKAGE_LOCAL_INTERFACE">
+            <value/>
+        </option>
+        <option name="GO_PACKAGE_LOCAL_STRUCT">
+            <value/>
+        </option>
+        <option name="GO_SCOPE_VARIABLE">
+            <value>
+                <option name="FOREGROUND" value="e0e1e4"/>
+            </value>
+        </option>
+        <option name="GO_SHADOWING_VARIABLE">
+            <value>
+                <option name="FOREGROUND" value="7dbda2"/>
+            </value>
+        </option>
+        <option name="GO_TYPE_REFERENCE">
+            <value>
+                <option name="FOREGROUND" value="6fafbd"/>
+            </value>
+        </option>
+        <option name="GO_TYPE_SPECIFICATION">
+            <value/>
+        </option>
+        <option name="GRAMMAR_ERROR">
+            <value>
+                <option name="EFFECT_COLOR" value="865a15"/>
+                <option name="EFFECT_TYPE" value="2"/>
+            </value>
+        </option>
+        <option name="HTML_ATTRIBUTE_NAME" baseAttributes="DEFAULT_ATTRIBUTE"/>
+        <option name="HTML_ATTRIBUTE_VALUE" baseAttributes="DEFAULT_STRING"/>
+        <option name="HTML_CODE">
+            <value/>
+        </option>
+        <option name="HTML_ENTITY_REFERENCE" baseAttributes="DEFAULT_ENTITY"/>
+        <option name="HTML_TAG">
+            <value>
+                <option name="FOREGROUND" value="aba7be"/>
+            </value>
+        </option>
+        <option name="HTML_TAG_NAME">
+            <value>
+                <option name="FOREGROUND" value="e09b70"/>
+            </value>
+        </option>
+        <option name="HYPERLINK_ATTRIBUTES">
+            <value>
+                <option name="FOREGROUND" value="b174d9"/>
+                <option name="EFFECT_TYPE" value="1"/>
+            </value>
+        </option>
+        <option name="IDENTIFIER_UNDER_CARET_ATTRIBUTES">
+            <value>
+                <option name="BACKGROUND" value="2d2539"/>
+                <option name="ERROR_STRIPE_COLOR" value="e0e1e4"/>
+            </value>
+        </option>
+        <option name="IMPLICIT_ANONYMOUS_CLASS_PARAMETER_ATTRIBUTES" baseAttributes="CLASS_NAME_ATTRIBUTES"/>
+        <option name="INACTIVE_HYPERLINK_ATTRIBUTES">
+            <value>
+                <option name="FOREGROUND" value="e0e1e4"/>
+                <option name="EFFECT_COLOR" value="e0e1e4"/>
+                <option name="EFFECT_TYPE" value="1"/>
+            </value>
+        </option>
+        <option name="INFO_ATTRIBUTES">
+            <value>
+                <option name="EFFECT_COLOR" value="646b71"/>
+                <option name="ERROR_STRIPE_COLOR" value="5d636b"/>
+                <option name="EFFECT_TYPE" value="4"/>
+            </value>
+        </option>
+        <option name="INJECTED_LANGUAGE_FRAGMENT">
+            <value>
+                <option name="BACKGROUND" value="1f392d"/>
+            </value>
+        </option>
+        <option name="IVAR">
+            <value>
+                <option name="FOREGROUND" value="e0e1e4"/>
+            </value>
+        </option>
+        <option name="JAVA_DOC_MARKUP">
+            <value>
+                <option name="BACKGROUND" value="223f22"/>
+            </value>
+        </option>
+        <option name="JS.DOC_TAG_NAMEPATH">
+            <value>
+                <option name="FOREGROUND" value="e0e1e4"/>
+            </value>
+        </option>
+        <option name="JS.EXPORTED.FUNCTION">
+            <value>
+                <option name="FOREGROUND" value="c7a65d"/>
+            </value>
+        </option>
+        <option name="JS.FUNCTION_DECLARATION_IDENTIFIER">
+            <value>
+                <option name="FONT_TYPE" value="1"/>
+            </value>
+        </option>
+        <option name="JS.GLOBAL_FUNCTION">
+            <value>
+                <option name="FOREGROUND" value="c7a65d"/>
+            </value>
+        </option>
+        <option name="JS.GLOBAL_VARIABLE">
+            <value>
+                <option name="FOREGROUND" value="e0e1e4"/>
+            </value>
+        </option>
+        <option name="JS.INSTANCE_MEMBER_FUNCTION" baseAttributes="DEFAULT_INSTANCE_METHOD"/>
+        <option name="JS.INSTANCE_MEMBER_VARIABLE">
+            <value>
+                <option name="FOREGROUND" value="93a6f5"/>
+            </value>
+        </option>
+        <option name="JS.JSX_CLIENT_COMPONENT">
+            <value>
+                <option name="FOREGROUND" value="26bda4"/>
+            </value>
+        </option>
+        <option name="JS.LABEL">
+            <value>
+                <option name="FOREGROUND" value="e0e1e4"/>
+            </value>
+        </option>
+        <option name="JS.LOCAL_VARIABLE">
+            <value>
+                <option name="FOREGROUND" value="93a6f5"/>
+            </value>
+        </option>
+        <option name="JS.PARENTHS">
+            <value>
+                <option name="FOREGROUND" value="e0e1e4"/>
+            </value>
+        </option>
+        <option name="JS.PROPERTY_REFERENCE">
+            <value>
+                <option name="FOREGROUND" value="e0e1e4"/>
+            </value>
+        </option>
+        <option name="JS.THIS_IDENTIFIER">
+            <value>
+                <option name="FOREGROUND" value="8888c6"/>
+            </value>
+        </option>
+        <option name="JSON.KEYWORD">
+            <value>
+                <option name="FOREGROUND" value="e09b70"/>
+            </value>
+        </option>
+        <option name="JSON.PROPERTY_KEY">
+            <value>
+                <option name="FOREGROUND" value="93a6f5"/>
+            </value>
+        </option>
+        <option name="KOTLIN_ANNOTATION_ATTRIBUTE_NAME_ATTRIBUTES">
+            <value>
+                <option name="FOREGROUND" value="add1de"/>
+            </value>
+        </option>
+        <option name="KOTLIN_BACKING_FIELD_VARIABLE">
+            <value/>
+        </option>
+        <option name="KOTLIN_DYNAMIC_FUNCTION_CALL">
+            <value>
+                <option name="FOREGROUND" value="c7a65d"/>
+            </value>
+        </option>
+        <option name="KOTLIN_DYNAMIC_PROPERTY_CALL">
+            <value/>
+        </option>
+        <option name="KOTLIN_ENUM_ENTRY">
+            <value>
+                <option name="FOREGROUND" value="93a6f5"/>
+                <option name="FONT_TYPE" value="2"/>
+            </value>
+        </option>
+        <option name="KOTLIN_FUNCTION_DECLARATION">
+            <value>
+                <option name="FONT_TYPE" value="1"/>
+            </value>
+        </option>
+        <option name="KOTLIN_LABEL">
+            <value/>
+        </option>
+        <option name="KOTLIN_LABEL_AT">
+            <value>
+                <option name="FOREGROUND" value="85a658"/>
+            </value>
+        </option>
+        <option name="KOTLIN_MUTABLE_VARIABLE">
+            <value>
+                <option name="EFFECT_COLOR" value="555558"/>
+                <option name="EFFECT_TYPE" value="1"/>
+            </value>
+        </option>
+        <option name="KOTLIN_NAMED_ARGUMENT">
+            <value>
+                <option name="FOREGROUND" value="add1de"/>
+            </value>
+        </option>
+        <option name="KOTLIN_PACKAGE_FUNCTION_CALL">
+            <value>
+                <option name="FOREGROUND" value="c7a65d"/>
+            </value>
+        </option>
+        <option name="KOTLIN_PACKAGE_PROPERTY">
+            <value>
+                <option name="FOREGROUND" value="93a6f5"/>
+                <option name="FONT_TYPE" value="2"/>
+                <option name="EFFECT_COLOR" value="555558"/>
+                <option name="EFFECT_TYPE" value="1"/>
+            </value>
+        </option>
+        <option name="KOTLIN_SMART_CAST_RECEIVER">
+            <value>
+                <option name="BACKGROUND" value="1f392d"/>
+            </value>
+        </option>
+        <option name="KOTLIN_SMART_CAST_VALUE">
+            <value>
+                <option name="BACKGROUND" value="1f392d"/>
+            </value>
+        </option>
+        <option name="KOTLIN_SMART_CONSTANT">
+            <value>
+                <option name="BACKGROUND" value="1f392d"/>
+            </value>
+        </option>
+        <option name="KOTLIN_TYPE_PARAMETER">
+            <value>
+                <option name="FOREGROUND" value="37cccc"/>
+            </value>
+        </option>
+        <option name="LABEL">
+            <value>
+                <option name="FOREGROUND" value="e0e1e4"/>
+            </value>
+        </option>
+        <option name="LESS_VARIABLE">
+            <value>
+                <option name="FOREGROUND" value="e0e1e4"/>
+            </value>
+        </option>
+        <option name="LOCAL_VARIABLE_ATTRIBUTES">
+            <value/>
+        </option>
+        <option name="LOG_DEBUG_OUTPUT">
+            <value>
+                <option name="FOREGROUND" value="6daaf7"/>
+            </value>
+        </option>
+        <option name="LOG_ERROR_OUTPUT">
+            <value>
+                <option name="FOREGROUND" value="eb4056"/>
+            </value>
+        </option>
+        <option name="LOG_EXPIRED_ENTRY">
+            <value>
+                <option name="FOREGROUND" value="595959"/>
+            </value>
+        </option>
+        <option name="LOG_INFO_OUTPUT">
+            <value>
+                <option name="FOREGROUND" value="e09b70"/>
+            </value>
+        </option>
+        <option name="LOG_VERBOSE_OUTPUT">
+            <value>
+                <option name="FOREGROUND" value="e0e1e4"/>
+            </value>
+        </option>
+        <option name="LOG_WARNING_OUTPUT">
+            <value>
+                <option name="FOREGROUND" value="fad075"/>
+            </value>
+        </option>
+        <option name="LUA_DOC_TAG">
+            <value>
+                <option name="FOREGROUND" value="85a658"/>
+            </value>
+        </option>
+        <option name="LUA_FIELD">
+            <value/>
+        </option>
+        <option name="LUA_GLOBAL_FUNCTION_ID">
+            <value>
+                <option name="FOREGROUND" value="c7a65d"/>
+            </value>
+        </option>
+        <option name="LUA_GLOBAL_VAR">
+            <value>
+                <option name="FOREGROUND" value="c7a65d"/>
+            </value>
+        </option>
+        <option name="LUA_NUMBER">
+            <value>
+                <option name="FOREGROUND" value="93a6f5"/>
+            </value>
+        </option>
+        <option name="LUA_OPERATORS">
+            <value>
+                <option name="FOREGROUND" value="e09b70"/>
+            </value>
+        </option>
+        <option name="LUA_PARAMETER">
+            <value/>
+        </option>
+        <option name="LUA_PRIMITIVE_TYPE">
+            <value>
+                <option name="FOREGROUND" value="93a6f5"/>
+            </value>
+        </option>
+        <option name="LUA_REGION_DESC">
+            <value>
+                <option name="FOREGROUND" value="aba7be"/>
+            </value>
+        </option>
+        <option name="LUA_SELF">
+            <value>
+                <option name="FOREGROUND" value="8888c6"/>
+            </value>
+        </option>
+        <option name="LUA_STD_API">
+            <value>
+                <option name="FOREGROUND" value="c7a65d"/>
+                <option name="EFFECT_TYPE" value="2"/>
+            </value>
+        </option>
+        <option name="LUA_UP_VALUE">
+            <value>
+                <option name="EFFECT_TYPE" value="1"/>
+            </value>
+        </option>
+        <option name="MACRONAME">
+            <value>
+                <option name="FOREGROUND" value="e0e1e4"/>
+            </value>
+        </option>
+        <option name="MARKDOWN_AUTO_LINK">
+            <value>
+                <option name="FOREGROUND" value="b174d9"/>
+                <option name="EFFECT_TYPE" value="1"/>
+            </value>
+        </option>
+        <option name="MARKDOWN_BLOCK_QUOTE_MARKER">
+            <value>
+                <option name="FOREGROUND" value="62a362"/>
+            </value>
+        </option>
+        <option name="MARKDOWN_BOLD">
+            <value>
+                <option name="FONT_TYPE" value="1"/>
+            </value>
+        </option>
+        <option name="MARKDOWN_HEADER_LEVEL_1">
+            <value>
+                <option name="FOREGROUND" value="c7a65d"/>
+            </value>
+        </option>
+        <option name="MARKDOWN_HEADER_LEVEL_2">
+            <value>
+                <option name="FOREGROUND" value="c7a65d"/>
+            </value>
+        </option>
+        <option name="MARKDOWN_HEADER_LEVEL_3">
+            <value>
+                <option name="FOREGROUND" value="c7a65d"/>
+            </value>
+        </option>
+        <option name="MARKDOWN_HEADER_LEVEL_4">
+            <value>
+                <option name="FOREGROUND" value="c7a65d"/>
+            </value>
+        </option>
+        <option name="MARKDOWN_HEADER_LEVEL_5">
+            <value>
+                <option name="FOREGROUND" value="c7a65d"/>
+            </value>
+        </option>
+        <option name="MARKDOWN_HEADER_LEVEL_6">
+            <value>
+                <option name="FOREGROUND" value="c7a65d"/>
+            </value>
+        </option>
+        <option name="MARKDOWN_HTML_BLOCK">
+            <value>
+                <option name="FOREGROUND" value="62a362"/>
+            </value>
+        </option>
+        <option name="MARKDOWN_INLINE_HTML">
+            <value>
+                <option name="FOREGROUND" value="62a362"/>
+            </value>
+        </option>
+        <option name="MARKDOWN_ITALIC">
+            <value>
+                <option name="FONT_TYPE" value="2"/>
+            </value>
+        </option>
+        <option name="MARKDOWN_LINK_DESTINATION">
+            <value>
+                <option name="FOREGROUND" value="b174d9"/>
+            </value>
+        </option>
+        <option name="MARKDOWN_LINK_LABEL">
+            <value>
+                <option name="FOREGROUND" value="b174d9"/>
+            </value>
+        </option>
+        <option name="MARKDOWN_LINK_TEXT">
+            <value>
+                <option name="FOREGROUND" value="b174d9"/>
+                <option name="EFFECT_TYPE" value="1"/>
+            </value>
+        </option>
+        <option name="MARKDOWN_LIST_ITEM">
+            <value/>
+        </option>
+        <option name="MARKDOWN_REFERENCE_LINK">
+            <value>
+                <option name="FOREGROUND" value="93a6f5"/>
+            </value>
+        </option>
+        <option name="MARKDOWN_STRIKE_THROUGH">
+            <value>
+                <option name="FOREGROUND" value="7e7d85"/>
+                <option name="EFFECT_TYPE" value="3"/>
+            </value>
+        </option>
+        <option name="MARKED_FOR_REMOVAL_ATTRIBUTES">
+            <value>
+                <option name="FOREGROUND" value="e0e1e4"/>
+                <option name="EFFECT_COLOR" value="e0e1e4"/>
+                <option name="EFFECT_TYPE" value="3"/>
+            </value>
+        </option>
+        <option name="MATCHED_BRACE_ATTRIBUTES">
+            <value>
+                <option name="BACKGROUND" value="2e5246"/>
+                <option name="FONT_TYPE" value="1"/>
+            </value>
+        </option>
+        <option name="NGINX_IDENTIFIER">
+            <value>
+                <option name="FOREGROUND" value="93a6f5"/>
+            </value>
+        </option>
+        <option name="NGINX_VALUE">
+            <value>
+                <option name="FOREGROUND" value="e0e1e4"/>
+            </value>
+        </option>
+        <option name="NGINX_VARIABLE">
+            <value>
+                <option name="FOREGROUND" value="e0e1e4"/>
+            </value>
+        </option>
+        <option name="NOT_TOP_FRAME_ATTRIBUTES">
+            <value>
+                <option name="BACKGROUND" value="142a43"/>
+            </value>
+        </option>
+        <option name="NOT_USED_ELEMENT_ATTRIBUTES">
+            <value>
+                <option name="FOREGROUND" value="9c9ea0"/>
+            </value>
+        </option>
+        <option name="OC.BUILTIN_TYPE_KEYWORD">
+            <value>
+                <option name="FOREGROUND" value="e0e1e4"/>
+            </value>
+        </option>
+        <option name="OC.CONDITIONALLY_NOT_COMPILED">
+            <value>
+                <option name="FOREGROUND" value="627347"/>
+            </value>
+        </option>
+        <option name="OC.CPP_KEYWORD">
+            <value>
+                <option name="FOREGROUND" value="e09b70"/>
+            </value>
+        </option>
+        <option name="OC.DEPENDENT_CODE">
+            <value>
+                <option name="FOREGROUND" value="93a6f5"/>
+            </value>
+        </option>
+        <option name="OC.DIRECTIVE">
+            <value>
+                <option name="FOREGROUND" value="85a658"/>
+            </value>
+        </option>
+        <option name="OC.EXTERN_VARIABLE">
+            <value>
+                <option name="FOREGROUND" value="e0e1e4"/>
+            </value>
+        </option>
+        <option name="OC.FUNCTION_DECLARATION">
+            <value>
+                <option name="FOREGROUND" value="e0e1e4"/>
+                <option name="FONT_TYPE" value="1"/>
+            </value>
+        </option>
+        <option name="OC.KEYWORD">
+            <value>
+                <option name="FOREGROUND" value="e09b70"/>
+            </value>
+        </option>
+        <option name="OC.LOCAL_VARIABLE">
+            <value>
+                <option name="FOREGROUND" value="e0e1e4"/>
+            </value>
+        </option>
+        <option name="OC.MACRONAME">
+            <value>
+                <option name="FOREGROUND" value="e0e1e4"/>
+            </value>
+        </option>
+        <option name="OC.MESSAGE_ARGUMENT">
+            <value>
+                <option name="FOREGROUND" value="e0e1e4"/>
+            </value>
+        </option>
+        <option name="OC.NAMESPACE_LIKE">
+            <value>
+                <option name="FOREGROUND" value="e0e1e4"/>
+            </value>
+        </option>
+        <option name="OC.NUMBER">
+            <value>
+                <option name="FOREGROUND" value="4dacf0"/>
+            </value>
+        </option>
+        <option name="OC.PARAMETER">
+            <value>
+                <option name="FOREGROUND" value="e0e1e4"/>
+            </value>
+        </option>
+        <option name="OC.PROPERTY">
+            <value>
+                <option name="FOREGROUND" value="e0e1e4"/>
+            </value>
+        </option>
+        <option name="OC.SELFSUPERTHIS">
+            <value>
+                <option name="FOREGROUND" value="8888c6"/>
+            </value>
+        </option>
+        <option name="OC.STRING">
+            <value>
+                <option name="FOREGROUND" value="62a362"/>
+            </value>
+        </option>
+        <option name="OC.STRUCT_FIELD">
+            <value>
+                <option name="FOREGROUND" value="93a6f5"/>
+            </value>
+        </option>
+        <option name="OC.STRUCT_LIKE">
+            <value>
+                <option name="FOREGROUND" value="e0e1e4"/>
+            </value>
+        </option>
+        <option name="OC.TEMPLATE_VALUE">
+            <value>
+                <option name="FOREGROUND" value="e0e1e4"/>
+            </value>
+        </option>
+        <option name="OC.TYPEDEF">
+            <value>
+                <option name="FOREGROUND" value="e0e1e4"/>
+            </value>
+        </option>
+        <option name="OC_FORMAT_TOKEN">
+            <value>
+                <option name="FOREGROUND" value="62a362"/>
+            </value>
+        </option>
+        <option name="PACKAGE_PRIVATE_REFERENCE">
+            <value/>
+        </option>
+        <option name="PERL_ANNOTATION">
+            <value>
+                <option name="FOREGROUND" value="aba7be"/>
+            </value>
+        </option>
+        <option name="PERL_ARRAY">
+            <value/>
+        </option>
+        <option name="PERL_ARRAY_BUILTIN">
+            <value/>
+        </option>
+        <option name="PERL_AUTOLOAD">
+            <value/>
+        </option>
+        <option name="PERL_DEREFERENCE">
+            <value>
+                <option name="FOREGROUND" value="e09b70"/>
+            </value>
+        </option>
+        <option name="PERL_EMBED_MARKER">
+            <value>
+                <option name="FOREGROUND" value="62a362"/>
+            </value>
+        </option>
+        <option name="PERL_GLOB_BUILTIN">
+            <value>
+                <option name="FOREGROUND" value="c7a65d"/>
+            </value>
+        </option>
+        <option name="PERL_HASH">
+            <value/>
+        </option>
+        <option name="PERL_HASH_BUILTIN">
+            <value/>
+        </option>
+        <option name="PERL_LABEL">
+            <value>
+                <option name="EFFECT_COLOR" value="e0e1e4"/>
+                <option name="EFFECT_TYPE" value="1"/>
+            </value>
+        </option>
+        <option name="PERL_NUMBER">
+            <value/>
+        </option>
+        <option name="PERL_PACKAGE">
+            <value/>
+        </option>
+        <option name="PERL_PACKAGE_PRAGMA">
+            <value/>
+        </option>
+        <option name="PERL_REGEX_QUOTE">
+            <value>
+                <option name="FOREGROUND" value="62a362"/>
+            </value>
+        </option>
+        <option name="PERL_SCALAR">
+            <value/>
+        </option>
+        <option name="PERL_SCALAR_BUILTIN">
+            <value/>
+        </option>
+        <option name="PERL_SQ_STRING">
+            <value>
+                <option name="FOREGROUND" value="62a362"/>
+            </value>
+        </option>
+        <option name="PERL_SUB_ATTRIBUTE">
+            <value/>
+        </option>
+        <option name="PERL_SUB_DECLARATION">
+            <value>
+                <option name="FONT_TYPE" value="1"/>
+            </value>
+        </option>
+        <option name="PERL_SUB_DEFINITION">
+            <value>
+                <option name="FONT_TYPE" value="1"/>
+            </value>
+        </option>
+        <option name="PERL_TAG">
+            <value>
+                <option name="FOREGROUND" value="93a6f5"/>
+            </value>
+        </option>
+        <option name="PHP_ALIAS_IDENTIFIER_DECLARATION">
+            <value>
+                <option name="FOREGROUND" value="e0e1e4"/>
+            </value>
+        </option>
+        <option name="PHP_CLASS_SELF_REFERENCE">
+            <value>
+                <option name="FOREGROUND" value="8888c6"/>
+            </value>
+        </option>
+        <option name="PHP_CONSTANT">
+            <value>
+                <option name="FOREGROUND" value="93a6f5"/>
+                <option name="FONT_TYPE" value="2"/>
+            </value>
+        </option>
+        <option name="PHP_FUNCTION">
+            <value>
+                <option name="FOREGROUND" value="e0e1e4"/>
+                <option name="FONT_TYPE" value="1"/>
+            </value>
+        </option>
+        <option name="PHP_GOTO_LABEL_IDENTIFIER">
+            <value>
+                <option name="FOREGROUND" value="e0e1e4"/>
+            </value>
+        </option>
+        <option name="PHP_IDENTIFIER">
+            <value>
+                <option name="FOREGROUND" value="e0e1e4"/>
+                <option name="BACKGROUND" value="18191b"/>
+            </value>
+        </option>
+        <option name="PHP_NAMED_ARGUMENT">
+            <value/>
+        </option>
+        <option name="PHP_PARAMETER">
+            <value>
+                <option name="FOREGROUND" value="93a6f5"/>
+            </value>
+        </option>
+        <option name="PHP_STATIC_METHOD">
+            <value>
+                <option name="FOREGROUND" value="c7a65d"/>
+                <option name="FONT_TYPE" value="2"/>
+            </value>
+        </option>
+        <option name="PHP_THIS_VAR">
+            <value>
+                <option name="FOREGROUND" value="8888c6"/>
+            </value>
+        </option>
+        <option name="PHP_VAR">
+            <value>
+                <option name="FOREGROUND" value="93a6f5"/>
+            </value>
+        </option>
+        <option name="PHP_VAR_VAR">
+            <value/>
+        </option>
+        <option name="POWER_SHELL_COMMAND_NAME">
+            <value>
+                <option name="FOREGROUND" value="c7a65d"/>
+            </value>
+        </option>
+        <option name="POWER_SHELL_COMMAND_PARAMETER">
+            <value/>
+        </option>
+        <option name="POWER_SHELL_NUMBER">
+            <value>
+                <option name="FOREGROUND" value="93a6f5"/>
+            </value>
+        </option>
+        <option name="POWER_SHELL_TYPE_NAME">
+            <value>
+                <option name="FONT_TYPE" value="1"/>
+            </value>
+        </option>
+        <option name="PRIVATE_REFERENCE">
+            <value/>
+        </option>
+        <option name="PROPERTIES.INVALID_STRING_ESCAPE">
+            <value>
+                <option name="FOREGROUND" value="ffc66d"/>
+                <option name="BACKGROUND" value="450505"/>
+                <option name="EFFECT_COLOR" value="ff0000"/>
+                <option name="EFFECT_TYPE" value="4"/>
+            </value>
+        </option>
+        <option name="PROPERTIES.KEY">
+            <value>
+                <option name="FOREGROUND" value="e09b70"/>
+                <option name="EFFECT_TYPE" value="1"/>
+            </value>
+        </option>
+        <option name="PROPERTIES.KEY_VALUE_SEPARATOR" baseAttributes="DEFAULT_OPERATION_SIGN"/>
+        <option name="PROPERTIES.STRING_LITERAL_VALUE">
+            <value>
+                <option name="FOREGROUND" value="62a362"/>
+            </value>
+        </option>
+        <option name="PROPERTIES.VALID_STRING_ESCAPE">
+            <value>
+                <option name="FOREGROUND" value="e0e1e4"/>
+            </value>
+        </option>
+        <option name="PROPERTIES.VALUE">
+            <value>
+                <option name="FOREGROUND" value="e0e1e4"/>
+            </value>
+        </option>
+        <option name="PROTECTED_REFERENCE">
+            <value/>
+        </option>
+        <option name="PROTOCOL_REFERENCE">
+            <value>
+                <option name="FOREGROUND" value="e0e1e4"/>
+            </value>
+        </option>
+        <option name="PROTOTEXT_IDENTIFIER">
+            <value>
+                <option name="FOREGROUND" value="e09b70"/>
+            </value>
+        </option>
+        <option name="PUBLIC_REFERENCE">
+            <value/>
+        </option>
+        <option name="PY.ANNOTATION">
+            <value/>
+        </option>
+        <option name="PY.BUILTIN_NAME">
+            <value>
+                <option name="FOREGROUND" value="c7a65d"/>
+            </value>
+        </option>
+        <option name="PY.DECORATOR">
+            <value>
+                <option name="FOREGROUND" value="c7a65d"/>
+            </value>
+        </option>
+        <option name="PY.KEYWORD_ARGUMENT">
+            <value/>
+        </option>
+        <option name="PY.LOCAL_VARIABLE">
+            <value/>
+        </option>
+        <option name="PY.METHOD_CALL">
+            <value>
+                <option name="FOREGROUND" value="c7a65d"/>
+            </value>
+        </option>
+        <option name="PY.NESTED_FUNC_DEFINITION">
+            <value>
+                <option name="FONT_TYPE" value="1"/>
+            </value>
+        </option>
+        <option name="PY.PREDEFINED_DEFINITION">
+            <value>
+                <option name="FONT_TYPE" value="1"/>
+            </value>
+        </option>
+        <option name="PY.PREDEFINED_USAGE">
+            <value/>
+        </option>
+        <option name="PY.SELF_PARAMETER">
+            <value/>
+        </option>
+        <option name="PY.STRING">
+            <value>
+                <option name="FOREGROUND" value="62a362"/>
+            </value>
+        </option>
+        <option name="PY.TYPE_ANNOTATION">
+            <value>
+                <option name="FOREGROUND" value="e0e1e4"/>
+            </value>
+        </option>
+        <option name="PY.TYPE_PARAMETER">
+            <value>
+                <option name="FOREGROUND" value="37cccc"/>
+            </value>
+        </option>
+        <option name="REASSIGNED_LOCAL_VARIABLE_ATTRIBUTES">
+            <value/>
+        </option>
+        <option name="RECORD_COMPONENT_ATTRIBUTES">
+            <value/>
+        </option>
+        <option name="REGEXP.ESC_CHARACTER" baseAttributes="DEFAULT_VALID_STRING_ESCAPE"/>
+        <option name="REGEXP.META" baseAttributes="DEFAULT_KEYWORD"/>
+        <option name="REGEXP.QUOTE_CHARACTER" baseAttributes="DEFAULT_VALID_STRING_ESCAPE"/>
+        <option name="REST.EXPLICIT">
+            <value>
+                <option name="FOREGROUND" value="e09b70"/>
+            </value>
+        </option>
+        <option name="RUNTIME_ERROR">
+            <value>
+                <option name="EFFECT_COLOR" value="f49810"/>
+                <option name="ERROR_STRIPE_COLOR" value="e25a6b"/>
+                <option name="EFFECT_TYPE" value="5"/>
+            </value>
+        </option>
+        <option name="R_FIELD">
+            <value/>
+        </option>
+        <option name="R_FUNCTION_DECLARATION">
+            <value>
+                <option name="FONT_TYPE" value="1"/>
+            </value>
+        </option>
+        <option name="R_NAMED_ARGUMENT">
+            <value/>
+        </option>
+        <option name="R_NAMESPACE">
+            <value/>
+        </option>
+        <option name="R_NUMBER">
+            <value>
+                <option name="FOREGROUND" value="93a6f5"/>
+            </value>
+        </option>
+        <option name="R_OPERATION_SIGN">
+            <value>
+                <option name="FOREGROUND" value="e09b70"/>
+            </value>
+        </option>
+        <option name="ReSharper.CSHARP_NAMESPACE_IDENTIFIER">
+            <value>
+                <option name="FOREGROUND" value="e0e1e4"/>
+            </value>
+        </option>
+        <option name="SASS_COMMENT" baseAttributes="CSS.COMMENT"/>
+        <option name="SASS_IDENTIFIER">
+            <value>
+                <option name="FOREGROUND" value="e09b70"/>
+            </value>
+        </option>
+        <option name="SASS_MIXIN">
+            <value>
+                <option name="FOREGROUND" value="e0e1e4"/>
+            </value>
+        </option>
+        <option name="SASS_NUMBER">
+            <value>
+                <option name="FOREGROUND" value="4dacf0"/>
+            </value>
+        </option>
+        <option name="SASS_PROPERTY_NAME">
+            <value>
+                <option name="FOREGROUND" value="e0e1e4"/>
+            </value>
+        </option>
+        <option name="SASS_STRING">
+            <value>
+                <option name="FOREGROUND" value="62a362"/>
+            </value>
+        </option>
+        <option name="SASS_VARIABLE">
+            <value>
+                <option name="FOREGROUND" value="4dacf0"/>
+            </value>
+        </option>
+        <option name="SEARCH_RESULT_ATTRIBUTES">
+            <value>
+                <option name="BACKGROUND" value="4d3814"/>
+            </value>
+        </option>
+        <option name="SQL_COLUMN">
+            <value/>
+        </option>
+        <option name="SQL_DATABASE_OBJECT">
+            <value/>
+        </option>
+        <option name="SQL_LOCAL_ALIAS">
+            <value>
+                <option name="EFFECT_TYPE" value="1"/>
+            </value>
+        </option>
+        <option name="SQL_NUMBER">
+            <value>
+                <option name="FOREGROUND" value="93a6f5"/>
+            </value>
+        </option>
+        <option name="SQL_PRIMARY_KEY_DEFINITION">
+            <value>
+                <option name="FOREGROUND" value="e0e1e4"/>
+            </value>
+        </option>
+        <option name="SQL_REFERENCE_IDENTIFIER">
+            <value>
+                <option name="FOREGROUND" value="93a6f5"/>
+            </value>
+        </option>
+        <option name="SQL_SCHEMA">
+            <value/>
+        </option>
+        <option name="SQL_TABLE">
+            <value/>
+        </option>
+        <option name="SQL_TYPE">
+            <value>
+                <option name="FOREGROUND" value="e0e1e4"/>
+            </value>
+        </option>
+        <option name="STATIC_FIELD_IMPORTED_ATTRIBUTES">
+            <value>
+                <option name="FOREGROUND" value="93a6f5"/>
+                <option name="FONT_TYPE" value="2"/>
+            </value>
+        </option>
+        <option name="STATIC_FINAL_FIELD_ATTRIBUTES">
+            <value>
+                <option name="FOREGROUND" value="93a6f5"/>
+            </value>
+        </option>
+        <option name="STATIC_FINAL_FIELD_IMPORTED_ATTRIBUTES">
+            <value>
+                <option name="FOREGROUND" value="93a6f5"/>
+                <option name="FONT_TYPE" value="2"/>
+            </value>
+        </option>
+        <option name="STATIC_METHOD_ATTRIBUTES">
+            <value>
+                <option name="FOREGROUND" value="c7a65d"/>
+            </value>
+        </option>
+        <option name="STATIC_METHOD_IMPORTED_ATTRIBUTES">
+            <value>
+                <option name="FOREGROUND" value="c7a65d"/>
+            </value>
+        </option>
+        <option name="TAB_SELECTED">
+            <value>
+                <option name="BACKGROUND" value="342846"/>
+            </value>
+        </option>
+        <option name="TAB_SELECTED_INACTIVE">
+            <value>
+                <option name="BACKGROUND" value="28292b"/>
+            </value>
+        </option>
+        <option name="TAG_ATTR_KEY">
+            <value>
+                <option name="FOREGROUND" value="ffffff"/>
+            </value>
+        </option>
+        <option name="TEMPLATE_VARIABLE_ATTRIBUTES">
+            <value>
+                <option name="FOREGROUND" value="93a6f5"/>
+            </value>
+        </option>
+        <option name="TEXT">
+            <value>
+                <option name="FOREGROUND" value="e0e1e4"/>
+                <option name="BACKGROUND" value="1c1827"/>
+            </value>
+        </option>
+        <option name="TEXT_SEARCH_RESULT_ATTRIBUTES">
+            <value>
+                <option name="BACKGROUND" value="4d3814"/>
+                <option name="EFFECT_COLOR" value="765010"/>
+                <option name="ERROR_STRIPE_COLOR" value="d49550"/>
+            </value>
+        </option>
+        <option name="TEXT_STYLE_ERROR">
+            <value>
+                <option name="EFFECT_COLOR" value="ec5d6f"/>
+                <option name="EFFECT_TYPE" value="5"/>
+            </value>
+        </option>
+        <option name="TEXT_STYLE_SUGGESTION">
+            <value>
+                <option name="EFFECT_COLOR" value="e0e1e4"/>
+                <option name="EFFECT_TYPE" value="5"/>
+            </value>
+        </option>
+        <option name="TEXT_STYLE_WARNING">
+            <value>
+                <option name="EFFECT_COLOR" value="cd984d"/>
+                <option name="EFFECT_TYPE" value="5"/>
+            </value>
+        </option>
+        <option name="TODO_DEFAULT_ATTRIBUTES">
+            <value>
+                <option name="FOREGROUND" value="79dbb8"/>
+                <option name="ERROR_STRIPE_COLOR" value="d7445b"/>
+            </value>
+        </option>
+        <option name="TS.DOC_TYPE">
+            <value>
+                <option name="FOREGROUND" value="aba7be"/>
+            </value>
+        </option>
+        <option name="TS.EXPORTED_VARIABLE">
+            <value>
+                <option name="FOREGROUND" value="93a6f5"/>
+            </value>
+        </option>
+        <option name="TS.GLOBAL_VARIABLE">
+            <value>
+                <option name="FOREGROUND" value="93a6f5"/>
+            </value>
+        </option>
+        <option name="TS.INSTANCE_MEMBER_VARIABLE">
+            <value>
+                <option name="FOREGROUND" value="93a6f5"/>
+            </value>
+        </option>
+        <option name="TS.PARAMETER">
+            <value>
+                <option name="FOREGROUND" value="e0e1e4"/>
+            </value>
+        </option>
+        <option name="TS.TYPE_PARAMETER">
+            <value>
+                <option name="FOREGROUND" value="37cccc"/>
+            </value>
+        </option>
+        <option name="TYPEDEF">
+            <value>
+                <option name="FOREGROUND" value="e09b70"/>
+            </value>
+        </option>
+        <option name="TYPE_PARAMETER_NAME_ATTRIBUTES">
+            <value>
+                <option name="FOREGROUND" value="37cccc"/>
+            </value>
+        </option>
+        <option name="TYPO">
+            <value>
+                <option name="EFFECT_COLOR" value="169068"/>
+                <option name="EFFECT_TYPE" value="2"/>
+            </value>
+        </option>
+        <option name="UNMATCHED_BRACE_ATTRIBUTES">
+            <value>
+                <option name="BACKGROUND" value="583535"/>
+            </value>
+        </option>
+        <option name="WARNING_ATTRIBUTES">
+            <value>
+                <option name="EFFECT_COLOR" value="cd984d"/>
+                <option name="ERROR_STRIPE_COLOR" value="e59408"/>
+                <option name="EFFECT_TYPE" value="4"/>
+            </value>
+        </option>
+        <option name="WRITE_IDENTIFIER_UNDER_CARET_ATTRIBUTES">
+            <value>
+                <option name="BACKGROUND" value="3d1d26"/>
+                <option name="ERROR_STRIPE_COLOR" value="ffb0b5"/>
+            </value>
+        </option>
+        <option name="WRITE_SEARCH_RESULT_ATTRIBUTES">
+            <value>
+                <option name="BACKGROUND" value="51202b"/>
+            </value>
+        </option>
+        <option name="WRONG_REFERENCES_ATTRIBUTES">
+            <value>
+                <option name="EFFECT_COLOR" value="ec5d6f"/>
+                <option name="EFFECT_TYPE" value="4"/>
+            </value>
+        </option>
+        <option name="XML_ATTRIBUTE_NAME" baseAttributes="DEFAULT_ATTRIBUTE"/>
+        <option name="XML_DOCTYPE">
+            <value>
+                <option name="FOREGROUND" value="85a658"/>
+            </value>
+        </option>
+        <option name="XML_ENTITY_REFERENCE">
+            <value>
+                <option name="FOREGROUND" value="4dacf0"/>
+            </value>
+        </option>
+        <option name="XML_NS_PREFIX">
+            <value>
+                <option name="FOREGROUND" value="85a658"/>
+            </value>
+        </option>
+        <option name="XML_PROLOGUE">
+            <value/>
+        </option>
+        <option name="XML_TAG">
+            <value>
+                <option name="FOREGROUND" value="555558"/>
+            </value>
+        </option>
+        <option name="XML_TAG_DATA" baseAttributes="TEXT"/>
+        <option name="XML_TAG_NAME">
+            <value>
+                <option name="FOREGROUND" value="e09b70"/>
+            </value>
+        </option>
+        <option name="YAML_ALIAS">
+            <value>
+                <option name="FOREGROUND" value="c7a65d"/>
+            </value>
+        </option>
+        <option name="YAML_ANCHOR">
+            <value>
+                <option name="FOREGROUND" value="93a6f5"/>
+            </value>
+        </option>
+        <option name="YAML_SCALAR_LIST">
+            <value>
+                <option name="FOREGROUND" value="e0e1e4"/>
+            </value>
+        </option>
+        <option name="YAML_SCALAR_STRING">
+            <value>
+                <option name="FOREGROUND" value="e0e1e4"/>
+            </value>
+        </option>
+        <option name="YAML_SCALAR_VALUE">
+            <value>
+                <option name="FOREGROUND" value="e0e1e4"/>
+            </value>
+        </option>
+        <option name="YAML_SINGLE_QUOTED_STRING">
+            <value>
+                <option name="FOREGROUND" value="e0e1e4"/>
+            </value>
+        </option>
+        <option name="YAML_TEXT">
+            <value>
+                <option name="FOREGROUND" value="e0e1e4"/>
+            </value>
+        </option>
+        <option name="ZIG_BUILTIN">
+            <value>
+                <option name="FOREGROUND" value="85a658"/>
+            </value>
+        </option>
+        <option name="ZIG_FIELD_TYPE">
+            <value>
+                <option name="FOREGROUND" value="e0e1e4"/>
+            </value>
+        </option>
+        <option name="ZIG_FUNCTION" baseAttributes="DEFAULT_FUNCTION_CALL"/>
+        <option name="ZIG_FUNCTION_DECL">
+            <value>
+                <option name="FOREGROUND" value="e0e1e4"/>
+            </value>
+        </option>
+        <option name="ZIG_TYPE" baseAttributes="DEFAULT_CLASS_REFERENCE"/>
+        <option name="ZIG_TYPE_DECL" baseAttributes="DEFAULT_CLASS_NAME"/>
+        <option name="ZIG_VARIABLE">
+            <value>
+                <option name="FOREGROUND" value="e0e1e4"/>
+            </value>
+        </option>
+        <option name="ZIG_VARIABLE_DECL">
+            <value>
+                <option name="FOREGROUND" value="e0e1e4"/>
+            </value>
+        </option>
+        <option name="org.rust.ASSOC_FUNCTION">
+            <value>
+                <option name="FOREGROUND" value="c7a65d"/>
+                <option name="FONT_TYPE" value="1"/>
+            </value>
+        </option>
+        <option name="org.rust.ASSOC_FUNCTION_CALL" baseAttributes="DEFAULT_STATIC_METHOD"/>
+        <option name="org.rust.ASSOC_TRAIT_FUNCTION_CALL" baseAttributes="org.rust.ASSOC_FUNCTION_CALL"/>
+        <option name="org.rust.ATTRIBUTE_PUNCTUATION">
+            <value>
+                <option name="FOREGROUND" value="e0e1e4"/>
+            </value>
+        </option>
+        <option name="org.rust.CFG_DISABLED_CODE">
+            <value>
+                <option name="FOREGROUND" value="767676"/>
+            </value>
+        </option>
+        <option name="org.rust.CHAR">
+            <value>
+                <option name="FOREGROUND" value="4dacf0"/>
+            </value>
+        </option>
+        <option name="org.rust.CONSTANT">
+            <value>
+                <option name="FOREGROUND" value="e0e1e4"/>
+            </value>
+        </option>
+        <option name="org.rust.CONST_PARAMETER">
+            <value>
+                <option name="FOREGROUND" value="93a6f5"/>
+                <option name="FONT_TYPE" value="2"/>
+            </value>
+        </option>
+        <option name="org.rust.CRATE">
+            <value>
+                <option name="FOREGROUND" value="e0e1e4"/>
+            </value>
+        </option>
+        <option name="org.rust.DOC_EMPHASIS">
+            <value>
+                <option name="FONT_TYPE" value="2"/>
+            </value>
+        </option>
+        <option name="org.rust.ENUM" baseAttributes="DEFAULT_CLASS_NAME"/>
+        <option name="org.rust.ENUM_VARIANT" baseAttributes="DEFAULT_STATIC_FIELD"/>
+        <option name="org.rust.FUNCTION">
+            <value>
+                <option name="FOREGROUND" value="c7a65d"/>
+                <option name="FONT_TYPE" value="1"/>
+            </value>
+        </option>
+        <option name="org.rust.FUNCTION_CALL" baseAttributes="DEFAULT_FUNCTION_CALL"/>
+        <option name="org.rust.LIFETIME">
+            <value>
+                <option name="FOREGROUND" value="85a658"/>
+            </value>
+        </option>
+        <option name="org.rust.MACRO">
+            <value>
+                <option name="FOREGROUND" value="85a658"/>
+            </value>
+        </option>
+        <option name="org.rust.MACRO_BINDING_IDENTIFIER">
+            <value>
+                <option name="FOREGROUND" value="e0e1e4"/>
+            </value>
+        </option>
+        <option name="org.rust.MACRO_COLON">
+            <value>
+                <option name="FOREGROUND" value="e0e1e4"/>
+            </value>
+        </option>
+        <option name="org.rust.MACRO_DOLLAR">
+            <value>
+                <option name="FOREGROUND" value="e0e1e4"/>
+            </value>
+        </option>
+        <option name="org.rust.MACRO_GROUP_ELEMENTS">
+            <value>
+                <option name="FOREGROUND" value="e0e1e4"/>
+            </value>
+        </option>
+        <option name="org.rust.MACRO_IDENTIFIER">
+            <value>
+                <option name="FOREGROUND" value="85a658"/>
+            </value>
+        </option>
+        <option name="org.rust.MACRO_RULES">
+            <value>
+                <option name="FOREGROUND" value="e09b70"/>
+            </value>
+        </option>
+        <option name="org.rust.METHOD">
+            <value>
+                <option name="FOREGROUND" value="c7a65d"/>
+                <option name="FONT_TYPE" value="1"/>
+            </value>
+        </option>
+        <option name="org.rust.METHOD_CALL" baseAttributes="DEFAULT_FUNCTION_CALL"/>
+        <option name="org.rust.MODULE">
+            <value>
+                <option name="FOREGROUND" value="e0e1e4"/>
+            </value>
+        </option>
+        <option name="org.rust.MUT_BINDING">
+            <value>
+                <option name="FOREGROUND" value="e0e1e4"/>
+            </value>
+        </option>
+        <option name="org.rust.MUT_STATIC">
+            <value>
+                <option name="FOREGROUND" value="e0e1e4"/>
+            </value>
+        </option>
+        <option name="org.rust.PRIMITIVE_TYPE">
+            <value>
+                <option name="FOREGROUND" value="e0e1e4"/>
+            </value>
+        </option>
+        <option name="org.rust.Q_OPERATOR">
+            <value>
+                <option name="FOREGROUND" value="e0e1e4"/>
+            </value>
+        </option>
+        <option name="org.rust.SELF_EXPRESSION">
+            <value>
+                <option name="FOREGROUND" value="8888c6"/>
+            </value>
+        </option>
+        <option name="org.rust.SELF_PARAMETER">
+            <value>
+                <option name="FOREGROUND" value="8888c6"/>
+            </value>
+        </option>
+        <option name="org.rust.STATIC">
+            <value>
+                <option name="FOREGROUND" value="e0e1e4"/>
+            </value>
+        </option>
+        <option name="org.rust.STRUCT" baseAttributes="DEFAULT_CLASS_NAME"/>
+        <option name="org.rust.TRAIT" baseAttributes="DEFAULT_INTERFACE_NAME"/>
+        <option name="org.rust.TRAIT_METHOD" baseAttributes="org.rust.METHOD"/>
+        <option name="org.rust.TRAIT_METHOD_CALL" baseAttributes="org.rust.METHOD_CALL"/>
+        <option name="org.rust.TYPE_ALIAS" baseAttributes="DEFAULT_CLASS_NAME"/>
+        <option name="org.rust.TYPE_PARAMETER">
+            <value>
+                <option name="FOREGROUND" value="37cccc"/>
+            </value>
+        </option>
+        <option name="org.rust.UNION">
+            <value>
+                <option name="FOREGROUND" value="e0e1e4"/>
+            </value>
+        </option>
+        <option name="org.rust.UNSAFE_CODE">
+            <value>
+                <option name="BACKGROUND" value="5a3a14"/>
+            </value>
+        </option>
+        <option name="org.rust.VARIABLE">
+            <value>
+                <option name="FOREGROUND" value="e0e1e4"/>
+            </value>
+        </option>
+        <option name="org.toml.BOOLEAN">
+            <value>
+                <option name="FOREGROUND" value="e09b70"/>
+            </value>
+        </option>
+        <option name="org.toml.DATE">
+            <value>
+                <option name="FOREGROUND" value="93a6f5"/>
+            </value>
+        </option>
+    </attributes>
+</scheme>

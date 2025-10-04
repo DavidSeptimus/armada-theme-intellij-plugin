@@ -250,15 +250,17 @@ tasks {
 
         val finalContent = if (isEAP) {
             // Inject EAP dependencies into the designated section
-            val beginMarker = "  <!-- BEGIN Build-time Dependencies -->"
-            val endMarker = "  <!-- END Build-time Dependencies -->"
+            val beginMarker = "<!-- BEGIN Build-time Dependencies -->"
+            val endMarker = "<!-- END Build-time Dependencies -->"
+
+            val indent = mainContent.lineSequence().firstOrNull { it.contains(beginMarker) }?.takeWhile { it.isWhitespace() } ?: "    "
 
             if (mainContent.contains(beginMarker)) {
                 // Inject dependencies
-                val dependenciesText = """  <depends optional="true" config-file="plugin-eap.xml">com.intellij.modules.platform</depends>"""
+                val dependenciesText = """<depends optional="true" config-file="plugin-eap.xml">com.intellij.modules.platform</depends>"""
                 mainContent.replace(
-                    "$beginMarker\n$endMarker",
-                    "$beginMarker\n$dependenciesText\n$endMarker"
+                    "^\\s*$beginMarker\n\\s*$endMarker".toRegex(RegexOption.MULTILINE),
+                    "$indent$beginMarker\n$indent$dependenciesText\n$indent$endMarker"
                 )
             } else {
                 throw GradleException("Build-time dependency markers not found in plugin-main.xml")
@@ -278,6 +280,10 @@ tasks {
 
     publishPlugin {
         dependsOn(patchChangelog)
+    }
+
+    runIde {
+        dependsOn("generateAllThemes")
     }
 
     initializeIntellijPlatformPlugin {
@@ -415,11 +421,61 @@ tasks {
         }
     }
 
-    register("generateAllThemes") {
+
+    register<JavaExec>("generateDarkPurpleTheme") {
+        group = "generate"
+        description = "Generates the Armada Dark Purple New UI theme by merging base and overrides"
+
+        dependsOn("classes")
+        classpath(sourceSets["main"].runtimeClasspath, sourceSets["main"].output)
+        mainClass.set("buildscripts.ThemeMergerKt")
+
+        val baseTheme = "src/main/resources/themes/armada-dark-purple/armada-dark-purple-base.theme.json"
+        val overrides = "src/main/resources/themes/armada-dark-purple/armada-dark-purple.overrides.json"
+        val output = "src/main/resources/themes/armada-dark-purple/armada-dark-purple.theme.json"
+
+        inputs.files(baseTheme, overrides)
+        outputs.file(output)
+
+        args = listOf("merge", output, baseTheme, overrides)
+
+        doLast {
+            println("Generated Armada Dark Purple Islands theme")
+        }
+    }
+
+    register<JavaExec>("generateDarkPurpleIslandsTheme") {
+        group = "generate"
+        description = "Generates the Armada Dark Purple Islands theme by merging base and Islands overrides"
+
+        dependsOn("classes")
+        classpath(sourceSets["main"].runtimeClasspath, sourceSets["main"].output)
+        mainClass.set("buildscripts.ThemeMergerKt")
+
+        val baseTheme = "src/main/resources/themes/armada-dark-purple/armada-dark-purple-base.theme.json"
+        val overrides = "src/main/resources/themes/armada-dark-purple/armada-dark-purple-islands.overrides.json"
+        val output = "src/main/resources/themes/armada-dark-purple/armada-dark-purple-islands.theme.json"
+
+        inputs.files(baseTheme, overrides)
+        outputs.file(output)
+
+        args = listOf("merge", output, baseTheme, overrides)
+
+        doLast {
+            println("Generated Armada Dark Purple Islands theme")
+        }
+    }
+
+    register<Task>("generateAllThemes") {
         group = "generate"
         description = "Generates all theme variants"
 
-        dependsOn("generateDarkClassicUITheme", "generateLightClassicUITheme")
+        dependsOn(
+            "generateDarkClassicUITheme",
+            "generateLightClassicUITheme",
+            "generateDarkPurpleTheme",
+            "generateDarkPurpleIslandsTheme"
+        )
 
         doLast {
             println("Generated all theme variants")

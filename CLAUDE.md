@@ -35,7 +35,7 @@ This is an IntelliJ Platform plugin that provides Armada themes for IntelliJ-bas
 - **Theme JSON files**: Located in `src/main/resources/themes/` with separate folders for `armada-dark` and `armada-light`
 - **Editor color schemes**: XML files (e.g., `armada-dark.xml`) defining syntax highlighting colors
 - **UI theme definitions**: JSON files (e.g., `armada-dark.theme.json`) defining IDE UI colors and icons
-- **Theme variants**: Both "classic" and "islands" variants available for each theme
+- **Theme variants**:  "Classic UI", "New UI" and "Islands" variants available for each theme
 
 #### Language-Specific Annotators
 Located in `src/main/kotlin/com/github/davidseptimus/armada/annotators/`:
@@ -72,6 +72,62 @@ src/main/
 - Editor XML files should be comprehensive for all syntax elements
 - Use Fleet's original color palettes as reference (available in root directory as CSV files)
 - Test themes with sample files located in `src/test/testData/samples/`
+
+### Merging Themes
+The project includes a `ThemeMerger` utility (in `buildscripts/ThemeMerger.kt`) for combining theme files:
+
+**Normalize a theme** (converts dotted keys to nested objects):
+```bash
+./gradlew normalizeTheme -Pinput=<input.json> -Poutput=<output.json>
+```
+
+**Merge multiple themes**:
+```bash
+./gradlew mergeThemes -Poutput=<output.json> -Pinputs=<file1.json,file2.json,...>
+```
+
+**Generate theme variants**:
+- `./gradlew generateDarkClassicUITheme` - Merges `armada-dark.theme.json` with `armada-dark-classic-ui.overrides.json`
+- `./gradlew generateLightClassicUITheme` - Merges `armada-light.theme.json` with `armada-light-classic-ui.overrides.json`
+- `./gradlew generateAllThemes` - Generates all theme variants
+
+The merger performs deep merging where later themes override earlier ones for conflicting keys. It intelligently handles dotted keys (e.g., `"ui.*.background"`) and preserves image file paths.
+
+### Adding a New Theme
+To add a completely new theme to the plugin:
+
+1. **Create theme directory**: Add a new folder under `src/main/resources/themes/` (e.g., `armada-blue/`)
+
+2. **Create UI theme JSON**: Add the main theme file (e.g., `armada-blue.theme.json`) with:
+   - UI colors for IDE components
+   - Icon mappings
+   - Any theme-specific settings
+
+3. **Create editor color scheme XML**: Add the editor scheme file (e.g., `armada-blue.xml`) defining:
+   - Syntax highlighting colors for all language tokens
+   - Editor background and gutter colors
+   - Selection and caret colors
+
+4. **Register theme in plugin.xml**: Add a `<themeProvider>` entry in `src/main/resources/META-INF/plugin-main.xml`:
+   ```xml
+   <themeProvider
+       id="com.github.davidseptimus.armada.armada-blue"
+       path="themes/armada-blue/armada-blue.theme.json"
+       targetUi="new"
+   />
+   ```
+
+5. **Create theme variants** (optional): For Classic UI or Islands variants:
+   - Create override files (e.g., `armada-blue-classic-ui.overrides.json`)
+   - Add Gradle tasks to merge base theme with overrides
+   - Register variant themes in plugin.xml with appropriate `targetUi` attribute
+
+6. **Add custom text attribute keys**: If the theme requires new syntax highlighting tokens, add them to `TextAttributeKeys.java`
+
+7. **Test the theme**:
+   - Run `./gradlew runIde` to test in a live IDE instance
+   - Test with various sample files in `src/test/testData/samples/`
+   - Verify all UI components render correctly
 
 ### Adding Language Support
 1. Create annotator class in `annotators/` package

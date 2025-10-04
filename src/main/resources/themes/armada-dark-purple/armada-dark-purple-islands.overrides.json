@@ -1,0 +1,7 @@
+{
+  "name": "Armada Dark Purple (Islands)",
+  "parentTheme": "Islands Dark",
+  "ui": {
+    "Island.borderColor": "Blueberry_50"
+  }
+}

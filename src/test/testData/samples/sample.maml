@@ -1,0 +1,38 @@
+{
+  apiVersion: "v1",
+  kind: "Service",
+  metadata: {
+    creationTimestamp: "2025-05-09T21:14:40Z",
+    labels: {
+      app: "hostnames",
+    },
+    name: "hostnames",
+    namespace: "default",
+    resourceVersion: "37697",
+    uid: "7aad616c-1686-4231-b32e-5ec68a738bba",
+  },
+  spec: {
+    clusterIP: "10.0.162.160",
+    clusterIPs: [
+      "10.0.162.160",
+    ],
+    internalTrafficPolicy: "Cluster",
+    ipFamilies: [
+      "IPv4",
+    ],
+    ipFamilyPolicy: "SingleStack",
+    ports: [{
+      port: 80,
+      protocol: "TCP",
+      targetPort: 9376,
+    }],
+    selector: {
+      app: "hostnames",
+    },
+    sessionAffinity: "None",
+    type: "ClusterIP",
+  },
+  status: {
+    loadBalancer: {},
+  },
+}

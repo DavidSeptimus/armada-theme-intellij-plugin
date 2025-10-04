@@ -1,0 +1,1519 @@
+{
+  "meta": {
+    "theme.name": "Fleet Dark - Edited",
+    "theme.kind": "Dark",
+    "theme.version": 8
+  },
+  "colors": {
+    "text.primary": "Neutral_140",
+    "text.secondary": "Neutral_110",
+    "text.tertiary": "Neutral_90",
+    "text.positive": "Green_110",
+    "text.dangerous": "Red_110",
+    "text.disabled": "Neutral_80",
+    "text.bright": "White",
+    "text.ai": "Violet_110",
+
+    "background.primary": "Neutral_10",
+    "background.secondary": "Gray 30",
+    "border": "Neutral_50",
+    "border.focused": "Blue_100",
+    "focusOutline": "Blue_50",
+
+    "banner.text": "Neutral_140",
+    "banner.background.info": "Blue_30",
+    "banner.background.dangerous": "Red_30",
+    "banner.background.warning": "Yellow_30",
+    "banner.background.positive": "Green_30",
+    "banner.background.ai": "Violet_30",
+    "banner.background.inline": "LightTint_10",
+    "banner.border.info": "Blue_60",
+    "banner.border.dangerous": "Red_60",
+    "banner.border.warning": "Yellow_60",
+    "banner.border.positive": "Green_60",
+    "banner.border.ai": "Violet_60",
+    "banner.secondary.background.error": "DarkTint_60",
+    "banner.inline.background": "LightTint_10",
+    "banner.inline.border": "Transparent",
+    "banner.inline.text": "Neutral_140",
+
+    "button.dangerous.background.default": "Red_90",
+    "button.dangerous.background.disabled": "Transparent",
+    "button.dangerous.background.hovered": "Red_80",
+    "button.dangerous.background.pressed": "Red_70",
+    "button.dangerous.border.default": "Red_90",
+    "button.dangerous.border.disabled": "LightTint_12",
+    "button.dangerous.border.hovered": "Red_80",
+    "button.dangerous.border.pressed": "Red_70",
+    "button.dangerous.focusBorder": "Neutral_20",
+    "button.dangerous.focusOutline": "Red_90",
+    "button.dangerous.separator.default": "LightTint_30",
+    "button.dangerous.separator.disabled": "LightTint_15",
+    "button.dangerous.split.focusOutline": "Red_120",
+    "button.dangerous.text.default": "White",
+    "button.dangerous.text.disabled": "Neutral_80",
+    "button.dangerous.text.hovered": "White",
+    "button.dangerous.text.pressed": "White",
+    "button.dangerous.text.hint": "White",
+    "button.positive.background.default": "Green_90",
+    "button.positive.background.disabled": "Transparent",
+    "button.positive.background.hovered": "Green_80",
+    "button.positive.background.pressed": "Green_70",
+    "button.positive.border.default": "Green_90",
+    "button.positive.border.disabled": "LightTint_12",
+    "button.positive.border.hovered": "Green_80",
+    "button.positive.border.pressed": "Green_70",
+    "button.positive.focusBorder": "Neutral_20",
+    "button.positive.focusOutline": "Green_90",
+    "button.positive.separator.default": "LightTint_30",
+    "button.positive.separator.disabled": "LightTint_15",
+    "button.positive.split.focusOutline": "Green_120",
+    "button.positive.text.default": "White",
+    "button.positive.text.disabled": "Neutral_80",
+    "button.positive.text.hovered": "White",
+    "button.positive.text.pressed": "White",
+    "button.positive.text.hint": "White",
+    "button.primary.background.default": "Blue_90",
+    "button.primary.background.disabled": "Transparent",
+    "button.primary.background.hovered": "Blue_80",
+    "button.primary.background.pressed": "Blue_70",
+    "button.primary.border.default": "Blue_90",
+    "button.primary.border.disabled": "LightTint_12",
+    "button.primary.border.hovered": "Blue_80",
+    "button.primary.border.pressed": "Blue_70",
+    "button.primary.focusBorder": "Neutral_20",
+    "button.primary.focusOutline": "Blue_90",
+    "button.primary.separator.default": "LightTint_30",
+    "button.primary.separator.disabled": "LightTint_15",
+    "button.primary.split.focusOutline": "Blue_120",
+    "button.primary.text.default": "White",
+    "button.primary.text.disabled": "Neutral_80",
+    "button.primary.text.hovered": "White",
+    "button.primary.text.pressed": "White",
+    "button.primary.text.hint": "White",
+    "button.secondary.background.default": "LightTint_15",
+    "button.secondary.background.disabled": "Transparent",
+    "button.secondary.background.hovered": "#E0E1E42B",
+    "button.secondary.background.pressed": "LightTint_20",
+    "button.secondary.border.default": "Transparent",
+    "button.secondary.border.disabled": "LightTint_12",
+    "button.secondary.border.hovered": "Transparent",
+    "button.secondary.border.pressed": "Transparent",
+    "button.secondary.focusBorder": "Blue_100",
+    "button.secondary.focusOutline": "Blue_50",
+    "button.secondary.separator.default": "LightTint_20",
+    "button.secondary.separator.disabled": "LightTint_15",
+    "button.secondary.split.focusOutline": "Blue_50",
+    "button.secondary.text.default": "Neutral_140",
+    "button.secondary.text.disabled": "Neutral_80",
+    "button.secondary.text.hovered": "Neutral_140",
+    "button.secondary.text.pressed": "Neutral_140",
+    "button.secondary.text.hint": "LightTint_70",
+    "button.warning.background.default": "Yellow_90",
+    "button.warning.background.disabled": "Transparent",
+    "button.warning.background.hovered": "Yellow_80",
+    "button.warning.background.pressed": "Yellow_70",
+    "button.warning.border.default": "Yellow_90",
+    "button.warning.border.disabled": "LightTint_12",
+    "button.warning.border.hovered": "Yellow_80",
+    "button.warning.border.pressed": "Yellow_70",
+    "button.warning.focusBorder": "Neutral_20",
+    "button.warning.focusOutline": "Yellow_90",
+    "button.warning.separator.default": "LightTint_30",
+    "button.warning.separator.disabled": "LightTint_15",
+    "button.warning.split.focusOutline": "Yellow_120",
+    "button.warning.text.default": "White",
+    "button.warning.text.disabled": "Neutral_80",
+    "button.warning.text.hovered": "White",
+    "button.warning.text.pressed": "White",
+    "button.warning.text.hint": "White",
+    "button.ai.background.default": "Violet_90",
+    "button.ai.background.disabled": "Transparent",
+    "button.ai.background.hovered": "Violet_80",
+    "button.ai.background.pressed": "Violet_70",
+    "button.ai.border.default": "Violet_90",
+    "button.ai.border.disabled": "LightTint_12",
+    "button.ai.border.hovered": "Violet_80",
+    "button.ai.border.pressed": "Violet_70",
+    "button.ai.focusBorder": "Neutral_20",
+    "button.ai.focusOutline": "Violet_90",
+    "button.ai.separator.default": "LightTint_30",
+    "button.ai.separator.disabled": "LightTint_15",
+    "button.ai.split.focusOutline": "Violet_120",
+    "button.ai.text.default": "White",
+    "button.ai.text.disabled": "Neutral_80",
+    "button.ai.text.hovered": "White",
+    "button.ai.text.pressed": "White",
+    "button.ai.text.hint": "White",
+
+    "chat.message.user.background.default": "Neutral_40",
+    "chat.message.user.background.hovered": "Neutral_30",
+    "chat.message.user.background.edited": "Transparent",
+    "chat.message.user.border.default": "Transparent",
+    "chat.message.user.border.hovered": "Neutral_50",
+    "chat.message.user.border.edited": "Violet_90",
+    "chat.message.ai.background.default": "Transparent",
+    "chat.message.ai.background.hovered": "LightTint_5",
+    "chat.message.ai.border.default": "Transparent",
+    "chat.message.ai.border.hovered": "Transparent",
+
+    "checkbox.icon.default": "White",
+    "checkbox.icon.disabled": "Neutral_100",
+    "checkbox.text.default": "Neutral_140",
+    "checkbox.text.disabled": "Neutral_80",
+    "checkbox.off.background.default": "LightTint_8",
+    "checkbox.off.background.disabled": "Transparent",
+    "checkbox.off.background.hovered": "LightTint_8",
+    "checkbox.off.border.default": "Neutral_70",
+    "checkbox.off.border.disabled": "Neutral_60",
+    "checkbox.off.border.hovered": "Neutral_90",
+    "checkbox.off.focusBorder": "Blue_100",
+    "checkbox.off.focusOutline": "Blue_50",
+    "checkbox.on.background.default": "Blue_90",
+    "checkbox.on.background.disabled": "LightTint_12",
+    "checkbox.on.background.hovered": "Blue_80",
+    "checkbox.on.border.default": "Transparent",
+    "checkbox.on.border.disabled": "Neutral_60",
+    "checkbox.on.border.hovered": "Transparent",
+    "checkbox.on.focusBorder": "Neutral_20",
+    "checkbox.on.focusOutline": "Blue_90",
+
+    "combobox.arrowButton.background.default": "LightTint_15",
+    "combobox.arrowButton.background.disabled": "Transparent",
+    "combobox.background.default": "Transparent",
+    "combobox.background.disabled": "LightTint_12",
+    "combobox.background.hovered": "Transparent",
+    "combobox.background.error": "Transparent",
+    "combobox.border.default": "Neutral_50",
+    "combobox.border.disabled": "LightTint_12",
+    "combobox.border.hovered": "Neutral_60",
+    "combobox.border.error": "Red_100",
+    "combobox.focusBorder.default": "Blue_100",
+    "combobox.focusBorder.error": "Red_100",
+    "combobox.focusOutline.default": "Blue_50",
+    "combobox.focusOutline.error": "Red_50",
+    "combobox.text.default": "Neutral_140",
+    "combobox.text.disabled": "Neutral_80",
+    "combobox.text.hovered": "Neutral_140",
+    "combobox.text.error": "Neutral_140",
+
+    "completion.match.background": "Transparent",
+    "completion.match.text": "Blue_120",
+
+    "diff.preview.background": "Neutral_30",
+    "diff.preview.border": "Neutral_30",
+
+    "dragAndDrop.background": "BlueTint_15",
+    "dragAndDrop.border.default": "BlueTint_25",
+    "dragAndDrop.border.highlight": "Blue_90",
+
+    "dropdown.background.default": "LightTint_10",
+    "dropdown.background.disabled": "Transparent",
+    "dropdown.background.hovered": "LightTint_10",
+    "dropdown.background.error": "LightTint_10",
+    "dropdown.border.default": "Neutral_50",
+    "dropdown.border.disabled": "LightTint_20",
+    "dropdown.border.hovered": "Neutral_60",
+    "dropdown.border.error": "Red_100",
+    "dropdown.focusBorder.default": "Blue_100",
+    "dropdown.focusBorder.error": "Red_100",
+    "dropdown.focusOutline.default": "Blue_50",
+    "dropdown.focusOutline.error": "Red_50",
+    "dropdown.text.default": "Neutral_140",
+    "dropdown.text.disabled": "Neutral_80",
+    "dropdown.text.hovered": "Neutral_140",
+    "dropdown.text.error": "Neutral_140",
+
+    "editor.caret.background": "Neutral_140",
+    "editor.caret.border": "Neutral_140",
+    "editor.currentLine.background.default": "LightTint_8",
+    "editor.currentLine.background.focused": "BlueTint_15",
+    "editor.currentLine.scrollbarMark": "Neutral_140",
+    "editor.foldedMark.background": "LightTint_12",
+    "editor.foldedMark.text": "Neutral_110",
+    "editor.foldIndicator.background.hovered": "LightTint_10",
+    "editor.foldIndicator.icon.default": "Neutral_100",
+    "editor.foldIndicator.icon.hovered": "Neutral_100",
+    "editor.gitDiff.background.added": "Green_90",
+    "editor.gitDiff.background.blame": "Yellow_90",
+    "editor.gitDiff.background.conflict": "Yellow_90",
+    "editor.gitDiff.background.deleted": "Red_90",
+    "editor.gitDiff.background.modified": "Blue_90",
+    "editor.gitDiff.text.added": "Green_120",
+    "editor.gitDiff.text.conflict": "Yellow_120",
+    "editor.gitDiff.text.deleted": "Red_120",
+    "editor.gitDiff.text.modified": "Blue_120",
+    "editor.interline.background": "Neutral_30",
+    "editor.interline.text.default": "Neutral_90",
+    "editor.interline.text.hovered": "Blue_110",
+    "editor.interline.separator": "LightTint_20",
+    "editor.interline.match.background": "Yellow_60",
+    "editor.interline.match.text": "Neutral_140",
+    "editor.interline.match.background.secondary": "#FFFE24",
+    "editor.interline.match.text.secondary": "Black",
+    "editor.interline.preview.background": "Neutral_20",
+    "editor.interline.preview.border": "Transparent",
+    "editor.lineNumber.current": "Neutral_140",
+    "editor.lineNumber.default": "Neutral_90",
+    "editor.renamePostline.background": "Blue 10",
+    "editor.renamePostline.border": "Blue 100",
+    "editor.renamePostline.description.text": "Neutral_140",
+    "editor.renamePostline.usages.text": "Yellow 60",
+    "editor.selectableFoldedMark.background.default": "Transparent",
+    "editor.selectableFoldedMark.background.focused": "Blue 30",
+    "editor.selectableFoldedMark.border.default": "Gray 90",
+    "editor.selectableFoldedMark.border.focused": "Blue 80",
+    "editor.selectableFoldedMark.text.default": "Gray 80",
+    "editor.selectableFoldedMark.text.focused": "#D1D1D180",
+    "editor.text": "Neutral_140",
+    "editor.whitespaceIndicator": "LightTint_30",
+
+    "ghostButton.off.background.default": "Transparent",
+    "ghostButton.off.background.disabled": "Transparent",
+    "ghostButton.off.background.hovered": "LightTint_10",
+    "ghostButton.off.background.pressed": "LightTint_15",
+    "ghostButton.off.border.default": "Transparent",
+    "ghostButton.off.border.disabled": "Transparent",
+    "ghostButton.off.border.hovered": "Transparent",
+    "ghostButton.off.border.pressed": "Transparent",
+    "ghostButton.off.focusBorder": "Blue_100",
+    "ghostButton.off.focusOutline": "Transparent",
+    "ghostButton.off.text.default": "Neutral_140",
+    "ghostButton.off.text.disabled": "Neutral_80",
+    "ghostButton.off.text.hovered": "Neutral_140",
+    "ghostButton.off.text.pressed": "Neutral_140",
+    "ghostButton.on.background.default": "BlueTint_40",
+    "ghostButton.on.background.disabled": "LightTint_12",
+    "ghostButton.on.background.hovered": "BlueTint_30",
+    "ghostButton.on.background.pressed": "BlueTint_25",
+    "ghostButton.on.border.default": "Transparent",
+    "ghostButton.on.border.disabled": "Transparent",
+    "ghostButton.on.border.hovered": "Transparent",
+    "ghostButton.on.border.pressed": "Transparent",
+    "ghostButton.on.focusBorder": "Blue_120",
+    "ghostButton.on.focusOutline": "Transparent",
+    "ghostButton.on.text.default": "Blue_120",
+    "ghostButton.on.text.disabled": "Neutral_80",
+    "ghostButton.on.text.hovered": "Blue_120",
+    "ghostButton.on.text.pressed": "Blue_120",
+
+    "gitBranchTag.local.background": "Transparent",
+    "gitBranchTag.local.border": "Blue_110",
+    "gitBranchTag.local.text": "Blue_110",
+    "gitBranchTag.remote.background": "Transparent",
+    "gitBranchTag.remote.border": "Purple_110",
+    "gitBranchTag.remote.text": "Purple_110",
+
+    "icon.background.blue": "Blue_100",
+    "icon.background.green": "Green_100",
+    "icon.background.yellow": "YellowBright_10",
+    "icon.background.red": "Red_100",
+    "icon.background.cyan": "#13A4CD",
+
+    "inputField.background.default": "Transparent",
+    "inputField.background.hovered": "Transparent",
+    "inputField.background.disabled": "LightTint_12",
+    "inputField.background.error": "Transparent",
+    "inputField.border.default": "Neutral_50",
+    "inputField.border.hovered": "Neutral_60",
+    "inputField.border.disabled": "LightTint_12",
+    "inputField.border.error": "Red_100",
+    "inputField.caret.default": "Neutral_140",
+    "inputField.caret.error": "Neutral_140",
+    "inputField.focusBorder.default": "Blue_100",
+    "inputField.focusBorder.error": "Red_100",
+    "inputField.focusOutline.default": "Blue_50",
+    "inputField.focusOutline.error": "Red_50",
+    "inputField.hint.default": "Neutral_110",
+    "inputField.hint.hovered": "Neutral_110",
+    "inputField.hint.disabled": "Neutral_80",
+    "inputField.hint.error": "Neutral_110",
+    "inputField.selectionBackground.default": "Blue_50",
+    "inputField.selectionBackground.error": "Blue_50",
+    "inputField.text.default": "Neutral_140",
+    "inputField.text.hovered": "Neutral_140",
+    "inputField.text.disabled": "Neutral_80",
+    "inputField.text.error": "Neutral_140",
+    "inputField.ai.focusBorder.default": "Violet_100",
+    "inputField.ai.focusOutline.default": "Violet_50",
+    "inputField.ai.background.default": "Neutral_10",
+    "inputField.ai.border.default": "Neutral_10",
+
+    "island.background": "Neutral_20",
+
+    "layout.error": "#8000FF",
+
+    "link.focusOutline": "Blue_100",
+    "link.text.default": "Blue_110",
+    "link.text.disabled": "Neutral_80",
+    "link.underline": "Blue_110",
+    "link.ai.focusOutline": "Violet_100",
+    "link.ai.text.default": "Violet_110",
+    "link.ai.text.disabled": "Neutral_80",
+    "link.ai.underline": "Violet_110",
+
+    "listItem.background.default": "Transparent",
+    "listItem.background.focused": "BlueTint_40",
+    "listItem.background.hovered": "LightTint_5",
+    "listItem.background.selected": "LightTint_15",
+    "listItem.background.dnd": "Blue 70",
+    "listItem.border.default": "Transparent",
+    "listItem.border.focused": "Transparent",
+    "listItem.border.hovered": "Transparent",
+    "listItem.border.selected": "Transparent",
+    "listItem.focusBorder": "Blue_100",
+    "listItem.text.default": "Neutral_140",
+    "listItem.text.focused": "Neutral_140",
+    "listItem.text.hovered": "Neutral_140",
+    "listItem.text.secondary": "LightTint_70",
+    "listItem.text.selected": "Neutral_140",
+
+    "smartMode.background.enabled": "Blue_100",
+    "smartMode.background.error": "Red_100",
+    "smartMode.border.loading": "BlueTint_25",
+
+    "notification.background.default": "Neutral_30",
+    "notification.background.unread": "Gray 50",
+    "notification.text.primary": "Neutral_140",
+    "notification.text.secondary": "Neutral_110",
+    "notification.separator": "Neutral_50",
+    "notification.moreButton.background.default": "Neutral_30",
+    "notification.moreButton.background.hovered": "Neutral_40",
+    "notification.moreButton.background.pressed": "Neutral_50",
+    "notification.moreButton.border.default": "Neutral_50",
+    "notification.moreButton.border.hovered": "Neutral_50",
+    "notification.moreButton.border.pressed": "Neutral_50",
+    "notification.moreButton.text.default": "Neutral_140",
+    "notification.moreButton.text.hovered": "Neutral_140",
+    "notification.moreButton.text.pressed": "Neutral_140",
+
+    "parameterInfo.match.text": "Blue_120",
+
+    "pillButton.background.default": "Gray 20",
+    "pillButton.background.disabled": "Gray 20",
+    "pillButton.background.hovered": "Gray 50",
+    "pillButton.background.pressed": "Gray 40",
+    "pillButton.border.default": "Gray 50",
+    "pillButton.border.disabled": "Gray 50",
+    "pillButton.border.hovered": "Gray 50",
+    "pillButton.border.pressed": "Gray 50",
+    "pillButton.focusBorder": "Blue_100",
+    "pillButton.focusOutline": "Blue_50",
+    "pillButton.text.default": "Gray 90",
+    "pillButton.text.disabled": "Gray 90",
+    "pillButton.text.hovered": "Gray 90",
+    "pillButton.text.pressed": "Gray 90",
+
+    "popup.background": "Neutral_30",
+    "popup.border": "Neutral_50",
+    "popup.text": "Neutral_140",
+    "popup.separator": "Neutral_40",
+    "popup.footer.background": "Neutral_40",
+    "popup.footer.text": "Neutral_120",
+    "popup.closeIcon.default": "LightTint_30",
+    "popup.closeIcon.hovered": "LightTint_70",
+    "popup.closeIcon.pressed": "LightTint_80",
+    "popup.editor.background": "Neutral_20",
+    "popup.editor.border": "Transparent",
+    "popup.goto.background": "Neutral_30",
+
+    "problemsWidget.tag.error.background.default": "Red_70",
+    "problemsWidget.tag.error.background.hovered": "Red_60",
+    "problemsWidget.tag.error.background.pressed": "Red_50",
+    "problemsWidget.tag.error.text.default": "Red_150",
+    "problemsWidget.tag.error.text.hovered": "Red_150",
+    "problemsWidget.tag.error.text.pressed": "Red_150",
+    "problemsWidget.tag.warning.background.default": "Yellow_70",
+    "problemsWidget.tag.warning.background.hovered": "Yellow_60",
+    "problemsWidget.tag.warning.background.pressed": "Yellow_50",
+    "problemsWidget.tag.warning.text.default": "Yellow_150",
+    "problemsWidget.tag.warning.text.hovered": "Yellow_150",
+    "problemsWidget.tag.warning.text.pressed": "Yellow_150",
+    "problemsWidget.tag.weakWarning.background.default": "Neutral_50",
+    "problemsWidget.tag.weakWarning.background.hovered": "Neutral_40",
+    "problemsWidget.tag.weakWarning.background.pressed": "Neutral_30",
+    "problemsWidget.tag.weakWarning.text.default": "Neutral_140",
+    "problemsWidget.tag.weakWarning.text.hovered": "Neutral_140",
+    "problemsWidget.tag.weakWarning.text.pressed": "Neutral_140",
+    "problemsWidget.tag.success.background": "Green_40",
+    "problemsWidget.tag.success.foreground": "Green_120",
+    "problemsWidget.card.text.primary": "Neutral_140",
+    "problemsWidget.card.text.secondary": "Neutral_110",
+    "problemsWidget.card.expanded.error.border": "Red_60",
+    "problemsWidget.card.expanded.error.background": "Red_30",
+    "problemsWidget.card.expanded.warning.border": "Yellow_60",
+    "problemsWidget.card.expanded.warning.background": "Yellow_30",
+    "problemsWidget.card.expanded.weakWarning.border": "Neutral_60",
+    "problemsWidget.card.expanded.weakWarning.background": "Neutral_20",
+
+    "progressSpinner.foreground": "Neutral_140",
+
+    "progressBar.determinate.background": "BlueTint_20",
+    "progressBar.determinate.foreground": "Blue_90",
+    "progressBar.indeterminate.foreground": "Blue_90",
+    "progressBar.indeterminate.foregroundAccent": "#4A92E4",
+
+    "progressInline.foreground": "BlueTint_60",
+
+    "remote.userColor.background.eight": "#6D4DFF",
+    "remote.userColor.background.five": "Green 70",
+    "remote.userColor.background.four": "#74A827",
+    "remote.userColor.background.nine": "#A842EB",
+    "remote.userColor.background.one": "#DB3552",
+    "remote.userColor.background.seven": "#3D5BFC",
+    "remote.userColor.background.six": "Blue 80",
+    "remote.userColor.background.ten": "#BD40B4",
+    "remote.userColor.background.three": "Yellow 60",
+    "remote.userColor.background.two": "#E55F2E",
+
+    "remoteWorkspaceStatusLabel.background.docker": "BlueTint_40",
+    "remoteWorkspaceStatusLabel.background.space": "VioletTint_40",
+    "remoteWorkspaceStatusLabel.background.ssh": "GreenTint_40",
+    "remoteWorkspaceStatusLabel.background.wsl": "YellowTint_40",
+    "remoteWorkspaceStatusLabel.text.docker": "White",
+    "remoteWorkspaceStatusLabel.text.space": "White",
+    "remoteWorkspaceStatusLabel.text.ssh": "White",
+    "remoteWorkspaceStatusLabel.text.wsl": "White",
+
+    "scrollbar.thumb.default": "LightTint_15",
+    "scrollbar.thumb.hovered": "LightTint_20",
+    "scrollbar.thumb.pressed": "LightTint_30",
+    "scrollbar.track.default": "Transparent",
+    "scrollbar.track.hovered": "LightTint_10",
+    "scrollbar.track.pressed": "LightTint_10",
+
+    "search.match.background": "YellowTint_50",
+    "search.match.text": "Neutral_140",
+    "search.counter.background": "LightTint_20",
+
+    "separator.default": "Neutral_40",
+    "separator.hovered": "Blue_90",
+
+    "highlight.resize.border.center.hovered": "BlueTint_30",
+    "highlight.resize.border.edge.hovered": "Neutral_10",
+    "highlight.resize.border.center.pressed": "Blue_90",
+    "highlight.resize.border.edge.pressed": "BlueTint_5",
+
+    "settings.modified.indicator": "Yellow_110",
+    "settings.background.highlighted": "YellowTint_20",
+
+    "shadow.background.large": "#000000D9",
+    "shadow.background.medium": "#000000D9",
+    "shadow.background.small": "#00000040",
+    "shadow.border": "Black",
+
+    "shortcut.text": "Neutral_140",
+    "shortcut.background": "LightTint_15",
+
+    "snippet.background": "LightTint_15",
+    "snippet.border": "Transparent",
+    "snippet.content.background": "Neutral_20",
+    "snippet.content.border": "Transparent",
+
+    "statusBar.text.default": "Neutral_110",
+    "statusBar.text.hovered": "Neutral_120",
+    "statusBar.text.pressed": "Neutral_120",
+
+    "survey.button.background.default": "LightTint_15",
+    "survey.button.background.hovered": "Blue_90",
+    "survey.button.border.default": "Transparent",
+    "survey.button.border.hovered": "Transparent",
+    "survey.button.focusBorder": "Blue_100",
+    "survey.button.focusOutline": "Blue_50",
+    "survey.button.text.default": "Neutral_140",
+    "survey.button.text.hovered": "White",
+
+    "tab.background.default": "Transparent",
+    "tab.background.hovered": "LightTint_8",
+    "tab.background.selected": "LightTint_8",
+    "tab.background.selectedFocused": "BlueTint_25",
+    "tab.background.dragAndDrop": "Blue_40",
+    "tab.border.default": "Transparent",
+    "tab.border.hovered": "Transparent",
+    "tab.border.selected": "LightTint_8",
+    "tab.border.selectedFocused": "BlueTint_50",
+    "tab.border.dragAndDrop": "Gray 10",
+    "tab.focusOutline.dragAndDrop": "Blue_100",
+    "tab.text.default": "Neutral_140",
+    "tab.text.hovered": "Neutral_140",
+    "tab.text.selected": "White",
+    "tab.text.selectedFocused": "White",
+    "tab.closeIcon.default": "LightTint_30",
+    "tab.closeIcon.hovered": "LightTint_70",
+    "tab.closeIcon.pressed": "LightTint_80",
+    "tab.hint.default": "Neutral_90",
+    "tab.hint.hovered": "Neutral_110",
+    "tab.hint.selected": "Neutral_110",
+
+    "terminal.ansiColors.background.ansiBlack": "Neutral_20",
+    "terminal.ansiColors.background.ansiBlue": "#405C80",
+    "terminal.ansiColors.background.ansiBrightBlack": "#424242",
+    "terminal.ansiColors.background.ansiBrightBlue": "#314966",
+    "terminal.ansiColors.background.ansiBrightCyan": "#2F5F66",
+    "terminal.ansiColors.background.ansiBrightGreen": "#2D6654",
+    "terminal.ansiColors.background.ansiBrightMagenta": "#4E3166",
+    "terminal.ansiColors.background.ansiBrightRed": "#66333A",
+    "terminal.ansiColors.background.ansiBrightWhite": "Neutral_20",
+    "terminal.ansiColors.background.ansiBrightYellow": "#665234",
+    "terminal.ansiColors.background.ansiCyan": "#477880",
+    "terminal.ansiColors.background.ansiGreen": "#437A6A",
+    "terminal.ansiColors.background.ansiMagenta": "#6B5280",
+    "terminal.ansiColors.background.ansiRed": "#804A52",
+    "terminal.ansiColors.background.ansiWhite": "Gray 90",
+    "terminal.ansiColors.background.ansiYellow": "#80653E",
+    "terminal.ansiColors.foreground.ansiBlack": "Neutral_140",
+    "terminal.ansiColors.foreground.ansiBlue": "Blue_110",
+    "terminal.ansiColors.foreground.ansiBrightBlack": "#595959",
+    "terminal.ansiColors.foreground.ansiBrightBlue": "#0067E6",
+    "terminal.ansiColors.foreground.ansiBrightCyan": "#00BAD6",
+    "terminal.ansiColors.foreground.ansiBrightGreen": "#009E6F",
+    "terminal.ansiColors.foreground.ansiBrightMagenta": "#EB4DDE",
+    "terminal.ansiColors.foreground.ansiBrightRed": "#C7001B",
+    "terminal.ansiColors.foreground.ansiBrightWhite": "Neutral_20",
+    "terminal.ansiColors.foreground.ansiBrightYellow": "#E09119",
+    "terminal.ansiColors.foreground.ansiCyan": "#2CCCE6",
+    "terminal.ansiColors.foreground.ansiGreen": "Cyan",
+    "terminal.ansiColors.foreground.ansiMagenta": "#EB83E2",
+    "terminal.ansiColors.foreground.ansiRed": "#EB4056",
+    "terminal.ansiColors.foreground.ansiWhite": "Neutral_20",
+    "terminal.ansiColors.foreground.ansiYellow": "#FAD075",
+
+    "tileButton.off.background.default": "LightTint_12",
+    "tileButton.off.background.disabled": "Transparent",
+    "tileButton.off.background.hovered": "LightTint_10",
+    "tileButton.off.background.pressed": "LightTint_8",
+    "tileButton.off.border.default": "Transparent",
+    "tileButton.off.border.disabled": "LightTint_12",
+    "tileButton.off.border.hovered": "Transparent",
+    "tileButton.off.border.pressed": "Transparent",
+    "tileButton.off.focusBorder": "Blue_100",
+    "tileButton.off.focusOutline": "Blue_50",
+    "tileButton.off.text.default": "Neutral_140",
+    "tileButton.off.text.disabled": "Neutral_80",
+    "tileButton.off.text.hovered": "Neutral_140",
+    "tileButton.off.text.pressed": "Neutral_140",
+    "tileButton.off.text.shortcut.default": "LightTint_70",
+    "tileButton.off.text.shortcut.disabled": "Neutral_80",
+    "tileButton.on.background.default": "BlueTint_30",
+    "tileButton.on.background.disabled": "Transparent",
+    "tileButton.on.background.hovered": "BlueTint_25",
+    "tileButton.on.background.pressed": "BlueTint_20",
+    "tileButton.on.border.default": "Blue_100",
+    "tileButton.on.border.disabled": "LightTint_12",
+    "tileButton.on.border.hovered": "Blue_100",
+    "tileButton.on.border.pressed": "Blue_100",
+    "tileButton.on.focusBorder": "Neutral_20",
+    "tileButton.on.focusOutline": "Blue_90",
+    "tileButton.on.text.default": "Neutral_140",
+    "tileButton.on.text.disabled": "Neutral_80",
+    "tileButton.on.text.hovered": "Neutral_140",
+    "tileButton.on.text.pressed": "Neutral_140",
+    "tileButton.on.text.shortcut.default": "LightTint_70",
+    "tileButton.on.text.shortcut.disabled": "Neutral_80",
+
+    "toast.background": "LightTint_80",
+    "toast.border": "Transparent",
+    "toast.text": "Neutral_10",
+
+    "toggleButton.off.background.default": "Transparent",
+    "toggleButton.off.background.disabled": "Transparent",
+    "toggleButton.off.background.hovered": "LightTint_8",
+    "toggleButton.off.background.pressed": "LightTint_10",
+    "toggleButton.off.border.default": "LightTint_15",
+    "toggleButton.off.border.disabled": "LightTint_12",
+    "toggleButton.off.border.hovered": "LightTint_8",
+    "toggleButton.off.border.pressed": "LightTint_8",
+    "toggleButton.off.focusBorder": "Blue_100",
+    "toggleButton.off.focusOutline": "Blue_50",
+    "toggleButton.off.text.default": "Neutral_140",
+    "toggleButton.off.text.disabled": "Neutral_80",
+    "toggleButton.off.text.hovered": "Neutral_140",
+    "toggleButton.off.text.pressed": "Neutral_140",
+    "toggleButton.off.text.hint": "LightTint_70",
+    "toggleButton.on.background.default": "Blue_90",
+    "toggleButton.on.background.disabled": "LightTint_12",
+    "toggleButton.on.background.hovered": "Blue_80",
+    "toggleButton.on.background.pressed": "Blue_70",
+    "toggleButton.on.border.default": "Transparent",
+    "toggleButton.on.border.disabled": "Transparent",
+    "toggleButton.on.border.hovered": "Transparent",
+    "toggleButton.on.border.pressed": "Transparent",
+    "toggleButton.on.focusBorder": "Neutral_20",
+    "toggleButton.on.focusOutline": "Blue_90",
+    "toggleButton.on.text.default": "White",
+    "toggleButton.on.text.disabled": "Neutral_80",
+    "toggleButton.on.text.hovered": "White",
+    "toggleButton.on.text.pressed": "White",
+    "toggleButton.on.text.hint": "White",
+
+    "tooltip.text.primary": "Neutral_140",
+    "tooltip.text.secondary": "Neutral_120",
+    "tooltip.text.tertiary": "Neutral_80",
+    "tooltip.background": "Neutral_40",
+    "tooltip.border": "Transparent",
+    "tooltip.error.text": "White",
+    "tooltip.error.background": "Red_80",
+    "tooltip.error.border": "Transparent",
+
+    "tree.focusBorder": "Blue_100",
+    "tree.compactFolder.selector.default": "Neutral_140",
+    "tree.compactFolder.selector.focused": "Neutral_140",
+    "tree.compactFolder.separator": "Neutral_80",
+
+    "ai.attachment.background.default": "Violet_50",
+    "ai.chat.input.background.default": "Neutral_20",
+    "ai.chat.input.border.default": "Neutral_40",
+    "ai.chat.input.border.hovered": "Neutral_60",
+    "ai.chat.input.border.focused": "Violet_100",
+    "ai.chat.input.border.progress.default": "Violet_90",
+    "ai.error.border": "Red_60",
+    "ai.warning.border": "Yellow_60",
+    "ai.error.background": "Red_30",
+    "ai.warning.background": "Yellow_30",
+    "ai.icon.background": "Violet 70",
+    "ai.thread.background.default": "Neutral_40",
+    "ai.thread.background.hovered": "Neutral_50",
+    "ai.thread.agent.running.background": "Green_40",
+    "ai.thread.agent.error.background": "Red_40",
+    "ai.thread.agent.finished.background": "Violet_40",
+
+    "vim.recordingTag.background": "Red_50",
+    "vim.recordingTag.border": "Transparent",
+    "vim.recordingTag.text": "Neutral_140",
+    "vim.mode.cmdLine.background": "Yellow_50",
+    "vim.mode.cmdLine.border": "Transparent",
+    "vim.mode.cmdLine.text": "Neutral_140",
+    "vim.mode.insert.background": "Green_50",
+    "vim.mode.insert.border": "Transparent",
+    "vim.mode.insert.text": "Neutral_140",
+    "vim.mode.normal.background": "Neutral_40",
+    "vim.mode.normal.border": "Transparent",
+    "vim.mode.normal.text": "Neutral_140",
+    "vim.mode.replace.background": "Red_50",
+    "vim.mode.replace.border": "Transparent",
+    "vim.mode.replace.text": "Neutral_140",
+    "vim.mode.select.background": "Purple_50",
+    "vim.mode.select.border": "Transparent",
+    "vim.mode.select.text": "Neutral_140",
+    "vim.mode.visual.background": "Blue_50",
+    "vim.mode.visual.border": "Transparent",
+    "vim.mode.visual.text": "Neutral_140"
+  },
+  "textAttributes": {
+    "editor.text.scheme": {
+      "foregroundColor": "Neutral_140"
+    },
+    "editor.text.composable": {
+      "textDecoration": {
+        "color": "Neutral_140"
+      }
+    },
+    "editor.selection": {
+      "backgroundColor": "Neutral_60"
+    },
+    "editor.selection.focused": {
+      "backgroundColor": "Blue_60"
+    },
+    "editor.search.results": {
+      "backgroundColor": "YellowTint_50",
+      "scrollbarMarkColor": "#D49550"
+    },
+    "editor.rename.entries": {
+      "backgroundColor": "Green 30"
+    },
+    "editor.rename.current": {
+      "border": {
+        "color": "Blue 80"
+      }
+    },
+    "editor.brace.match": {
+      "backgroundColor": "#2A524F"
+    },
+    "comment": {
+      "foregroundColor": "LightTint_60"
+    },
+    "comment.doc": {
+      "foregroundColor": "LightTint_60"
+    },
+    "comment.doc.tag": {
+      "foregroundColor": "Cyan"
+    },
+    "comment.doc.value": {
+      "foregroundColor": "Neutral_140"
+    },
+    "comment.todo": {
+      "foregroundColor": "#81DE8A"
+    },
+    "link": {},
+    "link.always.visible": {
+      "textDecoration": {}
+    },
+    "link.hovered": {
+      "foregroundColor": "Blue_110",
+      "textDecoration": {
+        "color": "Blue_110"
+      }
+    },
+
+    "error.hovered": {
+      "backgroundColor": "Red 20"
+    },
+    "keyword": {
+      "foregroundColor": "Cyan"
+    },
+    "keyword.typeModifier": {
+      "foregroundColor": "Cyan"
+    },
+    "metadata": {
+      "foregroundColor": "Lime"
+    },
+    "number": {
+      "foregroundColor": "Yellow"
+    },
+    "boolean": {
+      "foregroundColor": "Cyan"
+    },
+    "string": {
+      "foregroundColor": "Pink"
+    },
+    "string.binary": {
+      "foregroundColor": "Lime"
+    },
+    "string.escape": {
+      "foregroundColor": "Cyan"
+    },
+    "string.escape.unicode": {
+      "foregroundColor": "Yellow"
+    },
+    "string.escape.alternative": {
+      "foregroundColor": "Violet"
+    },
+    "string.formatItem": {
+      "foregroundColor": "Yellow"
+    },
+    "string.regexp": {
+      "foregroundColor": "Cyan"
+    },
+    "identifier": {
+      "foregroundColor": "Neutral_140"
+    },
+    "identifier.this": {
+      "foregroundColor": "Coral"
+    },
+    "identifier.this.mutable": {
+      "foregroundColor": "Coral",
+      "textDecoration": {
+        "color": "Coral"
+      }
+    },
+    "identifier.underCaret": {
+      "backgroundColor": "LightTint_15",
+      "scrollbarMarkColor": "LightTint_30"
+    },
+    "identifier.constant": {
+      "foregroundColor": "Violet"
+    },
+    "identifier.constant.predefined": {
+      "foregroundColor": "Cyan"
+    },
+    "identifier.variable": {
+      "foregroundColor": "Neutral_140"
+    },
+    "identifier.variable.mutable": {
+      "textDecoration": {
+        "color": "LightTint_30"
+      }
+    },
+    "identifier.parameter": {
+      "foregroundColor": "Neutral_140"
+    },
+    "identifier.parameter.js": {
+      "foregroundColor": "Lime"
+    },
+    "identifier.function.declaration": {
+      "foregroundColor": "White",
+      "fontWeight": "SEMI_BOLD"
+    },
+    "identifier.function.declaration.js": {
+      "foregroundColor": "Yellow",
+      "fontWeight": "SEMI_BOLD"
+    },
+    "identifier.function.call": {
+      "foregroundColor": "Yellow"
+    },
+    "identifier.function.call.package": {
+      "foregroundColor": "Yellow"
+    },
+    "identifier.function.call.composable": {
+      "foregroundColor": "Lime"
+    },
+    "identifier.method.static": {
+      "foregroundColor": "Yellow",
+      "fontStyle": "ITALIC"
+    },
+    "identifier.type": {
+      "foregroundColor": "Blue"
+    },
+    "identifier.field": {
+      "foregroundColor": "Violet"
+    },
+    "identifier.field.static": {
+      "foregroundColor": "Violet",
+      "fontStyle": "ITALIC"
+    },
+    "identifier.interface": {
+      "foregroundColor": "Blue"
+    },
+    "identifier.type.class": {
+      "foregroundColor": "Blue"
+    },
+    "identifier.type.enum": {
+      "foregroundColor": "Blue"
+    },
+    "identifier.type.struct": {
+      "foregroundColor": "Blue"
+    },
+    "identifier.type.valueType": {
+      "foregroundColor": "Blue Light"
+    },
+    "identifier.typeParameter": {
+      "foregroundColor": "Blue Light"
+    },
+    "identifier.namedArgument": {
+      "foregroundColor": "Blue Light"
+    },
+    "identifier.other": {
+      "foregroundColor": "Blue"
+    },
+
+    "attributeName.html": {
+      "foregroundColor": "Violet"
+    },
+
+    "attributeValue.html": {
+      "foregroundColor": "Pink"
+    },
+
+    "entityReference.html": {
+      "foregroundColor": "Orange"
+    },
+
+    "tag.html": {
+      "foregroundColor": "LightTint_30"
+    },
+
+    "tagName.html": {
+      "foregroundColor": "Blue"
+    },
+    "tagName.custom.html": {
+      "foregroundColor": "Orange"
+    },
+
+    "attributeName.css": {
+      "foregroundColor": "Violet"
+    },
+
+    "hex.css": {
+      "foregroundColor": "Yellow"
+    },
+
+    "identifier.css": {
+      "foregroundColor": "Violet"
+    },
+    "identifier.function.css": {
+      "foregroundColor": "Violet"
+    },
+    "identifier.variable.css": {
+      "foregroundColor": "Blue"
+    },
+
+    "interpolation.css": {
+      "foregroundColor": "Neutral_140"
+    },
+
+    "identifier.variable.php": {
+      "foregroundColor": "Blue Light"
+    },
+
+    "property.php": {
+      "foregroundColor": "Violet"
+    },
+    "property.static.php": {
+      "foregroundColor": "Violet",
+      "fontStyle": "ITALIC"
+    },
+
+    "generic.php": {
+      "foregroundColor": "Yellow"
+    },
+
+    "jsCodeDelimiter.css": {
+      "foregroundColor": "Pink"
+    },
+
+    "jsCodeInjection.css": {
+      "foregroundColor": "Neutral_140"
+    },
+
+    "key.json": {
+      "foregroundColor": "Violet"
+    },
+
+    "keyword.css": {
+      "foregroundColor": "Lime"
+    },
+    "keyword.extend.css": {
+      "foregroundColor": "Lime"
+    },
+    "keyword.global.css": {
+      "foregroundColor": "Lime"
+    },
+    "keyword.important.css": {
+      "foregroundColor": "Lime"
+    },
+
+    "mixin.css": {
+      "foregroundColor": "Violet"
+    },
+
+    "number.css": {
+      "foregroundColor": "Yellow"
+    },
+    "number.unit.css": {
+      "foregroundColor": "Yellow"
+    },
+
+    "propertyName.css": {
+      "foregroundColor": "Cyan"
+    },
+
+    "propertyValue.css": {
+      "foregroundColor": "Pink"
+    },
+
+    "punctuation.css": {
+      "foregroundColor": "Neutral_140"
+    },
+
+    "selector.css": {
+      "foregroundColor": "Violet"
+    },
+    "selector.id.css": {
+      "foregroundColor": "Violet"
+    },
+    "selector.class.css": {
+      "foregroundColor": "Violet"
+    },
+    "selector.pseudo.css": {
+      "foregroundColor": "Violet"
+    },
+    "selector.tag.css": {
+      "foregroundColor": "Violet"
+    },
+
+    "string.css": {
+      "foregroundColor": "Pink"
+    },
+
+    "url.css": {
+      "foregroundColor": "Blue Light",
+      "textDecoration": {
+        "color": "#546267"
+      }
+    },
+
+    "attribute.cpp": {
+      "foregroundColor": "Coral"
+    },
+
+    "markup.heading": {
+      "foregroundColor": "Cyan",
+      "fontWeight": "BOLD"
+    },
+    "markup.bold": {
+      "fontWeight": "BOLD"
+    },
+    "markup.italic": {
+      "fontStyle": "ITALIC"
+    },
+    "markup.code.block": {
+      "foregroundColor": "Pink"
+    },
+    "markup.href": {
+      "foregroundColor": "Pink",
+      "fontStyle": "ITALIC",
+      "textDecoration": {}
+    },
+    "punctuation": {
+      "foregroundColor": "Neutral_140"
+    },
+    "punctuation.operator": {
+      "foregroundColor": "Neutral_140"
+    },
+    "snippet": {
+      "border": {
+        "color": "Neutral_100"
+      }
+    },
+    "snippet.selected": {
+      "border": {
+        "color": "Blue 80"
+      }
+    },
+
+    "debug.currentFrame": {
+      "backgroundColor": "RedTint_20"
+    },
+
+    "diff.added": {
+      "backgroundColor": "GreenTint_20"
+    },
+    "diff.added.word": {
+      "backgroundColor": "GreenTint_50"
+    },
+    "diff.added.withBorder": {
+      "backgroundColor": "GreenTint_50",
+      "border": {
+        "color": "GreenTint_50"
+      }
+    },
+    "diff.added.resolved": {
+      "backgroundColor": "Transparent",
+      "border": {
+        "color": "GreenTint_50"
+      }
+    },
+    "diff.added.empty": {
+      "backgroundColor": "Green_110"
+    },
+    "diff.deleted": {
+      "backgroundColor": "RedTint_20"
+    },
+    "diff.deleted.word": {
+      "backgroundColor": "RedTint_50"
+    },
+    "diff.deleted.withBorder": {
+      "backgroundColor": "RedTint_50",
+      "border": {
+        "color": "RedTint_50"
+      }
+    },
+    "diff.deleted.resolved": {
+      "backgroundColor": "Transparent",
+      "border": {
+        "color": "RedTint_50"
+      }
+    },
+    "diff.deleted.empty": {
+      "backgroundColor": "Red_110"
+    },
+    "diff.modified": {
+      "backgroundColor": "BlueTint_20"
+    },
+    "diff.modified.word": {
+      "backgroundColor": "BlueTint_50"
+    },
+    "diff.modified.withBorder": {
+      "backgroundColor": "BlueTint_50",
+      "border": {
+        "color": "BlueTint_50"
+      }
+    },
+    "diff.modified.resolved": {
+      "backgroundColor": "Transparent",
+      "border": {
+        "color": "BlueTint_50"
+      }
+    },
+    "diff.modified.original": {
+      "backgroundColor": "LightTint_10"
+    },
+    "diff.conflict": {
+      "backgroundColor": "YellowTint_50"
+    },
+    "diff.conflict.withBorder": {
+      "backgroundColor": "YellowTint_50",
+      "border": {
+        "color": "YellowTint_50"
+      }
+    },
+    "diff.conflict.resolved": {
+      "backgroundColor": "Transparent",
+      "border": {
+        "color": "YellowTint_50"
+      }
+    },
+
+    "refactoring.modified.code": {
+      "backgroundColor": "Green 30"
+    },
+
+    "problem.error": {
+      "scrollbarMarkColor": "Red_100",
+      "textDecoration": {
+        "color": "Red_110",
+        "thickness": 2.0
+      }
+    },
+    "problem.error.badCharacter": {
+      "scrollbarMarkColor": "Red_100",
+      "textDecoration": {
+        "color": "Red_110",
+        "thickness": 2.0
+      }
+    },
+    "problem.warning": {
+      "scrollbarMarkColor": "YellowBright_10",
+      "textDecoration": {
+        "color": "#FACB66",
+        "thickness": 2.0
+      }
+    },
+    "problem.warning.weak": {
+      "scrollbarMarkColor": "Neutral_70",
+      "textDecoration": {
+        "color": "Neutral_80",
+        "thickness": 2.0
+      }
+    },
+    "problem.deprecated": {
+      "textDecoration": {
+        "color": "Neutral_140",
+        "type": "LINE_THROUGH"
+      }
+    },
+    "problem.info": {
+      "textDecoration": {
+        "color": "#A366C4"
+      }
+    },
+    "problem.unknown": {},
+    "problem.unused": {
+      "foregroundColor": "LightTint_70"
+    },
+    "transparent": {},
+
+    "comment.buildConstraint.go": {
+      "foregroundColor": "Neutral_140"
+    },
+
+    "identifier.methodReceiver.go": {
+      "foregroundColor": "Neutral_140"
+    },
+    "identifier.package.go": {
+      "foregroundColor": "Lime"
+    },
+    "identifier.typeDeclaration.go": {
+      "foregroundColor": "Neutral_140"
+    },
+    "identifier.typeReference.go": {
+      "foregroundColor": "Blue"
+    },
+    "identifier.variable.shadowing.go": {
+      "foregroundColor": "Orange"
+    },
+
+    "metadata.structTag.arbitraryText.go": {
+      "foregroundColor": "Neutral_100"
+    },
+    "metadata.structTag.key.go": {
+      "foregroundColor": "Neutral_140"
+    },
+    "metadata.structTag.value.go": {
+      "foregroundColor": "Pink"
+    },
+
+    "identifier.anchor.yaml": {
+      "foregroundColor": "Lime"
+    },
+    "identifier.alias.yaml": {
+      "foregroundColor": "Orange"
+    },
+
+    "punctuation.operator.merge.yaml": {
+      "foregroundColor": "Yellow"
+    },
+
+    "schema.yaml": {
+      "foregroundColor": "Coral"
+    },
+
+    "key.yaml": {
+      "foregroundColor": "Cyan"
+    },
+
+    "value.yaml": {
+      "foregroundColor": "Violet"
+    },
+
+    "ai.generated": {
+      "backgroundColor": "Violet_50"
+    },
+
+    "target.match": {
+      "backgroundColor": "Yellow_40"
+    },
+    "target.match.word": {
+      "foregroundColor": "Black",
+      "backgroundColor": "Yellow_120"
+    },
+
+    "identifier.dependency.scope.amper": {
+      "foregroundColor": "Orange"
+    },
+    "identifier.dependency.annotator.amper": {
+      "foregroundColor": "Blue"
+    },
+    "identifier.dependency.add.amper": {
+      "foregroundColor": "Lime"
+    },
+
+    "editor.indentGuide": {
+      "foregroundColor": "LightTint_15",
+      "textDecoration": {
+        "style": "DASHED"
+      }
+    },
+    "editor.indentGuide.current": {
+      "foregroundColor": "LightTint_30",
+      "textDecoration": {
+        "style": "DASHED"
+      }
+    },
+    "editor.indentGuide.declaration": {
+      "foregroundColor": "LightTint_10"
+    },
+    "editor.indentGuide.declaration.current": {
+      "foregroundColor": "LightTint_30"
+    }
+  },
+  "palette": {
+    "White": "#FFFFFF",
+    "White-10": "#FFFFFF1A",
+    "Gray 120": "#D1D1D1",
+    "Gray 110": "#C2C2C2",
+    "Gray 100": "#A0A0A0",
+    "Gray 90": "#898989",
+    "Gray 80": "#767676",
+    "Gray 70": "#5D5D5D",
+    "Gray 60": "#484848",
+    "Gray 50": "#383838",
+    "Gray 40": "#333333",
+    "Gray 30": "#2D2D2D",
+    "Gray 20": "#292929",
+    "Gray 10": "#181818",
+    "Black": "#000000",
+    "Blue 110": "#6DAAF7",
+    "Blue 100": "#4D9BF8",
+    "Blue 90": "#3691F9",
+    "Blue 80": "#1A85F6",
+    "Blue 70": "#0273EB",
+    "Blue 60": "#0C6DDD",
+    "Blue 50": "#195EB5",
+    "Blue 40": "#194176",
+    "Blue 30": "#163764",
+    "Blue 20": "#132C4F",
+    "Blue 10-60": "#0B1B3299",
+    "Blue 10": "#0B1B32",
+    "Blue": "#87C3FF",
+    "Red 80": "#EC7388",
+    "Red 70": "#EA4B67",
+    "Red 60": "#D93953",
+    "Red 50": "#CE364D",
+    "Red 40": "#C03248",
+    "Red 30": "#A72A3F",
+    "Red 20": "#761B2D",
+    "Red 10": "#390813",
+    "Green 80": "#4CA988",
+    "Green 70": "#3EA17F",
+    "Green 60": "#028764",
+    "Green 50": "#07805F",
+    "Green 40": "#13664E",
+    "Green 30": "#134939",
+    "Green 20": "#0E3127",
+    "Green 10": "#081F19",
+    "Yellow 60": "#F8AB17",
+    "Yellow 50": "#E1971B",
+    "Yellow 40": "#B5791F",
+    "Yellow 30": "#7C511A",
+    "Yellow 20": "#5A3A14",
+    "Yellow 10": "#281806",
+    "Purple 30": "#C07BF3",
+    "Purple 20": "#B35DEF",
+    "Purple 10-60": "#2B0B4099",
+    "Purple 10": "#2B0B40",
+    "Blue Light": "#ADD1DE",
+    "Coral": "#CC7C8A",
+    "Cyan": "#82D2CE",
+    "Cyan Dark": "#779E9E",
+    "Lime": "#A8CC7C",
+    "Orange": "#E09B70",
+    "Pink": "#E394DC",
+    "Violet": "#AF9CFF",
+    "Yellow": "#EBC88D",
+    "Violet 70": "#958CF7",
+    "Violet 60": "#6D60F4",
+    "Violet 50": "#5A4CE5",
+    "Violet 40": "#4D40D8",
+    "Violet 30": "#473BC4",
+    "Violet 20": "#3A3098",
+    "Violet 10": "#282360",
+    "Transparent": "#FFFFFF00",
+    "Neutral_160": "#F8F8F9",
+    "Neutral_150": "#EEEFF0",
+    "Neutral_140": "#E0E1E4",
+    "Neutral_130": "#C3C5C9",
+    "Neutral_120": "#9EA3A8",
+    "Neutral_110": "#898E94",
+    "Neutral_100": "#7A7F86",
+    "Neutral_90": "#6E747B",
+    "Neutral_80": "#646B71",
+    "Neutral_70": "#5D636B",
+    "Neutral_60": "#4C5157",
+    "Neutral_50": "#3E4147",
+    "Neutral_40": "#323438",
+    "Neutral_30": "#252629",
+    "Neutral_20": "#18191B",
+    "Neutral_10": "#090909",
+    "Blue_160": "#F7F8FE",
+    "Blue_150": "#E9EFFC",
+    "Blue_140": "#D6E3F9",
+    "Blue_130": "#A8C6F4",
+    "Blue_120": "#71A3EF",
+    "Blue_110": "#4B8DEC",
+    "Blue_100": "#2A7DEB",
+    "Blue_90": "#0870E4",
+    "Blue_80": "#1868CB",
+    "Blue_70": "#1D61BA",
+    "Blue_60": "#225090",
+    "Blue_50": "#224271",
+    "Blue_40": "#1E3455",
+    "Blue_30": "#18263C",
+    "Blue_20": "#111926",
+    "Blue_10": "#06090F",
+    "Green_160": "#F5FAF5",
+    "Green_150": "#E6F2EA",
+    "Green_140": "#D2E7DB",
+    "Green_130": "#A3CEB8",
+    "Green_120": "#69B090",
+    "Green_110": "#409D78",
+    "Green_100": "#169068",
+    "Green_90": "#14835E",
+    "Green_80": "#1E7857",
+    "Green_70": "#216F52",
+    "Green_60": "#255A44",
+    "Green_50": "#234939",
+    "Green_40": "#1F392D",
+    "Green_30": "#182921",
+    "Green_20": "#111B16",
+    "Green_10": "#060A08",
+    "Red_160": "#FFF8F8",
+    "Red_150": "#FFE9EA",
+    "Red_140": "#FFD8DA",
+    "Red_130": "#FFB0B5",
+    "Red_120": "#F87C88",
+    "Red_110": "#EC5D6F",
+    "Red_100": "#E1465E",
+    "Red_90": "#D73251",
+    "Red_80": "#C72C49",
+    "Red_70": "#B82D46",
+    "Red_60": "#922C3B",
+    "Red_50": "#742831",
+    "Red_40": "#592228",
+    "Red_30": "#401A1E",
+    "Red_20": "#291214",
+    "Red_10": "#100607",
+    "Yellow_160": "#FFF8EF",
+    "Yellow_150": "#FCEDDC",
+    "Yellow_140": "#F5DEC2",
+    "Yellow_130": "#E5BF8C",
+    "Yellow_120": "#CD984D",
+    "Yellow_110": "#BD8128",
+    "Yellow_100": "#B07203",
+    "Yellow_90": "#9F680C",
+    "Yellow_80": "#916012",
+    "Yellow_70": "#865A15",
+    "Yellow_60": "#6C4B18",
+    "Yellow_50": "#573D18",
+    "Yellow_40": "#433016",
+    "Yellow_30": "#302412",
+    "Yellow_20": "#20180C",
+    "Yellow_10": "#0C0805",
+    "Violet_160": "#F9F7FE",
+    "Violet_150": "#EEEDFD",
+    "Violet_140": "#DEDFFC",
+    "Violet_130": "#BDC0FA",
+    "Violet_120": "#9599F9",
+    "Violet_110": "#7F80F9",
+    "Violet_100": "#726CF9",
+    "Violet_90": "#685AFB",
+    "Violet_80": "#604EF3",
+    "Violet_70": "#594CDD",
+    "Violet_60": "#4843A8",
+    "Violet_50": "#3A3982",
+    "Violet_40": "#2E2E61",
+    "Violet_30": "#222342",
+    "Violet_20": "#17172B",
+    "Violet_10": "#080810",
+    "Purple_160": "#FDF6FD",
+    "Purple_150": "#F6EAF9",
+    "Purple_140": "#EDDCF5",
+    "Purple_130": "#D8B9EC",
+    "Purple_120": "#C08FE0",
+    "Purple_110": "#B174D9",
+    "Purple_100": "#A660D4",
+    "Purple_90": "#9D4FCF",
+    "Purple_80": "#9049BE",
+    "Purple_70": "#8646AE",
+    "Purple_60": "#6A3D88",
+    "Purple_50": "#55346A",
+    "Purple_40": "#412B50",
+    "Purple_30": "#2F2139",
+    "Purple_20": "#1E1524",
+    "Purple_10": "#0B080D",
+    "YellowBright_10": "#E59408",
+    "LightTint_80": "#E0E1E4CC",
+    "LightTint_70": "#E0E1E4B2",
+    "LightTint_60": "#E0E1E499",
+    "LightTint_50": "#E0E1E480",
+    "LightTint_40": "#E0E1E466",
+    "LightTint_30": "#E0E1E44D",
+    "LightTint_20": "#E0E1E433",
+    "LightTint_15": "#E0E1E426",
+    "LightTint_12": "#E0E1E41F",
+    "LightTint_10": "#E0E1E41A",
+    "LightTint_8": "#E0E1E414",
+    "LightTint_5": "#E0E1E40D",
+    "DarkTint_70": "#18191BB2",
+    "DarkTint_60": "#18191B99",
+    "DarkTint_30": "#18191B4D",
+    "DarkTint_20": "#18191B33",
+    "DarkTint_15": "#18191B26",
+    "DarkTint_10": "#18191B1A",
+    "DarkTint_7": "#18191B12",
+    "DarkTint_5": "#18191B0D",
+    "DarkTint_3": "#18191B08",
+    "BlueTint_60": "#0870E499",
+    "BlueTint_50": "#0870E480",
+    "BlueTint_40": "#0870E466",
+    "BlueTint_30": "#0870E44D",
+    "BlueTint_25": "#0870E440",
+    "BlueTint_20": "#0870E433",
+    "BlueTint_15": "#0870E426",
+    "BlueTint_10": "#0870E41A",
+    "BlueTint_5": "#0870E40D",
+    "RedTint_50": "#D7325180",
+    "RedTint_30": "#D732514D",
+    "RedTint_20": "#D7325133",
+    "RedTint_15": "#D7325126",
+    "RedTint_10": "#D732511A",
+    "GreenTint_50": "#14835E80",
+    "GreenTint_40": "#14835E66",
+    "GreenTint_20": "#14835E33",
+    "GreenTint_10": "#14835E1A",
+    "VioletTint_40": "#685AFB66",
+    "YellowTint_50": "#9F680C80",
+    "YellowTint_40": "#9F680C66",
+    "YellowTint_20": "#9F680C33"
+  }
+}

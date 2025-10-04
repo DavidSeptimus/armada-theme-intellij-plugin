@@ -8,7 +8,14 @@ import java.io.File
  */
 object ThemeMerger {
     private val gson = GsonBuilder().setPrettyPrinting().create()
-    private val parser = JsonParser()
+
+    /**
+     * Paths that should not have their dotted keys flattened into nested structures.
+     * Add paths here to preserve dotted notation (e.g., "panel.button", "notification")
+     */
+    private val pathsNotToFlatten = setOf(
+        "icons"  // Never flatten any paths under the icons property
+    )
 
     /**
      * Normalizes a theme JSON by converting dotted keys to nested objects.
@@ -17,8 +24,8 @@ object ThemeMerger {
      */
     fun normalize(themeFile: File): JsonObject {
         val content = themeFile.readText()
-        val root = parser.parse(content).asJsonObject
-        return normalizeObject(root)
+        val root = JsonParser.parseString(content).asJsonObject
+        return normalizeObject(root, "")
     }
 
     /**
@@ -47,15 +54,16 @@ object ThemeMerger {
         outputFile.writeText(gson.toJson(theme))
     }
 
-    private fun normalizeObject(obj: JsonObject): JsonObject {
+    private fun normalizeObject(obj: JsonObject, currentPath: String): JsonObject {
         val result = JsonObject()
-        val imageExtensions = listOf(".svg", ".png", ".jpg", ".jpeg", ".gif", ".ico", ".webp")
 
         for ((key, value) in obj.entrySet()) {
-            // Don't split keys that end with image extensions (they're icon paths)
-            val isImagePath = imageExtensions.any { key.endsWith(it, ignoreCase = true) }
+            // Check if we're in a path that shouldn't be flattened
+            val shouldNotFlatten = pathsNotToFlatten.any { path ->
+                currentPath == path || currentPath.startsWith("$path.")
+            }
 
-            if (key.contains('.') && !isImagePath) {
+            if (key.contains('.') && !shouldNotFlatten) {
                 // Split the key and create nested structure
                 val parts = key.split('.')
                 var current = result
@@ -73,10 +81,11 @@ object ThemeMerger {
 
                 // Set the final value
                 val finalKey = parts.last()
+                val newPath = if (currentPath.isEmpty()) parts.joinToString(".") else "$currentPath.${parts.joinToString(".")}"
                 val normalizedValue = if (value.isJsonObject) {
-                    normalizeObject(value.asJsonObject)
+                    normalizeObject(value.asJsonObject, newPath)
                 } else if (value.isJsonArray) {
-                    normalizeArray(value.asJsonArray)
+                    normalizeArray(value.asJsonArray, newPath)
                 } else {
                     value
                 }
@@ -93,11 +102,12 @@ object ThemeMerger {
                     current.add(finalKey, normalizedValue)
                 }
             } else {
-                // No dots in key, just normalize the value if needed
+                // No dots in key or path should not be flattened
+                val newPath = if (currentPath.isEmpty()) key else "$currentPath.$key"
                 val normalizedValue = if (value.isJsonObject) {
-                    normalizeObject(value.asJsonObject)
+                    normalizeObject(value.asJsonObject, newPath)
                 } else if (value.isJsonArray) {
-                    normalizeArray(value.asJsonArray)
+                    normalizeArray(value.asJsonArray, newPath)
                 } else {
                     value
                 }
@@ -119,13 +129,13 @@ object ThemeMerger {
         return result
     }
 
-    private fun normalizeArray(arr: JsonArray): JsonArray {
+    private fun normalizeArray(arr: JsonArray, currentPath: String): JsonArray {
         val result = JsonArray()
         for (element in arr) {
             if (element.isJsonObject) {
-                result.add(normalizeObject(element.asJsonObject))
+                result.add(normalizeObject(element.asJsonObject, currentPath))
             } else if (element.isJsonArray) {
-                result.add(normalizeArray(element.asJsonArray))
+                result.add(normalizeArray(element.asJsonArray, currentPath))
             } else {
                 result.add(element)
             }

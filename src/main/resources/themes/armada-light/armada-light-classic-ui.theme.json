@@ -20,59 +20,39 @@
     "/com/intellij/ide/ui/laf/icons/intellij/radioSelectedDisabled.svg": "/themes/armada-light/icons/radioSelectedDisabled.svg",
     "/com/intellij/ide/ui/laf/icons/intellij/radioSelectedFocused.svg": "/themes/armada-light/icons/radioSelectedFocused.svg",
     "ColorPalette": {
-      "Tree": {
-        "iconColor": "Neutral_10"
-      },
-      "Gray": {
-        "Fill": "White",
-        "SecondaryStroke": "Neutral_90",
-        "Stroke": "Neutral_70"
-      },
-      "Green": {
-        "Solid": "Green_100",
-        "Stroke": "Green_100"
-      },
-      "Red": {
-        "Solid": "Red_100",
-        "Stroke": "Red_100"
-      },
-      "Blue": {
-        "Solid": "Blue_100",
-        "Stroke": "Blue_100"
-      },
-      "Yellow": {
-        "Solid": "YellowBright_10",
-        "Stroke": "YellowBright_10"
-      },
-      "Purple": {
-        "Solid": "Purple_100",
-        "Stroke": "Purple_100"
-      },
-      "Orange": {
-        "Solid": "Orange",
-        "Stroke": "Orange"
-      },
-      "Objects": {
-        "Pink": "Pink",
-        "Blue": "Blue_100",
-        "Red": "Red_100",
-        "Green": "Green_100",
-        "Grey": "Orange",
-        "Yellow": "YellowBright_10",
-        "YellowDark": "Yellow_100",
-        "Purple": "Purple_100",
-        "RedStatus": "Red_100"
-      },
-      "Actions": {
-        "Blue": "Blue_100",
-        "Red": "Red_100",
-        "Green": "Green_100",
-        "Yellow": "Yellow_100",
-        "Purple": "Purple_100",
-        "Violet": "Violet_100",
-        "Grey": "Neutral_70",
-        "GreyInline": "Neutral_70"
-      }
+      "Tree.iconColor": "Neutral_10",
+      "Gray.Fill": "White",
+      "Gray.SecondaryStroke": "Neutral_90",
+      "Gray.Stroke": "Neutral_70",
+      "Green.Solid": "Green_100",
+      "Green.Stroke": "Green_100",
+      "Red.Solid": "Red_100",
+      "Red.Stroke": "Red_100",
+      "Blue.Solid": "Blue_100",
+      "Blue.Stroke": "Blue_100",
+      "Yellow.Solid": "YellowBright_10",
+      "Yellow.Stroke": "YellowBright_10",
+      "Purple.Solid": "Purple_100",
+      "Purple.Stroke": "Purple_100",
+      "Orange.Solid": "Orange",
+      "Orange.Stroke": "Orange",
+      "Objects.Pink": "Pink",
+      "Objects.Blue": "Blue_100",
+      "Objects.Red": "Red_100",
+      "Objects.Green": "Green_100",
+      "Objects.Grey": "Orange",
+      "Objects.Yellow": "YellowBright_10",
+      "Objects.YellowDark": "Yellow_100",
+      "Objects.Purple": "Purple_100",
+      "Objects.RedStatus": "Red_100",
+      "Actions.Blue": "Blue_100",
+      "Actions.Red": "Red_100",
+      "Actions.Green": "Green_100",
+      "Actions.Yellow": "Yellow_100",
+      "Actions.Purple": "Purple_100",
+      "Actions.Violet": "Violet_100",
+      "Actions.Grey": "Neutral_70",
+      "Actions.GreyInline": "Neutral_70"
     }
   },
   "ui": {

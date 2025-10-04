@@ -2,7 +2,17 @@
 <!-- This file is only included in EAP builds and provides experimental features -->
 <idea-plugin>
   <extensions defaultExtensionNs="com.intellij">
+      <themeProvider
+              id="com.github.davidseptimus.armada.armada-dark-purple"
+              path="themes/armada-dark-purple/armada-dark-purple.theme.json"
+              targetUi="new"
+      />
 
+      <themeProvider
+              id="com.github.davidseptimus.armada.armada-dark-purle-islands"
+              path="themes/armada-dark-purple/armada-dark-purple-islands.theme.json"
+              targetUi="islands"
+      />
   </extensions>
 </idea-plugin>
 
