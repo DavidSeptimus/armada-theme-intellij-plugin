@@ -18,41 +18,6 @@ Armada is a plugin that aims to faithfully recreate the Fleet's builtin themes f
   - [Classic UI](https://plugins.jetbrains.com/plugin/24468-classic-ui)
 - Custom highlighting tokens for improved highlighting accuracy in various languages
 
-### Language Support
-
-Language-specific colors have been added for the following languages so far:
-
-|            | Armada Dark | Armada Light |
-|------------|-------------|--------------|
-| C/C++      | ✅           | ✅            |
-| C#         | ✅           | ✅            |
-| CSS        | ✅           | ✅            |
-| Dockerfile | ✅           | ✅            |
-| Go         | ✅           | ✅            |
-| Java       | ✅           | ✅            |
-| JavaScript | ✅           | ✅            |
-| JSON       | ✅           | ✅            |
-| Kotlin     | ✅           | ✅            |
-| Lua        | ✅           | ✅            |
-| HTML       | ✅           | ✅            |
-| Markdown   | ✅           | ✅            |
-| NGINX Conf | ✅           | ✅            |
-| Perl       | ✅           | ❌            |
-| PHP        | ✅           | ✅            |
-| PowerShell | ✅           | ❌            |
-| Properties | ✅           | ✅            |
-| Python     | ✅           | ✅            |
-| R          | ✅           | ❌            |
-| Rust       | ✅           | ✅            |
-| SASS/SCSS  | ✅           | ✅            |
-| Shell      | ✅           | ✅            |
-| SQL        | ✅           | ✅            |
-| Typescript | ✅           | ✅            |
-| TOML       | ✅           | ✅            |
-| XML        | ✅           | ✅            |
-| YAML       | ✅           | ✅            |
-| Zig        | ✅           | ✅            |
-
 <!-- Plugin description end -->
 
 IntelliJ's tokens don't perfectly match Fleet's, so some colors may not be 100% accurate. However, the goal is to get as
