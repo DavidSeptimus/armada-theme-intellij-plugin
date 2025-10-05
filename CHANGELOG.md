@@ -10,6 +10,10 @@
 
 ### Changed
 
+- Adjusted panel, tab, and toolbar colors for better consistency
+
+### Changed
+
 - The addition of `(Classic UI)` variants necessitated another variant rename of the original Armada themes from `(Classic)` to `(New UI)` to clarify which UI version they are designed for
 - Added `targetUI` attribute to theme definitions to ensure that `(Classic UI)` and `(Islands)` themes are only available when the corresponding UI is available in the IDE
 

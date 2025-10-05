@@ -255,7 +255,8 @@ tasks {
 
             if (mainContent.contains(beginMarker)) {
                 // Inject dependencies
-                val dependenciesText = """  <depends optional="true" config-file="plugin-eap.xml">com.intellij.modules.platform</depends>"""
+                val dependenciesText =
+                    """  <depends optional="true" config-file="plugin-eap.xml">com.intellij.modules.platform</depends>"""
                 mainContent.replace(
                     "$beginMarker\n$endMarker",
                     "$beginMarker\n$dependenciesText\n$endMarker"
@@ -328,101 +329,6 @@ tasks {
 
         doLast {
             println("EAP plugin built successfully, running verification...")
-        }
-    }
-
-    register<JavaExec>("normalizeTheme") {
-        group = "theme"
-        description = "Normalizes a theme JSON file by converting dotted keys to nested objects"
-
-        classpath = sourceSets["main"].runtimeClasspath
-        mainClass.set("buildscripts.ThemeMergerKt")
-
-        args = listOfNotNull(
-            "normalize",
-            project.findProperty("input")?.toString(),
-            project.findProperty("output")?.toString()
-        )
-
-        doFirst {
-            if (project.findProperty("input") == null || project.findProperty("output") == null) {
-                throw GradleException("Usage: ./gradlew normalizeTheme -Pinput=<input.json> -Poutput=<output.json>")
-            }
-        }
-    }
-
-    register<JavaExec>("mergeThemes") {
-        group = "theme"
-        description = "Merges multiple theme JSON files"
-
-        classpath = sourceSets["main"].runtimeClasspath
-        mainClass.set("buildscripts.ThemeMergerKt")
-
-        val inputs = project.findProperty("inputs")?.toString()?.split(",") ?: emptyList()
-        args = listOfNotNull(
-            "merge",
-            project.findProperty("output")?.toString()
-        ) + inputs
-
-        doFirst {
-            if (project.findProperty("output") == null || inputs.isEmpty()) {
-                throw GradleException("Usage: ./gradlew mergeThemes -Poutput=<output.json> -Pinputs=<file1.json,file2.json,...>")
-            }
-        }
-    }
-
-    register<JavaExec>("generateDarkClassicUITheme") {
-        group = "generate"
-        description = "Generates the Armada Dark Classic UI theme by merging base theme with overrides"
-
-        dependsOn("classes")
-        classpath(sourceSets["main"].runtimeClasspath, sourceSets["main"].output)
-        mainClass.set("buildscripts.ThemeMergerKt")
-
-        val baseTheme = "src/main/resources/themes/armada-dark/armada-dark.theme.json"
-        val overrides = "src/main/resources/themes/armada-dark/armada-dark-classic-ui.overrides.json"
-        val output = "src/main/resources/themes/armada-dark/armada-dark-classic-ui.theme.json"
-
-        inputs.files(baseTheme, overrides)
-        outputs.file(output)
-
-        args = listOf("merge", output, baseTheme, overrides)
-
-        doLast {
-            println("Generated Armada Dark Classic UI theme")
-        }
-    }
-
-    register<JavaExec>("generateLightClassicUITheme") {
-        group = "generate"
-        description = "Generates the Armada Light Classic UI theme by merging base theme with overrides"
-
-        dependsOn("classes")
-        classpath(sourceSets["main"].runtimeClasspath, sourceSets["main"].output)
-        mainClass.set("buildscripts.ThemeMergerKt")
-
-        val baseTheme = "src/main/resources/themes/armada-light/armada-light.theme.json"
-        val overrides = "src/main/resources/themes/armada-light/armada-light-classic-ui.overrides.json"
-        val output = "src/main/resources/themes/armada-light/armada-light-classic-ui.theme.json"
-
-        inputs.files(baseTheme, overrides)
-        outputs.file(output)
-
-        args = listOf("merge", output, baseTheme, overrides)
-
-        doLast {
-            println("Generated Armada Light Classic UI theme")
-        }
-    }
-
-    register("generateAllThemes") {
-        group = "generate"
-        description = "Generates all theme variants"
-
-        dependsOn("generateDarkClassicUITheme", "generateLightClassicUITheme")
-
-        doLast {
-            println("Generated all theme variants")
         }
     }
 }

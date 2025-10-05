@@ -3,7 +3,6 @@
   "dark": true,
   "name": "Armada Dark (Islands)",
   "editorScheme": "themes/armada-dark/armada-dark.xml",
-  "parentTheme": "Islands Dark",
   "icons": {
     "/com/intellij/ide/ui/laf/icons/darcula/checkBox.svg": "/themes/armada-dark/icons/checkBox.svg",
     "/com/intellij/ide/ui/laf/icons/darcula/checkBoxDisabled.svg": "/themes/armada-dark/icons/checkBoxDisabled.svg",
@@ -65,7 +64,9 @@
       "selectionForeground": "Neutral_140",
       "selectionInactiveBackground": "Neutral_50"
     },
-    "Borders.color": "Neutral_40",
+    "Borders": {
+      "color": "Neutral_40"
+    },
     "ActionButton": {
       "hoverBackground": "LightTint_15",
       "hoverBorderColor": "LightTint_2",
@@ -77,20 +78,26 @@
       "borderColor": "Transparent",
       "underlineColor": "Blue 60",
       "inactiveUnderlineColor": "LightTint_8",
-      "hoverBackground": "LightTint_8"
+      "hoverBackground": "LightTint_8",
+      "underlinedBorderColor": "BlueTint_40",
+      "underlinedTabBackground": "#1B2E4B"
     },
     "EditorTabs": {
-      "background": "Neutral_20",
       "borderColor": "Transparent",
       "underlineColor": "BlueTint_50",
       "inactiveUnderlineColor": "LightTint_8",
-      "hoverBackground": "LightTint_8"
+      "hoverBackground": "LightTint_8",
+      "underlinedBorderColor": "BlueTint_40",
+      "underTabsBorderColor": "Neutral_30",
+      "underlinedTabBackground": "#1B2E4B"
     },
     "TabbedPane": {
       "underlineColor": "Blue 60",
       "disabledUnderlineColor": "LightTint_8",
       "hoverColor": "LightTint_8",
-      "focusColor": "BlueTint_25"
+      "focusColor": "BlueTint_25",
+      "underlinedBorderColor": "BlueTint_40",
+      "underlinedTabBackground": "#1B2E4B"
     },
     "FileColor": {
       "Blue": "Blue_30",
@@ -101,9 +108,16 @@
       "Yellow": "Yellow_30",
       "Gray": "Gray 30"
     },
-    "MainWindow.background": "Neutral_10",
-    "MainToolbar.background": "Neutral_10",
-    "Editor.background": "Neutral_20",
+    "MainToolbar": {
+      "background": "Neutral_10",
+      "borderColor": "Transparent"
+    },
+    "MainWindow": {
+      "background": "Neutral_10"
+    },
+    "Editor": {
+      "background": "Neutral_20"
+    },
     "ScrollBar": {
       "background": "Neutral_20",
       "thumb": "LightTint_15",
@@ -120,15 +134,23 @@
         "hoverTrackColor": "LightTint_10"
       }
     },
-    "Settings.Spotlight.borderColor": "YellowTint_50",
-    "Panel.foreground": "Neutral_140",
+    "Settings": {
+      "Spotlight": {
+        "borderColor": "YellowTint_50"
+      }
+    },
+    "Panel": {
+      "foreground": "Neutral_140"
+    },
     "StatusBar": {
       "background": "Neutral_10",
       "borderColor": "Transparent"
     },
-    "Label.foreground": "Neutral_140",
-    "Label.selectedForeground": "White",
-    "Label.infoForeground": "Neutral_120",
+    "Label": {
+      "foreground": "Neutral_140",
+      "selectedForeground": "White",
+      "infoForeground": "Neutral_120"
+    },
     "Tree": {
       "foreground": "Neutral_140",
       "errorForeground": "Red_100"
@@ -165,16 +187,19 @@
       },
       "Stripe": {
         "background": "Neutral_10",
-        "separatorColor": "Neutral_40",
+        "separatorColor": "Neutral_30",
         "DragAndDrop": {
           "separatorColor": "Blue_90"
-        }
+        },
+        "borderColor": "Transparent"
       },
       "DragAndDrop": {
         "areaBackground": "BlueTint_15"
       }
     },
-    "TextPane.inactiveBackground": "Neutral_20",
+    "TextPane": {
+      "inactiveBackground": "Neutral_20"
+    },
     "CheckBoxMenuItem": {
       "background": "LightTint_8",
       "foreground": "Neutral_140",
@@ -226,7 +251,9 @@
         "startBorderColor": "Transparent",
         "endBorderColor": "Transparent"
       },
-      "Header.foreground": "Neutral_140",
+      "Header": {
+        "foreground": "Neutral_140"
+      },
       "secondaryActionForeground": "Blue_110"
     },
     "Menu": {
@@ -234,15 +261,31 @@
       "foreground": "Neutral_140",
       "separatorColor": "Neutral_50"
     },
-    "PopupMenu.background": "Neutral_30",
-    "MenuItem.background": "Neutral_30",
-    "ComplexPopup.Header.background": "Neutral_30",
-    "Popup.Header.activeBackground": "Neutral_30",
-    "Popup.background": "Neutral_30",
-    "Popup.borderColor": "Neutral_40",
-    "Popup.separatorColor": "Neutral_50",
-    "Popup.Advertiser.background": "Neutral_30",
-    "Separator.separatorColor": "Neutral_40",
+    "PopupMenu": {
+      "background": "Neutral_30"
+    },
+    "MenuItem": {
+      "background": "Neutral_30"
+    },
+    "ComplexPopup": {
+      "Header": {
+        "background": "Neutral_30"
+      }
+    },
+    "Popup": {
+      "Header": {
+        "activeBackground": "Neutral_30"
+      },
+      "background": "Neutral_30",
+      "borderColor": "Neutral_40",
+      "separatorColor": "Neutral_50",
+      "Advertiser": {
+        "background": "Neutral_30"
+      }
+    },
+    "Separator": {
+      "separatorColor": "Neutral_40"
+    },
     "Notification": {
       "background": "Neutral_30",
       "borderColor": "Neutral_40",
@@ -254,7 +297,9 @@
         "background": "Neutral_30",
         "hoverBackground": "Neutral_40"
       },
-      "Notification.hoverBackground": "Neutral_40"
+      "Notification": {
+        "hoverBackground": "Neutral_40"
+      }
     },
     "Component": {
       "focusColor": "Blue 60",
@@ -285,12 +330,14 @@
       "tagForeground": "Neutral_130",
       "tagBackground": "Neutral_50"
     },
-    "VersionControl.Log": {
-      "Commit": {
-        "currentBranchBackground": "Neutral_30",
-        "selectionInactiveBackground": "Neutral_60",
-        "selectionInactiveForeground": "Neutral_140",
-        "hoveredBackground": "Neutral_50"
+    "VersionControl": {
+      "Log": {
+        "Commit": {
+          "currentBranchBackground": "Neutral_30",
+          "selectionInactiveBackground": "Neutral_60",
+          "selectionInactiveForeground": "Neutral_140",
+          "hoveredBackground": "Neutral_50"
+        }
       }
     },
     "CompletionPopup": {
@@ -317,7 +364,9 @@
       "errorForeground": "Red_110",
       "errorBackground": "Red_40"
     },
-    "SpeedSearch.errorForeground": "Red_110",
+    "SpeedSearch": {
+      "errorForeground": "Red_110"
+    },
     "Counter": {
       "background": "LightTint_20"
     },
@@ -325,6 +374,9 @@
       "selectedBackground": "BlueTint_40",
       "selectedHoveredBackground": "BlueTint_30",
       "selectedPressedBackground": "BlueTint_25"
+    },
+    "Island": {
+      "borderColor": "Neutral_30"
     }
   },
   "colors": {
@@ -355,22 +407,6 @@
     "Blue 20": "#132C4F",
     "Blue 10-60": "#0B1B3299",
     "Blue 10": "#0B1B32",
-    "BlueDesaturated_160": "#F7F8FD",
-    "BlueDesaturated_150": "#E8EDFB",
-    "BlueDesaturated_140": "#D4E0F7",
-    "BlueDesaturated_130": "#A6C3F1",
-    "BlueDesaturated_120": "#6F9FEB",
-    "BlueDesaturated_110": "#4A89E7",
-    "BlueDesaturated_100": "#2C79E6",
-    "BlueDesaturated_90": "#0D6EDF",
-    "BlueDesaturated_80": "#1C65C6",
-    "BlueDesaturated_70": "#205DB5",
-    "BlueDesaturated_60": "#244D8B",
-    "BlueDesaturated_50": "#233F6C",
-    "BlueDesaturated_40": "#1F3250",
-    "BlueDesaturated_30": "#192537",
-    "BlueDesaturated_20": "#121824",
-    "BlueDesaturated_10": "#070910",
     "Blue": "#87C3FF",
     "Red 80": "#EC7388",
     "Red 70": "#EA4B67",
@@ -577,5 +613,6 @@
     "YellowTint_50": "#9F680C80",
     "YellowTint_40": "#9F680C66",
     "YellowTint_20": "#9F680C33"
-  }
+  },
+  "parentTheme": "Islands Dark"
 }
