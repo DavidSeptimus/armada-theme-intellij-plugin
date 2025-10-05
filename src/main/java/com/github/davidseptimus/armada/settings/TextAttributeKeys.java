@@ -3,11 +3,13 @@ package com.github.davidseptimus.armada.settings;
 import com.intellij.openapi.editor.colors.TextAttributesKey;
 import org.jetbrains.annotations.NotNull;
 
+import static com.intellij.openapi.editor.DefaultLanguageHighlighterColors.METADATA;
 import static com.intellij.sql.editor.SqlColors.SQL_KEYWORD;
 
 public final class TextAttributeKeys {
     public static final @NotNull TextAttributesKey CSS_IDENTIFIER_TERM = TextAttributesKey.createTextAttributesKey("CSS.TERM_IDENTIFIER");
     public static final @NotNull TextAttributesKey CSS_PERCENT = TextAttributesKey.createTextAttributesKey("CSS.PERCENT");
+    public static final @NotNull TextAttributesKey JAVA_ANNOTATION_DECLARATION = TextAttributesKey.createTextAttributesKey("JAVA.ANNOTATION_DECLARATION", METADATA);
     public static final @NotNull TextAttributesKey JAVASCRIPT_FUNCTION_DECLARATION_IDENTIFIER = TextAttributesKey.createTextAttributesKey("JS.FUNCTION_DECLARATION_IDENTIFIER");
     public static final @NotNull TextAttributesKey JAVASCRIPT_PROPERTY_REFERENCE = TextAttributesKey.createTextAttributesKey("JS.PROPERTY_REFERENCE");
     public static final @NotNull TextAttributesKey JAVASCRIPT_THIS_IDENTIFIER = TextAttributesKey.createTextAttributesKey("JS.THIS_IDENTIFIER");

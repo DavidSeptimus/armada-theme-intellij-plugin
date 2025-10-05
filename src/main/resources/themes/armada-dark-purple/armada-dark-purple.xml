@@ -89,15 +89,11 @@
     </colors>
     <attributes>
         <option name="ANNOTATION_ATTRIBUTE_NAME_ATTRIBUTES">
-            <value>
-                <option name="FOREGROUND" value="85a658"/>
-            </value>
+            <value/>
         </option>
         <option name="ANNOTATION_NAME_ATTRIBUTES" baseAttributes="DEFAULT_METADATA"/>
         <option name="ANONYMOUS_CLASS_NAME_ATTRIBUTES">
-            <value>
-                <option name="FONT_TYPE" value="1"/>
-            </value>
+            <value/>
         </option>
         <option name="BAD_CHARACTER">
             <value>
@@ -376,6 +372,7 @@
         </option>
         <option name="CONSTRUCTOR_DECLARATION_ATTRIBUTES">
             <value>
+                <option name="FOREGROUND" value="c7a65d"/>
                 <option name="FONT_TYPE" value="1"/>
             </value>
         </option>
@@ -431,7 +428,7 @@
         </option>
         <option name="CSS.PERCENT">
             <value>
-                <option name="FOREGROUND" value="4dacf0"/>
+                <option name="FOREGROUND" value="62a362"/>
             </value>
         </option>
         <option name="CSS.PROPERTY_NAME">
@@ -451,7 +448,7 @@
         </option>
         <option name="CSS.TERM_IDENTIFIER">
             <value>
-                <option name="FOREGROUND" value="4dacf0"/>
+                <option name="FOREGROUND" value="eb4dde"/>
             </value>
         </option>
         <option name="CSS.UNICODE.RANGE">
@@ -849,16 +846,6 @@
                 <option name="FOREGROUND" value="e0e1e4"/>
             </value>
         </option>
-        <option name="GO_SHADOWING_VARIABLE">
-            <value>
-                <option name="FOREGROUND" value="7dbda2"/>
-            </value>
-        </option>
-        <option name="GO_TYPE_REFERENCE">
-            <value>
-                <option name="FOREGROUND" value="6fafbd"/>
-            </value>
-        </option>
         <option name="GO_TYPE_SPECIFICATION">
             <value/>
         </option>
@@ -915,6 +902,9 @@
             <value>
                 <option name="BACKGROUND" value="1f392d"/>
             </value>
+        </option>
+        <option name="INTERFACE_NAME_ATTRIBUTES">
+            <value/>
         </option>
         <option name="IVAR">
             <value>
@@ -999,7 +989,7 @@
         </option>
         <option name="KOTLIN_ANNOTATION_ATTRIBUTE_NAME_ATTRIBUTES">
             <value>
-        <option name="FOREGROUND" value="4dacf0" />
+                <option name="FOREGROUND" value="4dacf0"/>
             </value>
         </option>
         <option name="KOTLIN_BACKING_FIELD_VARIABLE">
@@ -1019,8 +1009,11 @@
                 <option name="FONT_TYPE" value="2"/>
             </value>
         </option>
-    <option name="KOTLIN_EXTENSION_PROPERTY">
-      <value />
+        <option name="KOTLIN_EXTENSION_PROPERTY">
+            <value/>
+        </option>
+        <option name="KOTLIN_INSTANCE_PROPERTY">
+            <value/>
         </option>
         <option name="KOTLIN_LABEL">
             <value/>
@@ -1038,7 +1031,7 @@
         </option>
         <option name="KOTLIN_NAMED_ARGUMENT">
             <value>
-        <option name="FOREGROUND" value="4dacf0" />
+                <option name="FOREGROUND" value="4dacf0"/>
             </value>
         </option>
         <option name="KOTLIN_PACKAGE_FUNCTION_CALL">
@@ -1072,16 +1065,16 @@
         <option name="KOTLIN_TYPE_PARAMETER">
             <value>
                 <option name="FOREGROUND" value="37cccc"/>
-      </value>
-    </option>
-    <option name="KOTLIN_VARIABLE_AS_FUNCTION">
-      <value>
-        <option name="FOREGROUND" value="c7a65d" />
-      </value>
-    </option>
-    <option name="KOTLIN_VARIABLE_AS_FUNCTION_LIKE">
-      <value>
-        <option name="FOREGROUND" value="c7a65d" />
+            </value>
+        </option>
+        <option name="KOTLIN_VARIABLE_AS_FUNCTION">
+            <value>
+                <option name="FOREGROUND" value="c7a65d"/>
+            </value>
+        </option>
+        <option name="KOTLIN_VARIABLE_AS_FUNCTION_LIKE">
+            <value>
+                <option name="FOREGROUND" value="c7a65d"/>
             </value>
         </option>
         <option name="LABEL">
@@ -1594,6 +1587,11 @@
                 <option name="FONT_TYPE" value="1"/>
             </value>
         </option>
+        <option name="POWER_SHELL_TYPE_REFERENCE">
+            <value>
+                <option name="FOREGROUND" value="26bda4"/>
+            </value>
+        </option>
         <option name="PRIVATE_REFERENCE">
             <value/>
         </option>
@@ -1830,6 +1828,7 @@
         <option name="STATIC_FINAL_FIELD_ATTRIBUTES">
             <value>
                 <option name="FOREGROUND" value="93a6f5"/>
+                <option name="FONT_TYPE" value="2"/>
             </value>
         </option>
         <option name="STATIC_FINAL_FIELD_IMPORTED_ATTRIBUTES">

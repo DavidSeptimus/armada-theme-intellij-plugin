@@ -19,6 +19,7 @@ final class ArmadaColorSettingsPage implements ColorSettingsPage {
     private static final AttributesDescriptor[] DESCRIPTORS = new AttributesDescriptor[]{
             new AttributesDescriptor("CSS//Percent", TextAttributeKeys.CSS_PERCENT),
             new AttributesDescriptor("CSS//Identifier term", TextAttributeKeys.CSS_IDENTIFIER_TERM),
+            new AttributesDescriptor("Java//Annotation declaration @", TextAttributeKeys.JAVA_ANNOTATION_DECLARATION),
             new AttributesDescriptor("JavaScript//Function/method declaration identifier", TextAttributeKeys.JAVASCRIPT_FUNCTION_DECLARATION_IDENTIFIER),
             new AttributesDescriptor("JavaScript//This identifier", TextAttributeKeys.JAVASCRIPT_THIS_IDENTIFIER),
             new AttributesDescriptor("JavaScript//Property reference", TextAttributeKeys.JAVASCRIPT_PROPERTY_REFERENCE),
@@ -61,14 +62,17 @@ final class ArmadaColorSettingsPage implements ColorSettingsPage {
                 color: <css_identifier>--someColor</css_identifier>; <comment>// CSS Identifier Term</comment>
                 width: <css_percent>100%</css_percent>; <comment>// CSS Percent</comment>
 
+                <comment>// Java</comment>
+                <java_annotation>@</java_annotation>interface MyAnnotation {} <comment>// Java Annotation Declaration @</comment>
+
                 <comment>// JavaScript</comment>
                 function <js_function_decl>myFunc</js_function_decl>() {} <comment>// JavaScript Function Declaration Identifier</comment>
                 <js_this>this</js_this> <comment>// JavaScript This Identifier</comment>
                 a.<js_property>b</js_property>.<js_property>c</js_property> <comment>// JavaScript Property Reference</comment>
 
                 <comment>// Kotlin</comment>
-                ints.forEach <kotlin_label>lit@</kotlin_label> {                 <comment>// Kotlin Label @</comment>
-                    if (it == null) return <kotlin_label>@lit</kotlin_label>
+                ints.forEach lit<kotlin_label>@</kotlin_label> {                 <comment>// Kotlin Label @</comment>
+                    if (it == null) return <kotlin_label>@</kotlin_label>lit
                         println(it + ref)
                     }
                 }
@@ -121,6 +125,7 @@ final class ArmadaColorSettingsPage implements ColorSettingsPage {
                 Map.entry("comment", DefaultLanguageHighlighterColors.LINE_COMMENT),
                 Map.entry("css_identifier", TextAttributeKeys.CSS_IDENTIFIER_TERM),
                 Map.entry("css_percent", TextAttributeKeys.CSS_PERCENT),
+                Map.entry("java_annotation", TextAttributeKeys.JAVA_ANNOTATION_DECLARATION),
                 Map.entry("js_function_decl", TextAttributeKeys.JAVASCRIPT_FUNCTION_DECLARATION_IDENTIFIER),
                 Map.entry("js_this", TextAttributeKeys.JAVASCRIPT_THIS_IDENTIFIER),
                 Map.entry("js_property", TextAttributeKeys.JAVASCRIPT_PROPERTY_REFERENCE),
