@@ -90,7 +90,6 @@
       "splitBorder": "Azure_60"
     },
     "EditorTabs": {
-      "background": "Azure_20",
       "borderColor": "Transparent",
       "underlineColor": "AzureTint_50",
       "inactiveUnderlineColor": "LightTint_8",
@@ -140,6 +139,9 @@
       "background": "Azure_10",
       "borderColor": "Transparent"
     },
+    "MainWindow": {
+      "background": "Azure_10"
+    },
     "Editor": {
       "background": "Azure_20"
     },
@@ -168,6 +170,7 @@
       "foreground": "Neutral_140"
     },
     "StatusBar": {
+      "background": "Azure_10",
       "borderColor": "Transparent"
     },
     "Label": {
@@ -211,7 +214,7 @@
       },
       "Stripe": {
         "background": "Azure_10",
-        "separatorColor": "Azure_50",
+        "separatorColor": "Azure_30",
         "DragAndDrop": {
           "separatorColor": "Azure_90"
         },
@@ -416,7 +419,7 @@
       "separatorColor": "Azure_50"
     },
     "Island": {
-      "borderColor": "Azure_40"
+      "borderColor": "Azure_30"
     }
   },
   "colors": {

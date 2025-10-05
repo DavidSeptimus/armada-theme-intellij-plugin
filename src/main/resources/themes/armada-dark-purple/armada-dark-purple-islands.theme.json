@@ -140,6 +140,9 @@
       "background": "Blueberry_10",
       "borderColor": "Transparent"
     },
+    "MainWindow": {
+      "background": "Blueberry_10"
+    },
     "Editor": {
       "background": "Blueberry_20"
     },
@@ -168,6 +171,7 @@
       "foreground": "Neutral_140"
     },
     "StatusBar": {
+      "background": "Blueberry_10",
       "borderColor": "Transparent"
     },
     "Label": {
@@ -211,7 +215,7 @@
       },
       "Stripe": {
         "background": "Blueberry_10",
-        "separatorColor": "Blueberry_50",
+        "separatorColor": "Blueberry_30",
         "DragAndDrop": {
           "separatorColor": "Purple_90"
         },
@@ -416,7 +420,7 @@
       "separatorColor": "Blueberry_50"
     },
     "Island": {
-      "borderColor": "Blueberry_40"
+      "borderColor": "Blueberry_30"
     }
   },
   "colors": {

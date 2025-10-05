@@ -85,7 +85,6 @@
       "splitBorder": "Azure_60"
     },
     "EditorTabs": {
-      "background": "Azure_20",
       "borderColor": "Transparent",
       "underlineColor": "AzureTint_50",
       "inactiveUnderlineColor": "LightTint_8",
@@ -125,6 +124,7 @@
       "Gray": "Gray 30"
     },
     "MainToolbar.background": "Azure_10",
+    "MainWindow.background": "Azure_10",
     "Editor.background": "Azure_20",
     "ScrollBar": {
       "background": "Azure_20",
@@ -144,7 +144,10 @@
     },
     "Settings.Spotlight.borderColor": "YellowTint_50",
     "Panel.foreground": "Neutral_140",
-    "StatusBar.borderColor": "Transparent",
+    "StatusBar": {
+      "background": "Azure_10",
+      "borderColor": "Transparent"
+    },
     "Label.foreground": "Neutral_140",
     "Label.selectedForeground": "White",
     "Label.infoForeground": "Neutral_120",
@@ -184,7 +187,7 @@
       },
       "Stripe": {
         "background": "Azure_10",
-        "separatorColor": "Azure_50",
+        "separatorColor": "Azure_30",
         "DragAndDrop": {
           "separatorColor": "Azure_90"
         }

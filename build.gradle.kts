@@ -232,8 +232,23 @@ kover {
 // Configure theme merging plugin
 themeMerger {
     variants {
+
+        register("darkTheme") {
+            baseTheme.set("src/main/resources/themes/armada-dark/armada-dark-base.theme.json")
+            overrides("src/main/resources/themes/armada-dark/armada-dark.overrides.json")
+            output.set("src/main/resources/themes/armada-dark/armada-dark.theme.json")
+            description.set("Generates the Armada Dark New UI theme by merging base theme with overrides")
+        }
+
+        register("darkIslandsTheme") {
+            baseTheme.set("src/main/resources/themes/armada-dark/armada-dark-base.theme.json")
+            overrides("src/main/resources/themes/armada-dark/armada-dark-islands.overrides.json")
+            output.set("src/main/resources/themes/armada-dark/armada-dark-islands.theme.json")
+            description.set("Generates the Armada Dark Islands theme by merging base theme with Islands overrides")
+        }
+
         register("darkClassicUITheme") {
-            baseTheme.set("src/main/resources/themes/armada-dark/armada-dark.theme.json")
+            baseTheme.set("src/main/resources/themes/armada-dark/armada-dark-base.theme.json")
             overrides("src/main/resources/themes/armada-dark/armada-dark-classic-ui.overrides.json")
             output.set("src/main/resources/themes/armada-dark/armada-dark-classic-ui.theme.json")
             description.set("Generates the Armada Dark Classic UI theme by merging base theme with overrides")

@@ -2,7 +2,7 @@
   "name": "Armada Dark Purple (Islands)",
   "parentTheme": "Islands Dark",
   "ui": {
-    "Island.borderColor": "Blueberry_40",
+    "Island.borderColor": "Blueberry_30",
     "ToolWindow.Stripe.borderColor": "Transparent",
     "MainToolbar.borderColor": "Transparent",
 

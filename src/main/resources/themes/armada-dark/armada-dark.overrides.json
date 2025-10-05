@@ -1,10 +1,6 @@
 {
-  "name": "Armada Dark (Classic UI)",
+  "name": "Armada Dark (New UI)",
   "ui": {
-    "ToolWindow.Button.selectedBackground": "Neutral_50",
-    "ToolWindow.Button.selectedForeground": "Neutral_150",
-    "ToggleButton.foreground": "Neutral_150",
-    "EditorTabs.underTabsBorderColor": "Neutral_50",
     "ComboBox": {
       "selectionBackground": "BlueTint_40",
       "nonEditableBackground": "Neutral_30",

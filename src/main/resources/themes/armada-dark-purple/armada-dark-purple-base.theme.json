@@ -125,6 +125,7 @@
       "Gray": "Gray 30"
     },
     "MainToolbar.background": "Blueberry_10",
+    "MainWindow.background": "Blueberry_10",
     "Editor.background": "Blueberry_20",
     "ScrollBar": {
       "background": "Blueberry_20",
@@ -144,7 +145,10 @@
     },
     "Settings.Spotlight.borderColor": "YellowTint_50",
     "Panel.foreground": "Neutral_140",
-    "StatusBar.borderColor": "Transparent",
+    "StatusBar": {
+      "background": "Blueberry_10",
+      "borderColor": "Transparent"
+    },
     "Label.foreground": "Neutral_140",
     "Label.selectedForeground": "White",
     "Label.infoForeground": "Neutral_120",
@@ -184,7 +188,7 @@
       },
       "Stripe": {
         "background": "Blueberry_10",
-        "separatorColor": "Blueberry_50",
+        "separatorColor": "Blueberry_30",
         "DragAndDrop": {
           "separatorColor": "Purple_90"
         }

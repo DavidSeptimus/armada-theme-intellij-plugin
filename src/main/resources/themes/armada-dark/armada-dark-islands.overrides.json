@@ -1,29 +1,28 @@
 {
-  "name": "Armada Dark Azure (Islands)",
+  "name": "Armada Dark (Islands)",
   "parentTheme": "Islands Dark",
   "ui": {
-    "Island.borderColor": "Azure_30",
+    "Island.borderColor": "Neutral_30",
     "ToolWindow.Stripe.borderColor": "Transparent",
     "MainToolbar.borderColor": "Transparent",
 
     "EditorTabs": {
       "inactiveUnderlinedTabBorderColor": "InactiveUnderlinedBorder",
       "inactiveUnderlinedTabBackground": "InactiveUnderlinedBackground",
-      "underlinedBorderColor": "AzureTint_50",
-      "underTabsBorderColor": "Azure_40"
+      "underlinedBorderColor": "BlueTint_40",
+      "underTabsBorderColor": "Blue_30"
     },
 
     "DefaultTabs": {
       "inactiveUnderlinedTabBorderColor": "InactiveUnderlinedBorder",
       "inactiveUnderlinedTabBackground": "InactiveUnderlinedBackground",
-      "underlinedBorderColor": "AzureTint_50"
+      "underlinedBorderColor": "BlueTint_40"
     },
 
     "TabbedPane": {
       "inactiveUnderlinedTabBorderColor": "InactiveUnderlinedBorder",
       "inactiveUnderlinedTabBackground": "InactiveUnderlinedBackground",
-      "underlinedBorderColor": "AzureTint_50"
+      "underlinedBorderColor": "BlueTint_40"
     }
-
   }
 }
