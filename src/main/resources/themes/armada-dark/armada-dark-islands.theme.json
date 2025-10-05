@@ -79,28 +79,25 @@
       "underlineColor": "Blue 60",
       "inactiveUnderlineColor": "LightTint_8",
       "hoverBackground": "LightTint_8",
-      "inactiveUnderlinedTabBorderColor": "InactiveUnderlinedBorder",
-      "inactiveUnderlinedTabBackground": "InactiveUnderlinedBackground",
-      "underlinedBorderColor": "BlueTint_40"
+      "underlinedBorderColor": "BlueTint_40",
+      "underlinedTabBackground": "#1B2E4B"
     },
     "EditorTabs": {
       "borderColor": "Transparent",
       "underlineColor": "BlueTint_50",
       "inactiveUnderlineColor": "LightTint_8",
       "hoverBackground": "LightTint_8",
-      "inactiveUnderlinedTabBorderColor": "InactiveUnderlinedBorder",
-      "inactiveUnderlinedTabBackground": "InactiveUnderlinedBackground",
       "underlinedBorderColor": "BlueTint_40",
-      "underTabsBorderColor": "Blue_30"
+      "underTabsBorderColor": "Neutral_30",
+      "underlinedTabBackground": "#1B2E4B"
     },
     "TabbedPane": {
       "underlineColor": "Blue 60",
       "disabledUnderlineColor": "LightTint_8",
       "hoverColor": "LightTint_8",
       "focusColor": "BlueTint_25",
-      "inactiveUnderlinedTabBorderColor": "InactiveUnderlinedBorder",
-      "inactiveUnderlinedTabBackground": "InactiveUnderlinedBackground",
-      "underlinedBorderColor": "BlueTint_40"
+      "underlinedBorderColor": "BlueTint_40",
+      "underlinedTabBackground": "#1B2E4B"
     },
     "FileColor": {
       "Blue": "Blue_30",

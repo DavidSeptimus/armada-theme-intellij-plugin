@@ -122,10 +122,14 @@
     "Panel.foreground": "Neutral_140",
     "StatusBar": {
       "background": "Neutral_10",
-      "borderColor": "Transparent"
-    },    "Label.foreground": "Neutral_140",
-    "Label.selectedForeground": "White",
-    "Label.infoForeground": "Neutral_120",
+      "borderColor": "Neutral_40"
+    },
+    "Label": {
+      "foreground": "Neutral_140",
+      "selectedForeground": "White",
+      "infoForeground": "Neutral_120"
+    },
+
     "Tree": {
       "foreground": "Neutral_140",
       "errorForeground": "Red_100"

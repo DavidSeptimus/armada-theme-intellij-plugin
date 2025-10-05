@@ -7,22 +7,23 @@
     "MainToolbar.borderColor": "Transparent",
 
     "EditorTabs": {
-      "inactiveUnderlinedTabBorderColor": "InactiveUnderlinedBorder",
-      "inactiveUnderlinedTabBackground": "InactiveUnderlinedBackground",
       "underlinedBorderColor": "BlueTint_40",
-      "underTabsBorderColor": "Blue_30"
+      "underTabsBorderColor": "Neutral_30",
+      "underlinedTabBackground": "#1B2E4B"
     },
 
     "DefaultTabs": {
-      "inactiveUnderlinedTabBorderColor": "InactiveUnderlinedBorder",
-      "inactiveUnderlinedTabBackground": "InactiveUnderlinedBackground",
-      "underlinedBorderColor": "BlueTint_40"
+      "underlinedBorderColor": "BlueTint_40",
+      "underlinedTabBackground": "#1B2E4B"
     },
 
     "TabbedPane": {
-      "inactiveUnderlinedTabBorderColor": "InactiveUnderlinedBorder",
-      "inactiveUnderlinedTabBackground": "InactiveUnderlinedBackground",
-      "underlinedBorderColor": "BlueTint_40"
+      "underlinedBorderColor": "BlueTint_40",
+      "underlinedTabBackground": "#1B2E4B"
+    },
+
+    "StatusBar": {
+      "borderColor": "Transparent"
     }
   }
 }
