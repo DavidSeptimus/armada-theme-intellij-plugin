@@ -1,0 +1,99 @@
+{
+  "UIColors": {
+    "Azure_160": "#ecf2f4"
+    "Azure_150": "#d8e5e9"
+    "Azure_140": "#c5d8df"
+    "Azure_130": "#b3cbd4"
+    "Azure_120": "#a0bfc9"
+    "Azure_110": "#7aa6b4"
+    "Azure_100": "#6799aa"
+    "Azure_90": "#548da0"
+    "Azure_80": "#3f8195"
+    "Azure_70": "#28758b"
+    "Azure_60": "#006981"
+    "Azure_50": "#005d72"
+    "Azure_40": "#004556"
+    "Azure_30": "#002f3b"
+    "Azure_20": "#001a22"
+    "Azure_10": "#00070b"
+  }
+  "HighlightColors": {
+    "White": "#E0E1E4"
+    "Gray": "#6b7b8c"
+    "Blue": "#6fc3e8"
+    "Cyan": "#bee6df"
+    "Cyan Dark": "#90c1b2"
+    "Violet": "#b5a5e8"
+    "Pink": "#f2b7c8"
+    "Coral": "#cf5d6d"
+    "Green": "#9aae61"
+    "Lime": "#ccdc90"
+    "Orange": "#e8a289"
+    "Yellow": "#dbc75c"
+  }
+
+  "HighlightingGuide": {
+    "configuration_language": {
+      "description": "YAML, TOML, INI files"
+      "tokens": {
+        "keys": "#6fc3e8"
+        "string_values": "#ccdc90"
+        "numbers": "#dbc75c"
+        "booleans": "#f2b7c8"
+        "comments": "#6b7b8c"
+        "sections": "#b5a5e8"
+        "anchors_references": "#bee6df"
+      }
+    }
+    "json_like": {
+      "description": "JSON, JSON5"
+      "tokens": {
+        "keys": "#6fc3e8"
+        "string_values": "#ccdc90"
+        "numbers": "#dbc75c"
+        "booleans": "#f2b7c8"
+        "null": "#cf5d6d"
+        "brackets_braces": "#bee6df"
+        "comments": "#6b7b8c"
+      }
+    }
+    "scripting_language": {
+      "description": "Python, JavaScript, Ruby"
+      "tokens": {
+        "keywords": "#6fc3e8"
+        "control_flow": "#cf5d6d"
+        "functions": "#b5a5e8"
+        "function_calls": "#bee6df"
+        "strings": "#ccdc90"
+        "numbers": "#dbc75c"
+        "variables": "#E0E1E4"
+        "parameters": "#f2b7c8"
+        "operators": "#90c1b2"
+        "comments": "#6b7b8c"
+        "decorators": "#e8a289"
+        "builtins": "#bee6df"
+      }
+    }
+    "compiled_typed_language": {
+      "description": "TypeScript, Rust, C++, Java"
+      "tokens": {
+        "keywords": "#6fc3e8"
+        "control_flow": "#cf5d6d"
+        "types": "#b5a5e8"
+        "interfaces_classes": "#b5a5e8"
+        "functions": "#bee6df"
+        "methods": "#bee6df"
+        "parameters": "#f2b7c8"
+        "generics": "#e8a289"
+        "strings": "#ccdc90"
+        "numbers": "#dbc75c"
+        "variables": "#E0E1E4"
+        "properties": "#90c1b2"
+        "operators": "#90c1b2"
+        "comments": "#6b7b8c"
+        "annotations": "#e8a289"
+        "enums": "#cf5d6d"
+      }
+    }
+  }
+}

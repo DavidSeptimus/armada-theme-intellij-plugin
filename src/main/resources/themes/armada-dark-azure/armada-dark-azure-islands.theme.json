@@ -1,0 +1,681 @@
+{
+  "name": "Armada Dark Azure (Islands)",
+  "author": "David Septimus",
+  "dark": true,
+  "editorScheme": "themes/armada-dark-azure/armada-dark-azure.xml",
+  "icons": {
+    "/com/intellij/ide/ui/laf/icons/darcula/checkBox.svg": "/themes/armada-dark-azure/icons/checkBox.svg",
+    "/com/intellij/ide/ui/laf/icons/darcula/checkBoxDisabled.svg": "/themes/armada-dark-azure/icons/checkBoxDisabled.svg",
+    "/com/intellij/ide/ui/laf/icons/darcula/checkBoxFocused.svg": "/themes/armada-dark-azure/icons/checkBoxFocused.svg",
+    "/com/intellij/ide/ui/laf/icons/darcula/checkBoxIndeterminateSelected.svg": "/themes/armada-dark-azure/icons/checkBoxIndeterminateSelected.svg",
+    "/com/intellij/ide/ui/laf/icons/darcula/checkBoxIndeterminateSelectedDisabled.svg": "/themes/armada-dark-azure/icons/checkBoxIndeterminateSelectedDisabled.svg",
+    "/com/intellij/ide/ui/laf/icons/darcula/checkBoxIndeterminateSelectedFocused.svg": "/themes/armada-dark-azure/icons/checkBoxIndeterminateSelectedFocused.svg",
+    "/com/intellij/ide/ui/laf/icons/darcula/checkBoxSelected.svg": "/themes/armada-dark-azure/icons/checkBoxSelected.svg",
+    "/com/intellij/ide/ui/laf/icons/darcula/checkBoxSelectedDisabled.svg": "/themes/armada-dark-azure/icons/checkBoxSelectedDisabled.svg",
+    "/com/intellij/ide/ui/laf/icons/darcula/checkBoxSelectedFocused.svg": "/themes/armada-dark-azure/icons/checkBoxSelectedFocused.svg",
+    "/com/intellij/ide/ui/laf/icons/darcula/radio.svg": "/themes/armada-dark-azure/icons/radio.svg",
+    "/com/intellij/ide/ui/laf/icons/darcula/radioDisabled.svg": "/themes/armada-dark-azure/icons/radioDisabled.svg",
+    "/com/intellij/ide/ui/laf/icons/darcula/radioFocused.svg": "/themes/armada-dark-azure/icons/radioFocused.svg",
+    "/com/intellij/ide/ui/laf/icons/darcula/radioSelected.svg": "/themes/armada-dark-azure/icons/radioSelected.svg",
+    "/com/intellij/ide/ui/laf/icons/darcula/radioSelectedDisabled.svg": "/themes/armada-dark-azure/icons/radioSelectedDisabled.svg",
+    "/com/intellij/ide/ui/laf/icons/darcula/radioSelectedFocused.svg": "/themes/armada-dark-azure/icons/radioSelectedFocused.svg",
+    "ColorPalette": {
+      "Tree.iconColor": "Neutral_140",
+      "Gray.Fill": "Gray 50",
+      "Gray.SecondaryStroke": "Neutral_70",
+      "Gray.Stroke": "Neutral_140",
+      "Green.Solid": "Green_100",
+      "Green.Stroke": "Green_100",
+      "Red.Solid": "Red_100",
+      "Red.Stroke": "Red_100",
+      "Blue.Solid": "Blue_100",
+      "Blue.Stroke": "Blue_100",
+      "Yellow.Solid": "Yellow_120",
+      "Yellow.Stroke": "Yellow_120",
+      "Purple.Solid": "Azure_100",
+      "Purple.Stroke": "Azure_100",
+      "Orange.Solid": "Orange",
+      "Orange.Stroke": "Orange",
+      "Objects.Pink": "Pink",
+      "Objects.Blue": "Blue_100",
+      "Objects.Red": "Red_100",
+      "Objects.Green": "Green_100",
+      "Objects.Grey": "Gray_100",
+      "Objects.Yellow": "Yellow_120",
+      "Objects.YellowDark": "Yellow_90",
+      "Objects.Purple": "Azure_100",
+      "Objects.RedStatus": "Red_100",
+      "Actions.Blue": "Blue_100",
+      "Actions.Red": "Red_100",
+      "Actions.Green": "Green_100",
+      "Actions.Yellow": "Yellow_100",
+      "Actions.Purple": "Azure_100",
+      "Actions.Violet": "Violet_100",
+      "Actions.Grey": "Gray 120",
+      "Actions.GreyInline": "Gray 120"
+    }
+  },
+  "ui": {
+    "*": {
+      "borderColor": "Azure_50",
+      "separatorColor": "Azure_40",
+      "background": "Azure_20",
+      "foreground": "Neutral_140",
+      "disabledText": "Neutral_80",
+      "selectionBackground": "SelectionBackground",
+      "selectionForeground": "Neutral_140",
+      "selectionInactiveBackground": "SelectionInactiveBackground"
+    },
+    "Borders": {
+      "color": "Azure_50"
+    },
+    "ActionButton": {
+      "hoverBackground": "LightTint_15",
+      "hoverBorderColor": "LightTint_2",
+      "pressedBackground": "LightTint_30",
+      "pressedBorderColor": "LightTint_2"
+    },
+    "DefaultTabs": {
+      "background": "Azure_20",
+      "borderColor": "Transparent",
+      "underlineColor": "Azure_90",
+      "inactiveUnderlineColor": "LightTint_8",
+      "underlinedTabBackground": "AzureTint_25",
+      "hoverBackground": "LightTint_8",
+      "inactiveUnderlinedTabBorderColor": "InactiveUnderlinedBorder",
+      "inactiveUnderlinedTabBackground": "InactiveUnderlinedBackground",
+      "underlinedBorderColor": "AzureTint_50"
+    },
+    "EditorPane": {
+      "splitBorder": "Azure_60"
+    },
+    "EditorTabs": {
+      "background": "Azure_20",
+      "borderColor": "Transparent",
+      "underlineColor": "AzureTint_50",
+      "inactiveUnderlineColor": "LightTint_8",
+      "underlinedTabBackground": "AzureTint_25",
+      "hoverBackground": "LightTint_8",
+      "inactiveUnderlinedTabBorderColor": "InactiveUnderlinedBorder",
+      "inactiveUnderlinedTabBackground": "InactiveUnderlinedBackground",
+      "underlinedBorderColor": "AzureTint_50",
+      "underTabsBorderColor": "Azure_40"
+    },
+    "TabbedPane": {
+      "underlineColor": "AzureTint_50",
+      "disabledUnderlineColor": "LightTint_8",
+      "hoverColor": "LightTint_8",
+      "focusColor": "AzureTint_25",
+      "underlinedTabBackground": "AzureTint_25",
+      "inactiveUnderlinedTabBorderColor": "InactiveUnderlinedBorder",
+      "inactiveUnderlinedTabBackground": "InactiveUnderlinedBackground",
+      "underlinedBorderColor": "AzureTint_50"
+    },
+    "ProgressBar": {
+      "background": "Azure_50",
+      "foreground": "Neutral_140",
+      "failedEndColor": "Red_90",
+      "failedColor": "Red_110",
+      "indeterminateStartColor": "Azure_100",
+      "indeterminateEndColor": "Azure_120",
+      "progressColor": "Azure_110",
+      "selectionBackground": "Neutral_140",
+      "selectionForeground": "White",
+      "trackColor": "Azure_50",
+      "passedColor": "Green_110",
+      "passedEndColor": "Green_90",
+      "warningColor": "Yellow_110",
+      "warningEndColor": "Yellow_90"
+    },
+    "FileColor": {
+      "Blue": "Blue_30",
+      "Green": "Green_30",
+      "Orange": "Orange_30",
+      "Rose": "Pink_30",
+      "Violet": "Violet_30",
+      "Yellow": "Yellow_30",
+      "Gray": "Gray 30"
+    },
+    "MainToolbar": {
+      "background": "Azure_10",
+      "borderColor": "Transparent"
+    },
+    "Editor": {
+      "background": "Azure_20"
+    },
+    "ScrollBar": {
+      "background": "Azure_20",
+      "thumb": "LightTint_15",
+      "thumbColor": "LightTint_15",
+      "hoverThumbColor": "LightTint_20",
+      "thumbHighlight": "LightTint_30",
+      "trackColor": "Transparent",
+      "hoverTrackColor": "LightTint_10",
+      "trackHighlight": "LightTint_10",
+      "Mac": {
+        "thumbColor": "LightTint_15",
+        "hoverThumbColor": "LightTint_20",
+        "trackColor": "Transparent",
+        "hoverTrackColor": "LightTint_10"
+      }
+    },
+    "Settings": {
+      "Spotlight": {
+        "borderColor": "YellowTint_50"
+      }
+    },
+    "Panel": {
+      "foreground": "Neutral_140"
+    },
+    "StatusBar": {
+      "borderColor": "Transparent"
+    },
+    "Label": {
+      "foreground": "Neutral_140",
+      "selectedForeground": "White",
+      "infoForeground": "Neutral_120"
+    },
+    "Tree": {
+      "foreground": "Neutral_140",
+      "errorForeground": "Red_100"
+    },
+    "Link": {
+      "activeForeground": "Azure_110",
+      "hoverForeground": "Azure_100",
+      "visitedForeground": "Azure_80",
+      "pressedForeground": "Azure_90"
+    },
+    "CheckBox": {
+      "disabledText": "Neutral_100",
+      "foreground": "Neutral_140",
+      "borderInsets": "4,4,4,4",
+      "iconSize": 24,
+      "textIconGap": 4
+    },
+    "DragAndDrop": {
+      "areaBackground": "AzureTint_15",
+      "borderColor": "Azure_90",
+      "rowBackground": "AzureTint_20"
+    },
+    "ToolWindow": {
+      "HeaderTab": {
+        "inactiveUnderlineColor": "LightTint_30"
+      },
+      "Header": {
+        "inactiveBackground": "Azure_20"
+      },
+      "Button": {
+        "selectedBackground": "Azure_90",
+        "hoverBackground": "LightTint_15",
+        "selectedForeground": "White"
+      },
+      "Stripe": {
+        "background": "Azure_10",
+        "separatorColor": "Azure_50",
+        "DragAndDrop": {
+          "separatorColor": "Azure_90"
+        },
+        "borderColor": "Transparent"
+      },
+      "DragAndDrop": {
+        "areaBackground": "AzureTint_15"
+      }
+    },
+    "TextPane": {
+      "inactiveBackground": "Azure_20"
+    },
+    "CheckBoxMenuItem": {
+      "background": "LightTint_8",
+      "foreground": "Neutral_140",
+      "disabledBackground": "Transparent",
+      "disabledForeground": "Neutral_80"
+    },
+    "Button": {
+      "default": {
+        "startBackground": "Azure_90",
+        "endBackground": "Azure_90",
+        "startBorderColor": "Transparent",
+        "endBorderColor": "Transparent",
+        "focusColor": "Azure_100",
+        "focusedBorderColor": "Azure_20",
+        "shadowColor": "Transparent",
+        "foreground": "White"
+      },
+      "startBackground": "LightTint_15",
+      "endBackground": "LightTint_15",
+      "startBorderColor": "Transparent",
+      "endBorderColor": "Transparent",
+      "focusedBorderColor": "Azure_20",
+      "shadowColor": "Transparent",
+      "disabledBorderColor": "LightTint_12",
+      "disabledText": "Neutral_80"
+    },
+    "List": {
+      "selectionForeground": "Neutral_140",
+      "foreground": "Neutral_140",
+      "hoverBackground": "LightTint_5"
+    },
+    "ComboBox": {
+      "selectionBackground": "AzureTint_40",
+      "background": "Azure_30",
+      "modifiedItemForeground": "Azure_110",
+      "nonEditableBackground": "Azure_30",
+      "disabledBackground": "Azure_20",
+      "ArrowButton": {
+        "nonEditableBackground": "Azure_30",
+        "background": "Azure_30"
+      }
+    },
+    "ToolTip": {
+      "background": "Azure_40",
+      "borderColor": "Azure_50",
+      "foreground": "Neutral_140",
+      "infoForeground": "Neutral_130",
+      "linkForeground": "Azure_110"
+    },
+    "GotItTooltip": {
+      "background": "Azure_40",
+      "borderColor": "Azure_50",
+      "Button": {
+        "startBackground": "Azure_90",
+        "endBackground": "Azure_90",
+        "startBorderColor": "Transparent",
+        "endBorderColor": "Transparent"
+      },
+      "Header": {
+        "foreground": "Neutral_140"
+      },
+      "secondaryActionForeground": "Azure_110"
+    },
+    "Menu": {
+      "background": "Azure_30",
+      "foreground": "Neutral_140",
+      "separatorColor": "Azure_50"
+    },
+    "PopupMenu": {
+      "background": "Azure_30"
+    },
+    "MenuItem": {
+      "background": "Azure_30"
+    },
+    "ComplexPopup": {
+      "Header": {
+        "background": "Azure_30"
+      }
+    },
+    "Popup": {
+      "Header": {
+        "activeBackground": "Azure_30"
+      },
+      "background": "Azure_30",
+      "borderColor": "Azure_40",
+      "separatorColor": "Azure_50",
+      "Advertiser": {
+        "background": "Azure_30"
+      }
+    },
+    "Separator": {
+      "separatorColor": "Azure_40"
+    },
+    "Notification": {
+      "background": "Azure_30",
+      "borderColor": "Azure_50",
+      "errorBackground": "Razure_40",
+      "errorBorderColor": "Razure_50",
+      "linkForeground": "Azure_110"
+    },
+    "NotificationsToolwindow": {
+      "newNotification": {
+        "background": "Azure_30",
+        "hoverBackground": "Azure_40"
+      },
+      "Notification": {
+        "hoverBackground": "Azure_40"
+      }
+    },
+    "Component": {
+      "focusColor": "Azure_100",
+      "focusedBorderColor": "Transparent",
+      "errorFocusColor": "Red_100",
+      "inactiveErrorFocusColor": "Red_80"
+    },
+    "RadioButton": {
+      "borderInsets": "4,4,4,4",
+      "iconSize": 24,
+      "iconTextGap": 4
+    },
+    "Plugins": {
+      "Button": {
+        "installBackground": "LightTint_15",
+        "installBorderColor": "Transparent",
+        "installForeground": "White",
+        "installFillBackground": "Azure_90",
+        "installFillForeground": "White",
+        "installFocusedBackground": "Azure_100",
+        "updateBackground": "LightTint_15",
+        "updateBorderColor": "Transparent",
+        "updateForeground": "White"
+      },
+      "lightSelectionBackground": "AzureTint_40",
+      "trialTagBackground": "Green 40",
+      "paidTagBackground": "Blue_50",
+      "tagForeground": "Neutral_130",
+      "tagBackground": "Azure_50"
+    },
+    "Table": {
+      "lightSelectionBackground": "SelectionBackground",
+      "lightSelectionInactiveBackground": "SelectionInactiveBackground",
+      "hoverBackground": "LightTint_5"
+    },
+    "VersionControl": {
+      "Log": {
+        "Commit": {
+          "currentBranchBackground": "Azure_30",
+          "selectionInactiveBackground": "Azure_60",
+          "selectionInactiveForeground": "Neutral_140",
+          "hoveredBackground": "Azure_50"
+        }
+      }
+    },
+    "CompletionPopup": {
+      "Advertiser": {
+        "background": "Azure_20"
+      },
+      "selectionBackground": "AzureTint_40",
+      "selectionInactiveBackground": "LightTint_15",
+      "nonFocusedMask": "LightTint_5",
+      "foreground": "Neutral_140",
+      "matchForeground": "Neutral_140"
+    },
+    "Banner": {
+      "errorBackground": "Red_50",
+      "errorBorderColor": "Red_60",
+      "warningBackground": "Yellow_30",
+      "warningBorderColor": "Yellow_60",
+      "infoBackground": "Azure_30",
+      "infoBorderColor": "Azure_60",
+      "successBackground": "Green_30",
+      "successBorderColor": "Green_60"
+    },
+    "SearchField": {
+      "errorForeground": "Red_110",
+      "errorBackground": "Red_50"
+    },
+    "SpeedSearch": {
+      "errorForeground": "Red_110"
+    },
+    "Counter": {
+      "background": "LightTint_20"
+    },
+    "SearchOption": {
+      "selectedBackground": "AzureTint_40",
+      "selectedHoveredBackground": "AzureTint_30",
+      "selectedPressedBackground": "AzureTint_25"
+    },
+    "WelcomeScreen": {
+      "separatorColor": "Azure_50"
+    },
+    "Island": {
+      "borderColor": "Azure_40"
+    }
+  },
+  "colors": {
+    "White": "#FFFFFF",
+    "White-10": "#FFFFFF1A",
+    "Gray 120": "#D1D1D1",
+    "Gray 110": "#C2C2C2",
+    "Gray 100": "#A0A0A0",
+    "Gray 90": "#898989",
+    "Gray 80": "#767676",
+    "Gray 70": "#5D5D5D",
+    "Gray 60": "#484848",
+    "Gray 50": "#383838",
+    "Gray 40": "#333333",
+    "Gray 30": "#2D2D2D",
+    "Gray 20": "#292929",
+    "Gray 10": "#181818",
+    "Black": "#000000",
+    "Blue 110": "#6DAAF7",
+    "Blue 100": "#4D9BF8",
+    "Blue 90": "#3691F9",
+    "Blue 80": "#1A85F6",
+    "Blue 70": "#0273EB",
+    "Blue 60": "#0C6DDD",
+    "Blue 50": "#195EB5",
+    "Blue 40": "#194176",
+    "Blue 30": "#163764",
+    "Blue 20": "#132C4F",
+    "Blue 10-60": "#0B1B3299",
+    "Blue 10": "#0B1B32",
+    "Blue": "#4DACF0",
+    "Red 80": "#EC7388",
+    "Red 70": "#EA4B67",
+    "Red 60": "#D93953",
+    "Red 50": "#CE364D",
+    "Red 40": "#C03248",
+    "Red 30": "#A72A3F",
+    "Red 20": "#761B2D",
+    "Red 10": "#390813",
+    "Green 80": "#4CA988",
+    "Green 70": "#3EA17F",
+    "Green 60": "#028764",
+    "Green 50": "#07805F",
+    "Green 40": "#13664E",
+    "Green 30": "#134939",
+    "Green 20": "#0E3127",
+    "Green 10": "#081F19",
+    "Yellow 60": "#F8AB17",
+    "Yellow 50": "#E1971B",
+    "Yellow 40": "#B5791F",
+    "Yellow 30": "#7C511A",
+    "Yellow 20": "#5A3A14",
+    "Yellow 10": "#281806",
+    "Purple 30": "#C07BF3",
+    "Purple 20": "#B35DEF",
+    "Purple 10-60": "#2B0B4099",
+    "Purple 10": "#2B0B40",
+    "Blue Light": "#ADD1DE",
+    "Coral": "#CC7C8A",
+    "Green": "#62A362",
+    "Cyan": "#82D2CE",
+    "Cyan Dark": "#779E9E",
+    "Lime": "#A8CC7C",
+    "Orange": "#E09B70",
+    "Pink": "#E394DC",
+    "Violet": "#93A6F5",
+    "Yellow": "#C7A65D",
+    "Violet 70": "#958CF7",
+    "Violet 60": "#6D60F4",
+    "Violet 50": "#5A4CE5",
+    "Violet 40": "#4D40D8",
+    "Violet 30": "#473BC4",
+    "Violet 20": "#3A3098",
+    "Violet 10": "#282360",
+    "Transparent": "#FFFFFF00",
+    "Neutral_160": "#F8F8F9",
+    "Neutral_150": "#EEEFF0",
+    "Neutral_140": "#E0E1E4",
+    "Neutral_130": "#C3C5C9",
+    "Neutral_120": "#9EA3A8",
+    "Neutral_110": "#898E94",
+    "Neutral_100": "#7A7F86",
+    "Neutral_90": "#6E747B",
+    "Neutral_80": "#646B71",
+    "Neutral_70": "#5D636B",
+    "Neutral_60": "#4C5157",
+    "Neutral_50": "#3E4147",
+    "Neutral_40": "#323438",
+    "Neutral_30": "#252629",
+    "Neutral_20": "#18191B",
+    "Neutral_10": "#090909",
+    "Blue_160": "#F7F8FE",
+    "Blue_150": "#E9EFFC",
+    "Blue_140": "#D6E3F9",
+    "Blue_130": "#A8C6F4",
+    "Blue_120": "#71A3EF",
+    "Blue_110": "#4B8DEC",
+    "Blue_100": "#2A7DEB",
+    "Blue_90": "#0870E4",
+    "Blue_80": "#1868CB",
+    "Blue_70": "#1D61BA",
+    "Blue_60": "#225090",
+    "Blue_50": "#224271",
+    "Blue_40": "#1E3455",
+    "Blue_30": "#18263C",
+    "Blue_20": "#111926",
+    "Blue_10": "#06090F",
+    "Green_160": "#F5FAF5",
+    "Green_150": "#E6F2EA",
+    "Green_140": "#D2E7DB",
+    "Green_130": "#A3CEB8",
+    "Green_120": "#69B090",
+    "Green_110": "#409D78",
+    "Green_100": "#169068",
+    "Green_90": "#14835E",
+    "Green_80": "#1E7857",
+    "Green_70": "#216F52",
+    "Green_60": "#255A44",
+    "Green_50": "#234939",
+    "Green_40": "#1F392D",
+    "Green_30": "#182921",
+    "Green_20": "#111B16",
+    "Green_10": "#060A08",
+    "Red_160": "#FFF8F8",
+    "Red_150": "#FFE9EA",
+    "Red_140": "#FFD8DA",
+    "Red_130": "#FFB0B5",
+    "Red_120": "#F87C88",
+    "Red_110": "#EC5D6F",
+    "Red_100": "#E1465E",
+    "Red_90": "#D73251",
+    "Red_80": "#C72C49",
+    "Red_70": "#B82D46",
+    "Red_60": "#922C3B",
+    "Red_50": "#742831",
+    "Red_40": "#592228",
+    "Red_30": "#401A1E",
+    "Red_20": "#291214",
+    "Red_10": "#100607",
+    "Yellow_160": "#FFF8EF",
+    "Yellow_150": "#FCEDDC",
+    "Yellow_140": "#F5DEC2",
+    "Yellow_130": "#E5BF8C",
+    "Yellow_120": "#CD984D",
+    "Yellow_110": "#BD8128",
+    "Yellow_100": "#B07203",
+    "Yellow_90": "#9F680C",
+    "Yellow_80": "#916012",
+    "Yellow_70": "#865A15",
+    "Yellow_60": "#6C4B18",
+    "Yellow_50": "#573D18",
+    "Yellow_40": "#433016",
+    "Yellow_30": "#302412",
+    "Yellow_20": "#20180C",
+    "Yellow_10": "#0C0805",
+    "Violet_160": "#F9F7FE",
+    "Violet_150": "#EEEDFD",
+    "Violet_140": "#DEDFFC",
+    "Violet_130": "#BDC0FA",
+    "Violet_120": "#9599F9",
+    "Violet_110": "#7F80F9",
+    "Violet_100": "#726CF9",
+    "Violet_90": "#685AFB",
+    "Violet_80": "#604EF3",
+    "Violet_70": "#594CDD",
+    "Violet_60": "#4843A8",
+    "Violet_50": "#3A3982",
+    "Violet_40": "#2E2E61",
+    "Violet_30": "#222342",
+    "Violet_20": "#17172B",
+    "Violet_10": "#080810",
+    "Azure_160": "#ecf2f4",
+    "Azure_150": "#d8e5e9",
+    "Azure_140": "#c5d8df",
+    "Azure_130": "#b3cbd4",
+    "Azure_120": "#a0bfc9",
+    "Azure_110": "#7aa6b4",
+    "Azure_100": "#6799aa",
+    "Azure_90": "#548da0",
+    "Azure_80": "#3f8195",
+    "Azure_70": "#28758b",
+    "Azure_60": "#006981",
+    "Azure_50": "#005d72",
+    "Azure_40": "#004556",
+    "Azure_30": "#002f3b",
+    "Azure_20": "#001a22",
+    "Azure_10": "#00070b",
+    "Razure_60": "#663E50",
+    "Razure_50": "#513844",
+    "Razure_40": "#3E2C36",
+    "YellowBright_10": "#E59408",
+    "LightTint_80": "#E0E1E4CC",
+    "LightTint_70": "#E0E1E4B2",
+    "LightTint_60": "#E0E1E499",
+    "LightTint_50": "#E0E1E480",
+    "LightTint_40": "#E0E1E466",
+    "LightTint_30": "#E0E1E44D",
+    "LightTint_20": "#E0E1E433",
+    "LightTint_15": "#E0E1E426",
+    "LightTint_12": "#E0E1E41F",
+    "LightTint_10": "#E0E1E41A",
+    "LightTint_8": "#E0E1E414",
+    "LightTint_5": "#E0E1E40D",
+    "LightTint_2": "#E0E1E405",
+    "DarkTint_70": "#18191BB2",
+    "DarkTint_60": "#18191B99",
+    "DarkTint_50": "#18191B80",
+    "DarkTint_30": "#18191B4D",
+    "DarkTint_20": "#18191B33",
+    "DarkTint_15": "#18191B26",
+    "DarkTint_10": "#18191B1A",
+    "DarkTint_7": "#18191B12",
+    "DarkTint_5": "#18191B0D",
+    "DarkTint_3": "#18191B08",
+    "BlueTint_60": "#0870E499",
+    "BlueTint_50": "#0870E480",
+    "BlueTint_40": "#0870E466",
+    "BlueTint_30": "#0870E44D",
+    "BlueTint_25": "#0870E440",
+    "BlueTint_20": "#0870E433",
+    "BlueTint_15": "#0870E426",
+    "BlueTint_10": "#0870E41A",
+    "BlueTint_5": "#0870E40D",
+    "AzureTint_60": "#3f819599",
+    "AzureTint_50": "#3f819580",
+    "AzureTint_40": "#3f819566",
+    "AzureTint_30": "#3f81954D",
+    "AzureTint_25": "#3f819540",
+    "AzureTint_20": "#3f819533",
+    "AzureTint_15": "#3f819526",
+    "AzureTint_10": "#3f81951A",
+    "AzureTint_5": "#3f81950D",
+    "RedTint_50": "#D7325180",
+    "RedTint_30": "#D732514D",
+    "RedTint_20": "#D7325133",
+    "RedTint_15": "#D7325126",
+    "RedTint_10": "#D732511A",
+    "GreenTint_50": "#14835E80",
+    "GreenTint_40": "#14835E66",
+    "GreenTint_20": "#14835E33",
+    "GreenTint_10": "#14835E1A",
+    "VioletTint_40": "#685AFB66",
+    "VioletTint_30": "#685AFB4D",
+    "VioletTint_20": "#685AFB33",
+    "VioletTint_15": "#685AFB26",
+    "Pink_30": "#3F303F",
+    "PinkTint_10": "#E394DC1A",
+    "OrangeTint_10": "#E09B701A",
+    "OrangeUntint_10": "#2D252D",
+    "Orange_30": "#3E302A",
+    "YellowTint_50": "#9F680C80",
+    "YellowTint_40": "#9F680C66",
+    "YellowTint_20": "#9F680C33",
+    "YellowUntint_20": "#332822",
+    "EditorCaretRowForeground": "#1F3240",
+    "SelectionBackground": "#1F3E4D",
+    "SelectionInactiveBackground": "#393643",
+    "InactiveUnderlinedBackground": "#2C2A34",
+    "InactiveUnderlinedBorder": "#3A3744"
+  },
+  "parentTheme": "Islands Dark"
+}

@@ -1,0 +1,9 @@
+{
+  "name": "Armada Dark Azure (Classic UI)",
+  "ui": {
+    "ToolWindow.Button.selectedBackground": "Azure_50",
+    "ToolWindow.Button.selectedForeground": "Neutral_150",
+    "ToggleButton.foreground": "Neutral_150",
+    "EditorTabs.underTabsBorderColor": "Azure_50"
+  }
+}

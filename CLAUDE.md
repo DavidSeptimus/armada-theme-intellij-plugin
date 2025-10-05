@@ -44,10 +44,12 @@ Located in `src/main/kotlin/com/github/davidseptimus/armada/annotators/`:
 - Annotators enhance syntax highlighting beyond IntelliJ's default tokens to match Fleet's appearance
 
 #### Plugin Configuration
-- **Main plugin descriptor**: `src/main/resources/META-INF/plugin.xml`
+- **Main plugin descriptor**: `src/main/resources/META-INF/plugin-main.xml`
 - **Language-specific configs**: Separate XML files for each supported language (e.g., `plugin-javascript.xml`)
 - **Optional dependencies**: Each language support is optional and conditionally loaded
 - **Color settings**: `ArmadaColorSettingsPage.java` provides color configuration UI
+
+> **Note:** `src/main/resources/META-INF/plugin.xml` is auto-generated during build and should not be edited directly.
 
 ### Supported Languages
 The plugin provides enhanced syntax highlighting for: C/C++, C#, CSS, Dockerfile, Go, Java, JavaScript, JSON, Kotlin, HTML, Python, PHP, Properties, Rust, SASS/SCSS, TypeScript, TOML, XML, YAML, and Zig.

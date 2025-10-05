@@ -19,6 +19,24 @@
               path="themes/armada-dark-purple/armada-dark-purple-classic-ui.theme.json"
               targetUi="classic"
       />
+
+      <themeProvider
+              id="com.github.davidseptimus.armada.armada-dark-azure"
+              path="themes/armada-dark-azure/armada-dark-azure.theme.json"
+              targetUi="new"
+      />
+
+      <themeProvider
+              id="com.github.davidseptimus.armada.armada-dark-azure-islands"
+              path="themes/armada-dark-azure/armada-dark-azure-islands.theme.json"
+              targetUi="islands"
+      />
+
+      <themeProvider
+              id="com.github.davidseptimus.armada.armada-dark-azure-classic-ui"
+              path="themes/armada-dark-azure/armada-dark-azure-classic-ui.theme.json"
+              targetUi="classic"
+      />
   </extensions>
 </idea-plugin>
 

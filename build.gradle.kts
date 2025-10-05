@@ -266,6 +266,27 @@ themeMerger {
             output.set("src/main/resources/themes/armada-dark-purple/armada-dark-purple-classic-ui.theme.json")
             description.set("Generates the Armada Dark Purple Classic UI theme by merging base and Classic UI overrides")
         }
+
+        register("darkAzureTheme") {
+            baseTheme.set("src/main/resources/themes/armada-dark-azure/armada-dark-azure-base.theme.json")
+            overrides("src/main/resources/themes/armada-dark-azure/armada-dark-azure.overrides.json")
+            output.set("src/main/resources/themes/armada-dark-azure/armada-dark-azure.theme.json")
+            description.set("Generates the Armada Dark Azure New UI theme by merging base and overrides")
+        }
+
+        register("darkAzureIslandsTheme") {
+            baseTheme.set("src/main/resources/themes/armada-dark-azure/armada-dark-azure-base.theme.json")
+            overrides("src/main/resources/themes/armada-dark-azure/armada-dark-azure-islands.overrides.json")
+            output.set("src/main/resources/themes/armada-dark-azure/armada-dark-azure-islands.theme.json")
+            description.set("Generates the Armada Dark Azure Islands theme by merging base and Islands overrides")
+        }
+
+        register("darkAzureClassicUITheme") {
+            baseTheme.set("src/main/resources/themes/armada-dark-azure/armada-dark-azure-base.theme.json")
+            overrides("src/main/resources/themes/armada-dark-azure/armada-dark-azure-classic-ui.overrides.json")
+            output.set("src/main/resources/themes/armada-dark-azure/armada-dark-azure-classic-ui.theme.json")
+            description.set("Generates the Armada Dark Azure Classic UI theme by merging base and Classic UI overrides")
+        }
     }
 }
 
