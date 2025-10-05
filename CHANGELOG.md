@@ -7,6 +7,7 @@
 ### Added 
 
 - Added settings page for configuring Armada syntax highlighting enhancements
+- Added Java annotator to support highlighting of Java annotation declarations
 
 ## [0.8.0] - 2025-10-05
 

@@ -9,6 +9,7 @@
     <!-- Classic UI is only included when running the runIdeClassicUI task. Ignore the error here. -->
     <depends optional="true" config-file="plugin-classic-ui.xml">com.intellij.classic.ui</depends>
     <depends optional="true" config-file="plugin-css.xml">com.intellij.css</depends>
+    <depends optional="true" config-file="plugin-java.xml">com.intellij.java</depends>
     <depends optional="true" config-file="plugin-javascript.xml">JavaScript</depends>
     <depends optional="true" config-file="plugin-kotlin.xml">com.intellij.modules.kotlin.k2</depends>
     <depends optional="true" config-file="plugin-php.xml">com.jetbrains.php</depends>

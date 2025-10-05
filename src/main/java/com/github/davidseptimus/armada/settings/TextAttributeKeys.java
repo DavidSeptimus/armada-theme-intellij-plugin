@@ -3,11 +3,13 @@ package com.github.davidseptimus.armada.settings;
 import com.intellij.openapi.editor.colors.TextAttributesKey;
 import org.jetbrains.annotations.NotNull;
 
+import static com.intellij.openapi.editor.DefaultLanguageHighlighterColors.METADATA;
 import static com.intellij.sql.editor.SqlColors.SQL_KEYWORD;
 
 public final class TextAttributeKeys {
     public static final @NotNull TextAttributesKey CSS_IDENTIFIER_TERM = TextAttributesKey.createTextAttributesKey("CSS.TERM_IDENTIFIER");
     public static final @NotNull TextAttributesKey CSS_PERCENT = TextAttributesKey.createTextAttributesKey("CSS.PERCENT");
+    public static final @NotNull TextAttributesKey JAVA_ANNOTATION_DECLARATION = TextAttributesKey.createTextAttributesKey("JAVA.ANNOTATION_DECLARATION", METADATA);
     public static final @NotNull TextAttributesKey JAVASCRIPT_FUNCTION_DECLARATION_IDENTIFIER = TextAttributesKey.createTextAttributesKey("JS.FUNCTION_DECLARATION_IDENTIFIER");
     public static final @NotNull TextAttributesKey JAVASCRIPT_PROPERTY_REFERENCE = TextAttributesKey.createTextAttributesKey("JS.PROPERTY_REFERENCE");
     public static final @NotNull TextAttributesKey JAVASCRIPT_THIS_IDENTIFIER = TextAttributesKey.createTextAttributesKey("JS.THIS_IDENTIFIER");
@@ -15,7 +17,7 @@ public final class TextAttributeKeys {
     public static final @NotNull TextAttributesKey PHP_CLASS_REFERENCE = TextAttributesKey.createTextAttributesKey("PHP_CLASS_REFERENCE");
     public static final @NotNull TextAttributesKey PHP_ALIAS_IDENTIFIER_DECLARATION = TextAttributesKey.createTextAttributesKey("PHP_ALIAS_IDENTIFIER_DECLARATION");
     public static final @NotNull TextAttributesKey PHP_CLASS_SELF_REFERENCE = TextAttributesKey.createTextAttributesKey("PHP_CLASS_SELF_REFERENCE");
-    public static final @NotNull TextAttributesKey PHP_GOTO_LABEL_IDENTIFIER =  TextAttributesKey.createTextAttributesKey("PHP_GOTO_LABEL_IDENTIFIER");
+    public static final @NotNull TextAttributesKey PHP_GOTO_LABEL_IDENTIFIER = TextAttributesKey.createTextAttributesKey("PHP_GOTO_LABEL_IDENTIFIER");
     public static final @NotNull TextAttributesKey PROPERTIES_STRING_LITERAL_VALUE = TextAttributesKey.createTextAttributesKey("PROPERTIES.STRING_LITERAL_VALUE");
     public static final @NotNull TextAttributesKey PYTHON_TYPE_ANNOTATION = TextAttributesKey.createTextAttributesKey("PY.TYPE_ANNOTATION");
     // PYTHON_TYPE_PARAMETER is an existing attribute, but doesn't seem to get highlighted by the python highlighter
