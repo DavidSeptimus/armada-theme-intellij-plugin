@@ -85,7 +85,8 @@
       "borderColor": "Transparent",
       "underlineColor": "BlueTint_50",
       "inactiveUnderlineColor": "LightTint_8",
-      "hoverBackground": "LightTint_8"
+      "hoverBackground": "LightTint_8",
+      "underTabsBorderColor": "Neutral_50"
     },
     "TabbedPane": {
       "underlineColor": "Blue 60",

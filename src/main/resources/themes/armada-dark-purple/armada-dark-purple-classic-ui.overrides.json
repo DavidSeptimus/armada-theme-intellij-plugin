@@ -1,0 +1,9 @@
+{
+  "name": "Armada Dark Purple (Classic UI)",
+  "ui": {
+    "ToolWindow.Button.selectedBackground": "Blueberry_50",
+    "ToolWindow.Button.selectedForeground": "Neutral_150",
+    "ToggleButton.foreground": "Neutral_150",
+    "EditorTabs.underTabsBorderColor": "Blueberry_50"
+  }
+}

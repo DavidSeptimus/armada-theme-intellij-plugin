@@ -1,5 +1,5 @@
 {
-  "name": "Armada Dark Purple (New UI)",
+  "name": "Armada Dark Purple (Classic UI)",
   "author": "David Septimus",
   "dark": true,
   "editorScheme": "themes/armada-dark-purple/armada-dark-purple.xml",
@@ -89,7 +89,8 @@
       "underlineColor": "PurpleTint_50",
       "inactiveUnderlineColor": "LightTint_8",
       "underlinedTabBackground": "PurpleTint_25",
-      "hoverBackground": "LightTint_8"
+      "hoverBackground": "LightTint_8",
+      "underTabsBorderColor": "Blueberry_50"
     },
     "TabbedPane": {
       "underlineColor": "PurpleTint_50",
@@ -191,9 +192,9 @@
         "inactiveBackground": "Blueberry_20"
       },
       "Button": {
-        "selectedBackground": "Purple_90",
+        "selectedBackground": "Blueberry_50",
         "hoverBackground": "LightTint_15",
-        "selectedForeground": "White"
+        "selectedForeground": "Neutral_150"
       },
       "Stripe": {
         "background": "Blueberry_10",
@@ -399,6 +400,9 @@
     },
     "WelcomeScreen": {
       "separatorColor": "Blueberry_50"
+    },
+    "ToggleButton": {
+      "foreground": "Neutral_150"
     }
   },
   "colors": {

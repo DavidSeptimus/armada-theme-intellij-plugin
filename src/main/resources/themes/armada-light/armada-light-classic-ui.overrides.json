@@ -4,7 +4,8 @@
     "ToolWindow.Button.selectedBackground": "Neutral_130",
     "ToolWindow.Button.selectedForeground": "Neutral_10",
     "ToolWindow.Button.hoverBackground": "Neutral_140",
-    "ToggleButton.foreground": "Neutral_10"
+    "ToggleButton.foreground": "Neutral_10",
+    "EditorTabs.underTabsBorderColor": "Neutral_140"
   },
   "iconColorsOnSelection": {
     "#767a8a": "#ffffff",

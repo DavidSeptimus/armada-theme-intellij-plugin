@@ -13,6 +13,12 @@
               path="themes/armada-dark-purple/armada-dark-purple-islands.theme.json"
               targetUi="islands"
       />
+
+      <themeProvider
+              id="com.github.davidseptimus.armada.armada-dark-purple-classic-ui"
+              path="themes/armada-dark-purple/armada-dark-purple-classic-ui.theme.json"
+              targetUi="classic"
+      />
   </extensions>
 </idea-plugin>
 

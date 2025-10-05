@@ -90,7 +90,8 @@
       "underlinedTabBackground": "BlueTint_10",
       "inactiveUnderlineColor": "LightTint_8",
       "hoverBackground": "DarkTint_7",
-      "hoverSelectedBackground": "DarkTint_7"
+      "hoverSelectedBackground": "DarkTint_7",
+      "underTabsBorderColor": "Neutral_140"
     },
     "TabbedPane": {
       "background": "White",

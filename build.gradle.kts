@@ -47,17 +47,24 @@ abstract class GitTagValueSource : ValueSource<String, GitTagValueSource.Paramet
 
 fun generateEAPVersion(baseVersion: String, gitTagOutput: String): String {
     val baseSemVer = Version.fromString(baseVersion)
-    val tags = gitTagOutput.lines().filter { it.isNotBlank() }.map { Version.fromString(if (it.startsWith("v"))  it.substring(1) else it) }
-    val eapTags = tags.filter { it.preReleaseIdentifiers.any { id -> id.toString().startsWith("eap") } }.sortedWith { a, b -> Version.reverseComparator().compare(a,b) }
-    val stableTags = tags.filter { it.preReleaseIdentifiers.isEmpty() }.sortedWith { a, b -> Version.reverseComparator().compare(a,b) }
+    val tags = gitTagOutput.lines().filter { it.isNotBlank() }
+        .map { Version.fromString(if (it.startsWith("v")) it.substring(1) else it) }
+    val eapTags = tags.filter { it.preReleaseIdentifiers.any { id -> id.toString().startsWith("eap") } }
+        .sortedWith { a, b -> Version.reverseComparator().compare(a, b) }
+    val stableTags = tags.filter { it.preReleaseIdentifiers.isEmpty() }
+        .sortedWith { a, b -> Version.reverseComparator().compare(a, b) }
     val isBaseReleased = stableTags.any { it.equals(baseSemVer) }
     val eapBaseVersion = if (isBaseReleased) baseSemVer.incrementMinor() else baseSemVer
-    val eapsForBase = eapTags.filter { it.major == eapBaseVersion.major && it.minor == eapBaseVersion.minor && it.patch == eapBaseVersion.patch }
+    val eapsForBase =
+        eapTags.filter { it.major == eapBaseVersion.major && it.minor == eapBaseVersion.minor && it.patch == eapBaseVersion.patch }
     if (eapsForBase.size == 0) {
         return "$eapBaseVersion-eap"
     } else {
-        return  eapsForBase.first().let {
-            val currentEapNumber = if(it.preReleaseIdentifiers.size > 1 && it.preReleaseIdentifiers.get(1).isNumeric) it.preReleaseIdentifiers.get(1).toString().toInt() else 0
+        return eapsForBase.first().let {
+            val currentEapNumber =
+                if (it.preReleaseIdentifiers.size > 1 && it.preReleaseIdentifiers.get(1).isNumeric) it.preReleaseIdentifiers.get(
+                    1
+                ).toString().toInt() else 0
             "$eapBaseVersion-eap.${currentEapNumber + 1}"
         }
     }
@@ -191,7 +198,10 @@ intellijPlatform {
         // The pluginVersion is based on the SemVer (https://semver.org) and supports pre-release labels, like 2.1.7-alpha.3
         // Specify pre-release label to publish the plugin in a custom Release Channel automatically. Read more:
         // https://plugins.jetbrains.com/docs/intellij/deployment.html#specifying-a-release-channel
-        channels = provider { listOf(project.version.toString().substringAfter('-', "").substringBefore('.').ifEmpty { "default" }) }
+        channels = provider {
+            listOf(
+                project.version.toString().substringAfter('-', "").substringBefore('.').ifEmpty { "default" })
+        }
         token = providers.environmentVariable("PUBLISH_TOKEN")
     }
 
@@ -249,6 +259,13 @@ themeMerger {
             output.set("src/main/resources/themes/armada-dark-purple/armada-dark-purple-islands.theme.json")
             description.set("Generates the Armada Dark Purple Islands theme by merging base and Islands overrides")
         }
+
+        register("darkPurpleClassicUITheme") {
+            baseTheme.set("src/main/resources/themes/armada-dark-purple/armada-dark-purple-base.theme.json")
+            overrides("src/main/resources/themes/armada-dark-purple/armada-dark-purple-classic-ui.overrides.json")
+            output.set("src/main/resources/themes/armada-dark-purple/armada-dark-purple-classic-ui.theme.json")
+            description.set("Generates the Armada Dark Purple Classic UI theme by merging base and Classic UI overrides")
+        }
     }
 }
 
@@ -287,11 +304,14 @@ tasks {
             val beginMarker = "<!-- BEGIN Build-time Dependencies -->"
             val endMarker = "<!-- END Build-time Dependencies -->"
 
-            val indent = mainContent.lineSequence().firstOrNull { it.contains(beginMarker) }?.takeWhile { it.isWhitespace() } ?: "    "
+            val indent =
+                mainContent.lineSequence().firstOrNull { it.contains(beginMarker) }?.takeWhile { it.isWhitespace() }
+                    ?: "    "
 
             if (mainContent.contains(beginMarker)) {
                 // Inject dependencies
-                val dependenciesText = """<depends optional="true" config-file="plugin-eap.xml">com.intellij.modules.platform</depends>"""
+                val dependenciesText =
+                    """<depends optional="true" config-file="plugin-eap.xml">com.intellij.modules.platform</depends>"""
                 mainContent.replace(
                     "^\\s*$beginMarker\n\\s*$endMarker".toRegex(RegexOption.MULTILINE),
                     "$indent$beginMarker\n$indent$dependenciesText\n$indent$endMarker"
@@ -308,16 +328,20 @@ tasks {
         println("Generated plugin.xml for ${if (isEAP) "EAP" else "stable"} build")
     }
 
+    build {
+        dependsOn("generateAllThemes")
+    }
+
+    runIde {
+        dependsOn("generateAllThemes")
+    }
+
     wrapper {
         gradleVersion = providers.gradleProperty("gradleVersion").get()
     }
 
     publishPlugin {
         dependsOn(patchChangelog)
-    }
-
-    runIde {
-        dependsOn("generateAllThemes")
     }
 
     initializeIntellijPlatformPlugin {
@@ -391,31 +415,6 @@ tasks {
             }
         }
     }
-
-    register<JavaExec>("mergeThemes") {
-        group = "theme"
-        description = "Merges multiple theme JSON files"
-
-        classpath = sourceSets["main"].runtimeClasspath
-        mainClass.set("buildscripts.ThemeMergerKt")
-
-        val inputs = project.findProperty("inputs")?.toString()?.split(",") ?: emptyList()
-        args = listOfNotNull(
-            "merge",
-            project.findProperty("output")?.toString()
-        ) + inputs
-
-        doFirst {
-            if (project.findProperty("output") == null || inputs.isEmpty()) {
-                throw GradleException("Usage: ./gradlew mergeThemes -Poutput=<output.json> -Pinputs=<file1.json,file2.json,...>")
-            }
-        }
-    }
-
-    // Theme generation tasks are now auto-generated by the ThemeMergerPlugin
-    // based on the configuration in the themeMerger block above.
-    // Available tasks: generateDarkClassicUITheme, generateLightClassicUITheme,
-    // generateDarkPurpleTheme, generateDarkPurpleIslandsTheme, generateAllThemes
 }
 
 intellijPlatformTesting {

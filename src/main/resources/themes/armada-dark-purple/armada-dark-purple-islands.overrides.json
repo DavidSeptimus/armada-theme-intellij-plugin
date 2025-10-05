@@ -2,6 +2,27 @@
   "name": "Armada Dark Purple (Islands)",
   "parentTheme": "Islands Dark",
   "ui": {
-    "Island.borderColor": "Blueberry_50"
+    "Island.borderColor": "Blueberry_50",
+    "ToolWindow.Stripe.borderColor": "Transparent",
+    "MainToolbar.borderColor": "Transparent",
+
+    "EditorTabs": {
+      "inactiveUnderlinedTabBorderColor": "InactiveUnderlinedBorder",
+      "inactiveUnderlinedTabBackground": "InactiveUnderlinedBackground",
+      "underlinedBorderColor": "PurpleTint_50"
+    },
+
+    "DefaultTabs": {
+      "inactiveUnderlinedTabBorderColor": "InactiveUnderlinedBorder",
+      "inactiveUnderlinedTabBackground": "InactiveUnderlinedBackground",
+      "underlinedBorderColor": "PurpleTint_50"
+    },
+
+    "TabbedPane": {
+      "inactiveUnderlinedTabBorderColor": "InactiveUnderlinedBorder",
+      "inactiveUnderlinedTabBackground": "InactiveUnderlinedBackground",
+      "underlinedBorderColor": "PurpleTint_50"
+    }
+
   }
 }

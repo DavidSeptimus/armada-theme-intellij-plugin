@@ -57,6 +57,8 @@
   },
   "ui": {
     "*": {
+      "borderColor": "Blueberry_50",
+      "separatorColor": "Blueberry_40",
       "background": "Blueberry_20",
       "foreground": "Neutral_140",
       "disabledText": "Neutral_80",
@@ -79,8 +81,31 @@
       "underlineColor": "Purple_90",
       "inactiveUnderlineColor": "LightTint_8",
       "underlinedTabBackground": "PurpleTint_25",
-      "underlinedBorderColor": "PurpleTint_50",
-      "hoverBackground": "LightTint_8"
+      "hoverBackground": "LightTint_8",
+      "inactiveUnderlinedTabBorderColor": "InactiveUnderlinedBorder",
+      "inactiveUnderlinedTabBackground": "InactiveUnderlinedBackground",
+      "underlinedBorderColor": "PurpleTint_50"
+    },
+    "EditorTabs": {
+      "background": "Blueberry_20",
+      "borderColor": "Transparent",
+      "underlineColor": "PurpleTint_50",
+      "inactiveUnderlineColor": "LightTint_8",
+      "underlinedTabBackground": "PurpleTint_25",
+      "hoverBackground": "LightTint_8",
+      "inactiveUnderlinedTabBorderColor": "InactiveUnderlinedBorder",
+      "inactiveUnderlinedTabBackground": "InactiveUnderlinedBackground",
+      "underlinedBorderColor": "PurpleTint_50"
+    },
+    "TabbedPane": {
+      "underlineColor": "PurpleTint_50",
+      "disabledUnderlineColor": "LightTint_8",
+      "hoverColor": "LightTint_8",
+      "focusColor": "PurpleTint_25",
+      "underlinedTabBackground": "PurpleTint_25",
+      "inactiveUnderlinedTabBorderColor": "InactiveUnderlinedBorder",
+      "inactiveUnderlinedTabBackground": "InactiveUnderlinedBackground",
+      "underlinedBorderColor": "PurpleTint_50"
     },
     "ProgressBar": {
       "background": "Blueberry_50",
@@ -98,23 +123,6 @@
       "warningColor": "Yellow_110",
       "warningEndColor": "Yellow_90"
     },
-    "EditorTabs": {
-      "background": "Blueberry_20",
-      "borderColor": "Transparent",
-      "underlineColor": "PurpleTint_50",
-      "inactiveUnderlineColor": "LightTint_8",
-      "underlinedTabBackground": "PurpleTint_25",
-      "underlinedBorderColor": "PurpleTint_50",
-      "hoverBackground": "LightTint_8"
-    },
-    "TabbedPane": {
-      "underlineColor": "PurpleTint_50",
-      "disabledUnderlineColor": "LightTint_8",
-      "hoverColor": "LightTint_8",
-      "focusColor": "PurpleTint_25",
-      "underlinedTabBackground": "PurpleTint_25",
-      "underlinedBorderColor": "PurpleTint_50"
-    },
     "FileColor": {
       "Blue": "Blue_30",
       "Green": "Green_30",
@@ -125,7 +133,8 @@
       "Gray": "Gray 30"
     },
     "MainToolbar": {
-      "background": "Blueberry_10"
+      "background": "Blueberry_10",
+      "borderColor": "Transparent"
     },
     "Editor": {
       "background": "Blueberry_20"
@@ -197,10 +206,12 @@
         "selectedForeground": "White"
       },
       "Stripe": {
+        "background": "Blueberry_10",
         "separatorColor": "Blueberry_50",
         "DragAndDrop": {
           "separatorColor": "Purple_90"
-        }
+        },
+        "borderColor": "Transparent"
       },
       "DragAndDrop": {
         "areaBackground": "PurpleTint_15"
@@ -305,8 +316,8 @@
     "Notification": {
       "background": "Blueberry_30",
       "borderColor": "Blueberry_50",
-      "errorBackground": "Red_50",
-      "errorBorderColor": "Red_60",
+      "errorBackground": "Rurple_40",
+      "errorBorderColor": "Rurple_50",
       "linkForeground": "Purple_110"
     },
     "NotificationsToolwindow": {
@@ -346,6 +357,11 @@
       "paidTagBackground": "Blue_50",
       "tagForeground": "Neutral_130",
       "tagBackground": "Blueberry_50"
+    },
+    "Table": {
+      "lightSelectionBackground": "SelectionBackground",
+      "lightSelectionInactiveBackground": "SelectionInactiveBackground",
+      "hoverBackground": "LightTint_5"
     },
     "VersionControl": {
       "Log": {
@@ -391,6 +407,9 @@
       "selectedBackground": "PurpleTint_40",
       "selectedHoveredBackground": "PurpleTint_30",
       "selectedPressedBackground": "PurpleTint_25"
+    },
+    "WelcomeScreen": {
+      "separatorColor": "Blueberry_50"
     },
     "Island": {
       "borderColor": "Blueberry_50"
@@ -581,6 +600,9 @@
     "Purple_30": "#2F2139",
     "Purple_20": "#1E1524",
     "Purple_10": "#0B080D",
+    "Rurple_60": "#7E3562",
+    "Rurple_50": "#642E4E",
+    "Rurple_40": "#4D273C",
     "Blueberry_160": "#F6F6F9",
     "Blueberry_150": "#EDEDF3",
     "Blueberry_140": "#E4E3EC",
@@ -655,13 +677,17 @@
     "Pink_30": "#3F303F",
     "PinkTint_10": "#E394DC1A",
     "OrangeTint_10": "#E09B701A",
+    "OrangeUntint_10": "#2D252D",
     "Orange_30": "#3E302A",
     "YellowTint_50": "#9F680C80",
     "YellowTint_40": "#9F680C66",
     "YellowTint_20": "#9F680C33",
+    "YellowUntint_20": "#332822",
     "EditorCaretRowForeground": "#352348",
     "SelectionBackground": "#43295A",
-    "SelectionInactiveBackground": "#393643"
+    "SelectionInactiveBackground": "#393643",
+    "InactiveUnderlinedBackground": "#2C2A34",
+    "InactiveUnderlinedBorder": "#3A3744"
   },
   "parentTheme": "Islands Dark"
 }

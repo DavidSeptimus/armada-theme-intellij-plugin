@@ -1,0 +1,188 @@
+{
+  "name": "Islands Light",
+  "dark": false,
+  "author": "JetBrains",
+  "parentTheme": "ExperimentalLightWithLightHeader",
+  "editorScheme": "Light",
+  "colors": {
+    "BackgroundLight": "Gray14",
+    "BackgroundMid": "Gray14",
+    "BackgroundDark": "Gray12",
+    "BackgroundDarkest": "Gray11",
+
+    "BorderDark": "Gray12",
+    "BorderLight": "Gray12",
+    "BorderTransparent": "#00000000",
+    "ToolWindowBorder": "#00000006",
+
+    "PanelBackground": "Gray13",
+    "HoverBackground": "Gray12",
+
+    "PopupBackground": "Gray14",
+    "PopupBackgroundDark": "Gray13",
+    "PopupBorder": "Gray11",
+
+    "TooltipBackground": "Gray14",
+    "TooltipBorder": "Gray12",
+
+    "InputBackground": "Gray14",
+    "ComboboxBackground": "Gray14",
+    "ComponentBorder": "Gray9"
+  },
+
+  "ui": {
+    "Islands": 1,
+    "Island": {
+      "arc": 20,
+      "borderWidth": 4,
+      "inactiveAlpha": 0.44,
+      "inactiveAlphaInStatusBar": {
+        "os.mac": 0.2,
+        "os.windows": 0.2,
+        "os.linux": 0.15
+      }
+    },
+
+    "MainWindow.background": "BackgroundDark",
+    "Borders.color": "BorderDark",
+    "Borders.ContrastBorderColor": "BorderDark",
+
+    "MainWindow.Tab": {
+      "selectedBackground": "BackgroundMid",
+      "hoverBackground": "#0000000D",
+      "separatorColor": "#00000012",
+      "foreground": "#818594"
+    },
+
+    "MainToolbar": {
+      "background": "BackgroundDark",
+      "borderColor": "BorderTransparent",
+      "Button.arc.compact": 8
+    },
+
+    "StatusBar": {
+      "background": "BackgroundDark",
+      "borderColor": "BorderTransparent"
+    },
+
+    "ToolWindow": {
+      "background": "BackgroundMid",
+      "borderColor": "ToolWindowBorder",
+      "Header": {
+        "background": "BackgroundMid",
+        "inactiveBackground": "BackgroundMid",
+        "borderColor": "BorderDark"
+      },
+      "HeaderTab": {
+        "hoverBackground": "HoverBackground",
+        "hoverInactiveBackground": "HoverBackground"
+      },
+      "Stripe": {
+        "background": "BackgroundDark",
+        "borderColor": "BorderTransparent"
+      }
+    },
+
+    "EditorTabs": {
+      "background": "BackgroundLight",
+      "underTabsBorderColor": "BackgroundDark",
+      "underlinedBorderColor": "Blue9",
+      "underlinedTabBackground": "#D4E2FFB3",
+      "inactiveUnderlinedTabBorderColor": "Gray10",
+      "inactiveUnderlinedTabBackground": "Gray12",
+      "hoverBackground": "#0000000C",
+
+      "tabInsets": "-6,8,-6,8",
+      "tabInsets.compact": "-2,6,-2,4",
+      "tabContentActionsRightInsets": "0,2,0,2"
+    },
+
+    "Editor.SearchField.background": "BackgroundLight",
+
+    "Editor.ToolTip": {
+      "background": "TooltipBackground",
+      "border": "TooltipBackground"
+    },
+
+    "Code.Block": {
+      "borderColor": "BorderDark",
+      "EditorPane.borderColor": "BorderDark"
+    },
+
+    "FileColor": {
+      "Yellow": "#fff9eb",
+      "Green": "#edfaef"
+    },
+
+    "NavBar.borderColor": "BorderTransparent",
+
+    "Popup": {
+      "background": "PopupBackground",
+      "Header.activeBackground": "PopupBackground",
+      "Advertiser.background": "PopupBackgroundDark",
+      "Advertiser.borderColor": "PopupBackgroundDark",
+      "borderColor": "PopupBorder"
+    },
+    "ComplexPopup.Header.background": "PopupBackgroundDark",
+    "CompletionPopup.Advertiser.background": "PopupBackgroundDark",
+
+    "Menu": {
+      "background": "PopupBackground",
+      "borderColor": "PopupBorder"
+    },
+    "MenuItem.background": "PopupBackground",
+    "PopupMenu.background": "PopupBackground",
+
+    "ToolTip": {
+      "background": "TooltipBackground",
+      "borderColor": "TooltipBorder"
+    },
+    "GotItTooltip": {
+      "background": "TooltipBackground",
+      "borderColor": "TooltipBorder"
+    },
+    "Tooltip.Learning": {
+      "background": "Blue6",
+      "borderColor": "Blue6"
+    },
+
+    "ScrollBar": {
+      "hoverThumbBorderColor": "#00000080",
+      "hoverThumbColor": "#00000080",
+      "hoverTrackColor": "#80808000",
+      "thumbBorderColor": "#00000033",
+      "thumbColor": "#00000033",
+      "trackColor": "#80808000",
+      "Transparent": {
+        "hoverThumbBorderColor": "#00000080",
+        "hoverThumbColor": "#00000080",
+        "hoverTrackColor": "#8080801A",
+        "thumbBorderColor": "#00000000",
+        "thumbColor": "#00000000",
+        "trackColor": "#80808000"
+      }
+    },
+
+    "SearchEverywhere.Header.insets": "2,4,0,9",
+
+    "HelpBrowser.UserMessage.background": "#DFE1E5CC",
+
+    "RecentProject.Color1.MainToolbarGradientStart": "#f7d7cb",
+    "RecentProject.Color2.MainToolbarGradientStart": "#f5e6b8",
+    "RecentProject.Color3.MainToolbarGradientStart": "#e2f2c9",
+    "RecentProject.Color4.MainToolbarGradientStart": "#cbe4f7",
+    "RecentProject.Color5.MainToolbarGradientStart": "#d4d2fc",
+    "RecentProject.Color6.MainToolbarGradientStart": "#ecd3f5",
+    "RecentProject.Color7.MainToolbarGradientStart": "#e4d3f5",
+    "RecentProject.Color8.MainToolbarGradientStart": "#cef0e9",
+    "RecentProject.Color9.MainToolbarGradientStart": "#ceedd4",
+
+    "RecentProject.MainToolbarGradient.width": 600,
+    "RecentProject.MainToolbarGradient.height": 300,
+
+    "ProgressBar": {
+      "progressCounterBackground": "#5288f2",
+      "progressCounterForeground": "#FFFFFF"
+    }
+  }
+}
