@@ -28,9 +28,6 @@ class ThemeMergerPlugin : Plugin<Project> {
 
                     inputFiles.set(inputs)
                     outputFile.set(project.file(variant.output.get()))
-
-                    // Ensure the task runs after classes are compiled
-                    dependsOn("classes")
                 }
             }
 

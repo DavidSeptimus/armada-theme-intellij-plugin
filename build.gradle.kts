@@ -328,12 +328,18 @@ tasks {
         println("Generated plugin.xml for ${if (isEAP) "EAP" else "stable"} build")
     }
 
-    build {
+    processResources {
         dependsOn("generateAllThemes")
     }
 
     runIde {
-        dependsOn("generateAllThemes")
+        jvmArgumentProviders += CommandLineArgumentProvider {
+            listOf(
+                "-Deditor.color.scheme.mark.colors=true",
+                "-Dide.color.mixture.mark.colors=true",
+            )
+        }
+
     }
 
     wrapper {
