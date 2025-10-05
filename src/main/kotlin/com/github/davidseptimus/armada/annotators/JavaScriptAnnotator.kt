@@ -12,13 +12,9 @@ import com.intellij.psi.PsiElement
 import com.intellij.psi.util.elementType
 
 
-class JavaScriptAnnotator : Annotator {
+class JavaScriptAnnotator : BaseArmadaAnnotator() {
 
-    override fun isDumbAware(): Boolean {
-        return true
-    }
-
-    override fun annotate(element: PsiElement, holder: AnnotationHolder) {
+    override fun doAnnotate(element: PsiElement, holder: AnnotationHolder) {
         annotateThisIdentifier(element, holder)
         annotatePropertyReference(element, holder)
         annotateFunctionDeclaration(element, holder)

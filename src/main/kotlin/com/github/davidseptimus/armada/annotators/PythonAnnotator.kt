@@ -12,13 +12,9 @@ import com.jetbrains.python.psi.PyAnnotation
 import com.jetbrains.python.psi.PyReferenceExpression
 import com.jetbrains.python.psi.PyTypeParameter
 
-class PythonAnnotator : Annotator {
+class PythonAnnotator : BaseArmadaAnnotator() {
 
-    override fun isDumbAware(): Boolean {
-        return true
-    }
-
-    override fun annotate(element: PsiElement, holder: AnnotationHolder) {
+    override fun doAnnotate(element: PsiElement, holder: AnnotationHolder) {
         if (!annotateTypeParameter(element, holder)) {
             annotateTypeAnnotation(element, holder)
         }

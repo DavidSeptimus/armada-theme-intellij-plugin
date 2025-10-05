@@ -12,14 +12,10 @@ import org.rust.lang.core.psi.RsMetaItemArgs
 import org.rust.lang.core.psi.RsOuterAttr
 
 
-class RustAnnotator : Annotator {
+class RustAnnotator : BaseArmadaAnnotator() {
     val attributePunctuation = setOf("#", "!", "[", "]", "(", ")", ",", "=")
 
-    override fun isDumbAware(): Boolean {
-        return true
-    }
-
-    override fun annotate(element: PsiElement, holder: AnnotationHolder) {
+    override fun doAnnotate(element: PsiElement, holder: AnnotationHolder) {
         annotateMetadata(element, holder)
     }
 

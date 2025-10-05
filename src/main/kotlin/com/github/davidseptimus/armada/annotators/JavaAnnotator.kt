@@ -9,13 +9,9 @@ import com.intellij.psi.PsiElement
 import org.jetbrains.kotlin.idea.util.CommentSaver.Companion.tokenType
 import org.rust.lang.core.psi.ext.elementType
 
-class JavaAnnotator : Annotator {
+class JavaAnnotator : BaseArmadaAnnotator() {
 
-    override fun isDumbAware(): Boolean {
-        return true
-    }
-
-    override fun annotate(element: PsiElement, holder: AnnotationHolder) {
+    override fun doAnnotate(element: PsiElement, holder: AnnotationHolder) {
         if (annotateAnnotationDeclaration(element, holder)) return
     }
 

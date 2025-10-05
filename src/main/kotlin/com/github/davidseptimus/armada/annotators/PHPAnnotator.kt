@@ -12,13 +12,9 @@ import com.jetbrains.php.lang.psi.elements.ClassReference
 import com.jetbrains.php.lang.psi.elements.PhpGoto
 import com.jetbrains.php.lang.psi.elements.PhpUse
 
-class PHPAnnotator : Annotator {
+class PHPAnnotator : BaseArmadaAnnotator() {
 
-    override fun isDumbAware(): Boolean {
-        return true
-    }
-
-    override fun annotate(element: PsiElement, holder: AnnotationHolder) {
+    override fun doAnnotate(element: PsiElement, holder: AnnotationHolder) {
         if (annotateAliasIdentifierDeclaration(element, holder)) {
             return
         }
@@ -71,7 +67,7 @@ class PHPAnnotator : Annotator {
                     .range(TextRange(element.textRange.startOffset, element.textRange.endOffset))
                     .textAttributes(TextAttributeKeys.PHP_ALIAS_IDENTIFIER_DECLARATION)
                     .create()
-                return true;
+                return true
             }
 
             else -> return false
@@ -88,7 +84,7 @@ class PHPAnnotator : Annotator {
                     .range(TextRange(element.textRange.startOffset, element.textRange.endOffset))
                     .textAttributes(TextAttributeKeys.PHP_CLASS_REFERENCE)
                     .create()
-                return true;
+                return true
             }
 
             else -> return false
