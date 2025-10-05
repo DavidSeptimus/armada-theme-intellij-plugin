@@ -86,6 +86,9 @@
       "inactiveUnderlinedTabBackground": "InactiveUnderlinedBackground",
       "underlinedBorderColor": "PurpleTint_50"
     },
+    "EditorPane": {
+      "splitBorder": "Blueberry_60"
+    },
     "EditorTabs": {
       "background": "Blueberry_20",
       "borderColor": "Transparent",
@@ -95,7 +98,8 @@
       "hoverBackground": "LightTint_8",
       "inactiveUnderlinedTabBorderColor": "InactiveUnderlinedBorder",
       "inactiveUnderlinedTabBackground": "InactiveUnderlinedBackground",
-      "underlinedBorderColor": "PurpleTint_50"
+      "underlinedBorderColor": "PurpleTint_50",
+      "underTabsBorderColor": "Blueberry_40"
     },
     "TabbedPane": {
       "underlineColor": "PurpleTint_50",
@@ -412,7 +416,7 @@
       "separatorColor": "Blueberry_50"
     },
     "Island": {
-      "borderColor": "Blueberry_50"
+      "borderColor": "Blueberry_40"
     }
   },
   "colors": {

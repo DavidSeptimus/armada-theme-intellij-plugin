@@ -81,6 +81,9 @@
       "underlinedTabBackground": "PurpleTint_25",
       "hoverBackground": "LightTint_8"
     },
+    "EditorPane": {
+      "splitBorder": "Blueberry_60"
+    },
     "EditorTabs": {
       "background": "Blueberry_20",
       "borderColor": "Transparent",
