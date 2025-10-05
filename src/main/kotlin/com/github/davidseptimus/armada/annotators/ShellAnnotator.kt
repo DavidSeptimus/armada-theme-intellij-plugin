@@ -10,13 +10,9 @@ import com.intellij.sh.psi.ShLetCommand
 import com.intellij.sh.psi.ShSubshellCommand
 
 
-class ShellAnnotator : Annotator {
+class ShellAnnotator : BaseArmadaAnnotator() {
 
-    override fun isDumbAware(): Boolean {
-        return true
-    }
-
-    override fun annotate(element: PsiElement, holder: AnnotationHolder) {
+    override fun doAnnotate(element: PsiElement, holder: AnnotationHolder) {
         when {
             element.text.equals("let") && element.parent is ShLetCommand && element.parent.firstChild == element -> {
                 holder.newSilentAnnotation(HighlightSeverity.INFORMATION)

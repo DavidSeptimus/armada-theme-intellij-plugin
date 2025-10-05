@@ -9,13 +9,9 @@ import com.intellij.psi.PsiElement
 import com.intellij.psi.css.impl.CssElementTypes
 import com.intellij.psi.util.elementType
 
-class CSSAnnotator : Annotator {
+class CSSAnnotator : BaseArmadaAnnotator() {
 
-    override fun isDumbAware(): Boolean {
-        return true
-    }
-
-    override fun annotate(element: PsiElement, holder: AnnotationHolder) {
+    override fun doAnnotate(element: PsiElement, holder: AnnotationHolder) {
         when (element.elementType) {
             CssElementTypes.CSS_PERCENT -> {
                 holder.newSilentAnnotation(HighlightSeverity.INFORMATION)

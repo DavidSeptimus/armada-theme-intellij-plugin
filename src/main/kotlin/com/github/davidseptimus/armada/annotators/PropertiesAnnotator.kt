@@ -9,13 +9,9 @@ import com.intellij.openapi.util.TextRange
 import com.intellij.psi.PsiElement
 
 
-class PropertiesAnnotator : Annotator {
+class PropertiesAnnotator : BaseArmadaAnnotator() {
 
-    override fun isDumbAware(): Boolean {
-        return true
-    }
-
-    override fun annotate(element: PsiElement, holder: AnnotationHolder) {
+    override fun doAnnotate(element: PsiElement, holder: AnnotationHolder) {
         annotateStringLiteralValue(element, holder)
     }
 

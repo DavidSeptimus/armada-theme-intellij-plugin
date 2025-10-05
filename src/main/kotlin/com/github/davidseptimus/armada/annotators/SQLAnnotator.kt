@@ -9,7 +9,7 @@ import com.intellij.sql.psi.*
 import com.intellij.sql.psi.impl.SqlPrimaryKeyDefinitionImpl
 
 
-class SQLAnnotator : Annotator {
+class SQLAnnotator : BaseArmadaAnnotator() {
 
     private val sqlSymbolicOperators = setOf(
         "=",
@@ -48,11 +48,7 @@ class SQLAnnotator : Annotator {
 
     private val siblingPredicate = { s: PsiElement -> s.text == "." }
 
-    override fun isDumbAware(): Boolean {
-        return true
-    }
-
-    override fun annotate(element: PsiElement, holder: AnnotationHolder) {
+    override fun doAnnotate(element: PsiElement, holder: AnnotationHolder) {
 
         var annotated = false
         when {

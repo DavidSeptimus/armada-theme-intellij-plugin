@@ -25,6 +25,17 @@
 
     <extensions defaultExtensionNs="com.intellij">
 
+        <applicationService
+                serviceImplementation="com.github.davidseptimus.armada.settings.ArmadaSettingsState"/>
+
+        <applicationService
+                serviceImplementation="com.github.davidseptimus.armada.settings.ArmadaAnnotationController"/>
+
+        <applicationConfigurable
+                parentId="editor"
+                instance="com.github.davidseptimus.armada.settings.ArmadaSettingsConfigurable"
+                id="com.github.davidseptimus.armada.settings.ArmadaSettingsConfigurable"
+                displayName="Armada Theme"/>
 
         <themeProvider
                 id="com.github.davidseptimus.armada.fleet-dark"

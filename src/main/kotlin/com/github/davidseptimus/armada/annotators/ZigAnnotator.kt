@@ -9,13 +9,9 @@ import com.intellij.openapi.editor.colors.TextAttributesKey
 import com.intellij.openapi.util.TextRange
 import com.intellij.psi.PsiElement
 
-class ZigAnnotator : Annotator {
+class ZigAnnotator : BaseArmadaAnnotator() {
 
-    override fun isDumbAware(): Boolean {
-        return true
-    }
-
-    override fun annotate(element: PsiElement, holder: AnnotationHolder) {
+    override fun doAnnotate(element: PsiElement, holder: AnnotationHolder) {
         val isFieldOrParam = annotateFieldType(element, holder)
         if (!isFieldOrParam) {
             annotateReturnTypeIdentifiers(element, holder)
@@ -39,7 +35,7 @@ class ZigAnnotator : Annotator {
 
             // e.g. field: ?*Node
             element is ZigTypeExpr && (element.parent is ZigContainerField || element.parent is ZigParamType) -> {
-                val children = element.children.filterIsInstance<ZigPrimaryTypeExpr>();
+                val children = element.children.filterIsInstance<ZigPrimaryTypeExpr>()
                 children.forEach { typeExpr ->
                     doAnnotate(
                         typeExpr,

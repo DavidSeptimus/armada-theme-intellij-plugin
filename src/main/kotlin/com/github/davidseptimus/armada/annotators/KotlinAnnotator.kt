@@ -11,13 +11,9 @@ import org.jetbrains.kotlin.lexer.KtTokens
 import org.jetbrains.kotlin.psi.KtLabelReferenceExpression
 
 
-class KotlinAnnotator : Annotator {
+class KotlinAnnotator : BaseArmadaAnnotator() {
 
-    override fun isDumbAware(): Boolean {
-        return true
-    }
-
-    override fun annotate(element: PsiElement, holder: AnnotationHolder) {
+    override fun doAnnotate(element: PsiElement, holder: AnnotationHolder) {
         annotateLabel(element, holder)
     }
 

@@ -2,7 +2,13 @@
 
 # Armada Theme Changelog
 
-## Unreleased
+## [Unreleased]
+
+### Added 
+
+- Added settings page for configuring Armada syntax highlighting enhancements
+
+## [0.8.0] - 2025-10-05
 
 ### Added
 

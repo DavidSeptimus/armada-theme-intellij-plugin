@@ -9,13 +9,9 @@ import com.intellij.psi.PsiElement
 import org.jetbrains.yaml.psi.YAMLAlias
 import org.jetbrains.yaml.psi.YAMLQuotedText
 
-class YamlAnnotator : Annotator {
+class YamlAnnotator : BaseArmadaAnnotator() {
 
-    override fun isDumbAware(): Boolean {
-        return true
-    }
-
-    override fun annotate(element: PsiElement, holder: AnnotationHolder) {
+    override fun doAnnotate(element: PsiElement, holder: AnnotationHolder) {
         when {
             // Highlight aliases (e.g., *params)
             element is YAMLAlias -> {
