@@ -17,7 +17,7 @@
         <option name="CARET_ROW_COLOR" value="352348"/>
         <option name="CONSOLE_BACKGROUND_KEY" value="1C1827"/>
         <option name="DELETED_LINES_COLOR" value="D73251"/>
-        <option name="DOCUMENTATION_COLOR" value="252629"/>
+        <option name="DOCUMENTATION_COLOR" value="1B1826"/>
         <option name="DOC_COMMENT_GUIDE" value="28644B"/>
         <option name="DOC_COMMENT_LINK" value="B174D9"/>
         <option name="FILESTATUS_ADDED" value="69B090"/>
@@ -39,13 +39,14 @@
         <option name="FILESTATUS_changelistConflict" value="CD984D"/>
         <option name="FILESTATUS_modifiedOutside" value="71A3EF"/>
         <option name="GUTTER_BACKGROUND" value="13101B"/>
+        <option name="HINT_BORDER" value="3E3852"/>
         <option name="IGNORED_ADDED_LINES_BORDER_COLOR" value="1E7857"/>
         <option name="IGNORED_DELETED_LINES_BORDER_COLOR" value="C72C49"/>
         <option name="IGNORED_MODIFIED_LINES_BORDER_COLOR" value="1868CB"/>
         <option name="INDENT_GUIDE" value="3E3852"/>
         <option name="LINE_NUMBERS_COLOR" value="6E747B"/>
         <option name="LINE_NUMBER_ON_CARET_ROW_COLOR" value="E0E1E4"/>
-        <option name="LOOKUP_COLOR" value="252629"/>
+        <option name="LOOKUP_COLOR" value="1B1826"/>
         <option name="MODIFIED_LINES_COLOR" value="0870E4"/>
         <option name="MODIFIED_TAB_ICON" value="E0E1E4"/>
         <option name="NOTIFICATION_BACKGROUND" value="262136"/>

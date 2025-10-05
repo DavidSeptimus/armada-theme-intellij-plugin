@@ -8,18 +8,18 @@
         <option name="ANNOTATIONS_COLOR" value="9EA3A8"/>
         <option name="ANNOTATIONS_LAST_COMMIT_COLOR" value="F8F8F9"/>
         <option name="ActionButton.iconTextForeground" value="E0E1E4"/>
-        <option name="BLOCK_TERMINAL_BLOCK_BACKGROUND_END" value="3f81954D"/>
-        <option name="BLOCK_TERMINAL_BLOCK_BACKGROUND_START" value="3f81954D"/>
+        <option name="BLOCK_TERMINAL_BLOCK_BACKGROUND_END" value="3F81954D"/>
+        <option name="BLOCK_TERMINAL_BLOCK_BACKGROUND_START" value="3F81954D"/>
         <option name="BLOCK_TERMINAL_DEFAULT_FOREGROUND" value="E0E1E4"/>
-        <option name="BLOCK_TERMINAL_INACTIVE_SELECTED_BLOCK_BACKGROUND" value="28758b"/>
+        <option name="BLOCK_TERMINAL_INACTIVE_SELECTED_BLOCK_BACKGROUND" value="28758B"/>
         <option name="BLOCK_TERMINAL_INACTIVE_SELECTED_BLOCK_STROKE_COLOR" value="E0E1E4"/>
         <option name="CARET_COLOR" value="E0E1E4"/>
-        <option name="CARET_ROW_COLOR" value="002f3b"/>
-        <option name="CONSOLE_BACKGROUND_KEY" value="001a22"/>
+        <option name="CARET_ROW_COLOR" value="002F3B"/>
+        <option name="CONSOLE_BACKGROUND_KEY" value="001A22"/>
         <option name="DELETED_LINES_COLOR" value="D73251"/>
-        <option name="DOCUMENTATION_COLOR" value="252629"/>
+        <option name="DOCUMENTATION_COLOR" value="061921"/>
         <option name="DOC_COMMENT_GUIDE" value="28644B"/>
-        <option name="DOC_COMMENT_LINK" value="6fc3e8"/>
+        <option name="DOC_COMMENT_LINK" value="6FC3E8"/>
         <option name="FILESTATUS_ADDED" value="69B090"/>
         <option name="FILESTATUS_COPIED" value="69B090"/>
         <option name="FILESTATUS_DELETED" value="F87C88"/>
@@ -28,62 +28,63 @@
         <option name="FILESTATUS_IDEA_FILESTATUS_IGNORED" value="D69A6B"/>
         <option name="FILESTATUS_IDEA_SVN_FILESTATUS_EXTERNAL" value="69B090"/>
         <option name="FILESTATUS_IGNORE.PROJECT_VIEW.IGNORED" value="6E747B"/>
-        <option name="FILESTATUS_MERGED" value="6fc3e8"/>
-        <option name="FILESTATUS_MODIFIED" value="6fc3e8"/>
-        <option name="FILESTATUS_NOT_CHANGED_IMMEDIATE" value="6fc3e8"/>
-        <option name="FILESTATUS_NOT_CHANGED_RECURSIVE" value="6fc3e8"/>
+        <option name="FILESTATUS_MERGED" value="6FC3E8"/>
+        <option name="FILESTATUS_MODIFIED" value="6FC3E8"/>
+        <option name="FILESTATUS_NOT_CHANGED_IMMEDIATE" value="6FC3E8"/>
+        <option name="FILESTATUS_NOT_CHANGED_RECURSIVE" value="6FC3E8"/>
         <option name="FILESTATUS_SUPPRESSED" value="9EA3A8"/>
-        <option name="FILESTATUS_SWITCHED" value="6fc3e8"/>
+        <option name="FILESTATUS_SWITCHED" value="6FC3E8"/>
         <option name="FILESTATUS_UNKNOWN" value="F87C88"/>
         <option name="FILESTATUS_addedOutside" value="69B090"/>
         <option name="FILESTATUS_changelistConflict" value="CD984D"/>
-        <option name="FILESTATUS_modifiedOutside" value="6fc3e8"/>
-        <option name="GUTTER_BACKGROUND" value="001a22"/>
+        <option name="FILESTATUS_modifiedOutside" value="6FC3E8"/>
+        <option name="GUTTER_BACKGROUND" value="001A22"/>
+        <option name="HINT_BORDER" value="005D72"/>
         <option name="IGNORED_ADDED_LINES_BORDER_COLOR" value="1E7857"/>
         <option name="IGNORED_DELETED_LINES_BORDER_COLOR" value="C72C49"/>
         <option name="IGNORED_MODIFIED_LINES_BORDER_COLOR" value="1868CB"/>
-        <option name="INDENT_GUIDE" value="28758b"/>
+        <option name="INDENT_GUIDE" value="28758B"/>
         <option name="LINE_NUMBERS_COLOR" value="6E747B"/>
         <option name="LINE_NUMBER_ON_CARET_ROW_COLOR" value="E0E1E4"/>
-        <option name="LOOKUP_COLOR" value="252629"/>
+        <option name="LOOKUP_COLOR" value="061921"/>
         <option name="MODIFIED_LINES_COLOR" value="0870E4"/>
         <option name="MODIFIED_TAB_ICON" value="E0E1E4"/>
-        <option name="NOTIFICATION_BACKGROUND" value="002f3b"/>
-        <option name="RIGHT_MARGIN_COLOR" value="28758b"/>
-        <option name="SELECTED_INDENT_GUIDE" value="28758b"/>
-        <option name="SELECTION_BACKGROUND" value="28758b"/>
+        <option name="NOTIFICATION_BACKGROUND" value="002F3B"/>
+        <option name="RIGHT_MARGIN_COLOR" value="28758B"/>
+        <option name="SELECTED_INDENT_GUIDE" value="28758B"/>
+        <option name="SELECTION_BACKGROUND" value="28758B"/>
         <option name="ScrollBar.Mac.Transparent.hoverThumbBorderColor" value="00000000"/>
-        <option name="ScrollBar.Mac.Transparent.hoverThumbColor" value="28758b"/>
+        <option name="ScrollBar.Mac.Transparent.hoverThumbColor" value="28758B"/>
         <option name="ScrollBar.Mac.Transparent.hoverTrackColor" value="004556"/>
         <option name="ScrollBar.Mac.Transparent.thumbBorderColor" value="00000000"/>
         <option name="ScrollBar.Mac.Transparent.thumbColor" value="004556"/>
         <option name="ScrollBar.Mac.Transparent.trackColor" value="00000000"/>
         <option name="ScrollBar.Mac.hoverThumbBorderColor" value="00000000"/>
-        <option name="ScrollBar.Mac.hoverThumbColor" value="28758b"/>
+        <option name="ScrollBar.Mac.hoverThumbColor" value="28758B"/>
         <option name="ScrollBar.Mac.hoverTrackColor" value="004556"/>
         <option name="ScrollBar.Mac.thumbBorderColor" value="00000000"/>
         <option name="ScrollBar.Mac.thumbColor" value="004556"/>
         <option name="ScrollBar.Mac.trackColor" value="00000000"/>
         <option name="ScrollBar.Transparent.hoverThumbBorderColor" value="00000000"/>
-        <option name="ScrollBar.Transparent.hoverThumbColor" value="28758b"/>
+        <option name="ScrollBar.Transparent.hoverThumbColor" value="28758B"/>
         <option name="ScrollBar.Transparent.hoverTrackColor" value="004556"/>
         <option name="ScrollBar.Transparent.thumbBorderColor" value="00000000"/>
         <option name="ScrollBar.Transparent.thumbColor" value="004556"/>
         <option name="ScrollBar.Transparent.trackColor" value="00000000"/>
         <option name="ScrollBar.background" value="00000000"/>
         <option name="ScrollBar.hoverThumbBorderColor" value="00000000"/>
-        <option name="ScrollBar.hoverThumbColor" value="28758b"/>
+        <option name="ScrollBar.hoverThumbColor" value="28758B"/>
         <option name="ScrollBar.hoverTrackColor" value="004556"/>
         <option name="ScrollBar.thumbBorderColor" value="00000000"/>
         <option name="ScrollBar.thumbColor" value="004556"/>
         <option name="ScrollBar.trackColor" value="00000000"/>
-        <option name="TAB_UNDERLINE" value="6799aa"/>
+        <option name="TAB_UNDERLINE" value="6799AA"/>
         <option name="VCS_ANNOTATIONS_COLOR_1" value="916012"/>
         <option name="VCS_ANNOTATIONS_COLOR_2" value="6C4B18"/>
         <option name="VCS_ANNOTATIONS_COLOR_3" value="433016"/>
         <option name="VCS_ANNOTATIONS_COLOR_4" value="20180C"/>
         <option name="VCS_ANNOTATIONS_COLOR_5" value="0C0805"/>
-        <option name="VISUAL_INDENT_GUIDE" value="28758b"/>
+        <option name="VISUAL_INDENT_GUIDE" value="28758B"/>
         <option name="WHITESPACES" value="252629"/>
         <option name="WHITESPACES_MODIFIED_LINES_COLOR" value="9F680C"/>
     </colors>
@@ -207,7 +208,7 @@
         <option name="BLOCK_TERMINAL_WHITE_BRIGHT">
             <value>
                 <option name="FOREGROUND" value="18191b"/>
-                <option name="BACKGROUND" value="001a22"/>
+                <option name="BACKGROUND" value="1a22"/>
             </value>
         </option>
         <option name="BLOCK_TERMINAL_YELLOW">
@@ -246,7 +247,7 @@
         </option>
         <option name="BREAKPOINT_ATTRIBUTES">
             <value>
-                <option name="BACKGROUND" value="001a22"/>
+                <option name="BACKGROUND" value="1a22"/>
             </value>
         </option>
         <option name="CLASS_REFERENCE">
@@ -263,7 +264,7 @@
         <option name="CONSOLE_BLACK_OUTPUT">
             <value>
                 <option name="FOREGROUND" value="e0e1e4"/>
-                <option name="BACKGROUND" value="001a22"/>
+                <option name="BACKGROUND" value="1a22"/>
             </value>
         </option>
         <option name="CONSOLE_BLUE_BRIGHT_OUTPUT">
@@ -355,7 +356,7 @@
         <option name="CONSOLE_WHITE_OUTPUT">
             <value>
                 <option name="FOREGROUND" value="18191b"/>
-                <option name="BACKGROUND" value="001a22"/>
+                <option name="BACKGROUND" value="1a22"/>
             </value>
         </option>
         <option name="CONSOLE_YELLOW_BRIGHT_OUTPUT">
@@ -713,7 +714,7 @@
         </option>
         <option name="DIFF_MODIFIED">
             <value>
-                <option name="FOREGROUND" value="002f3b"/>
+                <option name="FOREGROUND" value="2f3b"/>
                 <option name="BACKGROUND" value="28758b"/>
                 <option name="ERROR_STRIPE_COLOR" value="6799aa"/>
             </value>
@@ -1303,7 +1304,7 @@
         </option>
         <option name="NOT_TOP_FRAME_ATTRIBUTES">
             <value>
-                <option name="BACKGROUND" value="002f3b"/>
+                <option name="BACKGROUND" value="2f3b"/>
             </value>
         </option>
         <option name="NOT_USED_ELEMENT_ATTRIBUTES">
@@ -1849,7 +1850,7 @@
         </option>
         <option name="TAB_SELECTED">
             <value>
-                <option name="BACKGROUND" value="002f3b"/>
+                <option name="BACKGROUND" value="2f3b"/>
             </value>
         </option>
         <option name="TAB_SELECTED_INACTIVE">
@@ -1870,7 +1871,7 @@
         <option name="TEXT">
             <value>
                 <option name="FOREGROUND" value="e0e1e4"/>
-                <option name="BACKGROUND" value="001a22"/>
+                <option name="BACKGROUND" value="1a22"/>
             </value>
         </option>
         <option name="TEXT_SEARCH_RESULT_ATTRIBUTES">
