@@ -17,10 +17,16 @@ Armada is a plugin that aims to faithfully recreate the Fleet's builtin themes f
   - New UI (default since 2024.2)
   - [Classic UI](https://plugins.jetbrains.com/plugin/24468-classic-ui)
 - Custom highlighting tokens for improved highlighting accuracy in various languages
+- Explicit support for over 25 programming languages with specially tailored colors
 
-### Language Support
+### Coming Soon
 
-Language-specific colors have been added for the following languages so far:
+**Armada Pro** - A paid version of the plugin that will include additional themes and color schemes including:
+
+- **Dark Purple** - Adapted from Fleet's Purple theme; an excellent choice for those looking for a more modern [Dark Purple Theme](https://plugins.jetbrains.com/plugin/12100-dark-purple-theme).
+- **Deep** - A new deep ocean blue theme with a vibrant high-contrast color scheme.
+
+### Supported Languages
 
 |            | Armada Dark | Armada Light |
 |------------|-------------|--------------|
