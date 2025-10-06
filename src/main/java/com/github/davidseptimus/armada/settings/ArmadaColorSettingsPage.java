@@ -31,6 +31,7 @@ final class ArmadaColorSettingsPage implements ColorSettingsPage {
             new AttributesDescriptor("Properties//String literal value", TextAttributeKeys.PROPERTIES_STRING_LITERAL_VALUE),
             new AttributesDescriptor("Python//Type annotation", TextAttributeKeys.PYTHON_TYPE_ANNOTATION),
             new AttributesDescriptor("Rust//Attribute punctuation", TextAttributeKeys.RUST_ATTRIBUTE_PUNCTUATION),
+            new AttributesDescriptor("Rust//Boolean", TextAttributeKeys.RUST_BOOLEAN),
             new AttributesDescriptor("Shell Script//Let command", TextAttributeKeys.BASH_LET_COMMAND),
             new AttributesDescriptor("Shell Script//Subshell command parentheses", TextAttributeKeys.BASH_SUBSHELL_COMMAND_PARENTHESES),
             new AttributesDescriptor("SQL//Symbolic operators", TextAttributeKeys.SQL_SYMBOLIC_OPERATORS),
@@ -92,6 +93,7 @@ final class ArmadaColorSettingsPage implements ColorSettingsPage {
 
                 <comment>// Rust</comment>
                 <rust_attr>#</rust_attr><rust_attr>!</rust_attr><rust_attr>[</rust_attr>some_attribute = "value"<rust_attr>]</rust_attr>  <comment>// Rust Attribute Punctuation</comment>
+                let is_enabled: bool = <rust_boolean>true</rust_boolean>; <comment>// Rust Boolean</comment>
 
                 <comment>// Shell Script</comment>
                 <bash_let>let</bash_let> a=5 b=10 <comment>// Shell Script let command</comment>
@@ -137,6 +139,7 @@ final class ArmadaColorSettingsPage implements ColorSettingsPage {
                 Map.entry("properties_string", TextAttributeKeys.PROPERTIES_STRING_LITERAL_VALUE),
                 Map.entry("python_type", TextAttributeKeys.PYTHON_TYPE_ANNOTATION),
                 Map.entry("rust_attr", TextAttributeKeys.RUST_ATTRIBUTE_PUNCTUATION),
+                Map.entry("rust_boolean", TextAttributeKeys.RUST_BOOLEAN),
                 Map.entry("bash_let", TextAttributeKeys.BASH_LET_COMMAND),
                 Map.entry("bash_subshell", TextAttributeKeys.BASH_SUBSHELL_COMMAND_PARENTHESES),
                 Map.entry("sql_symbolic", TextAttributeKeys.SQL_SYMBOLIC_OPERATORS),

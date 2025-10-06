@@ -30,6 +30,7 @@ public final class TextAttributeKeys {
     public static final @NotNull TextAttributesKey BASH_LET_COMMAND = TextAttributesKey.createTextAttributesKey("BASH.LET_COMMAND");
     public static final @NotNull TextAttributesKey BASH_SUBSHELL_COMMAND_PARENTHESES = TextAttributesKey.createTextAttributesKey("BASH.SUBSHELL_COMMAND_PARENTHESES");
     public static final @NotNull TextAttributesKey RUST_ATTRIBUTE_PUNCTUATION = TextAttributesKey.createTextAttributesKey("org.rust.ATTRIBUTE_PUNCTUATION");
+    public static final @NotNull TextAttributesKey RUST_BOOLEAN = TextAttributesKey.createTextAttributesKey("org.rust.BOOLEAN");
     public static final @NotNull TextAttributesKey SQL_REFERENCE_IDENTIFIER = TextAttributesKey.createTextAttributesKey("SQL_REFERENCE_IDENTIFIER");
     public static final @NotNull TextAttributesKey SQL_PRIMARY_KEY_DEFINITION = TextAttributesKey.createTextAttributesKey("SQL_PRIMARY_KEY_DEFINITION");
     public static final @NotNull TextAttributesKey SQL_SYMBOLIC_OPERATORS = TextAttributesKey.createTextAttributesKey("SQL_SYMBOLIC_OPERATORS", SQL_KEYWORD);

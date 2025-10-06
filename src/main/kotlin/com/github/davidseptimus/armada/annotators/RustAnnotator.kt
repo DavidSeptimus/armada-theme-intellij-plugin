@@ -6,27 +6,38 @@ import com.intellij.lang.annotation.Annotator
 import com.intellij.lang.annotation.HighlightSeverity
 import com.intellij.openapi.util.TextRange
 import com.intellij.psi.PsiElement
+import com.intellij.sql.dialects.redshift.RsTypes
 import org.rust.lang.core.psi.RsInnerAttr
 import org.rust.lang.core.psi.RsMetaItem
 import org.rust.lang.core.psi.RsMetaItemArgs
 import org.rust.lang.core.psi.RsOuterAttr
+import org.rust.lang.core.psi.ext.elementType
 
 
 class RustAnnotator : BaseArmadaAnnotator() {
     val attributePunctuation = setOf("#", "!", "[", "]", "(", ")", ",", "=")
 
     override fun doAnnotate(element: PsiElement, holder: AnnotationHolder) {
-        annotateMetadata(element, holder)
+       if  (annotateMetadata(element, holder)) return
+        annotateBooleanLiteral(element, holder)
+    }
+
+    private fun annotateBooleanLiteral(
+        element: PsiElement,
+        holder: AnnotationHolder
+    ): Boolean {
+        if (element.elementType == RsTypes.RS_BOOLEAN_LITERAL) {
+            highlightElement(element, holder, TextAttributeKeys.RUST_BOOLEAN)
+            return true
+        }
+        return false
     }
 
 
     private fun annotateMetadata(element: PsiElement, holder: AnnotationHolder): Boolean {
         when {
             attributePunctuation.contains(element.text) && (element.parent is RsOuterAttr || element.parent is RsInnerAttr || element.parent is RsMetaItemArgs || element.parent is RsMetaItem ) -> {
-                holder.newSilentAnnotation(HighlightSeverity.INFORMATION)
-                    .range(TextRange(element.textRange.startOffset, element.textRange.endOffset))
-                    .textAttributes(TextAttributeKeys.RUST_ATTRIBUTE_PUNCTUATION)
-                    .create()
+                highlightElement(element, holder, TextAttributeKeys.RUST_ATTRIBUTE_PUNCTUATION)
                 return true
             }
         }

@@ -18,14 +18,14 @@ Language-specific colors have been added for the following languages so far:
 | HTML       | ✅           | ✅            | ✅                  |
 | Markdown   | ✅           | ✅            | ✅                  |
 | NGINX Conf | ✅           | ✅            | ❌                  |
-| Perl       | ✅           | ❌            | ❌                  |
+| Perl       | ✅           | ❌            | ✅                  |
 | PHP        | ✅           | ✅            | ✅                  |
 | PowerShell | ✅           | ❌            | ✅                  |
 | Properties | ✅           | ✅            | ✅                  |
 | Python     | ✅           | ✅            | ✅                  |
-| R          | ✅           | ❌            | ❌                  |
-| Rust       | ✅           | ✅            | ❌                  |
-| SASS/SCSS  | ✅           | ✅            | ❌                  |
+| R          | ✅           | ❌            | ✅                  |
+| Rust       | ✅           | ✅            | ✅                  |
+| SASS/SCSS  | ✅           | ✅            | ✅                  |
 | Shell      | ✅           | ✅            | ✅                  |
 | SQL        | ✅           | ✅            | ❌                  |
 | Typescript | ✅           | ✅            | ✅                  |

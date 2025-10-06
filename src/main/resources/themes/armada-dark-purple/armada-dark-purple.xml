@@ -1428,7 +1428,7 @@
         </option>
         <option name="PERL_ANNOTATION">
             <value>
-                <option name="FOREGROUND" value="aba7be"/>
+                <option name="FOREGROUND" value="a8cc7c"/>
             </value>
         </option>
         <option name="PERL_ARRAY">
@@ -1468,10 +1468,17 @@
             </value>
         </option>
         <option name="PERL_NUMBER">
-            <value/>
+            <value>
+                <option name="FOREGROUND" value="4dacf0"/>
+            </value>
         </option>
         <option name="PERL_PACKAGE">
             <value/>
+        </option>
+        <option name="PERL_PACKAGE_CORE">
+            <value>
+                <option name="FONT_TYPE" value="1"/>
+            </value>
         </option>
         <option name="PERL_PACKAGE_PRAGMA">
             <value/>
@@ -1721,6 +1728,11 @@
         <option name="R_FIELD">
             <value/>
         </option>
+        <option name="R_FUNCTION_CALL">
+            <value>
+                <option name="FOREGROUND" value="ffc66d"/>
+            </value>
+        </option>
         <option name="R_FUNCTION_DECLARATION">
             <value>
                 <option name="FONT_TYPE" value="1"/>
@@ -1748,6 +1760,19 @@
             </value>
         </option>
         <option name="SASS_COMMENT" baseAttributes="CSS.COMMENT"/>
+        <option name="SASS_DEFAULT">
+            <value>
+                <option name="FOREGROUND" value="e0e1e4"/>
+            </value>
+        </option>
+        <option name="SASS_FUNCTION">
+            <value>
+                <option name="FOREGROUND" value="e0e1e4"/>
+            </value>
+        </option>
+        <option name="SASS_GLOBAL">
+            <value/>
+        </option>
         <option name="SASS_IDENTIFIER">
             <value>
                 <option name="FOREGROUND" value="e09b70"/>
@@ -1755,13 +1780,16 @@
         </option>
         <option name="SASS_MIXIN">
             <value>
-                <option name="FOREGROUND" value="e0e1e4"/>
+                <option name="FOREGROUND" value="93a6f5"/>
             </value>
         </option>
         <option name="SASS_NUMBER">
             <value>
                 <option name="FOREGROUND" value="4dacf0"/>
             </value>
+        </option>
+        <option name="SASS_OPTIONAL">
+            <value/>
         </option>
         <option name="SASS_PROPERTY_NAME">
             <value>
@@ -2084,6 +2112,11 @@
         <option name="org.rust.ATTRIBUTE_PUNCTUATION">
             <value>
                 <option name="FOREGROUND" value="e0e1e4"/>
+            </value>
+        </option>
+        <option name="org.rust.BOOLEAN">
+            <value>
+                <option name="FOREGROUND" value="4dacf0"/>
             </value>
         </option>
         <option name="org.rust.CFG_DISABLED_CODE">
