@@ -1314,12 +1314,12 @@
         </option>
         <option name="OC.BUILTIN_TYPE_KEYWORD">
             <value>
-                <option name="FOREGROUND" value="e0e1e4"/>
+        <option name="FOREGROUND" value="e09b70" />
             </value>
         </option>
         <option name="OC.CONDITIONALLY_NOT_COMPILED">
             <value>
-                <option name="FOREGROUND" value="627347"/>
+        <option name="FOREGROUND" value="576c39" />
             </value>
         </option>
         <option name="OC.CPP_KEYWORD">
@@ -1332,56 +1332,34 @@
                 <option name="FOREGROUND" value="93a6f5"/>
             </value>
         </option>
-        <option name="OC.DIRECTIVE">
-            <value>
-                <option name="FOREGROUND" value="85a658"/>
-            </value>
-        </option>
         <option name="OC.EXTERN_VARIABLE">
             <value>
                 <option name="FOREGROUND" value="e0e1e4"/>
             </value>
         </option>
-        <option name="OC.FUNCTION_DECLARATION">
-            <value>
-                <option name="FOREGROUND" value="e0e1e4"/>
-                <option name="FONT_TYPE" value="1"/>
-            </value>
-        </option>
-        <option name="OC.KEYWORD">
-            <value>
-                <option name="FOREGROUND" value="e09b70"/>
-            </value>
-        </option>
         <option name="OC.LOCAL_VARIABLE">
-            <value>
-                <option name="FOREGROUND" value="e0e1e4"/>
-            </value>
+      <value />
         </option>
         <option name="OC.MACRONAME">
-            <value>
-                <option name="FOREGROUND" value="e0e1e4"/>
-            </value>
+      <value />
         </option>
         <option name="OC.MESSAGE_ARGUMENT">
             <value>
                 <option name="FOREGROUND" value="e0e1e4"/>
             </value>
         </option>
-        <option name="OC.NAMESPACE_LIKE">
+    <option name="OC.NUMBER">
             <value>
-                <option name="FOREGROUND" value="e0e1e4"/>
+        <option name="FOREGROUND" value="4dacf0" />
             </value>
         </option>
-        <option name="OC.NUMBER">
+    <option name="OC.OVERLOADED_OPERATOR">
             <value>
-                <option name="FOREGROUND" value="4dacf0"/>
+        <option name="FOREGROUND" value="c7a65d" />
             </value>
         </option>
         <option name="OC.PARAMETER">
-            <value>
-                <option name="FOREGROUND" value="e0e1e4"/>
-            </value>
+      <value />
         </option>
         <option name="OC.PROPERTY">
             <value>
@@ -1404,13 +1382,16 @@
             </value>
         </option>
         <option name="OC.STRUCT_LIKE">
+      <value />
+    </option>
+    <option name="OC.TEMPLATE_TYPE">
             <value>
-                <option name="FOREGROUND" value="e0e1e4"/>
+        <option name="FOREGROUND" value="37cccc" />
             </value>
         </option>
         <option name="OC.TEMPLATE_VALUE">
             <value>
-                <option name="FOREGROUND" value="e0e1e4"/>
+        <option name="FOREGROUND" value="37cccc" />
             </value>
         </option>
         <option name="OC.TYPEDEF">
@@ -1754,24 +1735,32 @@
                 <option name="FOREGROUND" value="e09b70"/>
             </value>
         </option>
-        <option name="ReSharper.CSHARP_NAMESPACE_IDENTIFIER">
+    <option name="ReSharper.CPP_DIRECTIVE">
+            <value>
+        <option name="FOREGROUND" value="85a658" />
+      </value>
+    </option>
+    <option name="ReSharper.CSHARP_EXTENSION_METHOD_IDENTIFIER">
+      <value>
+        <option name="FOREGROUND" value="c7a65d" />
+        <option name="FONT_TYPE" value="2" />
+            </value>
+        </option>
+    <option name="ReSharper.CSHARP_NAMESPACE_IDENTIFIER">
             <value>
                 <option name="FOREGROUND" value="e0e1e4"/>
             </value>
         </option>
-        <option name="SASS_COMMENT" baseAttributes="CSS.COMMENT"/>
-        <option name="SASS_DEFAULT">
+    <option name="ReSharper.CSHARP_STATIC_METHOD_IDENTIFIER">
             <value>
-                <option name="FOREGROUND" value="e0e1e4"/>
+        <option name="FOREGROUND" value="c7a65d" />
+        <option name="FONT_TYPE" value="2" />
             </value>
         </option>
-        <option name="SASS_FUNCTION">
-            <value>
-                <option name="FOREGROUND" value="e0e1e4"/>
-            </value>
-        </option>
-        <option name="SASS_GLOBAL">
-            <value/>
+    <option name="ReSharper.TYPE_PARAMETER_IDENTIFIER">
+      <value>
+        <option name="FOREGROUND" value="37cccc" />
+      </value>
         </option>
         <option name="SASS_IDENTIFIER">
             <value>
