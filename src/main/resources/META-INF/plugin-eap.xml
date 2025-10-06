@@ -37,6 +37,24 @@
               path="themes/armada-dark-azure/armada-dark-azure-classic-ui.theme.json"
               targetUi="classic"
       />
+
+      <themeProvider
+              id="com.github.davidseptimus.armada.armada-coffee-light"
+              path="themes/armada-coffee-light/armada-coffee-light.theme.json"
+              targetUi="new"
+      />
+
+      <themeProvider
+              id="com.github.davidseptimus.armada.armada-coffee-light-islands"
+              path="themes/armada-coffee-light/armada-coffee-light-islands.theme.json"
+              targetUi="islands"
+      />
+
+      <themeProvider
+              id="com.github.davidseptimus.armada.armada-coffee-light-classic-ui"
+              path="themes/armada-coffee-light/armada-coffee-light-classic-ui.theme.json"
+              targetUi="classic"
+      />
   </extensions>
 </idea-plugin>
 

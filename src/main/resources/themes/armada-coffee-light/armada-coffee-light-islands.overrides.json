@@ -1,0 +1,30 @@
+{
+  "name": "Armada Coffee Light (Islands)",
+  "parentTheme": "Islands Light",
+  "ui": {
+    "Island.borderColor": "Coffee_120",
+    "ToolWindow.Stripe.borderColor": "Transparent",
+    "MainToolbar.borderColor": "Transparent",
+
+    "EditorTabs": {
+      "inactiveUnderlinedTabBorderColor": "Coffee_130",
+      "inactiveUnderlinedTabBackground": "Coffee_145",
+      "underlinedBorderColor": "CoffeeBlueTint_50",
+      "underTabsBorderColor": "Coffee_130"
+    },
+
+    "DefaultTabs": {
+      "inactiveUnderlinedTabBorderColor": "Coffee_130",
+      "inactiveUnderlinedTabBackground": "Coffee_145",
+      "underlinedBorderColor": "CoffeeBlueTint_50"
+    },
+
+    "TabbedPane": {
+      "inactiveUnderlinedTabBorderColor": "Coffee_130",
+      "inactiveUnderlinedTabBackground": "Coffee_145",
+      "underlinedBorderColor": "CoffeeBlueTint_50"
+    }
+
+  }
+}
+

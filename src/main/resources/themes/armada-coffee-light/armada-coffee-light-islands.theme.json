@@ -1,0 +1,520 @@
+{
+  "name": "Armada Coffee Light (Islands)",
+  "author": "David Septimus",
+  "dark": true,
+  "editorScheme": "themes/armada-coffee-light/armada-coffee-light.xml",
+  "icons": {
+    "/com/intellij/ide/ui/laf/icons/darcula/checkBox.svg": "/themes/armada-coffee-light/icons/checkBox.svg",
+    "/com/intellij/ide/ui/laf/icons/darcula/checkBoxDisabled.svg": "/themes/armada-coffee-light/icons/checkBoxDisabled.svg",
+    "/com/intellij/ide/ui/laf/icons/darcula/checkBoxFocused.svg": "/themes/armada-coffee-light/icons/checkBoxFocused.svg",
+    "/com/intellij/ide/ui/laf/icons/darcula/checkBoxIndeterminateSelected.svg": "/themes/armada-coffee-light/icons/checkBoxIndeterminateSelected.svg",
+    "/com/intellij/ide/ui/laf/icons/darcula/checkBoxIndeterminateSelectedDisabled.svg": "/themes/armada-coffee-light/icons/checkBoxIndeterminateSelectedDisabled.svg",
+    "/com/intellij/ide/ui/laf/icons/darcula/checkBoxIndeterminateSelectedFocused.svg": "/themes/armada-coffee-light/icons/checkBoxIndeterminateSelectedFocused.svg",
+    "/com/intellij/ide/ui/laf/icons/darcula/checkBoxSelected.svg": "/themes/armada-coffee-light/icons/checkBoxSelected.svg",
+    "/com/intellij/ide/ui/laf/icons/darcula/checkBoxSelectedDisabled.svg": "/themes/armada-coffee-light/icons/checkBoxSelectedDisabled.svg",
+    "/com/intellij/ide/ui/laf/icons/darcula/checkBoxSelectedFocused.svg": "/themes/armada-coffee-light/icons/checkBoxSelectedFocused.svg",
+    "/com/intellij/ide/ui/laf/icons/darcula/radio.svg": "/themes/armada-coffee-light/icons/radio.svg",
+    "/com/intellij/ide/ui/laf/icons/darcula/radioDisabled.svg": "/themes/armada-coffee-light/icons/radioDisabled.svg",
+    "/com/intellij/ide/ui/laf/icons/darcula/radioFocused.svg": "/themes/armada-coffee-light/icons/radioFocused.svg",
+    "/com/intellij/ide/ui/laf/icons/darcula/radioSelected.svg": "/themes/armada-coffee-light/icons/radioSelected.svg",
+    "/com/intellij/ide/ui/laf/icons/darcula/radioSelectedDisabled.svg": "/themes/armada-coffee-light/icons/radioSelectedDisabled.svg",
+    "/com/intellij/ide/ui/laf/icons/darcula/radioSelectedFocused.svg": "/themes/armada-coffee-light/icons/radioSelectedFocused.svg",
+    "ColorPalette": {
+      "Tree.iconColor": "Coffee_30",
+      "Gray.Fill": "Coffee_100",
+      "Gray.SecondaryStroke": "Coffee_90",
+      "Gray.Stroke": "Coffee_20",
+      "Green.Solid": "CoffeeGreen",
+      "Green.Stroke": "CoffeeGreen",
+      "Red.Solid": "CoffeeCoral",
+      "Red.Stroke": "CoffeeCoral",
+      "Blue.Solid": "CoffeeBlue",
+      "Blue.Stroke": "CoffeeBlue",
+      "Yellow.Solid": "CoffeeYellow",
+      "Yellow.Stroke": "CoffeeYellow",
+      "Purple.Solid": "CoffeeViolet",
+      "Purple.Stroke": "CoffeeViolet",
+      "Orange.Solid": "CoffeeOrange",
+      "Orange.Stroke": "CoffeeOrange",
+      "Objects.Pink": "CoffeePink",
+      "Objects.Blue": "CoffeeBlue",
+      "Objects.Red": "CoffeeCoral",
+      "Objects.Green": "CoffeeGreen",
+      "Objects.Grey": "Coffee_100",
+      "Objects.Yellow": "CoffeeYellow",
+      "Objects.YellowDark": "CoffeeYellowDark",
+      "Objects.Purple": "CoffeeViolet",
+      "Objects.RedStatus": "CoffeeCoral",
+      "Actions.Blue": "CoffeeBlue",
+      "Actions.Red": "CoffeeCoral",
+      "Actions.Green": "CoffeeGreen",
+      "Actions.Yellow": "CoffeeYellow",
+      "Actions.Purple": "CoffeeViolet",
+      "Actions.Violet": "CoffeeViolet",
+      "Actions.Grey": "Coffee_80",
+      "Actions.GreyInline": "Coffee_80"
+    }
+  },
+  "ui": {
+    "*": {
+      "borderColor": "Coffee_120",
+      "separatorColor": "Coffee_130",
+      "background": "Coffee_150",
+      "foreground": "Coffee_20",
+      "disabledText": "Coffee_100",
+      "selectionBackground": "SelectionBackground",
+      "selectionForeground": "Coffee_10",
+      "selectionInactiveBackground": "SelectionInactiveBackground"
+    },
+    "Borders": {
+      "color": "Coffee_120"
+    },
+    "ActionButton": {
+      "hoverBackground": "Coffee_140",
+      "hoverBorderColor": "Coffee_130",
+      "pressedBackground": "Coffee_130",
+      "pressedBorderColor": "Coffee_120"
+    },
+    "DefaultTabs": {
+      "background": "Coffee_150",
+      "borderColor": "Transparent",
+      "underlineColor": "CoffeeBlue",
+      "inactiveUnderlineColor": "Coffee_130",
+      "underlinedTabBackground": "CoffeeBlueTint_25",
+      "hoverBackground": "Coffee_145",
+      "inactiveUnderlinedTabBorderColor": "Coffee_130",
+      "inactiveUnderlinedTabBackground": "Coffee_145",
+      "underlinedBorderColor": "CoffeeBlueTint_50"
+    },
+    "EditorPane": {
+      "splitBorder": "Coffee_110"
+    },
+    "EditorTabs": {
+      "background": "Coffee_150",
+      "borderColor": "Transparent",
+      "underlineColor": "CoffeeBlueTint_50",
+      "inactiveUnderlineColor": "Coffee_130",
+      "underlinedTabBackground": "CoffeeBlueTint_25",
+      "hoverBackground": "Coffee_145",
+      "inactiveUnderlinedTabBorderColor": "Coffee_130",
+      "inactiveUnderlinedTabBackground": "Coffee_145",
+      "underlinedBorderColor": "CoffeeBlueTint_50",
+      "underTabsBorderColor": "Coffee_130"
+    },
+    "TabbedPane": {
+      "underlineColor": "CoffeeBlueTint_50",
+      "disabledUnderlineColor": "Coffee_130",
+      "hoverColor": "Coffee_145",
+      "focusColor": "CoffeeBlueTint_25",
+      "underlinedTabBackground": "CoffeeBlueTint_25",
+      "inactiveUnderlinedTabBorderColor": "Coffee_130",
+      "inactiveUnderlinedTabBackground": "Coffee_145",
+      "underlinedBorderColor": "CoffeeBlueTint_50"
+    },
+    "ProgressBar": {
+      "background": "Coffee_120",
+      "foreground": "Coffee_20",
+      "failedEndColor": "CoffeeCoralLight",
+      "failedColor": "CoffeeCoral",
+      "indeterminateStartColor": "CoffeeBlue",
+      "indeterminateEndColor": "CoffeeBlueLight",
+      "progressColor": "CoffeeBlue",
+      "selectionBackground": "Coffee_20",
+      "selectionForeground": "Coffee_160",
+      "trackColor": "Coffee_120",
+      "passedColor": "CoffeeGreen",
+      "passedEndColor": "CoffeeGreenLight",
+      "warningColor": "CoffeeYellow",
+      "warningEndColor": "CoffeeYellowLight"
+    },
+    "FileColor": {
+      "Blue": "CoffeeBlueTint_40",
+      "Green": "CoffeeGreenTint_40",
+      "Orange": "CoffeeOrangeTint_40",
+      "Rose": "CoffeePinkTint_40",
+      "Violet": "CoffeeVioletTint_40",
+      "Yellow": "CoffeeYellowTint_40",
+      "Gray": "Coffee_140"
+    },
+    "MainToolbar": {
+      "background": "Coffee_30",
+      "borderColor": "Transparent"
+    },
+    "MainWindow": {
+      "background": "Coffee_30"
+    },
+    "Editor": {
+      "background": "Coffee_160"
+    },
+    "ScrollBar": {
+      "background": "Coffee_160",
+      "thumb": "Coffee_110",
+      "thumbColor": "Coffee_110",
+      "hoverThumbColor": "Coffee_100",
+      "thumbHighlight": "Coffee_90",
+      "trackColor": "Transparent",
+      "hoverTrackColor": "Coffee_150",
+      "trackHighlight": "Coffee_150",
+      "Mac": {
+        "thumbColor": "Coffee_110",
+        "hoverThumbColor": "Coffee_100",
+        "trackColor": "Transparent",
+        "hoverTrackColor": "Coffee_150"
+      }
+    },
+    "Settings": {
+      "Spotlight": {
+        "borderColor": "CoffeeYellowTint_50"
+      }
+    },
+    "Panel": {
+      "foreground": "Coffee_20"
+    },
+    "StatusBar": {
+      "background": "Coffee_30",
+      "borderColor": "Transparent"
+    },
+    "Label": {
+      "foreground": "Coffee_20",
+      "selectedForeground": "Coffee_10",
+      "infoForeground": "Coffee_60"
+    },
+    "Tree": {
+      "foreground": "Coffee_20",
+      "errorForeground": "CoffeeCoral"
+    },
+    "Link": {
+      "activeForeground": "CoffeeBlue",
+      "hoverForeground": "CoffeeBlueDark",
+      "visitedForeground": "CoffeeViolet",
+      "pressedForeground": "CoffeeBlueDark"
+    },
+    "CheckBox": {
+      "disabledText": "Coffee_100",
+      "foreground": "Coffee_20",
+      "borderInsets": "4,4,4,4",
+      "iconSize": 24,
+      "textIconGap": 4
+    },
+    "DragAndDrop": {
+      "areaBackground": "CoffeeBlueTint_15",
+      "borderColor": "CoffeeBlue",
+      "rowBackground": "CoffeeBlueTint_20"
+    },
+    "ToolWindow": {
+      "HeaderTab": {
+        "inactiveUnderlineColor": "Coffee_100"
+      },
+      "Header": {
+        "inactiveBackground": "Coffee_40",
+        "background": "Coffee_40"
+      },
+      "Button": {
+        "selectedBackground": "CoffeeBlue",
+        "hoverBackground": "Coffee_50",
+        "selectedForeground": "Coffee_160"
+      },
+      "Stripe": {
+        "background": "Coffee_30",
+        "separatorColor": "Coffee_50",
+        "DragAndDrop": {
+          "separatorColor": "CoffeeBlue"
+        },
+        "borderColor": "Transparent"
+      },
+      "DragAndDrop": {
+        "areaBackground": "CoffeeBlueTint_15"
+      }
+    },
+    "TextPane": {
+      "inactiveBackground": "Coffee_150"
+    },
+    "CheckBoxMenuItem": {
+      "background": "Coffee_145",
+      "foreground": "Coffee_20",
+      "disabledBackground": "Transparent",
+      "disabledForeground": "Coffee_100"
+    },
+    "Button": {
+      "default": {
+        "startBackground": "CoffeeBlue",
+        "endBackground": "CoffeeBlue",
+        "startBorderColor": "Transparent",
+        "endBorderColor": "Transparent",
+        "focusColor": "CoffeeBlueDark",
+        "focusedBorderColor": "Coffee_160",
+        "shadowColor": "Transparent",
+        "foreground": "Coffee_160"
+      },
+      "startBackground": "Coffee_140",
+      "endBackground": "Coffee_140",
+      "startBorderColor": "Transparent",
+      "endBorderColor": "Transparent",
+      "focusedBorderColor": "Coffee_160",
+      "shadowColor": "Transparent",
+      "disabledBorderColor": "Coffee_130",
+      "disabledText": "Coffee_100"
+    },
+    "List": {
+      "selectionForeground": "Coffee_10",
+      "foreground": "Coffee_20",
+      "hoverBackground": "Coffee_155"
+    },
+    "ComboBox": {
+      "selectionBackground": "CoffeeBlueTint_40",
+      "background": "Coffee_150",
+      "modifiedItemForeground": "CoffeeBlue",
+      "nonEditableBackground": "Coffee_150",
+      "disabledBackground": "Coffee_155",
+      "ArrowButton": {
+        "nonEditableBackground": "Coffee_150",
+        "background": "Coffee_150"
+      }
+    },
+    "ToolTip": {
+      "background": "Coffee_40",
+      "borderColor": "Coffee_60",
+      "foreground": "Coffee_150",
+      "infoForeground": "Coffee_130",
+      "linkForeground": "CoffeeBlueLight"
+    },
+    "GotItTooltip": {
+      "background": "Coffee_40",
+      "borderColor": "Coffee_60",
+      "Button": {
+        "startBackground": "CoffeeBlue",
+        "endBackground": "CoffeeBlue",
+        "startBorderColor": "Transparent",
+        "endBorderColor": "Transparent"
+      },
+      "Header": {
+        "foreground": "Coffee_150"
+      },
+      "secondaryActionForeground": "CoffeeBlueLight"
+    },
+    "Menu": {
+      "background": "Coffee_40",
+      "foreground": "Coffee_150",
+      "separatorColor": "Coffee_60"
+    },
+    "PopupMenu": {
+      "background": "Coffee_40"
+    },
+    "MenuItem": {
+      "background": "Coffee_40"
+    },
+    "ComplexPopup": {
+      "Header": {
+        "background": "Coffee_40"
+      }
+    },
+    "Popup": {
+      "Header": {
+        "activeBackground": "Coffee_40"
+      },
+      "background": "Coffee_40",
+      "borderColor": "Coffee_60",
+      "separatorColor": "Coffee_70",
+      "Advertiser": {
+        "background": "Coffee_40"
+      }
+    },
+    "Separator": {
+      "separatorColor": "Coffee_130"
+    },
+    "Notification": {
+      "background": "Coffee_150",
+      "borderColor": "Coffee_120",
+      "errorBackground": "CoffeeCoralTint_30",
+      "errorBorderColor": "CoffeeCoral",
+      "linkForeground": "CoffeeBlue"
+    },
+    "NotificationsToolwindow": {
+      "newNotification": {
+        "background": "Coffee_150",
+        "hoverBackground": "Coffee_145"
+      },
+      "Notification": {
+        "hoverBackground": "Coffee_145"
+      }
+    },
+    "Component": {
+      "focusColor": "CoffeeBlue",
+      "focusedBorderColor": "Transparent",
+      "errorFocusColor": "CoffeeCoral",
+      "inactiveErrorFocusColor": "CoffeeCoralLight"
+    },
+    "RadioButton": {
+      "borderInsets": "4,4,4,4",
+      "iconSize": 24,
+      "iconTextGap": 4
+    },
+    "Plugins": {
+      "Button": {
+        "installBackground": "Coffee_140",
+        "installBorderColor": "Transparent",
+        "installForeground": "Coffee_20",
+        "installFillBackground": "CoffeeBlue",
+        "installFillForeground": "Coffee_160",
+        "installFocusedBackground": "CoffeeBlueDark",
+        "updateBackground": "Coffee_140",
+        "updateBorderColor": "Transparent",
+        "updateForeground": "Coffee_20"
+      },
+      "lightSelectionBackground": "CoffeeBlueTint_40",
+      "trialTagBackground": "CoffeeGreenTint_40",
+      "paidTagBackground": "CoffeeBlueTint_50",
+      "tagForeground": "Coffee_50",
+      "tagBackground": "Coffee_130"
+    },
+    "Table": {
+      "lightSelectionBackground": "SelectionBackground",
+      "lightSelectionInactiveBackground": "SelectionInactiveBackground",
+      "hoverBackground": "Coffee_155"
+    },
+    "VersionControl": {
+      "Log": {
+        "Commit": {
+          "currentBranchBackground": "Coffee_145",
+          "selectionInactiveBackground": "Coffee_110",
+          "selectionInactiveForeground": "Coffee_20",
+          "hoveredBackground": "Coffee_140"
+        }
+      }
+    },
+    "CompletionPopup": {
+      "Advertiser": {
+        "background": "Coffee_155"
+      },
+      "selectionBackground": "CoffeeBlueTint_40",
+      "selectionInactiveBackground": "Coffee_140",
+      "nonFocusedMask": "Coffee_155",
+      "foreground": "Coffee_20",
+      "matchForeground": "Coffee_10"
+    },
+    "Banner": {
+      "errorBackground": "CoffeeCoralTint_30",
+      "errorBorderColor": "CoffeeCoral",
+      "warningBackground": "CoffeeOrangeTint_30",
+      "warningBorderColor": "CoffeeOrange",
+      "infoBackground": "CoffeeBlueTint_30",
+      "infoBorderColor": "CoffeeBlue",
+      "successBackground": "CoffeeGreenTint_30",
+      "successBorderColor": "CoffeeGreen"
+    },
+    "SearchField": {
+      "errorForeground": "CoffeeCoral",
+      "errorBackground": "CoffeeCoralTint_30"
+    },
+    "SpeedSearch": {
+      "errorForeground": "CoffeeCoral"
+    },
+    "Counter": {
+      "background": "Coffee_110"
+    },
+    "SearchOption": {
+      "selectedBackground": "CoffeeBlueTint_40",
+      "selectedHoveredBackground": "CoffeeBlueTint_30",
+      "selectedPressedBackground": "CoffeeBlueTint_25"
+    },
+    "WelcomeScreen": {
+      "separatorColor": "Coffee_120"
+    },
+    "Island": {
+      "borderColor": "Coffee_120"
+    }
+  },
+  "colors": {
+    "White": "#FFFFFF",
+    "Black": "#18191b",
+    "Transparent": "#FFFFFF00",
+    "Coffee_10": "#0a0703",
+    "Coffee_20": "#100c06",
+    "Coffee_30": "#17130b",
+    "Coffee_40": "#1f1a10",
+    "Coffee_50": "#282216",
+    "Coffee_60": "#30291b",
+    "Coffee_70": "#393121",
+    "Coffee_80": "#4a4334",
+    "Coffee_90": "#5c5548",
+    "Coffee_100": "#6f695c",
+    "Coffee_110": "#827d72",
+    "Coffee_120": "#969188",
+    "Coffee_130": "#aaa69f",
+    "Coffee_140": "#bfbcb6",
+    "Coffee_145": "#cac7c2",
+    "Coffee_150": "#d4d2ce",
+    "Coffee_155": "#dfddd9",
+    "Coffee_160": "#e9e8e6",
+    "CoffeeBlue": "#2b6b7a",
+    "CoffeeBlueDark": "#236078",
+    "CoffeeBlueDarker": "#1c5566",
+    "CoffeeBlueLight": "#3f8091",
+    "CoffeeCyan": "#2d5a7f",
+    "CoffeeCyanDark": "#3d6738",
+    "CoffeeGreen": "#3d8a45",
+    "CoffeeGreenDark": "#357a3d",
+    "CoffeeGreenDarker": "#2d6a35",
+    "CoffeeGreenLight": "#4a9a52",
+    "CoffeeLime": "#5a8847",
+    "CoffeeOrange": "#c66735",
+    "CoffeeOrangeDark": "#b55d2f",
+    "CoffeeOrangeDarker": "#a35329",
+    "CoffeeOrangeLight": "#d37541",
+    "CoffeeYellow": "#9d8232",
+    "CoffeeYellowDark": "#8d7229",
+    "CoffeeYellowLight": "#b59438",
+    "CoffeeViolet": "#6b5fc8",
+    "CoffeeVioletDark": "#5f53b8",
+    "CoffeeVioletDarker": "#5347a8",
+    "CoffeeVioletLight": "#7d71d8",
+    "CoffeePink": "#b5478a",
+    "CoffeeCoral": "#b8453a",
+    "CoffeeCoralDark": "#a83d34",
+    "CoffeeCoralDarker": "#98352e",
+    "CoffeeCoralLight": "#c85548",
+    "CoffeeBrown": "#654a4f",
+    "CoffeeGray": "#5c5548",
+    "CoffeeBlueTint_50": "#2b6b7a80",
+    "CoffeeBlueTint_40": "#2b6b7a66",
+    "CoffeeBlueTint_30": "#2b6b7a4D",
+    "CoffeeBlueTint_25": "#2b6b7a40",
+    "CoffeeBlueTint_20": "#2b6b7a33",
+    "CoffeeBlueTint_15": "#2b6b7a26",
+    "CoffeeBlueTint_10": "#2b6b7a1A",
+    "CoffeeBlueTint_5": "#2b6b7a0D",
+    "CoffeeGreenTint_50": "#3d8a4580",
+    "CoffeeGreenTint_40": "#3d8a4566",
+    "CoffeeGreenTint_30": "#3d8a454D",
+    "CoffeeGreenTint_20": "#3d8a4533",
+    "CoffeeGreenTint_10": "#3d8a451A",
+    "CoffeeCoralTint_50": "#b8453a80",
+    "CoffeeCoralTint_40": "#b8453a66",
+    "CoffeeCoralTint_30": "#b8453a4D",
+    "CoffeeCoralTint_20": "#b8453a33",
+    "CoffeeCoralTint_10": "#b8453a1A",
+    "CoffeeYellowTint_50": "#9d823280",
+    "CoffeeYellowTint_40": "#9d823266",
+    "CoffeeYellowTint_30": "#9d82324D",
+    "CoffeeYellowTint_20": "#9d823233",
+    "CoffeeYellowTint_10": "#9d82321A",
+    "CoffeeOrangeTint_50": "#c6673580",
+    "CoffeeOrangeTint_40": "#c6673566",
+    "CoffeeOrangeTint_30": "#c667354D",
+    "CoffeeOrangeTint_20": "#c6673533",
+    "CoffeeOrangeTint_10": "#c667351A",
+    "CoffeeVioletTint_50": "#6b5fc880",
+    "CoffeeVioletTint_40": "#6b5fc866",
+    "CoffeeVioletTint_30": "#6b5fc84D",
+    "CoffeeVioletTint_20": "#6b5fc833",
+    "CoffeeVioletTint_15": "#6b5fc826",
+    "CoffeeVioletTint_10": "#6b5fc81A",
+    "CoffeePinkTint_40": "#b5478a66",
+    "CoffeePinkTint_30": "#b5478a4D",
+    "CoffeePinkTint_20": "#b5478a33",
+    "CoffeePinkTint_10": "#b5478a1A",
+    "SelectionBackground": "#aaa69f",
+    "SelectionInactiveBackground": "#bfbcb6"
+  },
+  "parentTheme": "Islands Light"
+}

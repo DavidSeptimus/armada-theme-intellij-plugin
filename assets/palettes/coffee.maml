@@ -1,0 +1,193 @@
+{
+  "UIColors": {
+    "Coffee_10": "#0a0703"
+    "Coffee_20": "#100c06"
+    "Coffee_30": "#17130b"
+    "Coffee_40": "#1f1a10"
+    "Coffee_50": "#282216"
+    "Coffee_60": "#30291b"
+    "Coffee_70": "#393121"
+    "Coffee_80": "#4a4334"
+    "Coffee_90": "#5c5548"
+    "Coffee_100": "#6f695c"
+    "Coffee_110": "#827d72"
+    "Coffee_120": "#969188"
+    "Coffee_130": "#aaa69f"
+    "Coffee_140": "#bfbcb6"
+    "Coffee_150": "#d4d2ce"
+    "Coffee_160": "#e9e8e6"
+  }
+  "HighlightColors": {
+    "Black": "#18191b"
+    "Gray": "#5c5548"
+    "Blue": "#2b6b7a"
+    "Cyan": "#2d5a7f"
+    "Cyan Dark": "#3d6738"
+    "Violet": "#6b5fc8"
+    "Pink": "#b5478a"
+    "Coral": "#b8453a"
+    "Green": "#3d8a45"
+    "Lime": "#5a8847"
+    "Orange": "#c66735"
+    "Yellow": "#9d8232"
+    "Brown": "#654a4f"
+  }
+
+  "HighlightingGuide": {
+    "configuration_language": {
+      "description": "YAML, TOML, INI files"
+      "tokens": {
+        "keys": "#2b6b7a"
+        "string_values": "#3d8a45"
+        "numbers": "#9d8232"
+        "booleans": "#b5478a"
+        "comments": "#5c5548"
+        "sections": "#6b5fc8"
+        "anchors_references": "#2d5a7f"
+      }
+    }
+    "json_like": {
+      "description": "JSON, JSON5"
+      "tokens": {
+        "keys": "#2b6b7a"
+        "string_values": "#3d8a45"
+        "numbers": "#9d8232"
+        "booleans": "#b5478a"
+        "null": "#b8453a"
+        "brackets_braces": "#2d5a7f"
+        "comments": "#5c5548"
+      }
+    }
+    "scripting_language": {
+      "description": "Python, JavaScript, Ruby"
+      "tokens": {
+        "keywords": "#2b6b7a"
+        "control_flow": "#b8453a"
+        "functions": "#6b5fc8"
+        "function_calls": "#2d5a7f"
+        "strings": "#3d8a45"
+        "numbers": "#9d8232"
+        "variables": "#18191b"
+        "parameters": "#b5478a"
+        "operators": "#3d6738"
+        "comments": "#5c5548"
+        "decorators": "#c66735"
+        "builtins": "#2d5a7f"
+      }
+    }
+    "compiled_typed_language": {
+      "description": "TypeScript, Rust, C++, Java"
+      "tokens": {
+        "keywords": "#2b6b7a"
+        "control_flow": "#b8453a"
+        "types": "#6b5fc8"
+        "interfaces_classes": "#6b5fc8"
+        "functions": "#2d5a7f"
+        "methods": "#2d5a7f"
+        "parameters": "#b5478a"
+        "generics": "#c66735"
+        "strings": "#3d8a45"
+        "numbers": "#9d8232"
+        "variables": "#18191b"
+        "properties": "#3d6738"
+        "operators": "#3d6738"
+        "comments": "#5c5548"
+        "annotations": "#c66735"
+        "enums": "#b8453a"
+      }
+    }
+    "markup_language": {
+      "description": "HTML, XML, Markdown"
+      "tokens": {
+        "tags": "#2b6b7a"
+        "attributes": "#b5478a"
+        "attribute_values": "#3d8a45"
+        "text_content": "#18191b"
+        "comments": "#5c5548"
+        "headings": "#6b5fc8"
+        "bold": "#9d8232"
+        "italic": "#2d5a7f"
+        "links": "#2d5a7f"
+        "code": "#c66735"
+      }
+    }
+    "styling_language": {
+      "description": "CSS, SCSS, Less"
+      "tokens": {
+        "selectors": "#2b6b7a"
+        "properties": "#6b5fc8"
+        "values": "#3d8a45"
+        "numbers_units": "#9d8232"
+        "colors": "#b5478a"
+        "pseudo_classes": "#2d5a7f"
+        "variables": "#c66735"
+        "functions": "#3d6738"
+        "comments": "#5c5548"
+      }
+    }
+    "shell_script": {
+      "description": "Bash, Zsh, Shell scripts"
+      "tokens": {
+        "commands": "#2b6b7a"
+        "keywords": "#b8453a"
+        "strings": "#3d8a45"
+        "variables": "#b5478a"
+        "parameters": "#2d5a7f"
+        "pipes_redirects": "#3d6738"
+        "comments": "#5c5548"
+        "numbers": "#9d8232"
+      }
+    }
+    "sql_language": {
+      "description": "SQL, PostgreSQL, MySQL"
+      "tokens": {
+        "keywords": "#2b6b7a"
+        "functions": "#6b5fc8"
+        "table_names": "#2d5a7f"
+        "column_names": "#b5478a"
+        "strings": "#3d8a45"
+        "numbers": "#9d8232"
+        "operators": "#3d6738"
+        "comments": "#5c5548"
+      }
+    }
+  }
+
+  "ColorPhilosophy": {
+    "description": "Coffee Light theme - A warm latte-inspired palette with light editor on dark brown UI"
+    "principles": [
+      "Dark brown UI (Coffee_10-40) frames the workspace like a rich espresso cup"
+      "Light cream editor (Coffee_160-150) provides a clean, paper-like writing surface"
+      "Deep green (#3d8a45) for strings - rich coffee bean color with good contrast"
+      "Golden yellow (#9d8232) for numbers - warm honey tones in your coffee"
+      "Teal blue (#2b6b7a) for keywords - calm and professional"
+      "Deep violet (#6b5fc8) for types/functions - elegant and distinct"
+      "Magenta (#b5478a) for parameters/attributes - rich berry notes"
+      "Coral red (#b8453a) for control flow/enums - attention-grabbing warmth"
+      "Muted cyan (#2d5a7f) for function calls - cool contrast"
+      "Forest green (#3d6738) for operators/properties - grounded and natural"
+      "Burnt orange (#c66735) for decorators/annotations - spice notes"
+      "Medium brown (#5c5548) for comments - subtle like coffee sediment"
+    ]
+    "accessibility": {
+      "contrast": "All highlight colors provide strong contrast against light backgrounds (Coffee_160-150)"
+      "color_blindness": "Darker saturated colors chosen for better distinction on light backgrounds"
+      "bright_light": "Light editor reduces glare while dark UI frame provides visual anchoring"
+    }
+  }
+
+  "UsageNotes": {
+    "editor_background": "Coffee_160 to Coffee_150 - light cream/paper color"
+    "ui_chrome": "Coffee_10 to Coffee_40 - dark brown for toolbars, sidebars, status bar"
+    "ui_panels": "Coffee_50 to Coffee_70 - medium brown for secondary panels"
+    "selection": "Coffee_140 with transparency"
+    "line_highlight": "Coffee_150 with low opacity"
+    "search_highlight": "#9d8232 with 25% opacity (golden highlight)"
+    "error": "#b8453a"
+    "warning": "#c66735"
+    "info": "#2d5a7f"
+    "success": "#3d8a45"
+    "visual_hierarchy": "Dark frame + light content = classic book or coffee shop menu aesthetic"
+  }
+}
+

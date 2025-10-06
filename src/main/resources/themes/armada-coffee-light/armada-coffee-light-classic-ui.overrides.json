@@ -1,0 +1,10 @@
+{
+  "name": "Armada Coffee Light (Classic UI)",
+  "ui": {
+    "ToolWindow.Button.selectedBackground": "Coffee_120",
+    "ToolWindow.Button.selectedForeground": "Coffee_10",
+    "ToggleButton.foreground": "Coffee_10",
+    "EditorTabs.underTabsBorderColor": "Coffee_120"
+  }
+}
+

@@ -302,6 +302,27 @@ themeMerger {
             output.set("src/main/resources/themes/armada-dark-azure/armada-dark-azure-classic-ui.theme.json")
             description.set("Generates the Armada Dark Azure Classic UI theme by merging base and Classic UI overrides")
         }
+
+        register("coffeeLightTheme") {
+            baseTheme.set("src/main/resources/themes/armada-coffee-light/armada-coffee-light-base.theme.json")
+            overrides("src/main/resources/themes/armada-coffee-light/armada-coffee-light.overrides.json")
+            output.set("src/main/resources/themes/armada-coffee-light/armada-coffee-light.theme.json")
+            description.set("Generates the Armada Coffee Light New UI theme by merging base and overrides")
+        }
+
+        register("coffeeLightIslandsTheme") {
+            baseTheme.set("src/main/resources/themes/armada-coffee-light/armada-coffee-light-base.theme.json")
+            overrides("src/main/resources/themes/armada-coffee-light/armada-coffee-light-islands.overrides.json")
+            output.set("src/main/resources/themes/armada-coffee-light/armada-coffee-light-islands.theme.json")
+            description.set("Generates the Armada Coffee Light Islands theme by merging base and Islands overrides")
+        }
+
+        register("coffeeLightClassicUITheme") {
+            baseTheme.set("src/main/resources/themes/armada-coffee-light/armada-coffee-light-base.theme.json")
+            overrides("src/main/resources/themes/armada-coffee-light/armada-coffee-light-classic-ui.overrides.json")
+            output.set("src/main/resources/themes/armada-coffee-light/armada-coffee-light-classic-ui.theme.json")
+            description.set("Generates the Armada Coffee Light Classic UI theme by merging base and Classic UI overrides")
+        }
     }
 }
 
