@@ -19,61 +19,72 @@
     "/com/intellij/ide/ui/laf/icons/intellij/radioSelected.svg": "/themes/armada-light/icons/radioSelected.svg",
     "/com/intellij/ide/ui/laf/icons/intellij/radioSelectedDisabled.svg": "/themes/armada-light/icons/radioSelectedDisabled.svg",
     "/com/intellij/ide/ui/laf/icons/intellij/radioSelectedFocused.svg": "/themes/armada-light/icons/radioSelectedFocused.svg",
+    "/com/intellij/ide/ui/laf/icons/intellij/treeCollapsedSelected.svg": "/themes/armada-light/icons/treeCollapsedSelected.svg",
+    "/com/intellij/ide/ui/laf/icons/intellij/treeExpandedSelected.svg": "/themes/armada-light/icons/treeExpandedSelected.svg",
     "ColorPalette": {
-      "Tree": {
-        "iconColor": "Neutral_10"
-      },
-      "Gray": {
-        "Fill": "White",
-        "SecondaryStroke": "Neutral_90",
-        "Stroke": "Neutral_70"
-      },
-      "Green": {
-        "Solid": "Green_100",
-        "Stroke": "Green_100"
-      },
-      "Red": {
-        "Solid": "Red_100",
-        "Stroke": "Red_100"
-      },
-      "Blue": {
-        "Solid": "Blue_100",
-        "Stroke": "Blue_100"
-      },
-      "Yellow": {
-        "Solid": "YellowBright_10",
-        "Stroke": "YellowBright_10"
-      },
-      "Purple": {
-        "Solid": "Purple_100",
-        "Stroke": "Purple_100"
-      },
-      "Orange": {
-        "Solid": "Orange",
-        "Stroke": "Orange"
-      },
-      "Objects": {
-        "Pink": "Pink",
-        "Blue": "Blue_100",
-        "Red": "Red_100",
-        "Green": "Green_100",
-        "Grey": "Orange",
-        "Yellow": "YellowBright_10",
-        "YellowDark": "Yellow_100",
-        "Purple": "Purple_100",
-        "RedStatus": "Red_100"
-      },
-      "Actions": {
-        "Blue": "Blue_100",
-        "Red": "Red_100",
-        "Green": "Green_100",
-        "Yellow": "Yellow_100",
-        "Purple": "Purple_100",
-        "Violet": "Violet_100",
-        "Grey": "Neutral_70",
-        "GreyInline": "Neutral_70"
-      }
+      "Tree.iconColor": "Neutral_10",
+      "Gray.Fill": "White",
+      "Gray.SecondaryStroke": "Neutral_90",
+      "Gray.Stroke": "Neutral_70",
+      "Green.Solid": "Green_100",
+      "Green.Stroke": "Green_100",
+      "Red.Solid": "Red_100",
+      "Red.Stroke": "Red_100",
+      "Blue.Solid": "Blue_100",
+      "Blue.Stroke": "Blue_100",
+      "Yellow.Solid": "YellowBright_10",
+      "Yellow.Stroke": "YellowBright_10",
+      "Purple.Solid": "Purple_100",
+      "Purple.Stroke": "Purple_100",
+      "Orange.Solid": "Orange",
+      "Orange.Stroke": "Orange",
+      "Objects.Pink": "Purple 30",
+      "Objects.Blue": "Blue 60",
+      "Objects.Red": "Orange_120",
+      "Objects.Green": "Green 60",
+      "Objects.Grey": "Neutral_120",
+      "Objects.Yellow": "Yellow 40",
+      "Objects.YellowDark": "Yellow_30",
+      "Objects.Purple": "Purple 30",
+      "Objects.RedStatus": "Red_110",
+      "Actions.Blue": "Blue_110",
+      "Actions.Red": "Red_100",
+      "Actions.Green": "Green_100",
+      "Actions.Yellow": "Yellow_120",
+      "Actions.Purple": "Purple_120",
+      "Actions.Violet": "Violet_120",
+      "Actions.Grey": "Gray 50",
+      "Actions.GreyInline": "Gray 50"
     }
+  },
+  "iconColorsOnSelection": {
+    "#db5860": "Red_120",
+    "#eda200": "Yellow 40",
+    "#59A869": "Green_120",
+    "#389FD6": "Blue 60",
+    "#6e6e6e": "Neutral_120",
+    "#9aa7b0": "Neutral_120",
+    "#9aa7b0cc": "Neutral_120",
+    "#9aa7b099": "Neutral_120",
+    "#f26522": "Orange_120",
+    "#f26522b3": "Orange_120",
+    "#f2652299": "Orange_120",
+    "#40b6e0": "Blue 60",
+    "#40b6e0b3": "Blue 60",
+    "#40b6e099": "Blue 60",
+    "#62b543": "Green 60",
+    "#62b543b3": "Green 60",
+    "#62b54399": "Green 60",
+    "#f98b9e": "Purple_130",
+    "#f98b9eb3": "Purple 30",
+    "#f98b9e99": "Purple 30",
+    "#f4af3d": "Yellow 40",
+    "#f4af3db3": "Yellow 40",
+    "#f4af3d99": "Yellow 40",
+    "#b99bf8": "Purple_120",
+    "#b99bf8b3": "Purple_120",
+    "#b99bf899": "Purple_120",
+    "#767a8a": "Gray 70"
   },
   "ui": {
     "*": {
@@ -110,7 +121,8 @@
       "underlinedTabBackground": "BlueTint_10",
       "inactiveUnderlineColor": "LightTint_8",
       "hoverBackground": "DarkTint_7",
-      "hoverSelectedBackground": "DarkTint_7"
+      "hoverSelectedBackground": "DarkTint_7",
+      "underTabsBorderColor": "Neutral_140"
     },
     "TabbedPane": {
       "background": "White",
@@ -164,7 +176,7 @@
       "background": "White"
     },
     "StatusBar": {
-      "borderColor": "Transparent"
+      "borderColor": "Neutral_140"
     },
     "Label": {
       "selectedForeground": "Neutral_10",
@@ -244,7 +256,7 @@
       "selectionForeground": "Neutral_10",
       "foreground": "Neutral_10",
       "hoverBackground": "DarkTint_5",
-      "selectionBackground": "BlueTint_20",
+      "selectionBackground": "#90B7EB",
       "selectionInactiveBackground": "DarkTint_15"
     },
     "ComboBox": {
@@ -642,25 +654,7 @@
     "VioletTint_40": "#685AFB66",
     "YellowTint_50": "#9F680C80",
     "YellowTint_40": "#9F680C66",
-    "YellowTint_20": "#9F680C33"
-  },
-  "iconColorsOnSelection": {
-    "#767a8a": "#ffffff",
-    "#6e6e6e": "#afb1b3",
-    "#db5860": "#b75e73",
-    "#f26522b3": "#d38369",
-    "#f2652299": "#d38369",
-    "#40b6e099": "#5eb6d4",
-    "#62b54399": "#7ebe65",
-    "#f98b9e99": "#f1a4b2",
-    "#f4af3d99": "#ecc27d",
-    "#b99bf899": "#b49ee2",
-    "#9aa7b0cc": "#aebdc6",
-    "#9aa7b099": "#aebdc6",
-    "#40b6e0b3": "#5eb6d4",
-    "#62b543b3": "#7ebe65",
-    "#f98b9eb3": "#f1a4b2",
-    "#f4af3db3": "#ecc27d",
-    "#b99bf8b3": "#b49ee2"
+    "YellowTint_20": "#9F680C33",
+    "Orange_120": "#e3ac89"
   }
 }

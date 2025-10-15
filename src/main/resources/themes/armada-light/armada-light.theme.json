@@ -19,6 +19,8 @@
     "/com/intellij/ide/ui/laf/icons/intellij/radioSelected.svg": "/themes/armada-light/icons/radioSelected.svg",
     "/com/intellij/ide/ui/laf/icons/intellij/radioSelectedDisabled.svg": "/themes/armada-light/icons/radioSelectedDisabled.svg",
     "/com/intellij/ide/ui/laf/icons/intellij/radioSelectedFocused.svg": "/themes/armada-light/icons/radioSelectedFocused.svg",
+    "/com/intellij/ide/ui/laf/icons/intellij/treeCollapsedSelected.svg": "/themes/armada-light/icons/treeCollapsedSelected.svg",
+    "/com/intellij/ide/ui/laf/icons/intellij/treeExpandedSelected.svg": "/themes/armada-light/icons/treeExpandedSelected.svg",
     "ColorPalette": {
       "Tree.iconColor": "Neutral_10",
       "Gray.Fill": "White",
@@ -36,24 +38,53 @@
       "Purple.Stroke": "Purple_100",
       "Orange.Solid": "Orange",
       "Orange.Stroke": "Orange",
-      "Objects.Pink": "Pink",
-      "Objects.Blue": "Blue_100",
-      "Objects.Red": "Red_100",
-      "Objects.Green": "Green_100",
-      "Objects.Grey": "Orange",
-      "Objects.Yellow": "YellowBright_10",
-      "Objects.YellowDark": "Yellow_100",
-      "Objects.Purple": "Purple_100",
-      "Objects.RedStatus": "Red_100",
-      "Actions.Blue": "Blue_100",
+      "Objects.Pink": "Purple 30",
+      "Objects.Blue": "Blue 60",
+      "Objects.Red": "Orange_120",
+      "Objects.Green": "Green 60",
+      "Objects.Grey": "Neutral_120",
+      "Objects.Yellow": "Yellow 40",
+      "Objects.YellowDark": "Yellow_30",
+      "Objects.Purple": "Purple 30",
+      "Objects.RedStatus": "Red_110",
+      "Actions.Blue": "Blue_110",
       "Actions.Red": "Red_100",
       "Actions.Green": "Green_100",
-      "Actions.Yellow": "Yellow_100",
-      "Actions.Purple": "Purple_100",
-      "Actions.Violet": "Violet_100",
-      "Actions.Grey": "Neutral_70",
-      "Actions.GreyInline": "Neutral_70"
+      "Actions.Yellow": "Yellow_120",
+      "Actions.Purple": "Purple_120",
+      "Actions.Violet": "Violet_120",
+      "Actions.Grey": "Gray 50",
+      "Actions.GreyInline": "Gray 50"
     }
+  },
+  "iconColorsOnSelection": {
+    "#db5860": "Red_120",
+    "#eda200": "Yellow 40",
+    "#59A869": "Green_120",
+    "#389FD6": "Blue 60",
+    "#6e6e6e": "Neutral_120",
+    "#9aa7b0": "Neutral_120",
+    "#9aa7b0cc": "Neutral_120",
+    "#9aa7b099": "Neutral_120",
+    "#f26522": "Orange_120",
+    "#f26522b3": "Orange_120",
+    "#f2652299": "Orange_120",
+    "#40b6e0": "Blue 60",
+    "#40b6e0b3": "Blue 60",
+    "#40b6e099": "Blue 60",
+    "#62b543": "Green 60",
+    "#62b543b3": "Green 60",
+    "#62b54399": "Green 60",
+    "#f98b9e": "Purple_130",
+    "#f98b9eb3": "Purple 30",
+    "#f98b9e99": "Purple 30",
+    "#f4af3d": "Yellow 40",
+    "#f4af3db3": "Yellow 40",
+    "#f4af3d99": "Yellow 40",
+    "#b99bf8": "Purple_120",
+    "#b99bf8b3": "Purple_120",
+    "#b99bf899": "Purple_120",
+    "#767a8a": "Gray 70"
   },
   "ui": {
     "*": {
@@ -133,7 +164,7 @@
       "foreground": "Neutral_10",
       "background": "White"
     },
-    "StatusBar.borderColor": "Transparent",
+    "StatusBar.borderColor": "Neutral_140",
     "Label": {
       "selectedForeground": "Neutral_10",
       "infoForeground": "Neutral_10",
@@ -211,7 +242,7 @@
       "selectionForeground": "Neutral_10",
       "foreground": "Neutral_10",
       "hoverBackground": "DarkTint_5",
-      "selectionBackground": "BlueTint_20",
+      "selectionBackground": "#CCDEF6",
       "selectionInactiveBackground": "DarkTint_15"
     },
     "ComboBox": {
@@ -593,6 +624,7 @@
     "VioletTint_40": "#685AFB66",
     "YellowTint_50": "#9F680C80",
     "YellowTint_40": "#9F680C66",
-    "YellowTint_20": "#9F680C33"
+    "YellowTint_20": "#9F680C33",
+    "Orange_120": "#e3ac89"
   }
 }
