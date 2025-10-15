@@ -1,5 +1,0 @@
-<idea-plugin>
-  <extensions defaultExtensionNs="com.intellij">
-    <annotator language="Rust" implementationClass="com.github.davidseptimus.armada.annotators.RustAnnotator"/>
-  </extensions>
-</idea-plugin>

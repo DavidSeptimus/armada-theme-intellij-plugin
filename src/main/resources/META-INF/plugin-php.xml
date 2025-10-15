@@ -1,5 +1,0 @@
-<idea-plugin>
-  <extensions defaultExtensionNs="com.intellij">
-    <annotator language="PHP" implementationClass="com.github.davidseptimus.armada.annotators.PHPAnnotator"/>
-  </extensions>
-</idea-plugin>

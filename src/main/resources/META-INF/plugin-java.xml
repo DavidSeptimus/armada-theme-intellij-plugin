@@ -1,5 +1,0 @@
-<idea-plugin>
-    <extensions defaultExtensionNs="com.intellij">
-        <annotator language="JAVA" implementationClass="com.github.davidseptimus.armada.annotators.JavaAnnotator"/>
-    </extensions>
-</idea-plugin>

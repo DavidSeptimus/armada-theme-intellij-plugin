@@ -1,0 +1,43 @@
+<!-- Plugin Configuration File. Read more: https://plugins.jetbrains.com/docs/intellij/plugin-configuration-file.html -->
+<idea-plugin>
+    <id>com.github.davidseptimus.armada</id>
+    <name>Armada Themes</name>
+    <vendor>David Septimus</vendor>
+    <description>Dark and Light themes based on Jetbrains Fleet's default themes</description>
+
+    <depends>com.intellij.modules.platform</depends>
+
+    <depends>com.github.davidseptimus.armada-syntax-highlighter</depends>
+
+    <!-- Classic UI dependency to only load themes for Classic UI if the Classic UI plugin is installed -->
+    <depends optional="true" config-file="plugin-classic-ui.xml">com.intellij.classic.ui</depends>
+
+    <extensions defaultExtensionNs="com.intellij">
+       <!-- New UI Themes -->
+        <themeProvider
+                id="com.github.davidseptimus.armada.fleet-dark"
+                path="themes/armada-dark/armada-dark.theme.json"
+                targetUi="new"
+        />
+
+        <themeProvider
+                id="com.github.davidseptimus.armada.fleet-light"
+                path="themes/armada-light/armada-light.theme.json"
+                targetUi="new"
+        />
+
+        <!-- Islands UI Themes -->
+        <themeProvider
+                id="com.github.davidseptimus.armada.armada-dark-islands"
+                path="themes/armada-dark/armada-dark-islands.theme.json"
+                targetUi="islands"
+        />
+
+        <themeProvider
+                id="com.github.davidseptimus.armada.armada-light-islands"
+                path="themes/armada-light/armada-light-islands.theme.json"
+                targetUi="islands"
+        />
+    </extensions>
+
+</idea-plugin>

@@ -21,65 +21,9 @@ plugins {
     alias(libs.plugins.kover) // Gradle Kover Plugin
 }
 
-abstract class GitTagValueSource : ValueSource<String, GitTagValueSource.Parameters> {
-    interface Parameters : ValueSourceParameters {
-        val pattern: Property<String>
-    }
-
-    @get:Inject
-    abstract val execOperations: ExecOperations
-
-    override fun obtain(): String {
-        val output = ByteArrayOutputStream()
-        return try {
-            execOperations.exec {
-                commandLine("git", "tag", "--list", "--sort=-version:refname", parameters.pattern.get())
-                standardOutput = output
-                isIgnoreExitValue = true
-            }
-            output.toString().trim()
-        } catch (ignored: Exception) {
-            ""
-        }
-    }
-}
-
-fun generateEAPVersion(baseVersion: String, gitTagOutput: String): String {
-    val baseSemVer = Version.fromString(baseVersion)
-    val tags = gitTagOutput.lines().filter { it.isNotBlank() }.map { Version.fromString(if (it.startsWith("v"))  it.substring(1) else it) }
-    val eapTags = tags.filter { it.preReleaseIdentifiers.any { id -> id.toString().startsWith("eap") } }.sortedWith { a, b -> Version.reverseComparator().compare(a,b) }
-    val stableTags = tags.filter { it.preReleaseIdentifiers.isEmpty() }.sortedWith { a, b -> Version.reverseComparator().compare(a,b) }
-    val isBaseReleased = stableTags.any { it.equals(baseSemVer) }
-    val eapBaseVersion = if (isBaseReleased) baseSemVer.incrementMinor() else baseSemVer
-    val eapsForBase = eapTags.filter { it.major == eapBaseVersion.major && it.minor == eapBaseVersion.minor && it.patch == eapBaseVersion.patch }
-    if (eapsForBase.size == 0) {
-        return "$eapBaseVersion-eap"
-    } else {
-        return  eapsForBase.first().let {
-            val currentEapNumber = if(it.preReleaseIdentifiers.size > 1 && it.preReleaseIdentifiers.get(1).isNumeric) it.preReleaseIdentifiers.get(1).toString().toInt() else 0
-            "$eapBaseVersion-eap.${currentEapNumber + 1}"
-        }
-    }
-}
-
 group = providers.gradleProperty("pluginGroup").get()
+version = providers.gradleProperty("pluginVersion").get()
 
-// Handle EAP version
-val baseVersion = providers.gradleProperty("pluginVersion").get()
-val isEAPBuild = project.hasProperty("eap") ||
-        providers.environmentVariable("IS_EAP_BUILD").isPresent ||
-        gradle.startParameter.taskNames.any { it.contains("EAP") }
-
-version = if (isEAPBuild) {
-    val gitTagOutput = providers.of(GitTagValueSource::class.java) {
-        parameters.pattern.set("v*")
-    }.get()
-    val eapVersion = generateEAPVersion(baseVersion, gitTagOutput)
-    println("Generated EAP version: $eapVersion")
-    eapVersion
-} else {
-    baseVersion
-}
 
 // Set the JVM language level used to build the project.
 kotlin {
@@ -146,7 +90,7 @@ dependencies {
 intellijPlatform {
     pluginConfiguration {
         name = providers.gradleProperty("pluginName")
-        version = if (isEAPBuild) project.version as String else providers.gradleProperty("pluginVersion").get()
+        version = providers.gradleProperty("pluginVersion")
 
         // Extract the <!-- Plugin description --> section from README.md and provide for the plugin's manifest
         description = providers.fileContents(layout.projectDirectory.file("README.md")).asText.map {
@@ -219,117 +163,12 @@ kover {
 }
 
 tasks {
-    // Task to generate plugin.xml from plugin-main.xml with conditional EAP injection
-    register<Task>("generatePluginXml") {
-        group = "build"
-        description = "Generates plugin.xml from plugin-main.xml with conditional EAP dependencies"
-
-        val pluginMainXml = layout.projectDirectory.file("src/main/resources/META-INF/plugin-main.xml")
-        val pluginEapXml = layout.projectDirectory.file("src/main/resources/META-INF/plugin-eap.xml")
-        val outputPluginXml = layout.projectDirectory.file("src/main/resources/META-INF/plugin.xml")
-
-        // Use providers to capture all EAP detection logic at configuration time
-        val eapPropertyProvider = providers.gradleProperty("eap").orElse("false")
-        val eapEnvProvider = providers.environmentVariable("IS_EAP_BUILD").orElse("false")
-        val taskNamesProvider = provider { gradle.startParameter.taskNames.joinToString(",") }
-
-        inputs.file(pluginMainXml)
-        inputs.file(pluginEapXml)
-        inputs.property("eapProperty", eapPropertyProvider)
-        inputs.property("eapEnv", eapEnvProvider)
-        inputs.property("taskNames", taskNamesProvider)
-        outputs.file(outputPluginXml)
-
-        val mainContent = pluginMainXml.asFile.readText()
-
-        // Determine if this is an EAP build using only the captured inputs
-        val hasEapProperty = eapPropertyProvider.get() != "false"
-        val hasEapEnv = eapEnvProvider.get() != "false"
-        val hasEapTask = taskNamesProvider.get().contains("EAP")
-        val isEAP = hasEapProperty || hasEapEnv || hasEapTask
-
-        val finalContent = if (isEAP) {
-            // Inject EAP dependencies into the designated section
-            val beginMarker = "  <!-- BEGIN Build-time Dependencies -->"
-            val endMarker = "  <!-- END Build-time Dependencies -->"
-
-            if (mainContent.contains(beginMarker)) {
-                // Inject dependencies
-                val dependenciesText =
-                    """  <depends optional="true" config-file="plugin-eap.xml">com.intellij.modules.platform</depends>"""
-                mainContent.replace(
-                    "$beginMarker\n$endMarker",
-                    "$beginMarker\n$dependenciesText\n$endMarker"
-                )
-            } else {
-                throw GradleException("Build-time dependency markers not found in plugin-main.xml")
-            }
-        } else {
-            // For non-EAP builds, just copy the main file as-is
-            mainContent
-        }
-
-        outputPluginXml.asFile.writeText(finalContent)
-        println("Generated plugin.xml for ${if (isEAP) "EAP" else "stable"} build")
-    }
-
     wrapper {
         gradleVersion = providers.gradleProperty("gradleVersion").get()
     }
 
     publishPlugin {
         dependsOn(patchChangelog)
-    }
-
-    initializeIntellijPlatformPlugin {
-        dependsOn("generatePluginXml")
-    }
-
-    register<Task>("buildEAP") {
-        group = "eap"
-        description = "Builds plugin with EAP version and configuration"
-
-        dependsOn("buildPlugin")
-
-        val buildVersion = version.toString()
-        doFirst {
-            println("Building EAP with version $buildVersion")
-        }
-    }
-
-    register<Exec>("publishEAP") {
-        group = "eap"
-        description = "Publishes plugin to EAP channel"
-
-        commandLine("./gradlew", "publishPlugin", "-Peap=true")
-        doLast {
-            println("EAP plugin published successfully")
-        }
-    }
-
-    register<Exec>("checkEAP") {
-        group = "eap"
-        description = "Runs tests with EAP configuration"
-
-        commandLine("./gradlew", "check", "-Peap=true")
-    }
-
-    register<Exec>("runIdeEAP") {
-        group = "eap"
-        description = "Runs IDE with EAP dependencies enabled"
-
-        commandLine("./gradlew", "runIde", "-Peap=true")
-    }
-
-    register("verifyPluginEAP") {
-        group = "eap"
-        description = "Verifies plugin with EAP dependencies enabled"
-
-        finalizedBy("verifyPlugin")
-
-        doLast {
-            println("EAP plugin built successfully, running verification...")
-        }
     }
 }
 

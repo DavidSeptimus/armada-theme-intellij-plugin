@@ -1,5 +1,0 @@
-<idea-plugin>
-  <extensions defaultExtensionNs="com.intellij">
-    <annotator language="Python" implementationClass="com.github.davidseptimus.armada.annotators.PythonAnnotator"/>
-  </extensions>
-</idea-plugin>

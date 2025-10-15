@@ -1,5 +1,0 @@
-<idea-plugin>
-  <extensions defaultExtensionNs="com.intellij">
-    <annotator language="Shell Script" implementationClass="com.github.davidseptimus.armada.annotators.ShellAnnotator"/>
-  </extensions>
-</idea-plugin>

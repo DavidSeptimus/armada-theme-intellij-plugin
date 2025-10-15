@@ -4,4 +4,3 @@
 .qodana
 build
 /keys/
-/src/main/resources/META-INF/plugin.xml
