@@ -6,8 +6,27 @@
 
 ### Added 
 
-- Added settings page for configuring Armada syntax highlighting enhancements
-- Added Java annotator to support highlighting of Java annotation declarations
+- Added dependency on [Armada Syntax Highlighter](https://plugins.jetbrains.com/plugin/28723-armada-syntax-highlighter)
+  plugin to handle enhanced syntax highlighting
+  - This plugin contains the annotators and settings pages previously included in this plugin to to allow for
+    reuse as well as separation of theme and syntax highlighting updates (no more restarts needed when updating themes).
+
+### Changed
+
+- Updated icon colors (with a focus on classic UI)
+- Added highlighting for YAML 1.2 `true`, `false` and `null` literal variants
+
+### Fixed
+
+- Fixed tree collapsed/expanded selected state icon colors in Armada Light themes
+- Fixed dual-color selection overlay in run configuration dropdown for Armada Light (Classic UI) theme
+- Fixed white error stripe marker for identifier under caret in Armada Dark color scheme
+- Fixed missing borders in non-Islands themes
+- Adjusted colors for various tokens in the Armada Dark color scheme that were previously set incorrectly or were using IntelliJ default colors
+
+### Removed
+
+- Removed syntax highlighting annotators and settings pages (now in the Armada Syntax Highlighter plugin)
 
 ## [0.8.0] - 2025-10-05
 

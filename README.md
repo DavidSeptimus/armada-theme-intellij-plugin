@@ -7,26 +7,30 @@
 ## Description
 
 <!-- Plugin description -->
-Armada is a plugin that aims to faithfully recreate the Fleet's builtin themes for IntelliJ-based IDEs.
+Armada Core Themes is a collection of themes based on JetBrains Fleet's default light and dark themes reimagined for IntelliJ-based IDEs.
+
+This plugin is part of the Armada family of themes, which includes both free and premium themes for JetBrains IDEs, primarily adapted from or inspired by the design aesthetics of JetBrains Fleet.
+
+If you enjoy Armada Core Themes, but are looking for a more colorful UI, you might
+consider exploring the [Armada Dark Purple](https://plugins.jetbrains.com/plugin/28726-armada-dark-purple-theme) and [Armada Deep](https://plugins.jetbrains.com/plugin/28727-armada-deep-theme) premium themes, which offer additional color schemes inspired by Fleet's design.
 
 ### Features
 
-- Fleet-inspired Dark and Light UI themes/Editor Color Schemes
-- Includes UI theme variants for all UI versions:
-  - [Islands](https://blog.jetbrains.com/platform/2025/09/islands-theme-the-new-look-coming-to-jetbrains-ides/) (2025.2.3+)
-  - New UI (default since 2024.2)
-  - [Classic UI](https://plugins.jetbrains.com/plugin/24468-classic-ui)
-- Custom highlighting tokens for improved highlighting accuracy in various languages
-- Explicit support for over 25 programming languages with specially tailored colors
+#### Includes Fleet-inspired Dark and Light UI themes/editor color schemes
 
-### Coming Soon
+#### Supports all three UI generations!
 
-**Armada Pro** - A paid version of the plugin that will include additional themes and color schemes including:
+- **Islands**
+- New UI
+- Classic UI
 
-- **Dark Purple** - Adapted from Fleet's Purple theme; an excellent choice for those looking for a more modern [Dark Purple Theme](https://plugins.jetbrains.com/plugin/12100-dark-purple-theme).
-- **Deep** - A new deep ocean blue theme with a vibrant high-contrast color scheme.
+#### Enhanced Syntax Highlighting
 
-### Supported Languages
+Leverages the [Armada Syntax Highlighter](https://plugins.jetbrains.com/plugin/28723-armada-syntax-highlighter) plugin for more precise syntax highlighting in 13 programming languages and counting.
+
+#### Supports 25+ Programming Languages
+
+Armada Core Themes have been optimized for syntax highlighting of 25+ programing languages, including:
 
 |            | Armada Dark | Armada Light |
 |------------|-------------|--------------|
@@ -59,10 +63,5 @@ Armada is a plugin that aims to faithfully recreate the Fleet's builtin themes f
 | YAML       | ✅           | ✅            |
 | Zig        | ✅           | ✅            |
 
+***This plugin is not affiliated with or endorsed by JetBrains.***
 <!-- Plugin description end -->
-
-IntelliJ's tokens don't perfectly match Fleet's, so some colors may not be 100% accurate. However, the goal is to get as
-close as possible.
-Where there are differences, I intend to add custom annotators to make the colors more accurate over time.
-
-This project is not affiliated with or endorsed by JetBrains.
