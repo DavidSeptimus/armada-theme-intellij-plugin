@@ -88,6 +88,20 @@ dependencies {
 
 // Configure IntelliJ Platform Gradle Plugin - read more: https://plugins.jetbrains.com/docs/intellij/tools-intellij-platform-gradle-plugin-extension.html
 intellijPlatform {
+    caching {
+        ides {
+            enabled.set(true)
+            path.set(
+                layout.dir(
+                    providers.environmentVariable("INTELLIJ_PLATFORM_IDES_CACHE")
+                        .orElse("${System.getProperty("user.home")}/idea-sandbox/downloads")
+                        .orElse(providers.gradleProperty("org.jetbrains.intellij.platform.intellijPlatformIdesCache"))
+                        .map { file(it).absoluteFile }
+
+                ))
+        }
+    }
+
     pluginConfiguration {
         name = providers.gradleProperty("pluginName")
         version = providers.gradleProperty("pluginVersion")
@@ -134,7 +148,10 @@ intellijPlatform {
         // The pluginVersion is based on the SemVer (https://semver.org) and supports pre-release labels, like 2.1.7-alpha.3
         // Specify pre-release label to publish the plugin in a custom Release Channel automatically. Read more:
         // https://plugins.jetbrains.com/docs/intellij/deployment.html#specifying-a-release-channel
-        channels = provider { listOf(project.version.toString().substringAfter('-', "").substringBefore('.').ifEmpty { "default" }) }
+        channels = provider {
+            listOf(
+                project.version.toString().substringAfter('-', "").substringBefore('.').ifEmpty { "default" })
+        }
         token = providers.environmentVariable("PUBLISH_TOKEN")
     }
 
