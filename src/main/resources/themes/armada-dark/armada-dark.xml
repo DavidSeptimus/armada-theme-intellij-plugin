@@ -227,7 +227,7 @@
     </option>
     <option name="BREAKPOINT_ATTRIBUTES">
       <value>
-        <option name="BACKGROUND" value="d73251"/>
+        <option name="BACKGROUND" value=""/>
       </value>
     </option>
     <option name="CLASS_REFERENCE">
@@ -513,61 +513,6 @@
         <option name="FONT_TYPE" value="1"/>
       </value>
     </option>
-    <!-- Debugger Colors -->
-    <!--    <option name="DEBUGGER_INLINED_VALUES">-->
-    <!--      <value>-->
-    <!--        <option name="FOREGROUND" value="12273f"/>-->
-    <!--        <option name="FONT_TYPE" value="2"/>-->
-    <!--      </value>-->
-    <!--    </option>-->
-    <!--    <option name="DEBUGGER_INLINED_VALUES_EXECUTION_LINE">-->
-    <!--      <value>-->
-    <!--        <option name="FOREGROUND" value="c325d"/>-->
-    <!--        <option name="FONT_TYPE" value="2"/>-->
-    <!--      </value>-->
-    <!--    </option>-->
-    <!--    <option name="DEBUGGER_INLINED_VALUES_MODIFIED">-->
-    <!--      <value>-->
-    <!--        <option name="FOREGROUND" value="171107"/>-->
-    <!--        <option name="FONT_TYPE" value="2"/>-->
-    <!--      </value>-->
-    <!--    </option>-->
-    <!--    <option name="DEBUGGER_SMART_STEP_INTO_SELECTION">-->
-    <!--      <value>-->
-    <!--        <option name="BACKGROUND" value="9a17bd"/>-->
-    <!--        <option name="EFFECT_COLOR" value="b91bb9"/>-->
-    <!--      </value>-->
-    <!--    </option>-->
-    <!--    <option name="DEBUGGER_SMART_STEP_INTO_TARGET">-->
-    <!--      <value>-->
-    <!--        <option name="BACKGROUND" value="264775"/>-->
-    <!--      </value>-->
-    <!--    </option>-->
-    <!--    <option name="EVALUATED_EXPRESSION_ATTRIBUTES">-->
-    <!--      <value>-->
-    <!--        <option name="BACKGROUND" value="8f3030"/>-->
-    <!--      </value>-->
-    <!--    </option>-->
-    <!--    <option name="EVALUATED_EXPRESSION_EXECUTION_LINE_ATTRIBUTES">-->
-    <!--      <value>-->
-    <!--        <option name="BACKGROUND" value="502626"/>-->
-    <!--      </value>-->
-    <!--    </option>-->
-    <!--    <option name="INLINE_STACK_FRAMES">-->
-    <!--      <value>-->
-    <!--        <option name="BACKGROUND" value="7e0606"/>-->
-    <!--      </value>-->
-    <!--    </option>-->
-    <option name="BREAKPOINT_ATTRIBUTES">
-      <value>
-        <option name="BACKGROUND" value="D7325100"/>
-      </value>
-    </option>
-    <option name="EXECUTIONPOINT_ATTRIBUTES">
-      <value>
-        <option name="BACKGROUND" value="D7325133"/>
-      </value>
-    </option>
     <option name="DEFAULT_ATTRIBUTE">
       <value>
         <option name="FOREGROUND" value="af9cff"/>
@@ -772,7 +717,7 @@
     </option>
     <option name="EXECUTIONPOINT_ATTRIBUTES">
       <value>
-        <option name="BACKGROUND" value="d73251"/>
+        <option name="BACKGROUND" value="3e1e26"/>
       </value>
     </option>
     <option name="FOLDED_TEXT_ATTRIBUTES">
@@ -859,11 +804,6 @@
         <option name="FOREGROUND" value="d6d6dd"/>
       </value>
     </option>
-    <option name="GO_PACKAGE">
-      <value>
-        <option name="FOREGROUND" value="a8cc7c"/>
-      </value>
-    </option>
     <option name="GO_PACKAGE_EXPORTED_INTERFACE">
       <value/>
     </option>
@@ -875,16 +815,6 @@
     </option>
     <option name="GO_PACKAGE_LOCAL_STRUCT">
       <value/>
-    </option>
-    <option name="GO_SCOPE_VARIABLE">
-      <value>
-        <option name="FOREGROUND" value="e09b70"/>
-      </value>
-    </option>
-    <option name="GO_SHADOWING_VARIABLE">
-      <value>
-        <option name="FOREGROUND" value="e09b70"/>
-      </value>
     </option>
     <option name="GO_TYPE_REFERENCE">
       <value>
@@ -930,7 +860,7 @@
     <option name="IDENTIFIER_UNDER_CARET_ATTRIBUTES">
       <value>
         <option name="BACKGROUND" value="334252"/>
-        <option name="ERROR_STRIPE_COLOR" value="e0e1e4"/>
+        <option name="ERROR_STRIPE_COLOR" value="5f7288"/>
       </value>
     </option>
     <option name="IMPLICIT_ANONYMOUS_CLASS_PARAMETER_ATTRIBUTES" baseAttributes="CLASS_NAME_ATTRIBUTES"/>
@@ -999,11 +929,7 @@
         <option name="FOREGROUND" value="d6d7da"/>
       </value>
     </option>
-    <option name="JS.LOCAL_VARIABLE">
-      <value>
-        <option name="FOREGROUND" value="af9cff"/>
-      </value>
-    </option>
+    <option name="JS.LOCAL_VARIABLE" baseAttributes="DEFAULT_LOCAL_VARIABLE" />
     <option name="JS.PARAMETER">
       <value>
         <option name="FOREGROUND" value="a1c377"/>
@@ -1012,11 +938,6 @@
     <option name="JS.PARENTHS">
       <value>
         <option name="FOREGROUND" value="d1d1d1"/>
-      </value>
-    </option>
-    <option name="JS.PROPERTY_REFERENCE">
-      <value>
-        <option name="FOREGROUND" value="e0e1e4"/>
       </value>
     </option>
     <option name="JS.REGEXP">
@@ -1508,7 +1429,9 @@
       </value>
     </option>
     <option name="PERL_NUMBER">
-      <value />
+      <value>
+        <option name="FOREGROUND" value="ebc88d" />
+      </value>
     </option>
     <option name="PERL_PACKAGE">
       <value />
@@ -1555,6 +1478,7 @@
         <option name="FOREGROUND" value="e0e1e4"/>
       </value>
     </option>
+    <option name="PHP_ALIAS_REFERENCE" baseAttributes="PHP_CLASS" />
     <option name="PHP_CLASS_SELF_REFERENCE">
       <value>
         <option name="FOREGROUND" value="cc7c8a"/>
@@ -1580,7 +1504,6 @@
     <option name="PHP_IDENTIFIER">
       <value>
         <option name="FOREGROUND" value="87c3ff"/>
-        <option name="BACKGROUND" value="18191b"/>
       </value>
     </option>
     <option name="PHP_NAMED_ARGUMENT">
@@ -1716,7 +1639,9 @@
       <value/>
     </option>
     <option name="PY.SELF_PARAMETER">
-      <value/>
+      <value>
+        <option name="FOREGROUND" value="cc7c8a" />
+      </value>
     </option>
     <option name="PY.STRING">
       <value>
