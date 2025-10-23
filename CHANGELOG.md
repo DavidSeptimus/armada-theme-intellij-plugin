@@ -18,6 +18,7 @@
 
 ### Fixed
 
+- Fixed broken highlighting of breakpoint lines: breakpoints other than the execution point are now unhighlighted and the correct color is used to highlight the execution point line
 - Fixed tree collapsed/expanded selected state icon colors in Armada Light themes
 - Fixed dual-color selection overlay in run configuration dropdown for Armada Light (Classic UI) theme
 - Fixed white error stripe marker for identifier under caret in Armada Dark color scheme
