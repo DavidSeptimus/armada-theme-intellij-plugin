@@ -187,6 +187,7 @@ jobs:
   verify:
     name: Verify plugin
     needs: [ build ]
+    runs-on: macos-latest
     steps:
 
 #      # Free GitHub Actions Environment Disk Space
