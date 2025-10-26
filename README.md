@@ -1,4 +1,4 @@
-# Armada IntelliJ Theme
+# Armada Core Themes for IntelliJ-based IDEs
 
 ![Build](https://github.com/DavidSeptimus/armada-theme-intellij-plugin/workflows/Build/badge.svg)
 [![Version](https://img.shields.io/jetbrains/plugin/v/26844-armada-theme.svg)](https://plugins.jetbrains.com/plugin/26844-armada-theme)
@@ -10,6 +10,8 @@
 Armada Core Themes is a collection of themes based on JetBrains Fleet's default light and dark themes reimagined for IntelliJ-based IDEs.
 
 This plugin is part of the Armada family of themes, which includes both free and premium themes for JetBrains IDEs, primarily adapted from or inspired by the design aesthetics of JetBrains Fleet.
+The complete list of Armada premium themes can be found [here](https://plugins.jetbrains.com/plugin/26844-armada-theme/premium-themes).
+
 
 If you enjoy Armada Core Themes, but are looking for a more colorful UI, you might
 consider exploring the [Armada Dark Purple](https://plugins.jetbrains.com/plugin/28726-armada-dark-purple-theme) and [Armada Deep](https://plugins.jetbrains.com/plugin/28727-armada-deep-theme) premium themes, which offer additional color schemes inspired by Fleet's design.
