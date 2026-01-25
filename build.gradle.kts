@@ -3,14 +3,6 @@ import org.jetbrains.changelog.markdownToHTML
 import org.jetbrains.intellij.platform.gradle.TestFrameworkType
 import org.jetbrains.intellij.platform.gradle.extensions.IntelliJPlatformDependenciesExtension
 import org.jetbrains.intellij.pluginRepository.PluginRepositoryFactory
-import org.gradle.api.provider.Property
-import org.gradle.api.provider.ValueSource
-import org.gradle.api.provider.ValueSourceParameters
-import org.gradle.process.ExecOperations
-import org.jetbrains.kotlin.com.github.gundy.semver4j.model.Version
-import java.io.ByteArrayOutputStream
-import javax.inject.Inject
-import kotlin.collections.sortedWith
 
 plugins {
     id("java") // Java support
@@ -134,7 +126,7 @@ intellijPlatform {
 
         ideaVersion {
             sinceBuild = providers.gradleProperty("pluginSinceBuild")
-            untilBuild = providers.gradleProperty("pluginUntilBuild")
+            untilBuild = provider { null }
         }
     }
 

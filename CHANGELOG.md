@@ -4,6 +4,16 @@
 
 ## [Unreleased]
 
+### Fixed
+
+- Fixed invisible whitespace color
+
+### Removed
+
+- Removed upper bound on platform version compatibility
+
+## [1.0.0] - 2025-10-26
+
 ### Added 
 
 - Added dependency on [Armada Syntax Highlighter](https://plugins.jetbrains.com/plugin/28723-armada-syntax-highlighter)
