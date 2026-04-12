@@ -1017,12 +1017,13 @@
         </option>
         <option name="LOG_DEBUG_OUTPUT">
             <value>
-                <option name="FOREGROUND" value="a8282"/>
+                <option name="FOREGROUND" value="0870e4"/>
             </value>
         </option>
         <option name="LOG_ERROR_OUTPUT">
             <value>
-                <option name="FOREGROUND" value="b73b4c"/>
+                <option name="FOREGROUND" value="086e14"/>
+                <option name="FONT_TYPE" value="1"/>
             </value>
         </option>
         <option name="LOG_EXPIRED_ENTRY">
@@ -1032,7 +1033,7 @@
         </option>
         <option name="LOG_INFO_OUTPUT">
             <value>
-                <option name="FOREGROUND" value="4dbb5f"/>
+                <option name="FOREGROUND" value="14835e"/>
             </value>
         </option>
         <option name="LOG_VERBOSE_OUTPUT">
@@ -1042,7 +1043,7 @@
         </option>
         <option name="LOG_WARNING_OUTPUT">
             <value>
-                <option name="FOREGROUND" value="b0993c"/>
+                <option name="FOREGROUND" value="d73251"/>
             </value>
         </option>
         <option name="LUA_GLOBAL_FUNCTION_ID">
@@ -1808,5 +1809,32 @@
                 <option name="FOREGROUND" value="a31d8d"/>
             </value>
         </option>
+        <option name="TextMateCustomRule_log.info">
+            <value>
+                <option name="FOREGROUND" value="14835E"/>
+                <option name="BACKGROUND" value="FFFFFF"/>
+            </value>
+        </option>
+        <option name="TextMateCustomRule_log.warning">
+            <value>
+                <option name="FOREGROUND" value="D73251"/>
+                <option name="BACKGROUND" value="FFFFFF"/>
+            </value>
+        </option>
+        <option name="TextMateCustomRule_log.error">
+            <value>
+                <option name="FOREGROUND" value="086E14"/>
+                <option name="BACKGROUND" value="FFFFFF"/>
+                <option name="FONT_TYPE" value="1"/>
+            </value>
+        </option>
+        <option name="TextMateCustomRule_log.debug">
+            <value>
+                <option name="FOREGROUND" value="0870E4"/>
+                <option name="BACKGROUND" value="FFFFFF"/>
+            </value>
+        </option>
+        <option name="TextMateCustomRule_log.verbose" baseAttributes="TEXT"/>
+
     </attributes>
 </scheme>

@@ -1054,12 +1054,13 @@
     </option>
     <option name="LOG_DEBUG_OUTPUT">
       <value>
-        <option name="FOREGROUND" value="6daaf7"/>
+        <option name="FOREGROUND" value="71a3ef"/>
       </value>
     </option>
     <option name="LOG_ERROR_OUTPUT">
       <value>
-        <option name="FOREGROUND" value="eb4056"/>
+        <option name="FOREGROUND" value="e394dc"/>
+        <option name="FONT_TYPE" value="1"/>
       </value>
     </option>
     <option name="LOG_EXPIRED_ENTRY">
@@ -1069,7 +1070,7 @@
     </option>
     <option name="LOG_INFO_OUTPUT">
       <value>
-        <option name="FOREGROUND" value="82d2ce"/>
+        <option name="FOREGROUND" value="69b090"/>
       </value>
     </option>
     <option name="LOG_VERBOSE_OUTPUT">
@@ -1079,7 +1080,7 @@
     </option>
     <option name="LOG_WARNING_OUTPUT">
       <value>
-        <option name="FOREGROUND" value="fad075"/>
+        <option name="FOREGROUND" value="f87c88"/>
       </value>
     </option>
     <option name="LUA_DOC_TAG">
@@ -2209,5 +2210,32 @@
         <option name="FOREGROUND" value="af9cff"/>
       </value>
     </option>
+    <option name="TextMateCustomRule_log.info">
+      <value>
+        <option name="FOREGROUND" value="69B090"/>
+        <option name="BACKGROUND" value="18191B"/>
+      </value>
+    </option>
+    <option name="TextMateCustomRule_log.warning">
+      <value>
+        <option name="FOREGROUND" value="F87C88"/>
+        <option name="BACKGROUND" value="18191B"/>
+      </value>
+    </option>
+    <option name="TextMateCustomRule_log.error">
+      <value>
+        <option name="FOREGROUND" value="E394DC"/>
+        <option name="BACKGROUND" value="18191B"/>
+        <option name="FONT_TYPE" value="1"/>
+      </value>
+    </option>
+    <option name="TextMateCustomRule_log.debug">
+      <value>
+        <option name="FOREGROUND" value="71A3EF"/>
+        <option name="BACKGROUND" value="18191B"/>
+      </value>
+    </option>
+    <option name="TextMateCustomRule_log.verbose" baseAttributes="TEXT"/>
+
   </attributes>
 </scheme>
