@@ -86,8 +86,8 @@ intellijPlatform {
             path.set(
                 layout.dir(
                     providers.environmentVariable("INTELLIJ_PLATFORM_IDES_CACHE")
-                        .orElse("${System.getProperty("user.home")}/idea-sandbox/downloads")
                         .orElse(providers.gradleProperty("org.jetbrains.intellij.platform.intellijPlatformIdesCache"))
+                        .orElse("${System.getProperty("user.home")}/idea-sandbox/downloads")
                         .map { file(it).absoluteFile }
 
                 ))
