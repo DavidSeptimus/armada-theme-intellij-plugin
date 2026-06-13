@@ -7,6 +7,7 @@
 ### Fixed
 
 - Fixed invisible whitespace color
+- No longer bundles the Kotlin standard library; the IDE-provided stdlib is used instead, avoiding classloader conflicts with the platform and with other plugins (a stale bundled stdlib could shadow the platform's and break coroutine debug probes on 2026.1)
 
 ### Removed
 
