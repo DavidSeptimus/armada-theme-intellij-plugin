@@ -4,3 +4,5 @@
 .qodana
 build
 /keys/
+.DS_Store
+.kotlin

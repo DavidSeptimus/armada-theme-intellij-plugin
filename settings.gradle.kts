@@ -3,3 +3,5 @@ plugins {
 }
 
 rootProject.name = "armada-theme-intellij-plugin"
+
+include(":plugins:armada")

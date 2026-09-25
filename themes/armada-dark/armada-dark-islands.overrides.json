@@ -1,0 +1,39 @@
+{
+  "name": "Armada Dark (Islands)",
+  "parentTheme": "Islands Dark",
+  "ui": {
+    "ToolWindow.Stripe.borderColor": "Transparent",
+    "MainToolbar.borderColor": "Transparent",
+    "EditorTabs": {
+      "underlinedBorderColor": "BlueTint_50",
+      "underTabsBorderColor": "Neutral_20"
+    },
+    "DefaultTabs": {
+      "underlinedBorderColor": "BlueTint_50"
+    },
+    "TabbedPane": {
+      "underlinedBorderColor": "BlueTint_50"
+    },
+    "StatusBar": {
+      "borderColor": "Transparent"
+    },
+    "ToolWindow": {
+      "Header": {
+        "borderColor": "Neutral_20"
+      }
+    },
+    "alt": {
+      "ToolWindow": {
+        "Header": {
+          "borderColor": "Neutral_20"
+        }
+      },
+      "Island": {
+        "borderColor": "Neutral_20"
+      }
+    },
+    "Island": {
+      "borderColor": "Neutral_20"
+    }
+  }
+}

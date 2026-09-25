@@ -1,0 +1,52 @@
+{
+  "name": "Armada Light (Islands)",
+  "parentTheme": "Islands Light",
+  "icons": {
+    "ColorPalette": {
+      "Objects.Pink": "Pink",
+      "Objects.Blue": "Blue_100",
+      "Objects.Red": "Red_100",
+      "Objects.Green": "Green_100",
+      "Objects.Grey": "Orange",
+      "Objects.Yellow": "YellowBright_10",
+      "Objects.YellowDark": "Yellow_100",
+      "Objects.Purple": "Purple_100",
+      "Objects.RedStatus": "Red_100",
+      "Actions.Blue": "Blue_100",
+      "Actions.Yellow": "Yellow_100",
+      "Actions.Purple": "Purple_100",
+      "Actions.Violet": "Violet_100",
+      "Actions.Grey": "Neutral_70",
+      "Actions.GreyInline": "Neutral_70"
+    }
+  },
+  "ui": {
+    "StatusBar.borderColor": "Transparent",
+    "ToolWindow": {
+      "Header": {
+        "inactiveBackground": "White",
+        "background": "White",
+        "borderColor": "White"
+      }
+    },
+    "List": {
+      "selectionBackground": "BlueTint_20"
+    },
+    "alt": {
+      "ToolWindow": {
+        "Header": {
+          "borderColor": "White"
+        }
+      },
+      "Island": {
+        "borderColor": "White"
+      }
+    },
+    "Island": {
+      "borderColor": "White"
+    },
+    "EditorTabs": {
+      "underTabsBorderColor": "White"
+    }
+  }
+}

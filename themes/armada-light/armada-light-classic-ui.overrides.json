@@ -1,0 +1,11 @@
+{
+  "name": "Armada Light (Classic UI)",
+  "ui": {
+    "ToolWindow.Button.selectedBackground": "Neutral_130",
+    "ToolWindow.Button.selectedForeground": "Neutral_10",
+    "ToolWindow.Button.hoverBackground": "Neutral_140",
+    "ToggleButton.foreground": "Neutral_10",
+    "EditorTabs.underTabsBorderColor": "Neutral_140",
+    "List.selectionBackground": "#90B7EB"
+  }
+}

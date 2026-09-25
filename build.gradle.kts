@@ -1,224 +1,105 @@
-import org.jetbrains.changelog.Changelog
-import org.jetbrains.changelog.markdownToHTML
-import org.jetbrains.intellij.platform.gradle.TestFrameworkType
-import org.jetbrains.intellij.platform.gradle.extensions.IntelliJPlatformDependenciesExtension
-import org.jetbrains.intellij.pluginRepository.PluginRepositoryFactory
-
 plugins {
-    id("java") // Java support
-    alias(libs.plugins.kotlin) // Kotlin support
-    alias(libs.plugins.intelliJPlatform) // IntelliJ Platform Gradle Plugin
-    alias(libs.plugins.changelog) // Gradle Changelog Plugin
-    alias(libs.plugins.qodana) // Gradle Qodana Plugin
-    alias(libs.plugins.kover) // Gradle Kover Plugin
+    id("ThemeMergerPlugin")
 }
 
-group = providers.gradleProperty("pluginGroup").get()
-version = providers.gradleProperty("pluginVersion").get()
+// Every theme's variants are merged from its base theme and one overrides file per UI flavor:
+// themes/<theme>/<theme>-base.theme.json + <theme>[-islands|-classic-ui].overrides.json
+// -> <theme>[-islands|-classic-ui].theme.json. The generated files are committed.
+val themeVariants = mapOf("" to "New UI", "-islands" to "Islands", "-classic-ui" to "Classic UI")
+// Every folder under themes/ (a public mirror carries only its own plugin's themes).
+val themeNames = layout.projectDirectory.dir("themes").asFile.listFiles { f -> f.isDirectory }.orEmpty()
+    .map { it.name }.sorted()
 
-
-// Set the JVM language level used to build the project.
-kotlin {
-    jvmToolchain(21)
-}
-
-// Configure project's dependencies
-repositories {
-    mavenCentral()
-
-    // IntelliJ Platform Gradle Plugin Repositories Extension - read more: https://plugins.jetbrains.com/docs/intellij/tools-intellij-platform-gradle-plugin-repositories-extension.html
-    intellijPlatform {
-        defaultRepositories()
-    }
-}
-
-
-val IntelliJPlatformDependenciesExtension.pluginRepository by lazy {
-    PluginRepositoryFactory.create("https://plugins.jetbrains.com")
-}
-
-fun IntelliJPlatformDependenciesExtension.pluginsInLatestCompatibleVersion(pluginIdProvider: Provider<List<String>>) =
-    plugins(provider {
-        pluginIdProvider.get().map { pluginId ->
-            val platformType = intellijPlatform.productInfo.productCode
-            val platformVersion = intellijPlatform.productInfo.buildNumber
-
-            val plugin = pluginRepository.pluginManager.searchCompatibleUpdates(
-                build = "$platformType-$platformVersion",
-                xmlIds = listOf(pluginId),
-            ).firstOrNull()
-                ?: throw GradleException("No plugin update with id='$pluginId' compatible with '$platformType-$platformVersion' found in JetBrains Marketplace")
-
-            "${plugin.pluginXmlId}:${plugin.version}"
-        }
-    })
-
-// Dependencies are managed with Gradle version catalog - read more: https://docs.gradle.org/current/userguide/platforms.html#sub:version-catalog
-dependencies {
-    implementation(libs.gson)
-    testImplementation(libs.junit)
-    testImplementation(libs.opentest4j)
-
-    // IntelliJ Platform Gradle Plugin Dependencies Extension - read more: https://plugins.jetbrains.com/docs/intellij/tools-intellij-platform-gradle-plugin-dependencies-extension.html
-    intellijPlatform {
-        create(providers.gradleProperty("platformType"), providers.gradleProperty("platformVersion"))
-
-        // Plugin Dependencies. Uses `platformBundledPlugins` property from the gradle.properties file for bundled IntelliJ Platform plugins.
-        bundledPlugins(providers.gradleProperty("platformBundledPlugins").map { it.split(',') })
-
-        // Plugin Dependencies. Uses `platformPlugins` property from the gradle.properties file for plugin from JetBrains Marketplace.
-        plugins(providers.gradleProperty("platformPlugins").map { it.split(',') })
-
-        // Plugin Dependencies. Uses `platformPluginsLatestCompatibleVersion` property from the gradle.properties file for plugin from JetBrains Marketplace.
-        pluginsInLatestCompatibleVersion(
-            providers.gradleProperty("platformPluginsLatestCompatibleVersion").map { it.split(',') })
-
-        testFramework(TestFrameworkType.Platform)
-    }
-}
-
-// Configure IntelliJ Platform Gradle Plugin - read more: https://plugins.jetbrains.com/docs/intellij/tools-intellij-platform-gradle-plugin-extension.html
-intellijPlatform {
-    caching {
-        ides {
-            enabled.set(true)
-            path.set(
-                layout.dir(
-                    providers.environmentVariable("INTELLIJ_PLATFORM_IDES_CACHE")
-                        .orElse(providers.gradleProperty("org.jetbrains.intellij.platform.intellijPlatformIdesCache"))
-                        .orElse("${System.getProperty("user.home")}/idea-sandbox/downloads")
-                        .map { file(it).absoluteFile }
-
-                ))
-        }
-    }
-
-    pluginConfiguration {
-        name = providers.gradleProperty("pluginName")
-        version = providers.gradleProperty("pluginVersion")
-
-        // Extract the <!-- Plugin description --> section from README.md and provide for the plugin's manifest
-        description = providers.fileContents(layout.projectDirectory.file("README.md")).asText.map {
-            val start = "<!-- Plugin description -->"
-            val end = "<!-- Plugin description end -->"
-
-            with(it.lines()) {
-                if (!containsAll(listOf(start, end))) {
-                    throw GradleException("Plugin description section not found in README.md:\n$start ... $end")
+themeMerger {
+    variants {
+        themeNames.forEach { theme ->
+            themeVariants.forEach { (suffix, flavor) ->
+                val taskSuffix = theme.split('-').joinToString("") { it.replaceFirstChar(Char::uppercase) } +
+                    suffix.split('-').joinToString("") { it.replaceFirstChar(Char::uppercase) }
+                register(taskSuffix) {
+                    baseTheme.set("themes/$theme/$theme-base.theme.json")
+                    overrides("themes/$theme/$theme$suffix.overrides.json")
+                    output.set("themes/$theme/$theme$suffix.theme.json")
+                    description.set("Generates the $theme $flavor theme by merging the base theme with its overrides")
                 }
-                subList(indexOf(start) + 1, indexOf(end)).joinToString("\n").let(::markdownToHTML)
             }
-        }
-
-        val changelog = project.changelog // local variable for configuration cache compatibility
-        // Get the latest available change notes from the changelog file
-        changeNotes = providers.gradleProperty("pluginVersion").map { pluginVersion ->
-            with(changelog) {
-                renderItem(
-                    (getOrNull(pluginVersion) ?: getUnreleased())
-                        .withHeader(false)
-                        .withEmptySections(false),
-                    Changelog.OutputType.HTML,
-                )
-            }
-        }
-
-        ideaVersion {
-            sinceBuild = providers.gradleProperty("pluginSinceBuild")
-            untilBuild = provider { null }
-        }
-    }
-
-    signing {
-        certificateChain = providers.environmentVariable("CERTIFICATE_CHAIN")
-        privateKey = providers.environmentVariable("PRIVATE_KEY")
-        password = providers.environmentVariable("PRIVATE_KEY_PASSWORD")
-    }
-
-    publishing {
-        // The pluginVersion is based on the SemVer (https://semver.org) and supports pre-release labels, like 2.1.7-alpha.3
-        // Specify pre-release label to publish the plugin in a custom Release Channel automatically. Read more:
-        // https://plugins.jetbrains.com/docs/intellij/deployment.html#specifying-a-release-channel
-        channels = provider {
-            listOf(
-                project.version.toString().substringAfter('-', "").substringBefore('.').ifEmpty { "default" })
-        }
-        token = providers.environmentVariable("PUBLISH_TOKEN")
-    }
-
-    pluginVerification {
-        ides {
-            recommended()
         }
     }
 }
 
-// Configure Gradle Changelog Plugin - read more: https://github.com/JetBrains/gradle-changelog-plugin
-changelog {
-    groups.empty()
-    repositoryUrl = providers.gradleProperty("pluginRepositoryUrl")
-}
+data class CachedIde(val dir: File, val type: String, val branch: Int, val isRelease: Boolean, val parts: List<Int>)
 
-// Configure Gradle Kover Plugin - read more: https://github.com/Kotlin/kotlinx-kover#configuration
-kover {
-    reports {
-        total {
-            xml {
-                onCheck = true
-            }
+fun pruneIdeCache(cacheDir: File, sinceBranch: Int, keepNames: Set<String>, confirm: Boolean) {
+    val releaseVersion = Regex("""^(\d{4})\.(\d)(\.\d+)*$""")
+    val buildNumber = Regex("""^(\d{3})(\.\d+)+$""")
+    val ides = cacheDir.listFiles { f -> f.isDirectory }.orEmpty().mapNotNull { dir ->
+        val type = dir.name.substringBefore('-')
+        val version = dir.name.substringAfter('-')
+        val parts = version.split('.').mapNotNull { it.toIntOrNull() }
+        when {
+            releaseVersion.matches(version) -> CachedIde(dir, type, (parts[0] - 2000) * 10 + parts[1], true, parts)
+            buildNumber.matches(version) -> CachedIde(dir, type, parts[0], false, parts)
+            else -> null // unrecognized layout: never delete
         }
     }
+    val byNewest = compareBy<CachedIde> { it.isRelease }.thenComparator { a, b ->
+        a.parts.zip(b.parts).map { (x, y) -> x.compareTo(y) }.firstOrNull { it != 0 } ?: a.parts.size.compareTo(b.parts.size)
+    }
+    val newestPerLine = ides.groupBy { it.type to it.branch }.values.map { it.maxWith(byNewest) }.toSet()
+    val doomed = ides.filter { it.dir.name !in keepNames && (it.branch < sinceBranch || it !in newestPerLine) }
+        .sortedBy { it.dir.name }
+
+    if (doomed.isEmpty()) println("Nothing to prune in $cacheDir")
+    doomed.forEach { ide ->
+        if (confirm) {
+            ide.dir.deleteRecursively()
+            println("Deleted ${ide.dir}")
+        } else {
+            println("Would delete ${ide.dir}")
+        }
+    }
+    if (!confirm && doomed.isNotEmpty()) println("Dry run: re-run with -Pconfirm to delete.")
 }
 
 tasks {
+    // Deletes cached IDEs that are below the since-build, or superseded by a newer build of the
+    // same release line (a release supersedes that line's EAPs). The build target and the Pro
+    // sandbox IDEs (current release, next EAP) are always kept, and anything newer is never
+    // touched, since other projects share the cache. Dry run unless -Pconfirm is passed.
+    register("pruneIdeCache") {
+        group = "intellij platform"
+        description = "Removes superseded and pre-since-build IDEs from the shared IDE cache (-Pconfirm to delete)"
+        notCompatibleWithConfigurationCache("Deletes outside the build directory")
+
+        val cacheDir = ArmadaBuild.ideCacheDir(providers)
+        val sinceBranch = providers.gradleProperty("pluginSinceBuild").map { it.substringBefore('.').toInt() }
+        val platformType = providers.gradleProperty("platformType")
+        val keep = listOf("platformVersion", "platformVersionCurrent", "platformVersionEap").map { version ->
+            platformType.zip(providers.gradleProperty(version)) { t, v -> "$t-$v" }
+        }
+        val confirm = providers.gradleProperty("confirm").isPresent
+
+        doLast {
+            pruneIdeCache(cacheDir.get(), sinceBranch.get(), keep.map { it.get() }.toSet(), confirm)
+        }
+    }
+
+    // Converts dotted keys to nested objects: ./gradlew normalizeTheme -Pinput=<in.json> -Poutput=<out.json>
+    register("normalizeTheme") {
+        group = "theme"
+        description = "Normalizes a theme JSON file by converting dotted keys to nested objects"
+        val input = providers.gradleProperty("input")
+        val output = providers.gradleProperty("output")
+        doLast {
+            if (!input.isPresent || !output.isPresent) {
+                throw GradleException("Usage: ./gradlew normalizeTheme -Pinput=<input.json> -Poutput=<output.json>")
+            }
+            val theme = buildscripts.ThemeMerger.normalize(file(input.get()))
+            buildscripts.ThemeMerger.writeTheme(theme, file(output.get()))
+        }
+    }
+
     wrapper {
         gradleVersion = providers.gradleProperty("gradleVersion").get()
-    }
-
-    publishPlugin {
-        dependsOn(patchChangelog)
-    }
-}
-
-intellijPlatformTesting {
-    runIde {
-        register("runIdeForUiTests") {
-            task {
-                jvmArgumentProviders += CommandLineArgumentProvider {
-                    listOf(
-                        "-Drobot-server.port=8082",
-                        "-Dide.mac.message.dialogs.as.sheets=false",
-                        "-Djb.privacy.policy.text=<!--999.999-->",
-                        "-Djb.consents.confirmation.enabled=false",
-                    )
-                }
-            }
-
-            plugins {
-                robotServerPlugin()
-            }
-        }
-
-        register("runIdeClassicUI") {
-            task {
-                description = "Runs IDE with the classic UI plugin for testing theme compatibility"
-            }
-
-            plugins {
-                plugin(provider {
-                    val platformType = intellijPlatform.productInfo.productCode
-                    val platformVersion = intellijPlatform.productInfo.buildNumber
-
-                    val repo = PluginRepositoryFactory.create("https://plugins.jetbrains.com")
-                    val plugin = repo.pluginManager.searchCompatibleUpdates(
-                        build = "$platformType-$platformVersion",
-                        xmlIds = listOf("com.intellij.classic.ui"),
-                    ).firstOrNull()
-                        ?: throw GradleException("No plugin update with id='com.intellij.classic.ui' compatible with '$platformType-$platformVersion' found in JetBrains Marketplace")
-
-                    "${plugin.pluginXmlId}:${plugin.version}"
-                })
-            }
-        }
     }
 }

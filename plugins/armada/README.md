@@ -1,6 +1,3 @@
-> This repository mirrors each release of the plugin. Development happens in a private
-> repository, so pull requests here can't be merged directly; issues are welcome.
-
 # Armada Core Themes for IntelliJ-based IDEs
 
 [![Version](https://img.shields.io/jetbrains/plugin/v/26844-armada-theme.svg)](https://plugins.jetbrains.com/plugin/26844-armada-theme)

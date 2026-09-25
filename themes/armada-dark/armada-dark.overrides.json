@@ -1,0 +1,8 @@
+{
+  "name": "Armada Dark (New UI)",
+  "ui": {
+    "ComboBox": {
+      "selectionBackground": "BlueTint_40"
+    }
+  }
+}
