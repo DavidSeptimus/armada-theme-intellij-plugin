@@ -136,7 +136,14 @@
       "lightSelectionInactiveBackground": "Neutral_50"
     },
     "WelcomeScreen": {
-      "separatorColor": "Neutral_50"
+      "separatorColor": "Neutral_50",
+      "Frame": {
+        "DisclosureButton": {
+          "defaultBackground": "Neutral_30",
+          "hoverOverlay": "#FFFFFF0D",
+          "pressedOverlay": "White-10"
+        }
+      }
     },
     "FileColor": {
       "Blue": "Blue_30",
@@ -178,11 +185,15 @@
       }
     },
     "Panel": {
-      "foreground": "Neutral_140"
+      "foreground": "Neutral_140",
+      "disabledForeground": "Neutral_80"
     },
     "StatusBar": {
       "background": "Neutral_10",
-      "borderColor": "Neutral_40"
+      "borderColor": "Neutral_40",
+      "Breadcrumbs": {
+        "pressedBackground": "LightTint_8"
+      }
     },
     "Label": {
       "foreground": "Neutral_140",
@@ -232,7 +243,8 @@
         }
       },
       "DragAndDrop": {
-        "areaBackground": "BlueTint_15"
+        "areaBackground": "BlueTint_15",
+        "hintBackground": "BlueTint_10"
       }
     },
     "TextPane": {
@@ -388,6 +400,12 @@
           "selectionInactiveForeground": "Neutral_140",
           "hoveredBackground": "Neutral_50"
         }
+      },
+      "Merge": {
+        "Badge": {
+          "infoForeground": "Neutral_90",
+          "modifiedItemForeground": "Blue 110"
+        }
       }
     },
     "CompletionPopup": {
@@ -411,7 +429,13 @@
       "infoBackground": "Blue_30",
       "infoBorderColor": "Blue_60",
       "successBackground": "Green_30",
-      "successBorderColor": "Green_60"
+      "successBorderColor": "Green_60",
+      "aiBackground": "Purple_30",
+      "aiBorderColor": "Purple_50",
+      "infoMutedBackground": "Blue_30",
+      "infoMutedBorderColor": "Blue_40",
+      "neutralMutedBackground": "Neutral_30",
+      "neutralMutedBorderColor": "Neutral_40"
     },
     "SearchField": {
       "errorForeground": "Red_110",
@@ -427,6 +451,106 @@
       "selectedBackground": "BlueTint_40",
       "selectedHoveredBackground": "BlueTint_30",
       "selectedPressedBackground": "BlueTint_25"
+    },
+    "AIA": {
+      "Elicitation": {
+        "choice": {
+          "focusedBorderColor": "Blue_100",
+          "hoverBackground": "LightTint_10",
+          "numberForeground": "Neutral_110",
+          "selectedBackground": "Blue_30",
+          "selectedBorderColor": "Blue_60",
+          "selectedNumberForeground": "Blue_130"
+        }
+      }
+    },
+    "AIAssistant": {
+      "Chat": {
+        "AssistantMessage": {
+          "inlineCodeBackground": "Neutral_30"
+        },
+        "StepCard": {
+          "Default": {
+            "background": {
+              "color": "Neutral_30"
+            },
+            "border": {
+              "color": "Neutral_40"
+            }
+          }
+        }
+      }
+    },
+    "AgentThreads": {
+      "Color": {
+        "Blue": "Blue_40",
+        "Blue.selection": "Blue_50",
+        "Cyan": "Cyan_30",
+        "Cyan.selection": "Cyan_40",
+        "Green": "Green_40",
+        "Green.selection": "Green_60",
+        "Orange": "Orange_30",
+        "Orange.selection": "Orange_40",
+        "Pink": "Pink_30",
+        "Pink.selection": "Pink_40",
+        "Purple": "Purple_40",
+        "Purple.selection": "Purple_50",
+        "Red": "Red_30",
+        "Red.selection": "Red_40",
+        "Yellow": "Yellow_40",
+        "Yellow.selection": "Yellow_50"
+      },
+      "SessionView": {
+        "background": {
+          "selection": "Green_50"
+        },
+        "tabBackground": "Green_60"
+      }
+    },
+    "Air": {
+      "Junie": {
+        "Selector": {
+          "slider": "Green_90"
+        }
+      },
+      "Prompt": {
+        "Tooltip": {
+          "footerBackground": "Neutral_50"
+        }
+      },
+      "Usage": {
+        "barForeground": "Blue_90",
+        "pillBackground": "Neutral_40",
+        "trackBackground": "BlueTint_20"
+      }
+    },
+    "Badge": {
+      "blueBackground": "Blue_110",
+      "blueForeground": "Neutral_30",
+      "blueSecondaryBackground": "#1D61BAB3",
+      "blueSecondaryForeground": "Blue_140",
+      "disabledBackground": "LightTint_15",
+      "disabledForeground": "LightTint_40",
+      "graySecondaryBackground": "LightTint_15",
+      "graySecondaryForeground": "LightTint_80",
+      "greenBackground": "Green_110",
+      "greenForeground": "Neutral_30",
+      "greenSecondaryBackground": "#216F52B3",
+      "greenSecondaryForeground": "Green_140",
+      "purpleSecondaryBackground": "#8646AEB3",
+      "purpleSecondaryForeground": "Purple_140"
+    },
+    "NuGet": {
+      "section": {
+        "hoverBackground": "Gray 20"
+      }
+    },
+    "PillButton": {
+      "blueBorderColor": "Blue_110",
+      "blueForeground": "Blue_120",
+      "blueHoverBackground": "Blue_40",
+      "blueHoverBorderColor": "Blue_110",
+      "blueHoverForeground": "Blue_120"
     }
   },
   "colors": {
@@ -488,6 +612,8 @@
     "Coral": "#CC7C8A",
     "Cyan": "#82D2CE",
     "Cyan Dark": "#779E9E",
+    "Cyan_30": "#1C3837",
+    "Cyan_40": "#1F4E4B",
     "Lime": "#A8CC7C",
     "Orange": "#E09B70",
     "Pink": "#E394DC",
@@ -657,11 +783,38 @@
     "VioletTint_40": "#685AFB66",
     "VioletTint_20": "#685AFB33",
     "Pink_30": "#3F303F",
+    "Pink_40": "#5E405C",
     "PinkTint_10": "#E394DC1A",
     "Orange_120": "#e3ac89",
     "Orange_30": "#3E302A",
+    "Orange_40": "#5A4237",
+    "Lime_120": "#91B169",
+    "Lime_110": "#749940",
+    "Lime_90": "#73763D",
     "YellowTint_50": "#9F680C80",
     "YellowTint_40": "#9F680C66",
-    "YellowTint_20": "#9F680C33"
-  }
+    "YellowTint_20": "#9F680C33",
+    "blue-100": "Blue 110",
+    "icon-disabled": "Neutral_70",
+    "icon-over-accent": "White",
+    "main-window-border": "Neutral_40",
+    "purple-80": "Purple_70",
+    "toggle-focus-border": "Blue 60",
+    "toggle-off-bg": "LightTint_20",
+    "toggle-off-border": "Transparent",
+    "toggle-off-disabled-bg": "Transparent",
+    "toggle-off-disabled-border": "Neutral_40",
+    "toggle-off-disabled-notch": "Neutral_70",
+    "toggle-off-notch": "Neutral_130",
+    "toggle-on-bg": "Blue_90",
+    "toggle-on-border": "Blue_90",
+    "toggle-on-disabled-bg": "Transparent",
+    "toggle-on-disabled-border": "Neutral_40",
+    "toggle-on-disabled-notch": "Neutral_70",
+    "toggle-on-notch": "White",
+    "tool-window-bg-inline": "Neutral_30",
+    "toolbar-selected-bg-active": "Blue_90",
+    "toolbar-selected-bg-hovered": "Blue_70"
+  },
+  "parentTheme": "ExperimentalDark"
 }

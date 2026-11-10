@@ -1,5 +1,6 @@
 [versions]
 # libraries
+asm = "9.8"
 gson = "2.14.0"
 junit = "4.13.2"
 opentest4j = "1.3.0"
@@ -11,6 +12,7 @@ kotlin = "2.4.20"
 kover = "0.9.9"
 
 [libraries]
+asm-analysis = { group = "org.ow2.asm", name = "asm-analysis", version.ref = "asm" }
 gson = { group = "com.google.code.gson", name = "gson", version.ref = "gson" }
 junit = { group = "junit", name = "junit", version.ref = "junit" }
 opentest4j = { group = "org.opentest4j", name = "opentest4j", version.ref = "opentest4j" }

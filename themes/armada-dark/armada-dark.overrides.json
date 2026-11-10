@@ -1,5 +1,6 @@
 {
   "name": "Armada Dark (New UI)",
+  "parentTheme": "ExperimentalDark",
   "ui": {
     "ComboBox": {
       "selectionBackground": "BlueTint_40"

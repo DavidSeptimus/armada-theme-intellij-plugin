@@ -111,10 +111,12 @@ intellijPlatform {
             // Newest release of each line from the since-build on. Not recommended(): it also
             // pulls EAPs, and every new patch or EAP is another ~4 GB download that nothing
             // cleans up. Superseded downloads are removed by the root pruneIdeCache task.
+            // -PverifyLatestLines=N (CI passes 2) keeps only the newest N lines, counting back from
+            // platformVersionCurrent: each IDE is a large download and a long verifier run.
             select {
                 types = listOf(IntelliJPlatformType.IntellijIdeaUltimate)
                 channels = listOf(ProductRelease.Channel.RELEASE)
-                sinceBuild = armadaProperty("pluginSinceBuild")
+                sinceBuild = verifySinceBuild()
             }
         }
     }

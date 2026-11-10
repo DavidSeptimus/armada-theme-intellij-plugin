@@ -1,6 +1,7 @@
 package buildscripts
 
 import com.google.gson.*
+import dev.tachilabs.armada.uitheme.UiKeyRules
 import java.io.File
 
 /**
@@ -63,70 +64,72 @@ object ThemeMerger {
                 currentPath == path || currentPath.startsWith("$path.")
             }
 
-            if (key.contains('.') && !shouldNotFlatten) {
-                // Split the key and create nested structure
-                val parts = key.split('.')
-                var current = result
-
-                for (i in 0 until parts.size - 1) {
-                    val part = parts[i]
-                    if (!current.has(part)) {
-                        current.add(part, JsonObject())
-                    } else if (!current.get(part).isJsonObject) {
-                        // If the path exists but isn't an object, we need to convert it
-                        current.add(part, JsonObject())
-                    }
-                    current = current.getAsJsonObject(part)
-                }
-
-                // Set the final value
-                val finalKey = parts.last()
-                val newPath = if (currentPath.isEmpty()) parts.joinToString(".") else "$currentPath.${parts.joinToString(".")}"
-                val normalizedValue = if (value.isJsonObject) {
-                    normalizeObject(value.asJsonObject, newPath)
-                } else if (value.isJsonArray) {
-                    normalizeArray(value.asJsonArray, newPath)
-                } else {
-                    value
-                }
-
-                // If the key already exists, merge the values
-                if (current.has(finalKey)) {
-                    val existing = current.get(finalKey)
-                    if (existing.isJsonObject && normalizedValue.isJsonObject) {
-                        current.add(finalKey, deepMerge(existing.asJsonObject, normalizedValue.asJsonObject))
-                    } else {
-                        current.add(finalKey, normalizedValue)
-                    }
-                } else {
-                    current.add(finalKey, normalizedValue)
-                }
+            val newPath = if (currentPath.isEmpty()) key else "$currentPath.$key"
+            val normalizedValue = if (value.isJsonObject && isValue(value)) {
+                value
+            } else if (value.isJsonObject) {
+                normalizeObject(value.asJsonObject, newPath)
+            } else if (value.isJsonArray) {
+                normalizeArray(value.asJsonArray, newPath)
             } else {
-                // No dots in key or path should not be flattened
-                val newPath = if (currentPath.isEmpty()) key else "$currentPath.$key"
-                val normalizedValue = if (value.isJsonObject) {
-                    normalizeObject(value.asJsonObject, newPath)
-                } else if (value.isJsonArray) {
-                    normalizeArray(value.asJsonArray, newPath)
-                } else {
-                    value
-                }
-
-                // Merge if key already exists
-                if (result.has(key)) {
-                    val existing = result.get(key)
-                    if (existing.isJsonObject && normalizedValue.isJsonObject) {
-                        result.add(key, deepMerge(existing.asJsonObject, normalizedValue.asJsonObject))
-                    } else {
-                        result.add(key, normalizedValue)
-                    }
-                } else {
-                    result.add(key, normalizedValue)
-                }
+                value
             }
+
+            putPath(result, if (shouldNotFlatten) listOf(key) else key.split('.'), normalizedValue, currentPath)
         }
 
         return result
+    }
+
+    /** A leaf: anything but an object, or a per-OS object, which holds one value for each OS. */
+    private fun isValue(element: JsonElement): Boolean = !element.isJsonObject || UiKeyRules.isPerOs(element.asJsonObject)
+
+    /** Only `ui` keys are independent of each other, so only there can one be a prefix of another. */
+    private fun inUi(path: String) = path == "ui" || path.startsWith("ui.")
+
+    private fun child(path: String, key: String) = if (path.isEmpty()) key else "$path.$key"
+
+    /** Sets [value] at a dotted path under the object at [path], nesting until it reaches a value in `ui`. */
+    private fun putPath(target: JsonObject, parts: List<String>, value: JsonElement, path: String) {
+        val head = parts.first()
+        val existing = target.get(head)
+        when {
+            parts.size == 1 -> put(target, head, value, path)
+            existing != null && isValue(existing) && inUi(path) -> putLeaves(target, parts.joinToString("."), value, path)
+            else -> {
+                if (existing == null || isValue(existing)) target.add(head, JsonObject())
+                putPath(target.getAsJsonObject(head), parts.drop(1), value, child(path, head))
+            }
+        }
+    }
+
+    /**
+     * Sets [value] at [key] in the object at [path], merging objects. A `ui` key can be both a value
+     * and a prefix of other keys, like `Color.Blue` and `Color.Blue.selection`. Nesting can't hold
+     * both, so the children stay dotted. Anywhere else, the later value replaces the earlier one.
+     */
+    private fun put(target: JsonObject, key: String, value: JsonElement, path: String) {
+        val existing = target.get(key)
+        when {
+            existing == null || (isValue(existing) && isValue(value)) || !inUi(path) && (isValue(existing) || isValue(value)) ->
+                target.add(key, value.deepCopy())
+            !isValue(existing) && !isValue(value) ->
+                target.add(key, deepMerge(existing.asJsonObject, value.asJsonObject, child(path, key)))
+            isValue(existing) -> putLeaves(target, key, value, path)
+            else -> {
+                putLeaves(target, key, existing, path)
+                target.add(key, value.deepCopy())
+            }
+        }
+    }
+
+    /**
+     * Sets [value] under the dotted [key], an object as one dotted key per leaf. An object at a dotted
+     * key could define a key a second way, next to the same key written out in full.
+     */
+    private fun putLeaves(target: JsonObject, key: String, value: JsonElement, path: String) {
+        if (isValue(value)) put(target, key, value, path)
+        else value.asJsonObject.entrySet().toList().forEach { (name, v) -> putLeaves(target, "$key.$name", v, path) }
     }
 
     private fun normalizeArray(arr: JsonArray, currentPath: String): JsonArray {
@@ -143,31 +146,9 @@ object ThemeMerger {
         return result
     }
 
-    private fun deepMerge(base: JsonObject, overlay: JsonObject): JsonObject {
-        val result = JsonObject()
-
-        // First, add all entries from base
-        for ((key, value) in base.entrySet()) {
-            result.add(key, value.deepCopy())
-        }
-
-        // Then, merge in entries from overlay
-        for ((key, value) in overlay.entrySet()) {
-            if (result.has(key)) {
-                val existing = result.get(key)
-                if (existing.isJsonObject && value.isJsonObject) {
-                    // Recursively merge objects
-                    result.add(key, deepMerge(existing.asJsonObject, value.asJsonObject))
-                } else {
-                    // Override with overlay value
-                    result.add(key, value.deepCopy())
-                }
-            } else {
-                // Add new key from overlay
-                result.add(key, value.deepCopy())
-            }
-        }
-
+    private fun deepMerge(base: JsonObject, overlay: JsonObject, path: String = ""): JsonObject {
+        val result = base.deepCopy()
+        for ((key, value) in overlay.entrySet()) put(result, key, value, path)
         return result
     }
 }

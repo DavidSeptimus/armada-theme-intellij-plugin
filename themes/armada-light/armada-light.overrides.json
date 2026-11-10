@@ -1,5 +1,6 @@
 {
   "name": "Armada Light (New UI)",
+  "parentTheme": "ExperimentalLight",
   "icons": {
     "/com/intellij/ide/ui/laf/icons/intellij/checkBox.svg": "/themes/armada-light/icons/classic/checkBox.svg",
     "/com/intellij/ide/ui/laf/icons/intellij/checkBoxDisabled.svg": "/themes/armada-light/icons/classic/checkBoxDisabled.svg",

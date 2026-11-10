@@ -30,6 +30,20 @@ object ArmadaBuild {
 fun Project.armadaProperty(name: String): String =
     findProperty(name)?.toString() ?: throw GradleException("Property '$name' is not set for $path")
 
+/**
+ * The oldest build line verifyPlugin checks: pluginSinceBuild, or with `-PverifyLatestLines=N` the
+ * Nth newest line counting back from platformVersionCurrent (2026.3 is 263, the line before it 262,
+ * and a year's first line follows the previous year's third), never older than pluginSinceBuild.
+ */
+fun Project.verifySinceBuild(): String {
+    val since = armadaProperty("pluginSinceBuild")
+    val lines = findProperty("verifyLatestLines")?.toString()?.toIntOrNull()?.takeIf { it > 0 } ?: return since
+    val (year, release) = armadaProperty("platformVersionCurrent").split('.').map(String::toInt)
+    var branch = (year % 100) * 10 + release
+    repeat(lines - 1) { branch = if (branch % 10 > 1) branch - 1 else (branch / 10 - 1) * 10 + 3 }
+    return maxOf(branch, since.toInt()).toString()
+}
+
 /** The theme folders under the root `themes/` directory that a theme plugin ships. */
 abstract class ArmadaThemesExtension {
     abstract val themes: ListProperty<String>

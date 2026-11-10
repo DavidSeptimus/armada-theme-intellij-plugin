@@ -4,6 +4,22 @@
 
 ## [Unreleased]
 
+## [1.3.0] - 2026-11-09
+
+### Added
+
+- Armada Dark colors the UI added in IDEs 2026.1 through 2026.3 from its own palette: the new toggle switch, badges, banners, pill buttons, and the agent UI from JetBrains Air (thread color labels, agent questions, chat step cards, and AI usage)
+- Armada Dark colors diagrams for the official Mermaid plugin
+
+### Changed
+
+- Armada Dark covers many more editor colors that previously fell back to IDE defaults, including the debugger, file status, and console
+- Armada Dark highlights Markdown with more fidelity: alerts, block quotes, code spans and blocks, links, citations, and footnotes each get their own colors
+
+### Fixed
+
+- New UI themes are based on the IDE's New UI theme again, so controls get New UI shapes, focus rings, and colors instead of Classic UI's
+
 ## [1.2.0] - 2026-09-25
 
 ### Added
@@ -240,7 +256,8 @@
 - Fleet Dark UI and Editor Color Scheme
 - Plugin Icon
 
-[Unreleased]: https://github.com/DavidSeptimus/armada-theme-intellij-plugin/compare/v1.2.0...HEAD
+[Unreleased]: https://github.com/DavidSeptimus/armada-theme-intellij-plugin/compare/v1.3.0...HEAD
+[1.3.0]: https://github.com/DavidSeptimus/armada-theme-intellij-plugin/compare/v1.2.0...v1.3.0
 [1.2.0]: https://github.com/DavidSeptimus/armada-theme-intellij-plugin/compare/v1.1.0...v1.2.0
 [1.1.0]: https://github.com/DavidSeptimus/armada-theme-intellij-plugin/compare/v1.0.0...v1.1.0
 [1.0.0]: https://github.com/DavidSeptimus/armada-theme-intellij-plugin/compare/v0.8.0...v1.0.0

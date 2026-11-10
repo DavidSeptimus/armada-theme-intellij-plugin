@@ -676,5 +676,6 @@
     "YellowTint_30": "#9F680C4D",
     "YellowTint_20": "#9F680C33",
     "Orange_120": "#e3ac89"
-  }
+  },
+  "parentTheme": "ExperimentalLight"
 }

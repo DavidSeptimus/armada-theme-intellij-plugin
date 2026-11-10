@@ -6,3 +6,4 @@ build
 /keys/
 .DS_Store
 .kotlin
+/plugins/armada-pro/scheme-reviews/
